@@ -32,3 +32,6 @@ Depois de publicar: observabilidade, revisão de acessos, atualizações, respos
 Fontes oficiais: [OWASP ASVS](https://asvs.owasp.org/), [Codex seguro](https://openai.com/index/running-codex-safely/), [permissões](https://learn.chatgpt.com/docs/agent-approvals-security), [Supabase RLS](https://supabase.com/docs/guides/database/postgres/row-level-security). Verificar versões quando aplicar.
 
 [Continuidade](CONTINUIDADE.md) · [Backup](BACKUP_DRIVE.md)
+
+## Registro de execução
+Use o [template de revisão](../templates/REVISAO_SEGURANCA.md) em destino privado e confira o [estado operacional](../OPERACAO.md).

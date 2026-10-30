@@ -7,6 +7,24 @@
 
 Uma metodologia para criar, recuperar e evoluir software com decisões claras, colaboração seletiva e evidências antes da conclusão. Documentação pública; operação específica e credenciais ficam fora deste repositório.
 
+## Comece uma vez. Avance com controle.
+
+**Projeto novo começa no P01.** O coordenador conduz as próximas etapas autorizadas na sessão ativa, sem exigir que você copie todos os prompts. A entrevista continua interativa; escopo, gastos, dados e produção mantêm decisões próprias.
+
+```text
+Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P01.md
+Inicie meu produto em CONTINUO_SUPERVISIONADO. Avance após aceite, revisão, segurança, backup pertinente e checkpoint, respeitando minhas autorizações.
+```
+
+| Acesso | Documento | Site |
+|---|---|---|
+| Continuidade entre etapas | [Política](politicas/CONTINUIDADE.md) | [Fluxo contínuo](https://carlosemox.github.io/engenharia-cadu/guia/continuidade/) |
+| Revisão e segurança | [Política](politicas/SEGURANCA_ENGENHARIA.md) | [Segurança](https://carlosemox.github.io/engenharia-cadu/guia/seguranca/) |
+| Backup por projeto | [Política](politicas/BACKUP_DRIVE.md) | [Backup](https://carlosemox.github.io/engenharia-cadu/guia/backup/) |
+| Implantação e limites | [Estado](OPERACAO.md) | [O que está ativo](https://carlosemox.github.io/engenharia-cadu/guia/operacao/) |
+
+**Destino dos backups:** `Projetos 2026/Backup/<nome-do-projeto>`. Políticas publicadas não significam conexão Drive ou supervisor instalado. [Mapa completo da central](MAPA_DA_CENTRAL.md).
+
 ## Já existe um aplicativo em desenvolvimento?
 
 Use o **[guia de adoção de projetos existentes](https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/GUIA_DE_USO.md)**. Ele reúne os comandos para entender o produto, reconciliar PRD/TRD e fluxos, mostrar o estado real, revisar o redesenho e aplicar somente os lotes aprovados, preservando o trabalho anterior.

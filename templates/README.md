@@ -12,3 +12,6 @@ Modelos documentais inativos. Campos pendentes não significam autorização ou 
 - [PRD](PRD.md)
 - [REGISTRO_CAPACIDADE](REGISTRO_CAPACIDADE.md)
 - [TRD](TRD.md)
+
+## Controle entre etapas
+[Estado do fluxo](ESTADO_FLUXO.json) · [Revisão de segurança](REVISAO_SEGURANCA.md) · [Recibo de backup](RECIBO_BACKUP.md). Templates inativos; salvar instâncias reais privadamente.

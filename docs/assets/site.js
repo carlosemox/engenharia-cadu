@@ -34,6 +34,16 @@
       setTimeout(() => { button.textContent = original; }, 1600);
     }
   });
+  // CADU organization navigation; creates links only, never runs a prompt.
+  const scriptUrl = document.currentScript ? document.currentScript.src : null;
+  const guideNav = document.querySelector('.sidebar nav');
+  if (scriptUrl && guideNav && !guideNav.querySelector('[data-ops-nav]')) {
+    [['continuidade', 'Fluxo contínuo'], ['seguranca', 'Segurança e revisão'], ['backup', 'Backup por projeto'], ['operacao', 'Implantação e limites']].forEach(([slug, label]) => {
+      const link = document.createElement('a');
+      link.href = new URL('../guia/' + slug + '/', scriptUrl).href;
+      link.dataset.opsNav = slug; link.textContent = label; guideNav.appendChild(link);
+    });
+  }
   const menu = $('.menu-toggle'), sidebar = $('#sidebar');
   function setMenu(open) { if (!menu || !sidebar) return; sidebar.classList.toggle('open', open); menu.setAttribute('aria-expanded', String(open)); menu.setAttribute('aria-label', open ? 'Fechar navegação' : 'Abrir navegação'); }
   if (menu) menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));

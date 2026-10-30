@@ -38,3 +38,6 @@ Uma pasta criada não prova automação instalada. Cada computador/supervisor pr
 Fontes: [Drive/checksums](https://developers.google.com/workspace/drive/api/reference/rest/v3/files), [Supabase backups](https://supabase.com/docs/guides/platform/backups), [NIST — backups e recuperação](https://csrc.nist.gov/pubs/other/2020/04/24/protecting-data-from-ransomware-and-other-data-los/final).
 
 [Continuidade](CONTINUIDADE.md) · [Segurança](SEGURANCA_ENGENHARIA.md)
+
+## Registro de execução
+Use o [recibo de backup](../templates/RECIBO_BACKUP.md) em destino privado. O [estado operacional](../OPERACAO.md) distingue política publicada de automação implantada.

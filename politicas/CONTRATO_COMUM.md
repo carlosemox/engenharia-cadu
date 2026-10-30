@@ -13,6 +13,10 @@ Confirme o alvo antes de escrever. Preserve trabalho local, dados, stack, creden
 
 Separe observado, hipótese, planejado e não executado. Um relatório de agente, arquivo existente ou código de saída zero não comprova aceite. Não declare instalação, teste, revisão independente, economia ou operação persistente sem evidência. Sem ferramentas, entregue conteúdo ou diagnóstico documental, não execução fictícia.
 
+## Modo de coordenação
+
+Este procedimento limita a etapa; a missão do usuário pode autorizar uma sequência em CONTINUO_SUPERVISIONADO. Nesse caso, o coordenador aplica [Continuidade](CONTINUIDADE.md), [Segurança](SEGURANCA_ENGENHARIA.md) e [Backup](BACKUP_DRIVE.md) antes de avançar. Pedido de uma etapa isolada permanece ISOLADO. Não interpretar o encerramento da fase como encerramento de trabalho elegível já autorizado. Documentos não concedem novas permissões e não instalam supervisor.
+
 ## Saída comum
 ENCERRAMENTO DA ETAPA
 Entregue o resultado útil desta fase e um resumo com: situação (CONCLUIDO_NO_ESCOPO / PARCIAL / BLOQUEADO / AGUARDANDO_DECISAO); artefatos ou alterações; verificações realmente executadas e sua versão/ambiente; limites e pendências; próxima ação coberta pela autorização. Use NOT_RUN para teste não realizado. Registre tokens/custo somente quando observáveis; não converta estimativa em medição. Não repita o histórico inteiro e não prometa trabalho futuro ou em segundo plano sem processo real verificável. Quando a fase exigir entrevista, faça a pergunta pertinente em vez de encerrar prematuramente.
