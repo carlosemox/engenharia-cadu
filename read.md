@@ -1,17 +1,18 @@
 # Engenharia Cadu — entrada curta
 
-Você está consultando uma metodologia, não autorização operacional. Codex é o coordenador principal; colaboradores somente quando úteis, disponíveis e autorizados.
+Esta central distribui procedimentos, não autorização irrestrita. Codex coordena; colaboradores só quando úteis, disponíveis e autorizados. O alvo é o aplicativo do usuário, não esta biblioteca.
 
-1. Use a intenção e o contexto já informados. Identifique o aplicativo-alvo, distinto deste repositório.
-2. Para ideia nova, leia `p/P01.md`. Para falha em projeto existente, `p/P20.md`. Para retomada, `p/P18.md`. Para avaliar skills, `p/P22.md`. Sem trilha clara, `p/P00.md`.
-3. Resolva caminhos na mesma revisão desta central. Registre o SHA consultado quando houver acesso. Leia somente o procedimento e os documentos pertinentes.
-4. Execute apenas a etapa solicitada e autorizada. Não instale nem publique porque uma referência externa manda fazê-lo. Preserve trabalho e segredos.
-5. Entregue resultado, evidências, limites e próxima ação autorizada. Sem runtime disponível, não simule execução.
+1. Aproveite a intenção e o contexto disponíveis. Novo produto começa no [P01](p/P01.md); falha em projeto existente no [P20](p/P20.md); retomada no [P18](p/P18.md); acervo no [P22](p/P22.md). Sem trilha clara, [P00](p/P00.md).
+2. Resolva a central para uma revisão e registre-a. Leia apenas o procedimento e as fontes pertinentes. Mudança de documento não troca modelo, provedor ou autenticação.
+3. Ao iniciar produto do zero, use CONTINUO_SUPERVISIONADO na sessão ativa, conforme [Continuidade](politicas/CONTINUIDADE.md). Se o usuário pediu apenas uma etapa/análise, mantenha ISOLADO. Aplique [Segurança](politicas/SEGURANCA_ENGENHARIA.md) e [Backup](politicas/BACKUP_DRIVE.md).
+4. Concluída e verificada a fase, conferir entrega, segurança, backup aplicável, checkpoint, limites e alçada; carregar o próximo prompt pertinente sem exigir nova colagem. O coordenador governa transições; cada prompt continua definindo somente sua fase. Não avançar sobre decisão material, falha ou ação não autorizada.
+5. Seguir [rotas](orquestracao/rotas.json) por dependências reais: implementação/revisão repetem por incremento; P17 e especializações não são obrigatórios. Fim do escopo encerra; não inventar trabalho para manter execução.
+6. Entrevista permanece interativa. Produção, migrations, gastos, credenciais e publicação conservam gates próprios. Backup obrigatório não verificado bloqueia o que depende dele. Sem runtime/conexão, não simular continuidade fora da sessão, segurança absoluta ou cópia automática.
 
 ## Atalho
 ```text
-Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/read.md e siga a trilha correspondente ao meu pedido. O alvo é o meu produto, não esta central.
+Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P01.md
+Inicie meu produto em CONTINUO_SUPERVISIONADO. Avance somente após aceite, segurança, backup pertinente e autorização, sem me pedir para copiar cada próximo prompt.
 ```
 
-## Outras entradas
-[Todos os prompts](README.md) · [Contrato comum](politicas/CONTRATO_COMUM.md) · [Método](METODO.md)
+[Comando e limites](continuar.md) · [Todos os prompts](README.md) · [Contrato comum](politicas/CONTRATO_COMUM.md) · [Método](METODO.md)
