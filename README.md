@@ -1,11 +1,22 @@
 <p align="center"><img src="docs/assets/banner.svg" alt="Engenharia Cadu — Da intenção ao software. Com engenharia." width="100%"></p>
 
 <p align="center"><b>Codex principal · Astra econômico · design no briefing · integrações planejadas</b></p>
-<p align="center"><a href="https://carlosemox.github.io/engenharia-cadu/"><b>Abrir a central visual</b></a> · <a href="read.md">Comece aqui</a> · <a href="#biblioteca-de-prompts">29 prompts</a> · <a href="catalogo/README.md">Agentes e skills</a></p>
+<p align="center"><a href="https://carlosemox.github.io/engenharia-cadu/"><b>Abrir a central visual</b></a> · <a href="read.md">Comece aqui</a> · <a href="#biblioteca-de-prompts">29 prompts</a> · <a href="catalogo/README.md">Agentes e skills</a> · <a href="https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/GUIA_DE_USO.md">Adotar projeto existente</a></p>
 
 # Engenharia Cadu
 
 Uma metodologia para criar, recuperar e evoluir software com decisões claras, colaboração seletiva e evidências antes da conclusão. Documentação pública; operação específica e credenciais ficam fora deste repositório.
+
+## Já existe um aplicativo em desenvolvimento?
+
+Use o **[guia de adoção de projetos existentes](https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/GUIA_DE_USO.md)**. Ele reúne os comandos para entender o produto, reconciliar PRD/TRD e fluxos, mostrar o estado real, revisar o redesenho e aplicar somente os lotes aprovados, preservando o trabalho anterior.
+
+```text
+Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu-adocao/main/read.md
+Entenda este projeto existente e apresente o Retrato do Projeto e o Plano de Adoção antes de alterar código, estrutura ou banco.
+```
+
+A trilha complementa P20/P21 e P17/P18; não renumera os prompts nem substitui a filosofia. O guia também inclui retomada e preparação para 24 horas. Publicar o procedimento não instala supervisor, migra banco ou autoriza mudanças no aplicativo. Relatórios reais permanecem privados.
 
 ## Atalho principal
 Cole na **conversa do agente**, não no shell:
@@ -17,6 +28,7 @@ Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/read.md e
 | Quero… | Começar em | Atalho |
 |---|---|---|
 | Criar um produto | [P01](p/P01.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P01.md` |
+| Entender e reorganizar um projeto existente | [Guia de adoção](https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/GUIA_DE_USO.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu-adocao/main/read.md` |
 | Recuperar um projeto travado | [P20](p/P20.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P20.md` |
 | Retomar uma execução | [P18](p/P18.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P18.md` |
 | Selecionar serviços e APIs | [P08](p/P08.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P08.md` |
@@ -66,6 +78,7 @@ Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/read.md e
 | Seção | O que você encontra |
 |---|---|
 | [Método](METODO.md) | Filosofia e fluxo do início à operação. |
+| [Adoção de projetos existentes](https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/GUIA_DE_USO.md) | Comandos para entender, revisar, reorganizar, retomar e preparar execução prolongada. |
 | [Papéis](agentes/README.md) | 10 responsabilidades documentadas, não uma equipe instalada. |
 | [Skills e catálogos](catalogo/README.md) | 120 identificadores de referência, 57 papéis operacionais e matriz Matheus. |
 | [Política de economia](politicas/ECONOMIA_ASTRA.md) | Contexto, esforço, delegação e medição sem promessas fictícias. |
