@@ -6,6 +6,11 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 ROOT=Path(__file__).resolve().parents[1]
 errors=[];links=0
+def expected_language(path):
+ relative=path.relative_to(ROOT).as_posix()
+ if relative.startswith('docs/en/'):return 'en'
+ if relative.startswith('docs/es/'):return 'es'
+ return 'pt-BR'
 class Links(HTMLParser):
  def __init__(self):super().__init__();self.urls=[];self.ids=set();self.lang=None;self.h1=0
  def handle_starttag(self,tag,attrs):
@@ -25,7 +30,7 @@ def check_link(source,url):
  if not p.exists():errors.append(f'Missing: {source.relative_to(ROOT)} -> {url}')
 for p in ROOT.rglob('*.html'):
  parser=Links();parser.feed(p.read_text())
- if parser.lang!='pt-BR':errors.append(f'Missing language: {p}')
+ if parser.lang!=expected_language(p):errors.append(f'Incorrect language: {p}')
  if parser.h1!=1:errors.append(f'Expected one h1: {p} ({parser.h1})')
  for u in parser.urls:check_link(p,u)
 for p in ROOT.rglob('*.md'):

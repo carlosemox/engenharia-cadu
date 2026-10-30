@@ -1,122 +1,259 @@
-<p align="center"><img src="docs/assets/banner.svg" alt="Engenharia Cadu — Da intenção ao software. Com engenharia." width="100%"></p>
-
-<p align="center"><b>Codex principal · Astra econômico · design no briefing · integrações planejadas</b></p>
-<p align="center"><a href="https://carlosemox.github.io/engenharia-cadu/"><b>Abrir a central visual</b></a> · <a href="read.md">Comece aqui</a> · <a href="#biblioteca-de-prompts">29 prompts</a> · <a href="catalogo/README.md">Agentes e skills</a> · <a href="https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/GUIA_DE_USO.md">Adotar projeto existente</a></p>
+[English](i18n/README.en.md) · **Português (Brasil)** · [Español](i18n/README.es.md)
 
 # Engenharia Cadu
 
-Uma metodologia para criar, recuperar e evoluir software com decisões claras, colaboração seletiva e evidências antes da conclusão. Documentação pública; operação específica e credenciais ficam fora deste repositório.
+**Da ideia à entrega. Sem perder o caminho.**
 
-## Comece uma vez. Avance com controle.
+Transforme sua visão de negócio em um produto que você entende, consegue revisar e pode evoluir. Uma engenharia de trabalho com agentes de IA: decisões antes da implementação, contexto que sobrevive à sessão e evidências antes de chamar algo de pronto.
 
-**Projeto novo começa no P01.** O coordenador conduz as próximas etapas autorizadas na sessão ativa, sem exigir que você copie todos os prompts. A entrevista continua interativa; escopo, gastos, dados e produção mantêm decisões próprias.
+Você traz o problema, o briefing e as referências. O método organiza a próxima decisão. O agente executa dentro do escopo autorizado. O projeto guarda os requisitos, o código e as provas do que foi feito.
+
+[COMEÇAR UM PRODUTO →](p/P01.md) · [ORGANIZAR UM PROJETO EXISTENTE](https://github.com/carlosemox/engenharia-cadu-adocao) · [PREPARAR O AMBIENTE](p/P07.md) · [ABRIR O SITE](https://carlosemox.github.io/engenharia-cadu/)
+
+Codex principal · colaboração seletiva · design desde o briefing · economia de contexto · segurança por etapas.
+
+> A apresentação está disponível em três idiomas. O português brasileiro é a base editorial da Engenharia Cadu. Os procedimentos e guias mantêm seus idiomas atuais; o prompt universal de segurança S01 está em inglês. Escolher um idioma nesta página não traduz nem altera automaticamente os comandos.
+
+<!-- section:historia -->
+## 00 / Uma ideia não deveria se perder entre conversas
+
+O projeto começa com uma visão clara. Depois chegam referências, telas, bibliotecas, integrações e novas decisões. O código cresce. Mas, quando a sessão termina ou outra ferramenta assume, surge a pergunta: **o que está decidido, o que realmente funciona e por onde continuar?**
+
+A Engenharia Cadu foi estruturada para enfrentar esse problema: dar um lugar às decisões e um caminho ao desenvolvimento. Não pede que você abandone o que já fez. Pede que a intenção seja compreendida, que as mudanças tenham limites e que cada entrega possa ser conferida.
+
+A proposta não é produzir mais arquivos por obrigação. É transformar conversas em conhecimento utilizável, ideias em requisitos e tarefas em resultados verificáveis. Uma mesma filosofia para começar do zero, recuperar projetos e desenvolver capacidades reutilizáveis.
+
+**Seu negócio determina o produto. A engenharia organiza o trabalho. A ferramenta não decide sozinha o que a empresa deve ser.**
+
+<!-- section:comecar -->
+## 01 / Comece do ponto em que você está
+
+| Seu momento | Entrada | O primeiro resultado |
+|---|---|---|
+| Tenho uma ideia ou um briefing | [P01 — Descoberta do produto](p/P01.md) | Entendimento compartilhado, lacunas relevantes e direção para a primeira versão. |
+| Já existe uma aplicação | [Trilha de adoção](https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/read.md) | Retrato do projeto e plano revisável antes de alterar código, estrutura ou banco. |
+| Preciso preparar a máquina | [P07 — Ambiente e capacidades](p/P07.md) | Inventário do que existe e configuração do que estiver autorizado. |
+| Preciso de uma tarefa específica | [P00 — Escolher a trilha](p/P00.md) | O procedimento pertinente, sem executar a engenharia inteira. |
+
+### Projeto novo: um briefing é ponto de partida, não trabalho perdido
+
+Cole na conversa do agente e descreva o produto na segunda linha. Se você já tem um briefing, disponibilize o texto ou arquivo nessa mesma conversa.
 
 ```text
 Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P01.md
-Inicie meu produto em CONTINUO_SUPERVISIONADO. Avance após aceite, revisão, segurança, backup pertinente e checkpoint, respeitando minhas autorizações.
+Projeto: [nome, problema, público, jornada principal e restrições]. Use meu briefing existente, valide somente as lacunas e conduza as próximas etapas autorizadas em CONTINUO_SUPERVISIONADO.
 ```
 
-| Acesso | Documento | Site |
-|---|---|---|
-| Continuidade entre etapas | [Política](politicas/CONTINUIDADE.md) | [Fluxo contínuo](https://carlosemox.github.io/engenharia-cadu/guia/continuidade/) |
-| Revisão e segurança | [Política](politicas/SEGURANCA_ENGENHARIA.md) | [Segurança](https://carlosemox.github.io/engenharia-cadu/guia/seguranca/) |
-| Backup por projeto | [Política](politicas/BACKUP_DRIVE.md) | [Backup](https://carlosemox.github.io/engenharia-cadu/guia/backup/) |
-| Implantação e limites | [Estado](OPERACAO.md) | [O que está ativo](https://carlosemox.github.io/engenharia-cadu/guia/operacao/) |
+Começar pelo P01 não significa repetir todas as perguntas. O agente aproveita decisões e pesquisas válidas, esclarece o que falta e encaminha o trabalho. Ele não pula a descoberta apenas porque encontrou um arquivo chamado briefing.
 
-**Destino dos backups:** `Projetos 2026/Backup/<nome-do-projeto>`. Políticas publicadas não significam conexão Drive ou supervisor instalado. [Mapa completo da central](MAPA_DA_CENTRAL.md).
-
-## Já existe um aplicativo em desenvolvimento?
-
-Use o **[guia de adoção de projetos existentes](https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/GUIA_DE_USO.md)**. Ele reúne os comandos para entender o produto, reconciliar PRD/TRD e fluxos, mostrar o estado real, revisar o redesenho e aplicar somente os lotes aprovados, preservando o trabalho anterior.
+### Projeto existente: primeiro enxergar, depois mudar
 
 ```text
 Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu-adocao/main/read.md
-Entenda este projeto existente e apresente o Retrato do Projeto e o Plano de Adoção antes de alterar código, estrutura ou banco.
+Entenda este projeto, reconcilie briefing, PRD, TRD e fluxos e apresente o Retrato do Projeto e o Plano de Adoção antes de alterar código, arquivos ou banco.
 ```
 
-A trilha complementa P20/P21 e P17/P18; não renumera os prompts nem substitui a filosofia. O guia também inclui retomada e preparação para 24 horas. Publicar o procedimento não instala supervisor, migra banco ou autoriza mudanças no aplicativo. Relatórios reais permanecem privados.
+Você deve enxergar o que o produto pretende fazer, o que foi implementado, o que foi comprovado e o que continua desconhecido. A arquitetura útil, a identidade, os contratos e o trabalho local são preservados. Reescrita ou migração não entram disfarçadas de organização.
 
-## Atalho principal
-Cole na **conversa do agente**, não no shell:
+### Ambiente: configurar não é presumir
 
 ```text
-Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/read.md e siga a trilha do meu pedido. O alvo é meu projeto, não esta central.
+Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P07.md
+Inventarie este ambiente e prepare somente as configurações autorizadas para meu projeto. Diferencie instalado, configurado, acessível e verificado.
 ```
 
-| Quero… | Começar em | Atalho |
-|---|---|---|
-| Criar um produto | [P01](p/P01.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P01.md` |
-| Entender e reorganizar um projeto existente | [Guia de adoção](https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/GUIA_DE_USO.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu-adocao/main/read.md` |
-| Recuperar um projeto travado | [P20](p/P20.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P20.md` |
-| Retomar uma execução | [P18](p/P18.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P18.md` |
-| Selecionar serviços e APIs | [P08](p/P08.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P08.md` |
-| Organizar agentes e skills | [P22](p/P22.md) | `Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P22.md` |
+Os textos são instruções para um agente, não comandos do shell. Leitura, edição e execução dependem das ferramentas e permissões disponíveis. Nenhum desses atalhos publica automaticamente sua aplicação.
 
-`Read` é uma instrução natural. O agente precisa de acesso ao conteúdo e ao projeto. Registre o SHA consultado para missões reproduzíveis. Não carregue a biblioteca inteira a cada tarefa.
+<!-- section:metodo -->
+## 02 / Dê forma ao produto antes de dar volume ao código
 
-## O fluxo
-**Ideia → entrevista → briefing com design → PRD → fluxos, arquitetura e dados → seleção de capacidades → bootstrap → preflight → implementação → testes e revisão → staging → release autorizado → operação.**
+A engenharia parte da pergunta que interessa ao negócio: **quem precisa realizar o quê, em qual situação e com qual resultado?** A resposta orienta escopo, interface, dados e operação.
 
-### Biblioteca de prompts
-
-| ID | Etapa | Quando usar |
-|---|---|---|
-| [P00](p/P00.md) | Escolher a trilha e a próxima ação | Quando chega uma ideia, um pedido de continuação, uma falha ou um acervo para avaliar. |
-| [P01](p/P01.md) | Entrevista de produto, histórico e direção de design | Quando a ideia ainda precisa virar um briefing utilizável. |
-| [P02](p/P02.md) | Pesquisa, evidências e viabilidade | Quando hipóteses, serviços ou alternativas ainda podem mudar a decisão de construir. |
-| [P03](p/P03.md) | Briefing final, primeira versão e fronteiras | Quando a descoberta deve se transformar em compromisso de produto e limites da versão. |
-| [P04](p/P04.md) | PRD com regras e critérios de aceite | Quando o escopo confirmado precisa ser transformado em requisitos implementáveis. |
-| [P05](p/P05.md) | Fluxos, experiência e design system | Quando a direção D0 precisa virar experiência especificada e critérios para implementação. |
-| [P06](p/P06.md) | TRD, dados, segurança e arquitetura | Quando o produto e as dependências precisam virar uma solução técnica proporcional. |
-| [P07](p/P07.md) | Inventariar e preparar a máquina, contas e clientes | Antes de configurar um projeto; repetir apenas quando o ambiente mudar ou houver evidência de problema. |
-| [P08](p/P08.md) | Selecionar agentes, ferramentas, serviços e APIs | Antes de fechar decisões dependentes de fornecedor e antes de instalar capacidades. |
-| [P09](p/P09.md) | Preparar repositório e base do projeto novo | Após definir o próximo incremento e sua arquitetura; projeto existente segue P20/P21. |
-| [P10](p/P10.md) | Preparar ambientes, CI e integrações aprovadas | Quando as decisões técnicas e de serviços precisam virar configurações verificáveis. |
-| [P11](p/P11.md) | Comprovar prontidão antes da execução | Antes de iniciar desenvolvimento, CI, staging, missão prolongada ou release. |
-| [P12](p/P12.md) | Transformar especificações em tarefas executáveis | Quando a versão está especificada e precisamos organizar execução sem decisões implícitas. |
-| [P13](p/P13.md) | Implementar uma tarefa com verificação | Quando há uma tarefa delimitada, entradas suficientes e autorização de implementação. |
-| [P14](p/P14.md) | SENTINEL — revisão independente por risco e evidência | Após uma implementação, antes da integração de mudanças que exigem revisão. |
-| [P15](p/P15.md) | Staging, jornada real e homologação | Quando um incremento revisado precisa ser verificado no ambiente representativo de homologação. |
-| [P16](p/P16.md) | Release, migração e operação inicial | Quando há candidato homologado e necessidade de preparar ou executar publicação. |
-| [P17](p/P17.md) | Executar missão prolongada com limites e recuperação | Somente depois de comprovar supervisor e prontidão para execução não assistida. |
-| [P18](p/P18.md) | Retomar trabalho sem duplicação ou perda | Após erro de sessão, reinício do host, falha de worker ou interrupção do controlador. |
-| [P19](p/P19.md) | Priorizar projetos em andamento ou parados | Quando há vários projetos e é necessário escolher uma recuperação ou entrega-piloto. |
-| [P20](p/P20.md) | Diagnosticar projeto travado sem reescrever | Quando já há código e o funcionamento ou desenvolvimento não avança. |
-| [P21](p/P21.md) | Corrigir e adotar o padrão incrementalmente | Após um diagnóstico ou plano de recuperação aprovado para o projeto existente. |
-| [P22](p/P22.md) | Auditar agentes, skills e pacotes | Antes de instalar um acervo ou ativar capacidades de terceiros. |
-| [P23](p/P23.md) | Transformar capacidade em módulo reutilizável | Quando uma função pode atender mais de um produto sem copiar a aplicação inteira. |
-| [P24](p/P24.md) | Medir e melhorar o harness sem enfraquecer controles | Após mudança material de instruções/ferramentas ou diante de falha recorrente comprovada. |
-| [P25](p/P25.md) | Projetar e construir módulo financeiro auditável | Quando o produto precisa de capacidade financeira, conciliação ou análise gerencial. |
-| [P26](p/P26.md) | Conteúdo, Instagram e publicação com controle | Quando a capacidade de criação de conteúdo precisa virar um processo rastreável por marca. |
-| [P27](p/P27.md) | Vídeo programático como capacidade reutilizável | Quando o produto precisa gerar, editar ou renderizar vídeos a partir de contratos repetíveis. |
-| [P28](p/P28.md) | Engenharia, quantitativos e gestão de obras | Quando um produto precisa de capacidades de orçamento, planejamento, compras ou acompanhamento de obras. |
-
-## Explorar a engenharia
-
-| Seção | O que você encontra |
+| Entrega | Para que serve |
 |---|---|
-| [Método](METODO.md) | Filosofia e fluxo do início à operação. |
-| [Adoção de projetos existentes](https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/GUIA_DE_USO.md) | Comandos para entender, revisar, reorganizar, retomar e preparar execução prolongada. |
-| [Papéis](agentes/README.md) | 10 responsabilidades documentadas, não uma equipe instalada. |
-| [Skills e catálogos](catalogo/README.md) | 120 identificadores de referência, 57 papéis operacionais e matriz Matheus. |
-| [Política de economia](politicas/ECONOMIA_ASTRA.md) | Contexto, esforço, delegação e medição sem promessas fictícias. |
-| [Contrato comum](politicas/CONTRATO_COMUM.md) | Escopo, autoridade, preservação e evidências. |
-| [Templates](templates/README.md) | Briefing, PRD, design, arquitetura, missão, tarefa e APIs. |
-| [Integração dos clientes](integracoes/CLIENTES.md) | Codex, Antigravity, Gemini e OpenCode; especificação, não instalação. |
-| [Avaliações](avaliacoes/CENARIOS.md) | Casos a homologar em clientes/projetos. |
-| [Licenciamento](LICENCIAMENTO.md) | Direitos, atribuição e restrições de terceiros. |
+| Briefing e escopo | Fixar problema, público, valor, primeira versão, restrições e exclusões. |
+| PRD — requisitos do produto | Definir comportamentos, regras, permissões, exceções e critérios de aceite. |
+| Fluxos e design system | Desenhar jornadas coerentes, componentes, feedback e acessibilidade. |
+| TRD — desenho técnico | Delimitar arquitetura, dados, contratos, integrações e recuperação. |
+| Plano por incrementos | Escolher unidades úteis, dependências, responsáveis e verificações. |
 
-## O que esta publicação não afirma
-Não instala CLIs, conecta contas, implementa supervisor de 24 horas ou certifica os prompts. `NOT_RUN` continua sendo teste não executado. Menos texto não comprova redução proporcional da fatura. Publicação documental não autoriza publicar seus aplicativos.
+**Design não é decoração adicionada no final.** A direção começa no briefing (D0), ganha regras e componentes na especificação (D1) e é conferida na interface implementada (D2). Uma tela bonita que não resolve a jornada ainda não concluiu a tarefa.
 
-## Referências e atribuição
-Inspirado no [Vibe Coding Toolkit de Matheus Gomes](https://github.com/soumatheusgomes/vibe-coding-toolkit), revisão `790a895304e0c08b70a5b215c9d334f1c86b816c`. Aviso MIT preservado. [Mapa de adaptação](fontes/MATRIZ_MATHEUS_CADU.md). Sem afiliação ou endosso presumido.
+Referências de mercado ajudam a fazer escolhas, não aprovam funcionalidades automaticamente. Estudar um produto, integrar sua API e reutilizar código licenciado são decisões distintas. Registre fontes e limitações; construa uma proposta própria, adequada à sua operação.
 
-## Manutenção
-`p/` e documentos são canônicos. Site e downloads são derivados. Leia [guia do site](site-src/README.md). Atualizações do método não alteram projetos em execução automaticamente.
+<!-- section:integracoes -->
+## 03 / Escolha as dependências antes de depender delas
 
-## Segurança no início, durante e no fim
+Aula ao vivo, pagamentos, autenticação, mensagens e armazenamento não podem surgir como surpresas no meio da implementação. Primeiro definimos a capacidade necessária. Depois comparamos **construir, reutilizar, contratar, integrar ou adiar**.
 
-O novo **[módulo S01](modulos/seguranca/README.md)** reúne o comando universal de auditoria, campanha por lotes e pontos de verificação: início, incrementos intermediários, pré-release e checks durante o desenvolvimento. [Abrir guia visual](https://carlosemox.github.io/engenharia-cadu/guia/auditoria/).
+O [P08](p/P08.md) separa ferramentas que ajudam a desenvolver de serviços que fazem parte do produto. Para cada serviço: requisitos, contrato, dados compartilhados, acesso, custo verificado ou pendente, limites, contingência e condição de substituição.
 
-Auditar, planejar, corrigir e verificar continuam modos separados. Hooks fornecidos são exemplos inativos e verificador de recibos testável; cada aplicativo precisa de implantação autorizada, scanners/testes reais e controles de CI/servidor. Nenhuma promessa de invulnerabilidade. Não renumera P00–P28.
+Uma plataforma de ensino, por exemplo, pode organizar matrículas e agenda enquanto um serviço externo realiza a aula. A integração pode ser a solução inicial — ou continuar sendo a melhor escolha. Infraestrutura própria não é um destino obrigatório.
+
+Supabase pode compor a arquitetura quando escolhido. Isso não autoriza trocar autenticação, recriar bancos ou migrar dados existentes. Framework, banco e ORM seguem as necessidades e decisões do projeto, não uma stack imposta pela biblioteca.
+
+<!-- section:agentes -->
+## 04 / Um coordenador. Colaboração com responsabilidade.
+
+**Codex é o executor principal do método.** Antigravity, Gemini CLI e OpenCode são colaboradores possíveis, selecionados pela tarefa e pelas capacidades realmente disponíveis. Não há obrigação de abrir quatro agentes para resolver uma mudança simples.
+
+Cada delegação leva objetivo, contexto suficiente, arquivos e recursos permitidos, dependências, critérios de aceite e formato de retorno. Recursos compartilhados têm um responsável. Revisores trabalham em leitura; o coordenador confere a integração.
+
+Produto, arquitetura, design, frontend, backend, qualidade, GUARDIAN, SENTINEL e release são responsabilidades documentadas, não uma equipe automaticamente instalada. Uma skill presente em um catálogo ainda precisa de procedência, licença, compatibilidade e teste no cliente escolhido.
+
+[Conhecer os papéis](agentes/README.md) · [Selecionar capacidades](catalogo/README.md) · [Entender os clientes](integracoes/CLIENTES.md)
+
+<!-- section:continuidade -->
+## 05 / A próxima etapa não precisa de outra colagem
+
+Em **CONTINUO_SUPERVISIONADO**, o coordenador conclui a fase, verifica entrega, segurança e backup pertinente, registra o estado e carrega o próximo procedimento autorizado. A entrevista continua interativa. Decisões materiais continuam com você.
+
+```text
+Entender → especificar → preparar → implementar → testar → revisar → homologar
+                       ↑                         ↓
+                       └──── corrigir e verificar ┘
+```
+
+P13, P14 e P15 formam ciclos por incremento. P17 é a preparação/execução de uma missão prolongada quando houver supervisor e condições comprovadas; não é a etapa obrigatória depois de toda entrega. Especializações entram por necessidade, não por número na lista.
+
+Falha bloqueante, decisão pendente, risco grave, proteção necessária ausente ou limite atingido interrompem a ação dependente. Trabalho independente já autorizado pode continuar. O agente não inventa tarefas para manter a sessão ocupada.
+
+**Um prompt não mantém o computador trabalhando depois que a sessão termina.** Autonomia prolongada precisa de processo real, fila, limites, exclusividade, checkpoint, parada e recuperação testados. [Ler as regras de continuidade](politicas/CONTINUIDADE.md).
+
+<!-- section:documentos -->
+## 06 / Faça o conhecimento sobreviver à sessão
+
+Harness engineering, no nosso método, significa organizar o ambiente de trabalho do agente: instruções encontráveis, fontes claras, ferramentas acessíveis e feedback que possa ser verificado. O conhecimento importante fica no projeto, não apenas na memória de uma conversa.
+
+| Informação | Onde manter |
+|---|---|
+| Como iniciar e executar | README do aplicativo. |
+| O que o produto deve fazer | Briefing e PRD canônicos. |
+| Como as partes se conectam | TRD, contratos e decisões arquiteturais. |
+| Como o usuário percorre o produto | Fluxos e design system. |
+| Como o agente deve trabalhar | AGENTS.md curto, apontando para detalhes. |
+| O que mudou e como continuar | Evidências, decisões e handoff pertinente. |
+
+Não é uma árvore obrigatória. Em um projeto existente, preserve documentos equivalentes e registre o mapeamento. Uma mudança de comportamento, schema ou comando deve atualizar sua fonte responsável. Não transforme AGENTS.md em uma enciclopédia.
+
+O método público guarda receitas. Cada aplicativo guarda seu produto. A operação privada guarda perfis e registros internos — nunca senhas ou tokens em arquivos Git. [Explorar os templates](templates/README.md).
+
+<!-- section:auditoria -->
+## 07 / Segurança antes, durante e antes de publicar
+
+Uma auditoria no fim não substitui boas decisões no começo. A engenharia prevê requisitos e ameaças desde o desenho, verificações durante os lotes e revisão do candidato antes de cada publicação.
+
+| Marco | O que precisa ser examinado |
+|---|---|
+| Início | Dados, identidade, permissões, exposição, limites de confiança e controles necessários. |
+| Durante | Alterações, chamadores, segredos, dependências, regressões e usos permitidos e negados. |
+| Integração | Isolamento entre módulos/clientes, regras compartilhadas e efeitos externos. |
+| Pré-publicação | Achados, cobertura, revisão, configuração e recuperação da mesma versão candidata. |
+
+O **[S01](modulos/seguranca/README.md)** preserva o comando universal de auditoria. Seus modos são distintos: AUDIT examina; PLAN organiza correções; FIX altera somente o lote autorizado; VERIFY reavalia. A campanha avançada exige solicitação expressa. Testes ativos e produção têm autorização própria.
+
+Os exemplos de hooks cobrem início, conclusão de módulo, saída de fase, integração, commit, push, pull request, pré-release e manutenção periódica. **Estão publicados como exemplos, não instalados nos aplicativos.** O verificador de recibos confere registros; não é scanner nem prova a honestidade de um resultado preenchido.
+
+Nenhuma ferramenta garante ausência de invasões. Ausência de teste, erro, timeout ou evidência antiga não é aprovação. Controles essenciais precisam de implementação real, revisão e manutenção. [Hooks e limites](modulos/seguranca/hooks/README.md) · [Política de segurança](politicas/SEGURANCA_ENGENHARIA.md).
+
+<!-- section:backup -->
+## 08 / Preserve o trabalho. Comprove que consegue recuperá-lo.
+
+O destino definido para cada projeto é `Projetos 2026/Backup/<nome-do-projeto>`. A proteção exige mais que uma pasta criada: cobertura explícita, gerações identificadas, integridade conferida e recuperação testada no escopo necessário.
+
+Arquivos de trabalho e alterações locais, histórico Git, banco, uploads e segredos são classes diferentes. Um ZIP de código não comprova todas elas. Credenciais precisam de proteção específica; não entram em arquivo comum. Nenhuma limpeza automática das gerações anteriores está autorizada pelo método.
+
+Backup deve anteceder mudanças arriscadas e acompanhar entregas com novos artefatos. Se a proteção indispensável não foi comprovada, a ação dependente não avança. **A integração automática com o Drive precisa ser configurada e testada em cada ambiente; a publicação desta página não a ativa.** [Política e cobertura](politicas/BACKUP_DRIVE.md).
+
+<!-- section:economia -->
+## 09 / Economize contexto, não critério
+
+A política de economia no Astra é uma disciplina de trabalho: carregar somente o que a tarefa exige, reutilizar decisões válidas, usar scripts para verificações repetitivas e delegar quando houver benefício concreto.
+
+O detalhe continua disponível na fonte. O implementador recebe requisitos e contratos relevantes, não todos os documentos. O revisor recebe o candidato e seu contexto, não o histórico inteiro. Esperar CI não exige chamadas sucessivas ao modelo.
+
+Não prometemos um percentual de economia. Tokens, custo e retrabalho devem ser medidos quando observáveis. Não há troca silenciosa de modelo, provedor, autenticação ou cobrança. O objetivo é **menor custo por entrega aceita**, incluindo os testes e as correções necessários. [Política de economia](politicas/ECONOMIA_ASTRA.md).
+
+[Biblioteca interativa em português](https://carlosemox.github.io/engenharia-cadu/biblioteca.html)
+
+<!-- section:prompts -->
+## 10 / Um comando para cada responsabilidade
+
+Use a biblioteca completa como mapa, não como texto para colar de uma vez. Os IDs permanecem estáveis; cada procedimento informa finalidade, entradas, limites, entrega e critérios de conclusão.
+
+| Prompt | Responsabilidade |
+|---|---|
+| [P00](p/P00.md) | Escolher a trilha e a próxima ação. |
+| [P01](p/P01.md) | Entender o produto e validar o briefing inicial. |
+| [P02](p/P02.md) | Pesquisar hipóteses, referências e viabilidade. |
+| [P03](p/P03.md) | Consolidar primeira versão, escopo e exclusões. |
+| [P04](p/P04.md) | Escrever requisitos, regras e critérios de aceite. |
+| [P05](p/P05.md) | Especificar fluxos, experiência e design system. |
+| [P06](p/P06.md) | Definir arquitetura, dados, contratos e segurança. |
+| [P07](p/P07.md) | Inventariar e preparar máquina, contas e clientes. |
+| [P08](p/P08.md) | Selecionar agentes, ferramentas, serviços e APIs. |
+| [P09](p/P09.md) | Preparar a base e o repositório do produto novo. |
+| [P10](p/P10.md) | Configurar ambientes, CI e integrações aprovadas. |
+| [P11](p/P11.md) | Comprovar prontidão para o trabalho seguinte. |
+| [P12](p/P12.md) | Transformar requisitos em tarefas delimitadas. |
+| [P13](p/P13.md) | Implementar e verificar uma tarefa. |
+| [P14](p/P14.md) | Revisar independentemente conforme risco e evidência. |
+| [P15](p/P15.md) | Homologar jornadas e integrações em staging. |
+| [P16](p/P16.md) | Preparar ou executar release autorizado. |
+| [P17](p/P17.md) | Conduzir missão prolongada com supervisor comprovado. |
+| [P18](p/P18.md) | Retomar sem perder nem duplicar trabalho. |
+| [P19](p/P19.md) | Priorizar projetos em andamento ou parados. |
+| [P20](p/P20.md) | Diagnosticar um projeto sem reescrevê-lo. |
+| [P21](p/P21.md) | Corrigir e adotar o método incrementalmente. |
+| [P22](p/P22.md) | Auditar agentes, skills e pacotes antes de ativá-los. |
+| [P23](p/P23.md) | Estruturar módulos reutilizáveis com consumidores reais. |
+| [P24](p/P24.md) | Avaliar melhorias no harness sem enfraquecer controles. |
+| [P25](p/P25.md) | Desenvolver capacidades financeiras auditáveis. |
+| [P26](p/P26.md) | Organizar conteúdo e publicação por marca. |
+| [P27](p/P27.md) | Criar capacidades de vídeo programático. |
+| [P28](p/P28.md) | Estruturar capacidades de engenharia e obras. |
+
+<!-- section:capacidades -->
+## 11 / Adote o necessário. Preserve o que funciona.
+
+O catálogo é uma seleção de possibilidades, não uma instalação em massa. A escolha de cada skill, biblioteca ou integração deve considerar necessidade, procedência, licença, compatibilidade, custo e validação. Consultar documentação atual não autoriza enviar código ou informações privadas a terceiros.
+
+| Local | Responsabilidade |
+|---|---|
+| Máquina e cliente | Runtime, ferramentas, autenticação e integrações globais autorizadas. |
+| Aplicativo | Código, dependências, lockfiles, documentos, testes e configuração específica. |
+| Central pública | Método, procedimentos, modelos e referências publicáveis. |
+| Operação privada | Perfis, alçadas, destinos e evidências internas, sem segredos no Git. |
+
+Projetos existentes preservam stack, banco, contratos e equivalentes funcionais. Mudanças incompatíveis exigem decisão própria. Monorepos precisam de inventário das fronteiras e recursos compartilhados. Novos serviços só entram quando existe função concreta no produto.
+
+<!-- section:operacao -->
+## 12 / Saiba o que está publicado — e o que precisa ser comprovado
+
+**Documento disponível não significa instalação concluída. Teste local não significa integração em produção.** Esta central oferece receitas, templates e exemplos; cada ambiente precisa comprovar seu funcionamento.
+
+| Capacidade | Situação e condição |
+|---|---|
+| P00–P28 e S01 | Biblioteca publicada; a eficácia no seu projeto precisa de execução e avaliação. |
+| Continuidade entre etapas | Instrução do coordenador; depende de sessão, contexto e autorizações. |
+| Hooks e controles de segurança | Exemplos e políticas; instalação e bloqueios reais precisam ser testados. |
+| Backup automático | Política definida; conexão, cobertura e restauração precisam ser implantadas. |
+| Missão de 24 horas | Depende de supervisor, limites, recursos e recuperação comprovados. |
+| Página trilíngue | Apresentação traduzida; guias e comandos vinculados mantêm seus idiomas atuais. |
+
+Sem acesso ao ambiente, o agente pode explicar e especificar, mas não comprovar configuração. Relatórios de execução devem separar PASS, FAIL, NOT_RUN e não aplicável, com justificativa. Segurança não é promessa de invulnerabilidade.
+
+[Estado operacional](OPERACAO.md) · [Mapa da central](MAPA_DA_CENTRAL.md) · [Cenários de avaliação](avaliacoes/CENARIOS.md) · [Validação S01](modulos/seguranca/validacao/RESULTADOS.md)
+
+<!-- section:evolucao -->
+## 13 / Construa uma base que possa evoluir
+
+Quando uma melhoria surge em um projeto, extraia a parte reutilizável, remova dados internos, confira a licença e revise antes de incorporá-la ao método público. Atualizações permanecem em suas fontes oficiais; assuntos novos recebem um lugar próprio. Não há espelhamento automático da operação privada.
+
+A Engenharia Cadu se inspira na organização do **[Vibe Coding Toolkit, de Matheus Gomes](https://github.com/soumatheusgomes/vibe-coding-toolkit)** e adapta essa referência às decisões desta central. Não há afiliação ou endosso presumido. O aviso de licença do toolkit está preservado; os demais componentes mantêm seus próprios termos. A central não herda automaticamente uma licença MIT para todo o seu conteúdo. [Licenciamento e atribuições](LICENCIAMENTO.md).
+
+O melhor ponto de partida é o próximo resultado útil: compreender o produto, recuperar um fluxo ou preparar uma base verificável. Escolha a entrada, disponibilize seu contexto e mantenha as decisões importantes visíveis.
+
+**Defina com intenção. Construa com contexto. Evolua com evidência.**
+
+[COMEÇAR PELO P01 →](p/P01.md) · [RECUPERAR UM PROJETO](https://github.com/carlosemox/engenharia-cadu-adocao) · [REPORTAR UM PROBLEMA](https://github.com/carlosemox/engenharia-cadu/issues)

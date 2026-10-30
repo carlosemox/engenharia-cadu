@@ -18,3 +18,11 @@ Navegação única para continuidade, segurança, backup e implantação; págin
 - Três marcos (início, meio e pré-release) e nove eventos lógicos; modos AUDIT/PLAN/FIX/VERIFY separados.
 - Verificador determinístico de recibos, wrappers inativos e testes sintéticos, sem scanners/CI instalados nos aplicativos.
 - Políticas e índices existentes atualizados no mesmo caminho; P00–P28 e workflows preservados.
+
+## Apresentação trilíngue — 30/10/2026
+- Copy e narrativa próprias em português brasileiro, inglês e espanhol, com 14 capítulos equivalentes e descrições dos 29 procedimentos.
+- README principal atualizado; traduções separadas em `i18n/`; páginas em `/`, `/en/` e `/es/`.
+- Seletor de idioma, metadados por idioma, navegação responsiva e progressiva, busca e cópia de comandos sem serviços externos.
+- Biblioteca interativa anterior preservada em `docs/biblioteca.html`; guias, prompts e S01 mantêm seus caminhos e idiomas originais.
+- Gerador a partir das fontes editoriais, testes de consistência e verificação de idioma por caminho.
+- Não ativa hooks, backups, scanners, supervisores ou configurações dos aplicativos. Verificações e limites em `avaliacoes/APRESENTACAO_TRILINGUE.md`.

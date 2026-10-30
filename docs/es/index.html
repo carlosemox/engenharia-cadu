@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101915"><meta name="description" content="Convierte tu visión de negocio en un producto que puedas comprender, revisar y mejorar. Una forma de trabajar con agentes de IA: decisiones antes de implementar, contexto que sobrevive a la sesión y evidencia antes de dar algo por terminado."><meta property="og:title" content="De la idea a la entrega. Sin perder el rumbo. | Engenharia Cadu"><meta property="og:description" content="Convierte tu visión de negocio en un producto que puedas comprender, revisar y mejorar. Una forma de trabajar con agentes de IA: decisiones antes de implementar, contexto que sobrevive a la sesión y evidencia antes de dar algo por terminado."><meta property="og:type" content="website"><meta property="og:url" content="https://carlosemox.github.io/engenharia-cadu/es/"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><meta name="referrer" content="strict-origin-when-cross-origin"><title>De la idea a la entrega. Sin perder el rumbo. | Engenharia Cadu</title><link rel="canonical" href="https://carlosemox.github.io/engenharia-cadu/es/"><link rel="alternate" hreflang="pt-BR" href="https://carlosemox.github.io/engenharia-cadu/"><link rel="alternate" hreflang="en" href="https://carlosemox.github.io/engenharia-cadu/en/"><link rel="alternate" hreflang="es" href="https://carlosemox.github.io/engenharia-cadu/es/"><link rel="alternate" hreflang="x-default" href="https://carlosemox.github.io/engenharia-cadu/"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/story.css"><script defer src="../assets/story.js"></script></head>
+<body id="top" data-editorial="trilingual" data-copied="Comando copiado" data-copy-error="Selecciona el comando y cópialo manualmente." data-count-label="procedimientos"><a class="skip" href="#main">Ir al contenido</a><aside class="rail" id="rail"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">EC</span><span>Engenharia<br><strong>Cadu<span>.</span></strong></span></a><p class="rail-label">Explorar el método</p><nav class="toc" aria-label="Explorar el método"><a href="#historia"><span>00</span>La historia</a><a href="#comecar"><span>01</span>Por dónde empezar</a><a href="#metodo"><span>02</span>Producto y diseño</a><a href="#integracoes"><span>03</span>Servicios y API</a><a href="#agentes"><span>04</span>Agentes</a><a href="#continuidade"><span>05</span>Continuidad</a><a href="#documentos"><span>06</span>Conocimiento</a><a href="#auditoria"><span>07</span>Seguridad y hooks</a><a href="#backup"><span>08</span>Backup</a><a href="#economia"><span>09</span>Economía</a><a href="#prompts"><span>10</span>29 prompts</a><a href="#capacidades"><span>11</span>Global y local</a><a href="#operacao"><span>12</span>Evidencias y límites</a><a href="#evolucao"><span>13</span>Evolución</a></nav><div class="rail-bottom"><a href="../biblioteca.html">Biblioteca interactiva · PT ↗</a><span class="live-dot"></span> Una visión de negocio. Un camino verificable.<a href="https://github.com/carlosemox/engenharia-cadu">Abrir en GitHub ↗</a></div></aside>
+<div class="workspace"><header class="topbar"><button class="menu" type="button" aria-label="Abrir navegación" aria-controls="rail" aria-expanded="false">☰</button><span class="top-label">ENGENHARIA CADU / 2026</span><nav class="languages" aria-label="Idioma de la presentación"><a lang="pt-BR" hreflang="pt-BR" href="../index.html">Português (Brasil)</a><a lang="en" hreflang="en" href="../en/index.html">English</a><a lang="es" hreflang="es" href="../es/index.html" aria-current="page">Español</a></nav></header><main id="main" data-source="i18n/README.es.md" data-source-sha256="b95a24f82f62b05cbf417c026116c77d6d63adf9def5fb841e94dfbfaf58d149"><section class="hero"><div class="hero-copy"><span class="eyebrow"><i></i>INGENIERÍA DE PRODUCTO CON IA</span><h1>De la idea a la entrega.<br><em>Sin perder el rumbo.</em></h1><p class="hero-lead">Convierte tu visión de negocio en un producto que puedas comprender, revisar y mejorar. Una forma de trabajar con agentes de IA: decisiones antes de implementar, contexto que sobrevive a la sesión y evidencia antes de dar algo por terminado.</p><div class="hero-actions"><a class="button primary" href="#comecar">Iniciar un producto ↗</a><a class="button secondary" href="https://github.com/carlosemox/engenharia-cadu-adocao">Organizar un proyecto existente ↗</a></div><div class="tags"><span>Codex como principal</span><span>Operación privada</span><span>Contexto bajo demanda</span></div></div><aside class="method-card" aria-label="DEL BRIEFING A LA SIGUIENTE ENTREGA"><span class="eyebrow">DEL BRIEFING A LA SIGUIENTE ENTREGA</span><ol><li><span class="stage-number">01</span><div><strong>Dirección</strong><small>Producto, alcance y experiencia</small></div></li><li><span class="stage-number">02</span><div><strong>Base</strong><small>Arquitectura, servicios y entorno</small></div></li><li><span class="stage-number">03</span><div><strong>Construcción</strong><small>Incrementos y colaboración</small></div></li><li><span class="stage-number">04</span><div><strong>Evidencia</strong><small>Pruebas, revisión y recuperación</small></div></li></ol><p>Un mapa del método. No es un panel de ejecución.</p></aside></section><div class="intro-strip"><p>Tú aportas el problema, el briefing y las referencias. El método organiza la siguiente decisión. El agente ejecuta dentro del alcance autorizado. El proyecto conserva los requisitos, el código y las pruebas de lo realizado.</p><span class="signature">Cadu Amaral<br><small>Engenharia Cadu</small></span></div><div class="language-note"><strong>PT · EN · ES</strong><p>La presentación está disponible en tres idiomas. El portugués de Brasil es la base editorial de Engenharia Cadu. Los procedimientos y las guías conservan sus idiomas actuales; el prompt universal de seguridad S01 está en inglés. Elegir un idioma aquí no traduce ni modifica automáticamente los comandos.</p></div><section class="chapter" id="historia"><div class="chapter-title"><span class="chapter-number">00</span><h2>Una idea no debería perderse entre conversaciones</h2></div><div class="chapter-body"><p>El proyecto empieza con una visión clara. Después llegan referencias, pantallas, bibliotecas, integraciones y nuevas decisiones. El código crece. Pero cuando termina la sesión o toma el relevo otra herramienta, vuelve la pregunta: <strong>¿qué está decidido, qué funciona realmente y por dónde seguimos?</strong></p>
+<p>Engenharia Cadu se estructura para afrontar ese problema: dar un lugar a las decisiones y un camino al desarrollo. No te pide que descartes lo que ya construiste. Pide comprender la intención, delimitar los cambios y poder comprobar cada entrega.</p>
+<p>La propuesta no consiste en producir documentos por obligación. Consiste en convertir conversaciones en conocimiento útil, ideas en requisitos y tareas en resultados verificables. Una misma filosofía para empezar de cero, recuperar proyectos y desarrollar capacidades reutilizables.</p>
+<p><strong>Tu negocio define el producto. La ingeniería organiza el trabajo. La herramienta no decide por sí sola qué debe ser tu empresa.</strong></p>
+</div></section><section class="chapter" id="comecar"><div class="chapter-title"><span class="chapter-number">01</span><h2>Empieza donde estás</h2></div><div class="chapter-body"><div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tu situación</th>
+<th>Entrada</th>
+<th>Primer resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tengo una idea o un briefing</td>
+<td><a href="../prompts/P01/">P01 — Descubrimiento del producto</a></td>
+<td>Entendimiento compartido, carencias relevantes y dirección para la primera versión.</td>
+</tr>
+<tr>
+<td>Ya existe una aplicación</td>
+<td><a href="https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/read.md">Adopción de proyectos</a></td>
+<td>Diagnóstico del proyecto y plan revisable antes de cambiar código, estructura o datos.</td>
+</tr>
+<tr>
+<td>Necesito preparar el equipo</td>
+<td><a href="../prompts/P07/">P07 — Entorno y capacidades</a></td>
+<td>Inventario de lo disponible y configuración de lo autorizado.</td>
+</tr>
+<tr>
+<td>Necesito una tarea específica</td>
+<td><a href="../prompts/P00/">P00 — Elegir el camino</a></td>
+<td>El procedimiento pertinente, sin ejecutar toda la metodología.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Proyecto nuevo: el briefing es un punto de partida, no trabajo perdido</h3>
+<p>Pega el texto en la conversación del agente y describe el producto en la segunda línea. Si ya tienes un briefing, incorpora su texto o archivo en esa misma conversación.</p>
+<div class="command"><div class="command-bar"><span>READ / 01</span><button type="button" data-copy-target="entry-1">Copiar comando</button></div><pre id="entry-1"><code>Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P01.md
+Proyecto: [nombre, problema, público, recorrido principal y restricciones]. Aprovecha mi briefing, valida solo las carencias y conduce las siguientes etapas autorizadas en CONTINUO_SUPERVISIONADO. Responde en español.
+</code></pre></div>
+<p>Empezar por P01 no significa repetir todas las preguntas. El agente aprovecha decisiones e investigaciones válidas, aclara lo que falta y encamina el trabajo. No omite el descubrimiento solo porque encuentra un archivo llamado briefing.</p>
+<h3>Proyecto existente: primero comprender, después cambiar</h3>
+<div class="command"><div class="command-bar"><span>READ / 02</span><button type="button" data-copy-target="entry-2">Copiar comando</button></div><pre id="entry-2"><code>Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu-adocao/main/read.md
+Comprende este proyecto, concilia briefing, PRD, TRD y flujos, y presenta el Diagnóstico del Proyecto y el Plan de Adopción antes de modificar código, archivos o bases de datos. Responde en español.
+</code></pre></div>
+<p>Debes poder ver qué pretende hacer el producto, qué está implementado, qué se ha comprobado y qué sigue siendo desconocido. Se preservan la arquitectura útil, la identidad, los contratos y el trabajo local. Una reescritura o migración no debe disfrazarse de organización.</p>
+<h3>Entorno: configurar no es suponer</h3>
+<div class="command"><div class="command-bar"><span>READ / 03</span><button type="button" data-copy-target="entry-3">Copiar comando</button></div><pre id="entry-3"><code>Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P07.md
+Haz un inventario del entorno y prepara solo las configuraciones autorizadas para mi proyecto. Distingue instalado, configurado, accesible y verificado. Responde en español.
+</code></pre></div>
+<p>Estos textos son instrucciones para un agente, no comandos del shell. La lectura, la edición y la ejecución dependen de las herramientas y los permisos disponibles. Ninguno de estos accesos publica automáticamente tu aplicación.</p>
+</div></section><section class="chapter" id="metodo"><div class="chapter-title"><span class="chapter-number">02</span><h2>Da forma al producto antes de ampliar el código</h2></div><div class="chapter-body"><p>La ingeniería parte de la pregunta que importa al negocio: <strong>¿quién necesita hacer qué, en qué situación y con qué resultado?</strong> La respuesta orienta el alcance, la interfaz, los datos y la operación.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Entregable</th>
+<th>Para qué sirve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Briefing y alcance</td>
+<td>Definir problema, público, valor, primera versión, restricciones y exclusiones.</td>
+</tr>
+<tr>
+<td>PRD — requisitos del producto</td>
+<td>Especificar comportamientos, reglas, permisos, excepciones y criterios de aceptación.</td>
+</tr>
+<tr>
+<td>Flujos y sistema de diseño</td>
+<td>Definir recorridos coherentes, componentes, respuesta de la interfaz y accesibilidad.</td>
+</tr>
+<tr>
+<td>TRD — diseño técnico</td>
+<td>Delimitar arquitectura, datos, contratos, integraciones y recuperación.</td>
+</tr>
+<tr>
+<td>Plan por incrementos</td>
+<td>Elegir unidades útiles, dependencias, responsables y verificaciones.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>El diseño no es decoración añadida al final.</strong> La dirección comienza en el briefing (D0), se convierte en reglas y componentes durante la especificación (D1) y se comprueba en la interfaz implementada (D2). Una pantalla atractiva que no resuelve el recorrido aún no completa la tarea.</p>
+<p>Las referencias del mercado ayudan a decidir; no aprueban funcionalidades automáticamente. Estudiar un producto, integrar su API y reutilizar código con licencia son decisiones distintas. Registra fuentes y limitaciones, y construye una propuesta propia, adecuada a tu operación.</p>
+</div></section><section class="chapter" id="integracoes"><div class="chapter-title"><span class="chapter-number">03</span><h2>Elige las dependencias antes de depender de ellas</h2></div><div class="chapter-body"><p>Clases en directo, pagos, autenticación, mensajes y almacenamiento no deben aparecer como sorpresas a mitad de la implementación. Primero definimos la capacidad necesaria. Después comparamos <strong>construir, reutilizar, contratar, integrar o posponer</strong>.</p>
+<p>El <a href="../prompts/P08/">P08</a> separa las herramientas de desarrollo de los servicios que forman parte del producto. Para cada servicio: requisitos, contrato, datos compartidos, acceso, coste verificado o pendiente, límites, alternativa ante fallos y condiciones de sustitución.</p>
+<p>Por ejemplo, una plataforma educativa puede gestionar matrículas y agenda mientras un servicio externo realiza la clase. La integración puede ser la solución inicial o seguir siendo la mejor opción. Tener infraestructura propia no es un destino obligatorio.</p>
+<p>Supabase puede formar parte de la arquitectura cuando se elija. Eso no autoriza sustituir la autenticación, recrear bases de datos ni migrar información existente. El framework, la base de datos y el ORM responden a las necesidades y decisiones del proyecto, no a una tecnología impuesta por la biblioteca.</p>
+</div></section><section class="chapter" id="agentes"><div class="chapter-title"><span class="chapter-number">04</span><h2>Un coordinador. Colaboración con responsabilidad.</h2></div><div class="chapter-body"><p><strong>Codex es el ejecutor principal del método.</strong> Antigravity, Gemini CLI y OpenCode son colaboradores posibles, elegidos según la tarea y las capacidades realmente disponibles. No es obligatorio abrir cuatro agentes para resolver un cambio sencillo.</p>
+<p>Cada delegación lleva un objetivo, contexto suficiente, archivos y recursos permitidos, dependencias, criterios de aceptación y formato de respuesta. Los recursos compartidos tienen un responsable. Los revisores trabajan en lectura; el coordinador comprueba la integración.</p>
+<p>Producto, arquitectura, diseño, frontend, backend, calidad, GUARDIAN, SENTINEL y release son responsabilidades documentadas, no un equipo instalado automáticamente. Una skill incluida en un catálogo todavía necesita procedencia, licencia, compatibilidad y una prueba en el cliente elegido.</p>
+<p><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/agentes/README.md">Conocer los roles</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/catalogo/README.md">Seleccionar capacidades</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/integracoes/CLIENTES.md">Entender los clientes</a></p>
+</div></section><section class="chapter" id="continuidade"><div class="chapter-title"><span class="chapter-number">05</span><h2>La siguiente etapa no necesita otro comando pegado</h2></div><div class="chapter-body"><p>En <strong>CONTINUO_SUPERVISIONADO</strong>, el coordinador termina la fase, verifica la entrega, la seguridad y el backup pertinente, registra el estado y carga el siguiente procedimiento autorizado. La entrevista sigue siendo interactiva. Las decisiones importantes siguen en tus manos.</p>
+<pre><code class="language-text">Comprender → especificar → preparar → implementar → probar → revisar → validar
+                          ↑                           ↓
+                          └──── corregir y verificar ─┘
+</code></pre>
+<p>P13, P14 y P15 forman ciclos por incremento. P17 contempla una misión prolongada cuando existe un supervisor y se han comprobado sus condiciones; no es una etapa obligatoria después de cada entrega. Las especializaciones se activan por necesidad, no por su número en la lista.</p>
+<p>Un fallo bloqueante, una decisión pendiente, un riesgo grave, una protección indispensable ausente o un límite alcanzado detienen la acción dependiente. El trabajo independiente ya autorizado puede continuar. El agente no inventa tareas para mantener ocupada la sesión.</p>
+<p><strong>Un prompt no mantiene el equipo trabajando después de cerrar la sesión.</strong> La autonomía prolongada requiere un proceso real, cola de tareas, límites, exclusividad, puntos de control, parada y recuperación probadas. <a href="../guia/continuidade/">Reglas de continuidad</a>.</p>
+</div></section><section class="chapter" id="documentos"><div class="chapter-title"><span class="chapter-number">06</span><h2>Haz que el conocimiento sobreviva a la sesión</h2></div><div class="chapter-body"><p>En nuestro método, harness engineering significa organizar el entorno de trabajo del agente: instrucciones localizables, fuentes claras, herramientas accesibles y resultados que puedan verificarse. El conocimiento importante permanece en el proyecto, no solo en la memoria de una conversación.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Información</th>
+<th>Dónde mantenerla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cómo iniciar y ejecutar</td>
+<td>README de la aplicación.</td>
+</tr>
+<tr>
+<td>Qué debe hacer el producto</td>
+<td>Briefing y PRD canónicos.</td>
+</tr>
+<tr>
+<td>Cómo se conectan las partes</td>
+<td>TRD, contratos y decisiones de arquitectura.</td>
+</tr>
+<tr>
+<td>Cómo se utiliza el producto</td>
+<td>Flujos y sistema de diseño.</td>
+</tr>
+<tr>
+<td>Cómo debe trabajar el agente</td>
+<td>AGENTS.md breve, con referencias a los detalles.</td>
+</tr>
+<tr>
+<td>Qué cambió y cómo continuar</td>
+<td>Evidencias, decisiones y traspaso de contexto pertinente.</td>
+</tr>
+</tbody>
+</table></div>
+<p>No es una estructura de carpetas obligatoria. En un proyecto existente, preserva documentos equivalentes y registra su correspondencia. Un cambio de comportamiento, esquema o comando debe actualizar su fuente responsable. No conviertas AGENTS.md en una enciclopedia.</p>
+<p>El método público guarda recetas. Cada aplicación guarda su producto. La operación privada guarda perfiles y registros internos, nunca contraseñas o tokens en archivos Git. <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/templates/README.md">Explorar las plantillas</a>.</p>
+</div></section><section class="chapter" id="auditoria"><div class="chapter-title"><span class="chapter-number">07</span><h2>Seguridad al inicio, durante y antes de publicar</h2></div><div class="chapter-body"><p>Una auditoría al final no sustituye las buenas decisiones del comienzo. La ingeniería incluye requisitos y amenazas desde el diseño, verificaciones durante los lotes y revisión del candidato antes de cada publicación.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Hito</th>
+<th>Qué debe examinarse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inicio</td>
+<td>Datos, identidad, permisos, exposición, límites de confianza y controles necesarios.</td>
+</tr>
+<tr>
+<td>Durante</td>
+<td>Cambios, componentes consumidores, secretos, dependencias, regresiones y usos permitidos y denegados.</td>
+</tr>
+<tr>
+<td>Integración</td>
+<td>Aislamiento entre módulos o clientes, reglas compartidas y efectos externos.</td>
+</tr>
+<tr>
+<td>Antes de publicar</td>
+<td>Hallazgos, cobertura, revisión, configuración y recuperación de la misma versión candidata.</td>
+</tr>
+</tbody>
+</table></div>
+<p>El <strong><a href="../guia/auditoria/">S01</a></strong> conserva el prompt universal de auditoría. Sus modos son distintos: AUDIT examina; PLAN organiza las correcciones; FIX modifica solo el lote autorizado; VERIFY vuelve a comprobar. La campaña avanzada requiere una solicitud expresa. Las pruebas activas y producción tienen autorización propia.</p>
+<p>Los ejemplos de hooks cubren inicio, cierre de módulo, salida de fase, integración, commit, push, pull request, pre-release y mantenimiento periódico. <strong>Son ejemplos publicados, no hooks instalados en las aplicaciones.</strong> El verificador de recibos comprueba registros; no es un escáner ni demuestra la veracidad de los resultados aportados.</p>
+<p>Ninguna herramienta garantiza la ausencia de intrusiones. Una prueba ausente, un error, un timeout o evidencia antigua no son una aprobación. Los controles esenciales necesitan implementación real, revisión y mantenimiento. <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/seguranca/hooks/README.md">Hooks y límites</a> · <a href="../guia/seguranca/">Política de seguridad</a>.</p>
+</div></section><section class="chapter" id="backup"><div class="chapter-title"><span class="chapter-number">08</span><h2>Preserva el trabajo. Demuestra que puedes recuperarlo.</h2></div><div class="chapter-body"><p>El destino definido es <code>Projetos 2026/Backup/&lt;nombre-del-proyecto&gt;</code>. Proteger exige más que crear una carpeta: cobertura explícita, generaciones identificadas, integridad comprobada y recuperación probada para el alcance pertinente.</p>
+<p>Archivos de trabajo y cambios locales, historial Git, bases de datos, uploads y secretos son clases distintas. Un ZIP del código no demuestra que todas estén protegidas. Las credenciales requieren protección específica; no deben incluirse en un archivo común. El método no autoriza eliminar automáticamente generaciones anteriores.</p>
+<p>El backup debe preceder a cambios arriesgados y acompañar entregas con nuevos artefactos. Si la protección indispensable no está comprobada, la acción dependiente no avanza. <strong>La integración automática con Drive debe configurarse y probarse en cada entorno; publicar esta página no la activa.</strong> <a href="../guia/backup/">Política y cobertura</a>.</p>
+</div></section><section class="chapter" id="economia"><div class="chapter-title"><span class="chapter-number">09</span><h2>Ahorra contexto, no criterio</h2></div><div class="chapter-body"><p>La política de economía en Astra es una disciplina de trabajo: cargar solo lo que exige la tarea, reutilizar decisiones válidas, usar scripts para verificaciones repetitivas y delegar cuando exista un beneficio concreto.</p>
+<p>El detalle sigue disponible en la fuente. Quien implementa recibe los requisitos y contratos pertinentes, no todos los documentos. Quien revisa recibe el candidato y su contexto, no el historial completo. Esperar al CI no requiere llamadas sucesivas al modelo.</p>
+<p>No prometemos un porcentaje de ahorro. Tokens, coste y retrabajo deben medirse cuando sean observables. No hay cambios silenciosos de modelo, proveedor, autenticación o facturación. El objetivo es <strong>menor coste por entrega aceptada</strong>, incluidas las pruebas y correcciones necesarias. <a href="../guia/economia/">Política de economía</a>.</p>
+<p><a href="https://carlosemox.github.io/engenharia-cadu/biblioteca.html">Biblioteca interactiva en portugués</a></p>
+</div></section><section class="chapter" id="prompts"><div class="chapter-title"><span class="chapter-number">10</span><h2>Un comando para cada responsabilidad</h2></div><div class="chapter-body"><label class="prompt-search">Buscar un prompt<input id="prompt-search" type="search" placeholder="Ej.: seguridad, briefing, vídeo" aria-controls="prompt-library"></label><p id="prompt-count" class="small" aria-live="polite">29 procedimientos</p><div id="prompt-library"><p>Utiliza la biblioteca completa como mapa, no como un texto para pegar entero. Los identificadores permanecen estables; cada procedimiento indica finalidad, entradas, límites, entregable y criterios de conclusión.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Prompt</th>
+<th>Responsabilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../prompts/P00/">P00</a></td>
+<td>Elegir el camino y la siguiente acción.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P01/">P01</a></td>
+<td>Comprender el producto y validar el briefing inicial.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P02/">P02</a></td>
+<td>Investigar hipótesis, referencias y viabilidad.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P03/">P03</a></td>
+<td>Consolidar primera versión, alcance y exclusiones.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P04/">P04</a></td>
+<td>Definir requisitos, reglas y criterios de aceptación.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P05/">P05</a></td>
+<td>Especificar flujos, experiencia y sistema de diseño.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P06/">P06</a></td>
+<td>Definir arquitectura, datos, contratos y seguridad.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P07/">P07</a></td>
+<td>Inventariar y preparar equipo, cuentas y clientes.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P08/">P08</a></td>
+<td>Seleccionar agentes, herramientas, servicios y API.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P09/">P09</a></td>
+<td>Preparar la base y el repositorio del producto nuevo.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P10/">P10</a></td>
+<td>Configurar entornos, CI e integraciones aprobadas.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P11/">P11</a></td>
+<td>Comprobar las condiciones para el siguiente trabajo.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P12/">P12</a></td>
+<td>Convertir requisitos en tareas delimitadas.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P13/">P13</a></td>
+<td>Implementar y verificar una tarea.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P14/">P14</a></td>
+<td>Revisar de forma independiente según riesgo y evidencia.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P15/">P15</a></td>
+<td>Validar recorridos e integraciones en staging.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P16/">P16</a></td>
+<td>Preparar o ejecutar una publicación autorizada.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P17/">P17</a></td>
+<td>Conducir una misión prolongada con supervisor comprobado.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P18/">P18</a></td>
+<td>Retomar sin perder ni duplicar trabajo.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P19/">P19</a></td>
+<td>Priorizar proyectos activos o detenidos.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P20/">P20</a></td>
+<td>Diagnosticar un proyecto sin reescribirlo.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P21/">P21</a></td>
+<td>Corregir y adoptar el método de forma incremental.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P22/">P22</a></td>
+<td>Auditar agentes, skills y paquetes antes de activarlos.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P23/">P23</a></td>
+<td>Estructurar módulos reutilizables con consumidores reales.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P24/">P24</a></td>
+<td>Evaluar mejoras del harness sin debilitar controles.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P25/">P25</a></td>
+<td>Desarrollar capacidades financieras auditables.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P26/">P26</a></td>
+<td>Organizar contenido y publicación por marca.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P27/">P27</a></td>
+<td>Crear capacidades de vídeo programático.</td>
+</tr>
+<tr>
+<td><a href="../prompts/P28/">P28</a></td>
+<td>Estructurar capacidades de ingeniería y obras.</td>
+</tr>
+</tbody>
+</table></div>
+</div></div></section><section class="chapter" id="capacidades"><div class="chapter-title"><span class="chapter-number">11</span><h2>Adopta lo necesario. Preserva lo que funciona.</h2></div><div class="chapter-body"><p>El catálogo reúne posibilidades; no es una instalación masiva. Cada skill, biblioteca o integración debe elegirse por necesidad, procedencia, licencia, compatibilidad, coste y validación. Consultar documentación actual no autoriza enviar código o información privada a terceros.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Lugar</th>
+<th>Responsabilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Equipo y cliente</td>
+<td>Runtime, herramientas, autenticación e integraciones globales autorizadas.</td>
+</tr>
+<tr>
+<td>Aplicación</td>
+<td>Código, dependencias, lockfiles, documentación, pruebas y configuración específica.</td>
+</tr>
+<tr>
+<td>Central pública</td>
+<td>Método, procedimientos, plantillas y referencias publicables.</td>
+</tr>
+<tr>
+<td>Operación privada</td>
+<td>Perfiles, autorizaciones, destinos y evidencias internas, sin secretos en Git.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Los proyectos existentes preservan sus tecnologías, base de datos, contratos y equivalentes funcionales. Los cambios incompatibles requieren una decisión propia. Los monorepos necesitan inventariar límites y recursos compartidos. Los servicios nuevos solo entran cuando tienen una función concreta en el producto.</p>
+</div></section><section class="chapter" id="operacao"><div class="chapter-title"><span class="chapter-number">12</span><h2>Distingue lo publicado de lo que necesita comprobarse</h2></div><div class="chapter-body"><p><strong>Un documento disponible no equivale a una instalación concluida. Una prueba local no equivale a una integración en producción.</strong> Esta central ofrece recetas, plantillas y ejemplos; cada entorno debe demostrar su funcionamiento.</p>
+<div class="table-scroll" tabindex="0"><table>
+<thead>
+<tr>
+<th>Capacidad</th>
+<th>Estado y condición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P00–P28 y S01</td>
+<td>Biblioteca publicada; su eficacia en tu proyecto requiere ejecución y evaluación.</td>
+</tr>
+<tr>
+<td>Continuidad entre etapas</td>
+<td>Instrucción del coordinador; depende de sesión, contexto y autorizaciones.</td>
+</tr>
+<tr>
+<td>Hooks y controles de seguridad</td>
+<td>Ejemplos y políticas; instalación y bloqueos reales deben probarse.</td>
+</tr>
+<tr>
+<td>Backup automático</td>
+<td>Política definida; conexión, cobertura y restauración requieren implantación.</td>
+</tr>
+<tr>
+<td>Misión de 24 horas</td>
+<td>Requiere supervisor, límites, recursos y recuperación comprobados.</td>
+</tr>
+<tr>
+<td>Presentación trilingüe</td>
+<td>Presentación traducida; guías y comandos enlazados conservan sus idiomas actuales.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Sin acceso al entorno, el agente puede explicar y especificar, pero no comprobar una configuración. Los informes deben distinguir PASS, FAIL, NOT_RUN y no aplicable, con justificación. Seguridad no significa prometer invulnerabilidad.</p>
+<p><a href="../guia/operacao/">Estado operativo</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/MAPA_DA_CENTRAL.md">Mapa de la central</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/avaliacoes/CENARIOS.md">Escenarios de evaluación</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/seguranca/validacao/RESULTADOS.md">Validación S01</a></p>
+</div></section><section class="chapter" id="evolucao"><div class="chapter-title"><span class="chapter-number">13</span><h2>Construye una base capaz de evolucionar</h2></div><div class="chapter-body"><p>Cuando un proyecto revela una mejora, extrae la parte reutilizable, elimina los datos internos, comprueba la licencia y revisa antes de incorporarla al método público. Las actualizaciones permanecen en sus fuentes oficiales; los temas nuevos reciben un lugar propio. La operación privada no se replica automáticamente.</p>
+<p>Engenharia Cadu se inspira en la organización de <strong><a href="https://github.com/soumatheusgomes/vibe-coding-toolkit">Vibe Coding Toolkit, de Matheus Gomes</a></strong> y adapta esa referencia a las decisiones de esta central. No se presume afiliación ni respaldo. Se conserva el aviso de licencia del toolkit; los demás componentes mantienen sus propios términos. La central no hereda automáticamente una licencia MIT para todo su contenido. <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/LICENCIAMENTO.md">Licencias y atribuciones</a>.</p>
+<p>El mejor punto de partida es el siguiente resultado útil: comprender el producto, recuperar un recorrido o preparar una base verificable. Elige la entrada, aporta tu contexto y mantén visibles las decisiones importantes.</p>
+<p><strong>Define con intención. Construye con contexto. Evoluciona con evidencia.</strong></p>
+<p><a href="../prompts/P01/">EMPEZAR POR P01 →</a> · <a href="https://github.com/carlosemox/engenharia-cadu-adocao">RECUPERAR UN PROYECTO</a> · <a href="https://github.com/carlosemox/engenharia-cadu/issues">REPORTAR UN PROBLEMA</a></p>
+</div></section></main><footer><a class="footer-brand" href="#top">Engenharia Cadu<span>.</span></a><p>Define con intención. Construye con contexto. Evoluciona con evidencia.</p><div><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/LICENCIAMENTO.md">Derechos y atribuciones</a><a href="#top">Volver al inicio ↑</a></div><nav class="languages" aria-label="Idioma de la presentación"><a lang="pt-BR" hreflang="pt-BR" href="../index.html">Português (Brasil)</a><a lang="en" hreflang="en" href="../en/index.html">English</a><a lang="es" hreflang="es" href="../es/index.html" aria-current="page">Español</a></nav></footer></div><div id="toast" role="status" aria-live="polite"></div></body></html>
