@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://carlosemox.github.io/engenharia-cadu/sitemap.xml

@@ -1,0 +1,125 @@
+[
+  {
+    "id": "coordenador",
+    "name": "Coordenador · Codex",
+    "description": "Organizar a missão, escolher a próxima tarefa e integrar resultados.",
+    "inputs": "Missão aprovada, perfil do projeto, dependências e evidências.",
+    "outputs": "Plano delimitado, delegações justificadas e resultado integrado.",
+    "prompts": [
+      "P00",
+      "P08",
+      "P12",
+      "P18"
+    ],
+    "status": "PAPEL_DOCUMENTADO_RUNTIME_NOT_RUN"
+  },
+  {
+    "id": "produto",
+    "name": "Produto",
+    "description": "Transformar intenção em requisitos e critérios de aceite.",
+    "inputs": "Contexto, relatos, hipóteses e restrições.",
+    "outputs": "Briefing, escopo, PRD e decisões pendentes explícitas.",
+    "prompts": [
+      "P01",
+      "P02",
+      "P03",
+      "P04"
+    ],
+    "status": "PAPEL_DOCUMENTADO_RUNTIME_NOT_RUN"
+  },
+  {
+    "id": "design",
+    "name": "Design & experiência",
+    "description": "Converter jornadas em sistema visual e interação utilizável.",
+    "inputs": "Briefing D0, fluxos, marca e critérios de acessibilidade.",
+    "outputs": "Design D1 e critérios verificáveis de D2.",
+    "prompts": [
+      "P05"
+    ],
+    "status": "PAPEL_DOCUMENTADO_RUNTIME_NOT_RUN"
+  },
+  {
+    "id": "arquitetura",
+    "name": "Arquitetura",
+    "description": "Definir a menor solução técnica coerente com o produto.",
+    "inputs": "PRD, requisitos de dados, integrações e restrições.",
+    "outputs": "TRD, contratos e decisões fundamentadas.",
+    "prompts": [
+      "P06",
+      "P08"
+    ],
+    "status": "PAPEL_DOCUMENTADO_RUNTIME_NOT_RUN"
+  },
+  {
+    "id": "backend",
+    "name": "FORGE · Backend",
+    "description": "Implementar regras, APIs e persistência do incremento.",
+    "inputs": "Contrato da tarefa, decisões de dados e autorização.",
+    "outputs": "Código, testes e evidências relacionados ao requisito.",
+    "prompts": [
+      "P13"
+    ],
+    "status": "PAPEL_DOCUMENTADO_RUNTIME_NOT_RUN"
+  },
+  {
+    "id": "frontend",
+    "name": "FRAME · Frontend",
+    "description": "Implementar interface sobre os contratos e design aprovados.",
+    "inputs": "Jornadas, design system, contratos de API e estados.",
+    "outputs": "Interface responsiva, acessível e verificável.",
+    "prompts": [
+      "P13",
+      "P15"
+    ],
+    "status": "PAPEL_DOCUMENTADO_RUNTIME_NOT_RUN"
+  },
+  {
+    "id": "qualidade",
+    "name": "QA · Qualidade",
+    "description": "Verificar comportamentos, regressões e limites.",
+    "inputs": "Requisito, candidato exato e ambientes autorizados.",
+    "outputs": "Resultados, cenários negativos e lacunas observadas.",
+    "prompts": [
+      "P11",
+      "P15"
+    ],
+    "status": "PAPEL_DOCUMENTADO_RUNTIME_NOT_RUN"
+  },
+  {
+    "id": "guardian",
+    "name": "GUARDIAN · Escopo",
+    "description": "Conferir destino, alçada, dados e isolamento.",
+    "inputs": "Missão, recursos, permissões e classificação dos dados.",
+    "outputs": "Permissão delimitada ou bloqueio com causa e condição de retorno.",
+    "prompts": [
+      "P07",
+      "P10",
+      "P11"
+    ],
+    "status": "PAPEL_DOCUMENTADO_RUNTIME_NOT_RUN"
+  },
+  {
+    "id": "sentinel",
+    "name": "SENTINEL · Revisão",
+    "description": "Revisar independentemente uma versão ou snapshot delimitado.",
+    "inputs": "Diff, base/head, contratos e evidências.",
+    "outputs": "Achados com cenário concreto, severidade e tratamento.",
+    "prompts": [
+      "P14"
+    ],
+    "status": "PAPEL_DOCUMENTADO_RUNTIME_NOT_RUN"
+  },
+  {
+    "id": "release",
+    "name": "Release & operação",
+    "description": "Conferir promoção, recuperação e observabilidade.",
+    "inputs": "Candidato homologado, GO, ambiente e plano de recuperação.",
+    "outputs": "Publicação autorizada ou bloqueio; evidências de operação.",
+    "prompts": [
+      "P16",
+      "P17",
+      "P18"
+    ],
+    "status": "PAPEL_DOCUMENTADO_RUNTIME_NOT_RUN"
+  }
+]

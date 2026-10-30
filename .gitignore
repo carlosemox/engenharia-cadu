@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+node_modules/
+.venv/
+__pycache__/
+playwright-report/
+private/
+ops/
+checkpoints/
+*.log
+.DS_Store

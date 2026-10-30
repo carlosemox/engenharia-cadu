@@ -1,0 +1,14 @@
+# Templates
+
+Modelos documentais inativos. Campos pendentes não significam autorização ou funcionamento.
+
+- [BRIEFING](BRIEFING.md)
+- [CONTRATO_MISSAO](CONTRATO_MISSAO.md)
+- [CONTRATO_TAREFA](CONTRATO_TAREFA.md)
+- [DESIGN_SYSTEM](DESIGN_SYSTEM.md)
+- [HANDOFF_EVIDENCIAS](HANDOFF_EVIDENCIAS.md)
+- [MAPA_SERVICOS_APIS](MAPA_SERVICOS_APIS.md)
+- [PERFIL_PROJETO](PERFIL_PROJETO.md)
+- [PRD](PRD.md)
+- [REGISTRO_CAPACIDADE](REGISTRO_CAPACIDADE.md)
+- [TRD](TRD.md)

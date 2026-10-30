@@ -1,0 +1,458 @@
+[
+  {
+    "id": "README",
+    "name": "README",
+    "category": "README",
+    "description": "Papel de referência para README. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "01-trafego-meta-analise-campanha",
+    "name": "trafego-meta-analise-campanha",
+    "category": "trafego",
+    "description": "Papel de referência para trafego meta analise campanha. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "02-trafego-meta-relatorio",
+    "name": "trafego-meta-relatorio",
+    "category": "trafego",
+    "description": "Papel de referência para trafego meta relatorio. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "03-trafego-meta-copy-criativo",
+    "name": "trafego-meta-copy-criativo",
+    "category": "trafego",
+    "description": "Papel de referência para trafego meta copy criativo. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "04-trafego-meta-audiencia",
+    "name": "trafego-meta-audiencia",
+    "category": "trafego",
+    "description": "Papel de referência para trafego meta audiencia. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "05-trafego-google-analise",
+    "name": "trafego-google-analise",
+    "category": "trafego",
+    "description": "Papel de referência para trafego google analise. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "06-trafego-google-relatorio",
+    "name": "trafego-google-relatorio",
+    "category": "trafego",
+    "description": "Papel de referência para trafego google relatorio. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "07-trafego-google-copy",
+    "name": "trafego-google-copy",
+    "category": "trafego",
+    "description": "Papel de referência para trafego google copy. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "08-lancamento-cronograma",
+    "name": "lancamento-cronograma",
+    "category": "lancamento",
+    "description": "Papel de referência para lancamento cronograma. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "09-lancamento-copy",
+    "name": "lancamento-copy",
+    "category": "lancamento",
+    "description": "Papel de referência para lancamento copy. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "10-lancamento-emails-cpl",
+    "name": "lancamento-emails-cpl",
+    "category": "lancamento",
+    "description": "Papel de referência para lancamento emails cpl. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "11-lancamento-emails-carrinho",
+    "name": "lancamento-emails-carrinho",
+    "category": "lancamento",
+    "description": "Papel de referência para lancamento emails carrinho. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "12-lancamento-metricas",
+    "name": "lancamento-metricas",
+    "category": "lancamento",
+    "description": "Papel de referência para lancamento metricas. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "13-lancamento-oferta",
+    "name": "lancamento-oferta",
+    "category": "lancamento",
+    "description": "Papel de referência para lancamento oferta. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "14-lancamento-pagina",
+    "name": "lancamento-pagina",
+    "category": "lancamento",
+    "description": "Papel de referência para lancamento pagina. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "15-lancamento-pos-venda",
+    "name": "lancamento-pos-venda",
+    "category": "lancamento",
+    "description": "Papel de referência para lancamento pos venda. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "16-instagram-copy",
+    "name": "instagram-copy",
+    "category": "instagram",
+    "description": "Papel de referência para instagram copy. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "17-instagram-calendario",
+    "name": "instagram-calendario",
+    "category": "instagram",
+    "description": "Papel de referência para instagram calendario. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "18-instagram-roteiro",
+    "name": "instagram-roteiro",
+    "category": "instagram",
+    "description": "Papel de referência para instagram roteiro. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "19-instagram-hashtag",
+    "name": "instagram-hashtag",
+    "category": "instagram",
+    "description": "Papel de referência para instagram hashtag. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "20-conteudo-pauta-seo",
+    "name": "conteudo-pauta-seo",
+    "category": "conteudo",
+    "description": "Papel de referência para conteudo pauta seo. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "21-conteudo-blog",
+    "name": "conteudo-blog",
+    "category": "conteudo",
+    "description": "Papel de referência para conteudo blog. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "22-conteudo-script-video",
+    "name": "conteudo-script-video",
+    "category": "conteudo",
+    "description": "Papel de referência para conteudo script video. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "23-whatsapp-atendimento",
+    "name": "whatsapp-atendimento",
+    "category": "whatsapp",
+    "description": "Papel de referência para whatsapp atendimento. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "24-whatsapp-disparos",
+    "name": "whatsapp-disparos",
+    "category": "whatsapp",
+    "description": "Papel de referência para whatsapp disparos. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "25-whatsapp-chatbot",
+    "name": "whatsapp-chatbot",
+    "category": "whatsapp",
+    "description": "Papel de referência para whatsapp chatbot. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "26-whatsapp-crm",
+    "name": "whatsapp-crm",
+    "category": "whatsapp",
+    "description": "Papel de referência para whatsapp crm. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "27-comercial-proposta",
+    "name": "comercial-proposta",
+    "category": "comercial",
+    "description": "Papel de referência para comercial proposta. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "28-comercial-crm",
+    "name": "comercial-crm",
+    "category": "comercial",
+    "description": "Papel de referência para comercial crm. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "29-comercial-follow-up",
+    "name": "comercial-follow-up",
+    "category": "comercial",
+    "description": "Papel de referência para comercial follow up. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "30-marketing-funil",
+    "name": "marketing-funil",
+    "category": "marketing",
+    "description": "Papel de referência para marketing funil. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "31-marketing-email",
+    "name": "marketing-email",
+    "category": "marketing",
+    "description": "Papel de referência para marketing email. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "32-marketing-persona",
+    "name": "marketing-persona",
+    "category": "marketing",
+    "description": "Papel de referência para marketing persona. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "33-marketing-concorrentes",
+    "name": "marketing-concorrentes",
+    "category": "marketing",
+    "description": "Papel de referência para marketing concorrentes. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "34-marketing-seo",
+    "name": "marketing-seo",
+    "category": "marketing",
+    "description": "Papel de referência para marketing seo. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "35-marketing-campanha",
+    "name": "marketing-campanha",
+    "category": "marketing",
+    "description": "Papel de referência para marketing campanha. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "36-influencer-outreach",
+    "name": "influencer-outreach",
+    "category": "influencer",
+    "description": "Papel de referência para influencer outreach. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "37-negocios-diagnostico",
+    "name": "negocios-diagnostico",
+    "category": "negocios",
+    "description": "Papel de referência para negocios diagnostico. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "38-negocios-precificacao",
+    "name": "negocios-precificacao",
+    "category": "negocios",
+    "description": "Papel de referência para negocios precificacao. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "39-negocios-proposta",
+    "name": "negocios-proposta",
+    "category": "negocios",
+    "description": "Papel de referência para negocios proposta. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "40-negocios-processos",
+    "name": "negocios-processos",
+    "category": "negocios",
+    "description": "Papel de referência para negocios processos. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "41-negocios-kpis",
+    "name": "negocios-kpis",
+    "category": "negocios",
+    "description": "Papel de referência para negocios kpis. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "42-negocios-forecasting",
+    "name": "negocios-forecasting",
+    "category": "negocios",
+    "description": "Papel de referência para negocios forecasting. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "43-negocios-pitch",
+    "name": "negocios-pitch",
+    "category": "negocios",
+    "description": "Papel de referência para negocios pitch. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "44-design-briefing",
+    "name": "design-briefing",
+    "category": "design",
+    "description": "Papel de referência para design briefing. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "45-design-brand",
+    "name": "design-brand",
+    "category": "design",
+    "description": "Papel de referência para design brand. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "46-design-prompts-ia",
+    "name": "design-prompts-ia",
+    "category": "design",
+    "description": "Papel de referência para design prompts ia. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "47-design-ui-ux",
+    "name": "design-ui-ux",
+    "category": "design",
+    "description": "Papel de referência para design ui ux. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "48-design-apresentacao",
+    "name": "design-apresentacao",
+    "category": "design",
+    "description": "Papel de referência para design apresentacao. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "49-design-naming",
+    "name": "design-naming",
+    "category": "design",
+    "description": "Papel de referência para design naming. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "50-ops-rh",
+    "name": "ops-rh",
+    "category": "ops",
+    "description": "Papel de referência para ops rh. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "51-ops-cs",
+    "name": "ops-cs",
+    "category": "ops",
+    "description": "Papel de referência para ops cs. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "52-ops-documentacao",
+    "name": "ops-documentacao",
+    "category": "ops",
+    "description": "Papel de referência para ops documentacao. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "53-ops-financeiro",
+    "name": "ops-financeiro",
+    "category": "ops",
+    "description": "Papel de referência para ops financeiro. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "54-ops-produto",
+    "name": "ops-produto",
+    "category": "ops",
+    "description": "Papel de referência para ops produto. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "55-ops-automacao",
+    "name": "ops-automacao",
+    "category": "ops",
+    "description": "Papel de referência para ops automacao. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  },
+  {
+    "id": "56-ops-dados",
+    "name": "ops-dados",
+    "category": "ops",
+    "description": "Papel de referência para ops dados. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
+    "state": "Inventariado · não homologado",
+    "source": "Acervo de papéis operacionais"
+  }
+]

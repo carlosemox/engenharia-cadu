@@ -15,4 +15,3 @@ Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/read.md e
 
 ## Outras entradas
 [Todos os prompts](README.md) · [Contrato comum](politicas/CONTRATO_COMUM.md) · [Método](METODO.md)
-
