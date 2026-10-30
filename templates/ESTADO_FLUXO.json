@@ -1,0 +1,21 @@
+{
+  "template_only": true,
+  "mode": "CONTINUO_SUPERVISIONADO",
+  "project": null,
+  "method_revision": null,
+  "stage": "P01",
+  "status": "NOT_STARTED",
+  "snapshot": null,
+  "evidence_snapshot": null,
+  "evidence": [],
+  "security_blockers": [],
+  "security_review_reference": null,
+  "backup_required": null,
+  "backup": {"status": "PLANNED", "snapshot": null, "receipt": null, "sha256": null},
+  "next_stage": null,
+  "next_scope_authorized": false,
+  "transitions_remaining": 8,
+  "required_approvals": [],
+  "observed_approval_refs": {},
+  "notes": "Template inativo. Campos não concedem autorização nem comprovam execução. Limites mais restritivos existentes prevalecem; valor ausente não significa ilimitado. Recibos e evidências precisam de verificação externa ao autorrelato."
+}
