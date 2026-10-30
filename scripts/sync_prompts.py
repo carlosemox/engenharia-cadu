@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Sync full procedure bodies from canonical Markdown into existing generated pages."""
+"""Sync canonical commands to downloads and supported static presentation pages.
+
+A page either embeds the full command or links explicitly to its generated TXT.
+A missing embedding AND missing TXT link is an error, never silently ignored.
+"""
 import html,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -13,6 +17,7 @@ for source in sorted((ROOT/'p').glob('P[0-9][0-9].md')):
  (ROOT/f'docs/p/{pid}.md').write_text(mirror)
  page=ROOT/f'docs/prompts/{pid}/index.html'
  content,count=re.subn(r'(<pre id="full-command">)[\s\S]*?(</pre>)',lambda x:x.group(1)+html.escape(body)+x.group(2),page.read_text(),count=1)
- if count!=1:raise ValueError(f'Expected full-command block: {page}')
+ if count!=1 and f'href="../../comandos/{pid}.txt"' not in content:
+  raise ValueError(f'Expected full-command block or explicit canonical TXT link: {page}')
  page.write_text(content)
 print('Synced 29 canonical bodies. Review metadata/navigation separately when changing titles or routes.')
