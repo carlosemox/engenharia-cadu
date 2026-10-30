@@ -1,0 +1,22 @@
+{
+  "version": "2.2.0",
+  "kind": "routing_reference_not_runtime",
+  "entry": "P01",
+  "mode_for_new_product": "CONTINUO_SUPERVISIONADO",
+  "single_stage_mode": "ISOLADO",
+  "default_order": ["P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09", "P10", "P11", "P12", "P13", "P14", "P15", "P16"],
+  "optional": {
+    "P02": "Pesquisa se necessária. Dispensa com justificativa e evidências.",
+    "P07": "Pode avançar em paralelo com independência e autorização.",
+    "P08": "Investigar fornecedores antes das decisões dependentes; revalidar P06 se houver mudança material."
+  },
+  "loops": {
+    "P14": {"fix": "P13", "new_scope": "P12", "accepted_increment": "P15"},
+    "P15": {"more_authorized_tasks": "P13", "scope_complete": "P16"}
+  },
+  "on_scope_complete": null,
+  "not_automatic": ["P17", "P18", "P19", "P20", "P21", "P22", "P23", "P24", "P25", "P26", "P27", "P28"],
+  "required_before_transition": ["acceptance_evidence", "security_disposition", "applicable_backup_receipt", "checkpoint", "next_scope_authority", "resource_and_budget_limits"],
+  "stop_on": ["material_user_decision", "failed_dependency", "blocking_security_finding", "missing_required_backup", "exhausted_limit", "unauthorized_action", "scope_complete"],
+  "limits": "Este mapa não executa agentes, autentica decisões, verifica evidências ou concede permissões. O coordenador precisa observar o ambiente e aplicar as políticas."
+}
