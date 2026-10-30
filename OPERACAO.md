@@ -42,3 +42,7 @@ Segurança é verificada durante o processo e novamente antes de release. Não s
 Cópias históricas já realizadas são registradas privadamente. Elas não demonstram backup atualizado de todo o portfólio, histórico Git completo, arquivos locais ou bancos. Não foi ativada exclusão automática de gerações antigas.
 
 [Continuidade](politicas/CONTINUIDADE.md) · [Segurança](politicas/SEGURANCA_ENGENHARIA.md) · [Backup](politicas/BACKUP_DRIVE.md) · [Mapa](MAPA_DA_CENTRAL.md)
+
+## Auditoria S01 e hooks
+
+[Módulo S01](modulos/seguranca/README.md) acrescenta início, marcos intermediários e revisão final, além de eventos durante a execução. Procedimentos, templates e verificador de recibos são uma entrega da biblioteca. **Hooks/scanners/CI dos aplicativos: NÃO IMPLANTADOS por esta publicação.** Auditorias de aplicativos: NOT_RUN. A campanha de projeto deve ligar os checks e produtores de evidência reais ao mecanismo de controle e comprovar bloqueios; os exemplos não fazem isso sozinhos.

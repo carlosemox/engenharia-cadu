@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "template_only": true,
+  "run": {
+    "id": null,
+    "mode": "AUDIT",
+    "status": "NOT_STARTED",
+    "project": null,
+    "revision": null,
+    "dirty_tree": null,
+    "scope": [],
+    "exclusions": [],
+    "audit_date": null,
+    "active_testing_authorized": false
+  },
+  "threat_model": null,
+  "coverage": [],
+  "findings": [],
+  "coverage_gaps": [],
+  "remediation_batches": [],
+  "standards_verified": [],
+  "dependency_inventory": [],
+  "enforcement_observed": []
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "template_only": true,
+  "project_id": null,
+  "event": null,
+  "snapshot": null,
+  "policy_sha256": null,
+  "created_at": null,
+  "checks": [],
+  "findings": [],
+  "coverage_gaps": [
+    "Not reviewed"
+  ],
+  "review": null,
+  "backup": null
+}

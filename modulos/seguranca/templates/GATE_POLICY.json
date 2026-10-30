@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "template_only": true,
+  "enabled": false,
+  "project_id": null,
+  "events": {
+    "project-start": {
+      "required_checks": [
+        "threat-model",
+        "scope-and-controls"
+      ],
+      "max_age_seconds": 3600,
+      "require_independent_review": false,
+      "require_verified_backup": false
+    },
+    "integration-review": {
+      "required_checks": [
+        "cross-boundary-review",
+        "security-regression",
+        "supply-chain"
+      ],
+      "max_age_seconds": 3600,
+      "require_independent_review": true,
+      "require_verified_backup": false
+    },
+    "module-complete": {
+      "required_checks": [
+        "secrets",
+        "security-regression",
+        "change-review"
+      ],
+      "max_age_seconds": 3600,
+      "require_independent_review": false,
+      "require_verified_backup": false
+    },
+    "phase-exit": {
+      "required_checks": [
+        "phase-security-coverage"
+      ],
+      "max_age_seconds": 3600,
+      "require_independent_review": false,
+      "require_verified_backup": false
+    },
+    "pre-commit": {
+      "required_checks": [
+        "staged-secrets",
+        "staged-static-checks"
+      ],
+      "max_age_seconds": 3600,
+      "require_independent_review": false,
+      "require_verified_backup": false
+    },
+    "pre-push": {
+      "required_checks": [
+        "candidate-tests",
+        "secrets"
+      ],
+      "max_age_seconds": 3600,
+      "require_independent_review": false,
+      "require_verified_backup": false
+    },
+    "pull-request": {
+      "required_checks": [
+        "security-regression",
+        "secrets",
+        "supply-chain"
+      ],
+      "max_age_seconds": 3600,
+      "require_independent_review": true,
+      "require_verified_backup": false
+    },
+    "pre-release": {
+      "required_checks": [
+        "release-coverage",
+        "deployment-review",
+        "security-regression",
+        "restore-evidence"
+      ],
+      "max_age_seconds": 3600,
+      "require_independent_review": true,
+      "require_verified_backup": true
+    },
+    "scheduled": {
+      "required_checks": [
+        "current-advisories",
+        "runtime-support"
+      ],
+      "max_age_seconds": 3600,
+      "require_independent_review": false,
+      "require_verified_backup": false
+    }
+  },
+  "notes": "Inativo. Validade ilustrativa. Escolher checks reais, aprovar política e implantar produtores confiáveis antes de usar."
+}

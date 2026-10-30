@@ -1,0 +1,86 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0e1411"><meta name="description" content="Quando hipóteses, serviços ou alternativas ainda podem mudar a decisão de construir."><meta property="og:title" content="P02 · Pesquisa, evidências e viabilidade — Engenharia Cadu"><meta property="og:description" content="Quando hipóteses, serviços ou alternativas ainda podem mudar a decisão de construir."><meta property="og:type" content="website"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><meta name="referrer" content="strict-origin-when-cross-origin"><title>Segurança do primeiro passo ao release. | Engenharia Cadu</title><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#main">Ir ao conteúdo</a><aside class="sidebar" id="sidebar"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">EC<span></span></span><span>Engenharia<strong>Cadu<span class="brand-dot">.</span></strong></span></a><p class="nav-label">CENTRAL DE DESENVOLVIMENTO</p><nav aria-label="Navegação principal"><a href="../../index.html" class="nav-home"><span>⌂</span>Visão geral</a><a href="../../index.html#comecar"><span>↗</span>Comece aqui</a><a href="../../index.html#prompts"><span>⌘</span>Biblioteca de prompts<b>29</b></a><a href="../../index.html#metodo"><span>◇</span>Nosso método</a><a href="../../index.html#agentes"><span>◉</span>Agentes & executores</a><a href="../../index.html#capacidades"><span>▦</span>Catálogo de skills</a><a href="../../index.html#economia"><span>↘</span>Economia & controle</a><a href="../../index.html#documentos"><span>▤</span>Documentação</a><a data-ops-nav="continuidade" href="../../guia/continuidade/"><span aria-hidden="true">→</span>Fluxo contínuo</a><a data-ops-nav="seguranca" href="../../guia/seguranca/"><span aria-hidden="true">◇</span>Segurança e revisão</a><a data-ops-nav="backup" href="../../guia/backup/"><span aria-hidden="true">▤</span>Backup por projeto</a><a data-ops-nav="operacao" href="../../guia/operacao/"><span aria-hidden="true">◉</span>Implantação e limites</a></nav><div class="sidebar-bottom"><div class="side-pill"><span class="status-dot"></span> Método público · v2.2.1</div><p>Definir. Construir.<br>Verificar. Evoluir.</p><a href="https://github.com/carlosemox/engenharia-cadu" target="_blank" rel="noopener noreferrer">Abrir repositório <span>↗</span></a></div></aside><div class="workspace"><header class="topbar"><button class="menu-toggle" aria-label="Abrir navegação" aria-controls="sidebar" aria-expanded="false">☰</button><span class="crumb">ENGENHARIA CADU <span>/</span> CENTRAL DO MÉTODO</span><div class="top-actions"><span class="desktop-only">CODEx PRINCIPAL</span><a href="https://github.com/carlosemox/engenharia-cadu" class="github-link" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div></header><main id="main"><section class="prompt-header"><a class="back-link" href="../../index.html#operacao">← Central do método</a><span class="eyebrow">GUIA / AUDITORIA</span><h1>Segurança do primeiro passo ao release.</h1><p>Três marcos, verificações durante o trabalho e evidências antes de avançar.</p><div class="ops-pills"><span>Fonte canônica versionada</span><span>Aplicação por projeto</span></div></section><article class="prose" data-source="modulos/seguranca/README.md" data-source-sha256="71837015b62998278d04c9fc8b3b3620047d19f56117a3984daff4aee97422ac"><p><strong>Investigar → priorizar → planejar → corrigir o lote aprovado → verificar → prosseguir.</strong></p>
+<p>Módulo adicional da Engenharia Cadu. O <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/seguranca/PROMPT_UNIVERSAL.md">prompt universal completo</a>, fornecido pelo usuário, permanece em inglês, sem redução de suas fronteiras; entrada e orientação de uso em português. Não pressupõe aplicação web, Node.js, GitHub, Supabase ou fornecedor de IA. Não renumera P00–P28.</p>
+<h2>Três marcos e verificações durante o trabalho</h2>
+<div class="ops-table"><table>
+<thead>
+<tr>
+<th>Momento</th>
+<th>Objetivo</th>
+<th>Evento lógico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INÍCIO — antes do primeiro lote de implementação</td>
+<td>Escopo, ameaças, dados, permissões, stack, controles e plano de cobertura. Sem código ainda, revisar o desenho sem inventar varredura.</td>
+<td>project-start</td>
+</tr>
+<tr>
+<td>MEIO — primeiro incremento integrado, depois por marco relevante</td>
+<td>Rever interfaces entre módulos, regras compartilhadas, regressões e cobertura acumulada. Não é uma porcentagem arbitrária do cronograma.</td>
+<td>integration-review</td>
+</tr>
+<tr>
+<td>FIM — antes de cada publicação</td>
+<td>Rever o candidato exato, achados, testes, configuração, revisão independente e recuperação.</td>
+<td>pre-release</td>
+</tr>
+<tr>
+<td>DURANTE — cada lote/módulo e saída de etapa</td>
+<td>Checks direcionados ao delta, chamadores e fronteiras afetadas; política do evento determina o que é obrigatório.</td>
+<td>module-complete / phase-exit</td>
+</tr>
+<tr>
+<td>DURANTE — versionamento e manutenção</td>
+<td>Checks rápidos locais, CI na revisão proposta e atualização periódica de advisories.</td>
+<td>pre-commit / pre-push / pull-request / scheduled</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Não é uma auditoria total em cada edição de arquivo.</strong> Checks rápidos usam ferramentas determinísticas. Uma revisão aprofundada usa S01, por risco e escopo. Isso reduz repetição e consumo sem dispensar controles.</p>
+<h2>Comando de entrada</h2>
+<pre><code class="language-text">Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/modulos/seguranca/read.md
+
+Modo: AUDIT.
+Organize a campanha de segurança deste projeto no início, nos marcos intermediários e antes de publicar. Comece pelo estado atual e pelas superfícies de maior risco.
+Preserve o código; testes ativos desativados. Não instale ferramentas ou hooks durante a auditoria. Apresente evidências, cobertura e o primeiro lote recomendado.
+</code></pre>
+<p>A campanha avançada é opt-in: autorizar uma campanha para o projeto pode cobrir seus marcos e lotes definidos, sem novas colagens, mas não autoriza FIX, alvos adicionais, custos ou testes ativos. A segurança básica permanece transversal ao método. No onboarding, planejar os controles; não iniciar o workflow avançado silenciosamente. A solicitação para publicar esta biblioteca não inicia auditorias dos aplicativos.</p>
+<h2>Modos distintos</h2>
+<div class="ops-table"><table>
+<thead>
+<tr>
+<th>Modo</th>
+<th>Ação</th>
+<th>Muda o projeto?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AUDIT</td>
+<td>Inventário, modelo de ameaças, análise e achados</td>
+<td>Não</td>
+</tr>
+<tr>
+<td>PLAN</td>
+<td>Plano e comando detalhado do primeiro lote</td>
+<td>Não</td>
+</tr>
+<tr>
+<td>FIX</td>
+<td>Correção dos achados/lotes explicitamente selecionados</td>
+<td>Somente o autorizado</td>
+</tr>
+<tr>
+<td>VERIFY</td>
+<td>Reteste dos achados e comparação com o critério</td>
+<td>Não</td>
+</tr>
+</tbody>
+</table></div>
+<p>Código alterado não é correção comprovada em produção. NOT_RUN, timeout, erro e job ignorado não viram PASS. Relatórios e recibos ficam privados. Sem garantia de ausência de invasões.</p>
+<h2>Conteúdo do módulo</h2>
+<p><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/seguranca/read.md">Entrada S01</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/seguranca/POR_ETAPAS.md">Roteiro e rastreabilidade</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/seguranca/hooks/README.md">Hooks e implantação</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/seguranca/templates/README.md">Templates</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/seguranca/FONTES.md">Fontes</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/seguranca/validacao/RESULTADOS.md">Validação</a></p>
+<p>O verificador de recibos e os wrappers foram feitos para integração posterior. Não contêm scanners, não iniciam modelos, não instalam ferramentas e não configuram CI. <strong>PASS valida os campos do recibo; não autentica seu produtor nem certifica a aplicação.</strong> Um job confiável precisa produzir e conferir a evidência real fora do alcance de quem implementou a mudança.</p>
+<p><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/politicas/SEGURANCA_ENGENHARIA.md">Política transversal</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/README.md">Central</a></p>
+<p><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/seguranca/README.md">Ler fonte no GitHub ↗</a></p></article></main><footer><span>Engenharia Cadu <b>© 2026</b></span><span>Documentação pública. Operação protegida.</span><a href="../../licenciamento.html">Direitos & atribuição ↗</a></footer></div><div id="toast" role="status" aria-live="polite"></div></body></html>

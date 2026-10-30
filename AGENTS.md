@@ -21,3 +21,7 @@ Consultar `politicas/SEGURANCA_ENGENHARIA.md` e `politicas/BACKUP_DRIVE.md`. Dec
 Roteiro em `orquestracao/rotas.json`. P13/P14/P15 repetem por incremento; P17 e especializações são opcionais. Não impor P01–P28 em fila única. Fim do escopo encerra a missão. Sessão interrompida não continua por texto: supervisor e conexão Drive precisam existir no host real.
 
 Scripts editoriais desta biblioteca não são agentes executores, controle de segurança ou supervisor. Não criar/alterar workflows bloqueados pelo ambiente para publicar conteúdo. Publicação, licenciamento e alterações operacionais conservam suas alçadas.
+
+## Módulo opt-in S01
+
+`modulos/seguranca/` contém o comando universal e a campanha por marcos início/meio/fim com checks durante cada lote. Procedimento avançado somente quando solicitado para o projeto ou coberto por uma campanha expressamente autorizada. Não executar automaticamente em todo P01 nem converter AUDIT em FIX. Os arquivos `.example` são inativos. O verificador testa recibos, não a segurança da aplicação; seus testes sintéticos não homologam hooks instalados. Preservar as fontes universais e os 29 prompts.

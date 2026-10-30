@@ -114,3 +114,9 @@ Inspirado no [Vibe Coding Toolkit de Matheus Gomes](https://github.com/soumatheu
 
 ## Manutenção
 `p/` e documentos são canônicos. Site e downloads são derivados. Leia [guia do site](site-src/README.md). Atualizações do método não alteram projetos em execução automaticamente.
+
+## Segurança no início, durante e no fim
+
+O novo **[módulo S01](modulos/seguranca/README.md)** reúne o comando universal de auditoria, campanha por lotes e pontos de verificação: início, incrementos intermediários, pré-release e checks durante o desenvolvimento. [Abrir guia visual](https://carlosemox.github.io/engenharia-cadu/guia/auditoria/).
+
+Auditar, planejar, corrigir e verificar continuam modos separados. Hooks fornecidos são exemplos inativos e verificador de recibos testável; cada aplicativo precisa de implantação autorizada, scanners/testes reais e controles de CI/servidor. Nenhuma promessa de invulnerabilidade. Não renumera P00–P28.

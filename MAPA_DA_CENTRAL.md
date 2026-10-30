@@ -20,3 +20,12 @@ Uma fonte por assunto. A biblioteca orienta; o ambiente e os testes demonstram o
 - Cada aplicativo: seu código, requisitos, dados de configuração não secretos, testes e runbooks.
 
 Relatórios reais, IDs de pastas de backup e recibos detalhados ficam no perfil privado. O site não navega pelo Drive e não executa prompts. Iniciar uma tarefa não autoriza migração, produção ou contratação por implicação.
+
+## Auditoria incremental S01
+
+- [Módulo e marcos](modulos/seguranca/README.md): início, meio, fim e verificação por lote.
+- [Comando de entrada](modulos/seguranca/read.md) e [prompt universal integral](modulos/seguranca/PROMPT_UNIVERSAL.md).
+- [Hooks e contrato de implantação](modulos/seguranca/hooks/README.md): exemplos separados de controles instalados.
+- [Página do módulo](https://carlosemox.github.io/engenharia-cadu/guia/auditoria/).
+
+Atualização das políticas existentes permanece no mesmo arquivo; o módulo novo fica separado em `modulos/seguranca/`. Relatórios reais ficam privados, fora da central.

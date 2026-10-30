@@ -12,3 +12,9 @@
 
 ## 2.2.1 — organização editorial de 30/10/2026
 Navegação única para continuidade, segurança, backup e implantação; página P01 integrada e comando completo copiável; mapa de fontes; templates de revisão e recibo. Preservados IDs P00–P28 e políticas operacionais. Esta publicação não ativa runtime, auditoria dos aplicativos ou backups automáticos.
+
+## Módulo S01 — 30/10/2026
+- Novo módulo de auditoria incremental, preservando o prompt universal fornecido pelo usuário.
+- Três marcos (início, meio e pré-release) e nove eventos lógicos; modos AUDIT/PLAN/FIX/VERIFY separados.
+- Verificador determinístico de recibos, wrappers inativos e testes sintéticos, sem scanners/CI instalados nos aplicativos.
+- Políticas e índices existentes atualizados no mesmo caminho; P00–P28 e workflows preservados.

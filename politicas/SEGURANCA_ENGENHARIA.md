@@ -35,3 +35,11 @@ Fontes oficiais: [OWASP ASVS](https://asvs.owasp.org/), [Codex seguro](https://o
 
 ## Registro de execução
 Use o [template de revisão](../templates/REVISAO_SEGURANCA.md) em destino privado e confira o [estado operacional](../OPERACAO.md).
+
+## Campanha por marcos e hooks S01
+
+Adotar três marcos de segurança no perfil do projeto: **início**, antes do primeiro lote; **meio**, no primeiro incremento integrado e depois nas mudanças materiais de fronteiras; **fim**, antes de cada release. Durante o trabalho, checks proporcionais no fechamento de lote/módulo, saída de etapa, Git/CI e revisão periódica quando implantados. Não usar percentual de prazo como marco técnico.
+
+O [módulo S01](../modulos/seguranca/README.md) preserva o comando universal completo e separa AUDIT/PLAN/FIX/VERIFY. Campanha avançada requer autorização explícita para o projeto/escopo; ela pode cobrir os marcos e lotes definidos sem repetição de aprovação, mas não autoriza correções, testes ativos ou publicação implicitamente. Planejar essa cobertura no início não significa executar um scan de um produto ainda inexistente.
+
+Os [hooks](../modulos/seguranca/hooks/README.md) verificam eventos e recibos; não são scanners nem autorização. Somente checks realmente executados por produtor confiável geram evidência. Missing/timeout/erro/skipped e cobertura essencial ausente bloqueiam a passagem dependente. Gancho local pode ser contornado; CI e proteção de merge/publicação precisam de implantação e verificação específicas. Não instalar nada automaticamente no onboarding nem modificar hooks em modo AUDIT.

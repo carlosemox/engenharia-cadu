@@ -1,0 +1,26 @@
+#!/bin/sh
+# Inactive, reviewed example. No scanners, eval, network, install or model calls.
+set -eu
+block() {
+ printf '%s\n' '{"schema_version":"1.0","decision":"BLOCKED","reasons":["hook_context_missing_or_invalid"],"receipt_validation_only":true}'
+ exit 2
+}
+[ "$#" -eq 1 ] || block
+case "$1" in
+ project-start|integration-review|module-complete|phase-exit|pre-commit|pre-push|pull-request|pre-release|scheduled) ;;
+ *) block ;;
+esac
+[ -n "${CADU_SECURITY_PYTHON:-}" ] && [ -n "${CADU_SECURITY_GATE:-}" ] &&
+ [ -n "${CADU_PROJECT_ROOT:-}" ] && [ -n "${CADU_SECURITY_POLICY:-}" ] &&
+ [ -n "${CADU_SECURITY_RECEIPT:-}" ] && [ -n "${CADU_SECURITY_POLICY_SHA256:-}" ] &&
+ [ -n "${CADU_SECURITY_SNAPSHOT:-}" ] || block
+for value in "$CADU_SECURITY_PYTHON" "$CADU_SECURITY_GATE" "$CADU_PROJECT_ROOT" "$CADU_SECURITY_POLICY" "$CADU_SECURITY_RECEIPT"; do
+ case "$value" in /*) ;; *) block ;; esac
+done
+[ -x "$CADU_SECURITY_PYTHON" ] && [ -f "$CADU_SECURITY_GATE" ] &&
+ [ -d "$CADU_PROJECT_ROOT" ] || block
+exec "$CADU_SECURITY_PYTHON" "$CADU_SECURITY_GATE" \
+ --policy "$CADU_SECURITY_POLICY" --receipt "$CADU_SECURITY_RECEIPT" \
+ --event "$1" --snapshot "$CADU_SECURITY_SNAPSHOT" \
+ --project-root "$CADU_PROJECT_ROOT" \
+ --expected-policy-sha256 "$CADU_SECURITY_POLICY_SHA256"

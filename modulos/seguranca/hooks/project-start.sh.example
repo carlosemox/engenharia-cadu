@@ -1,0 +1,4 @@
+#!/bin/sh
+# Logical-event wrapper; inactive until adapted and explicitly installed.
+set -eu
+exec sh "$(dirname -- "$0")/entrypoint.sh.example" project-start

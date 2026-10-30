@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "kind": "logical_events_not_installed_hooks",
+  "automatic_enable": false,
+  "milestones": {
+    "begin": "project-start",
+    "middle": "integration-review",
+    "end": "pre-release"
+  },
+  "events": [
+    {
+      "id": "project-start",
+      "candidate_checks": [
+        "threat-model",
+        "scope-and-controls"
+      ]
+    },
+    {
+      "id": "integration-review",
+      "candidate_checks": [
+        "cross-boundary-review",
+        "security-regression",
+        "supply-chain"
+      ]
+    },
+    {
+      "id": "module-complete",
+      "candidate_checks": [
+        "secrets",
+        "security-regression",
+        "change-review"
+      ]
+    },
+    {
+      "id": "phase-exit",
+      "candidate_checks": [
+        "phase-security-coverage"
+      ]
+    },
+    {
+      "id": "pre-commit",
+      "candidate_checks": [
+        "staged-secrets",
+        "staged-static-checks"
+      ]
+    },
+    {
+      "id": "pre-push",
+      "candidate_checks": [
+        "candidate-tests",
+        "secrets"
+      ]
+    },
+    {
+      "id": "pull-request",
+      "candidate_checks": [
+        "security-regression",
+        "secrets",
+        "supply-chain"
+      ]
+    },
+    {
+      "id": "pre-release",
+      "candidate_checks": [
+        "release-coverage",
+        "deployment-review",
+        "security-regression",
+        "restore-evidence"
+      ]
+    },
+    {
+      "id": "scheduled",
+      "candidate_checks": [
+        "current-advisories",
+        "runtime-support"
+      ]
+    }
+  ]
+}
