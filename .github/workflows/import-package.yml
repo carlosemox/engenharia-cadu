@@ -1,0 +1,56 @@
+name: Importar pacote documental verificado
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: importar-pacote-inicial
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.actor == github.repository_owner && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      RELEASE_TAG: pacote-v2.1.0
+      ASSET_NAME: engenharia-cadu-publicacao.zip
+      PACKAGE_SHA256: 65e4fabfb18160939bdb2a4b53aaa287dbe0b98fd52c9325ed7424e002959cc5
+    steps:
+      - name: Checkout do candidato
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+      - name: Verificar importador
+        run: python3 -m unittest discover -s tests -p 'test_import_package.py' -v
+      - name: Baixar pacote do proprio repositorio
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/cadu-package"
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern "$ASSET_NAME" --dir "$RUNNER_TEMP/cadu-package"
+      - name: Validar hash, manifesto e destinos
+        run: |
+          python3 scripts/import_package.py --archive "$RUNNER_TEMP/cadu-package/$ASSET_NAME" --sha256 "$PACKAGE_SHA256" --root "$GITHUB_WORKSPACE" --prefix "${GITHUB_REPOSITORY#*/}" --paths-file "$RUNNER_TEMP/imported-paths.txt"
+      - name: Conferir documentos e sintaxe
+        run: |
+          python3 scripts/validate.py
+          node --check docs/assets/site.js
+      - name: Publicar somente arquivos verificados
+        run: |
+          git add --pathspec-from-file="$RUNNER_TEMP/imported-paths.txt" --pathspec-file-nul
+          python3 - <<'PY'
+          import hashlib,json,subprocess
+          from pathlib import Path
+          files=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          manifest={n:hashlib.sha256(Path(n).read_bytes()).hexdigest() for n in sorted(files) if n and n!='MANIFEST_SHA256.json'}
+          Path('MANIFEST_SHA256.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+          PY
+          git add -- MANIFEST_SHA256.json
+          if git diff --cached --quiet; then
+            echo 'Pacote ja aplicado; nenhuma alteracao.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'docs: publica central, site e 29 prompts verificados'
+          git push origin HEAD:main
+          printf '## Publicacao documental\n\nCommit: `%s`\n\nHash do pacote: `%s`\n' "$(git rev-parse HEAD)" "$PACKAGE_SHA256" >> "$GITHUB_STEP_SUMMARY"
