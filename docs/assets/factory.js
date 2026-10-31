@@ -18,6 +18,12 @@
       status.textContent = '';
     };
     ['mode', 'target', 'request', 'attachment'].forEach(id => byId(id).addEventListener('input', update));
+    document.querySelectorAll('[data-mode]').forEach(button => button.addEventListener('click', () => {
+      byId('mode').value = button.dataset.mode;
+      byId('mode').dispatchEvent(new Event('input', { bubbles: true }));
+      byId('target').focus();
+      window.scrollTo({ top: byId('mode').getBoundingClientRect().top + window.scrollY - 24, behavior: 'smooth' });
+    }));
     update();
   } catch (_) {
     status.textContent = 'Personalização indisponível. Copie o comando padrão ou baixe o procedimento completo.';
