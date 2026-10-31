@@ -8,6 +8,8 @@ ROOT=Path(__file__).resolve().parents[1]
 errors=[];links=0
 def expected_language(path):
  relative=path.relative_to(ROOT).as_posix()
+ if relative.startswith('docs/fabrica/index.en'):return 'en'
+ if relative.startswith('docs/fabrica/index.es'):return 'es'
  if relative.startswith('docs/en/'):return 'en'
  if relative.startswith('docs/es/'):return 'es'
  return 'pt-BR'

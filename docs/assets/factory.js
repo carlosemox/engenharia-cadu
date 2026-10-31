@@ -2,6 +2,12 @@
 (async () => {
   const byId = id => document.getElementById(id);
   const status = byId('status');
+  const language = (document.documentElement && document.documentElement.dataset && document.documentElement.dataset.language) || 'pt';
+  const messages = {
+    pt: { copied: 'Comando copiado.', manual: 'Selecione e copie o texto manualmente.', unavailable: 'Personalização indisponível. Copie o comando padrão ou baixe o procedimento completo.' },
+    en: { copied: 'Command copied.', manual: 'Select and copy the text manually.', unavailable: 'Customization unavailable. Copy the default command or download the full procedure.' },
+    es: { copied: 'Comando copiado.', manual: 'Seleccione y copie el texto manualmente.', unavailable: 'Personalización no disponible. Copie el comando predeterminado o descargue el procedimiento completo.' }
+  }[language] || {};
   try {
     const response = await fetch('routes.json');
     if (!response.ok) throw new Error('catalog unavailable');
@@ -26,16 +32,16 @@
     }));
     update();
   } catch (_) {
-    status.textContent = 'Personalização indisponível. Copie o comando padrão ou baixe o procedimento completo.';
+    status.textContent = messages.unavailable;
   }
   byId('copy').addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(byId('output').value);
-      status.textContent = 'Comando copiado.';
+      status.textContent = messages.copied;
     } catch (_) {
       byId('output').focus();
       byId('output').select();
-      status.textContent = 'Selecione e copie o texto manualmente.';
+      status.textContent = messages.manual;
     }
   });
 })();
