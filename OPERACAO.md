@@ -46,3 +46,7 @@ Cópias históricas já realizadas são registradas privadamente. Elas não demo
 ## Auditoria S01 e hooks
 
 [Módulo S01](modulos/seguranca/README.md) acrescenta início, marcos intermediários e revisão final, além de eventos durante a execução. Procedimentos, templates e verificador de recibos são uma entrega da biblioteca. **Hooks/scanners/CI dos aplicativos: NÃO IMPLANTADOS por esta publicação.** Auditorias de aplicativos: NOT_RUN. A campanha de projeto deve ligar os checks e produtores de evidência reais ao mecanismo de controle e comprovar bloqueios; os exemplos não fazem isso sozinhos.
+
+## Estado V2.3
+
+Fábrica determinística e comandos de assumir/reestruturar são capacidades desta central. Não configuram agentes no computador do usuário, não auditam automaticamente aplicativos e não instalam candidatos de terceiros. O índice de contexto e o checkpoint devem ser adotados em cada projeto autorizado. O case possui protocolo, sem resultados operacionais declarados.

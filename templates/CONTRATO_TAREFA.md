@@ -20,3 +20,7 @@ Ação externa; destino; alçada; ID/idempotência; procedimento para resultado 
 
 ## Retorno
 Estado; artefatos/diff; versão/ambiente; checks realmente executados; achados; pendências; consumo observado; próxima ação. Conclusão do implementador não substitui revisão.
+
+## Recuperação e economia V2.3
+
+Fontes e condições de invalidação; índice derivado e fallback; limite de tentativas; critério observável de progresso; contribuição de cada agente; origem/semântica dos contadores. Preservar status de saída e acesso aos logs completos. Aprendizados candidatos exigem evidência e escopo antes de reutilização.

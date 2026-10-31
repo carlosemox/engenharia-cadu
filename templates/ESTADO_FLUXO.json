@@ -11,11 +11,27 @@
   "security_blockers": [],
   "security_review_reference": null,
   "backup_required": null,
-  "backup": {"status": "PLANNED", "snapshot": null, "receipt": null, "sha256": null},
+  "backup": {
+    "status": "PLANNED",
+    "snapshot": null,
+    "receipt": null,
+    "sha256": null
+  },
   "next_stage": null,
   "next_scope_authorized": false,
   "transitions_remaining": 8,
   "required_approvals": [],
   "observed_approval_refs": {},
-  "notes": "Template inativo. Campos não concedem autorização nem comprovam execução. Limites mais restritivos existentes prevalecem; valor ausente não significa ilimitado. Recibos e evidências precisam de verificação externa ao autorrelato."
+  "notes": "Template inativo. Campos não concedem autorização nem comprovam execução. Limites mais restritivos existentes prevalecem; valor ausente não significa ilimitado. Recibos e evidências precisam de verificação externa ao autorrelato.",
+  "context_index": null,
+  "source_validity": [],
+  "uncommitted_changes_reference": null,
+  "active_task": null,
+  "uncertain_effects": [],
+  "usage": {
+    "status": "NOT_OBSERVED",
+    "source": null,
+    "total_tokens": null,
+    "cost": null
+  }
 }

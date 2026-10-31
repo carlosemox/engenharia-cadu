@@ -12,6 +12,8 @@ R=Path(__file__).resolve().parents[1]
 G='https://github.com/carlosemox/engenharia-cadu/blob/main/'
 BASE='https://carlosemox.github.io/engenharia-cadu/'
 SPECS=[
+ ('contexto','politicas/CONTEXTO_E_MEMORIA.md','Contexto recuperável.','Fontes válidas, tarefas e evidências para continuar.'),
+ ('eficiencia','avaliacoes/CASE_EFICIENCIA.md','Medir antes de afirmar.','Protocolo de avaliação, sem ganhos presumidos.'),
  ('auditoria','modulos/seguranca/README.md','Segurança do primeiro passo ao release.','Três marcos, verificações durante o trabalho e evidências antes de avançar.'),
  ('continuidade','politicas/CONTINUIDADE.md','Um início. Próximos passos claros.','O Codex conduz as etapas autorizadas, com decisões e limites preservados.'),
  ('seguranca','politicas/SEGURANCA_ENGENHARIA.md','Segurança em cada etapa.','Revisão, casos negados e evidências antes de publicar. Sem promessa de invulnerabilidade.'),
@@ -112,6 +114,7 @@ p=R/'docs/index.html';text=p.read_text()
 text=re.sub(r'<!-- CADU-SECURITY-START -->[\s\S]*?<!-- CADU-SECURITY-END -->','',text)
 block='''<!-- CADU-SECURITY-START --><section id="auditoria" class="section ops-section"><div class="section-heading"><div><span class="eyebrow">S01 / SEGURANÇA POR ETAPAS</span><h2>No início. Durante.<br>Antes de publicar.</h2><p>Revisão de desenho, verificação por lote e controle do candidato final. O problema descoberto vira correção delimitada e reteste, não uma aprovação automática.</p></div><a class="text-link" href="guia/auditoria/">Abrir auditoria e hooks →</a></div><div class="ops-grid"><a class="ops-card" href="guia/auditoria/"><small>01 / INÍCIO</small><h3>Desenhar a proteção</h3><p>Dados, ameaças, perfis e controles antes da implementação.</p></a><a class="ops-card" href="guia/auditoria/"><small>02 / DURANTE E MEIO</small><h3>Revisar cada incremento</h3><p>Checks de alteração, interfaces compartilhadas e revisão por risco.</p></a><a class="ops-card" href="guia/auditoria/"><small>03 / PRÉ-RELEASE</small><h3>Verificar antes do GO</h3><p>Candidato identificado, achados, testes, revisão e recuperação.</p></a></div><div class="notice">Módulo de procedimentos e exemplos de hooks. Não significa auditoria realizada ou controles instalados nos aplicativos. Sem promessa de invulnerabilidade.</div></section><!-- CADU-SECURITY-END -->'''
 anchor='<section id="comecar"'
+if anchor not in text:anchor='<section class="chapter" id="comecar"'
 if anchor not in text:raise ValueError('Home anchor absent')
 text=text.replace(anchor,block+anchor,1)
 p.write_text(text,encoding='utf-8')

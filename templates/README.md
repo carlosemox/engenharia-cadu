@@ -15,3 +15,5 @@ Modelos documentais inativos. Campos pendentes não significam autorização ou 
 
 ## Controle entre etapas
 [Estado do fluxo](ESTADO_FLUXO.json) · [Revisão de segurança](REVISAO_SEGURANCA.md) · [Recibo de backup](RECIBO_BACKUP.md). Templates inativos; salvar instâncias reais privadamente.
+
+[Índice de contexto](INDICE_CONTEXTO.md): conecta os registros já existentes sem duplicar perfil, backlog ou checkpoint.

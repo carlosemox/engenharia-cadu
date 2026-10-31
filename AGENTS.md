@@ -25,3 +25,7 @@ Scripts editoriais desta biblioteca não são agentes executores, controle de se
 ## Módulo opt-in S01
 
 `modulos/seguranca/` contém o comando universal e a campanha por marcos início/meio/fim com checks durante cada lote. Procedimento avançado somente quando solicitado para o projeto ou coberto por uma campanha expressamente autorizada. Não executar automaticamente em todo P01 nem converter AUDIT em FIX. Os arquivos `.example` são inativos. O verificador testa recibos, não a segurança da aplicação; seus testes sintéticos não homologam hooks instalados. Preservar as fontes universais e os 29 prompts.
+
+## Entrada e contexto V2.3
+
+Comando único: `comando.md`; geração sem execução: `fabrica/README.md`. Projetos com estudos novos usam `comandos/ASSUMIR_PROJETO.md`; recuperação estrutural usa `comandos/REESTRUTURAR_PROJETO.md`. Aplicar `politicas/CONTEXTO_E_MEMORIA.md` e reutilizar registros existentes. A fábrica determinística é `scripts/prompt_factory.py`; publicar derivados com `scripts/build_factory.py`. Catálogo de candidatos não significa integração instalada. Benchmark do método é distinto de testes editoriais.

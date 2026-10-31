@@ -28,6 +28,8 @@ The goal is not to produce documents for their own sake. It is to turn conversat
 <!-- section:comecar -->
 ## 01 / Start where you are
 
+**New: [prompt factory](../fabrica/README.md) and [CADU universal entry](../comando.md).** Use the Portuguese procedures to reconcile attached studies, take over an existing project, or repair and restructure it within the authorized scope.
+
 | Your situation | Entry point | First outcome |
 |---|---|---|
 | I have an idea or a brief | [P01 — Product discovery](../p/P01.md) | Shared understanding, material gaps and direction for the first version. |

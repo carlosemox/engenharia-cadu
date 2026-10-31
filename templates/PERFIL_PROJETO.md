@@ -25,3 +25,7 @@ Preencher com dados observados/aprovados; A_DEFINIR não significa ausência de 
 | Recuperação | A_DEFINIR | Runbook e evidências |
 
 Secrets ficam em cofre/mecanismo apropriado. Aqui entram apenas nomes e referências. Evidência histórica deve indicar versão, ambiente, data e limites de validade.
+
+## Contexto V2.3
+
+Revisão efetiva do método (SHA); índice curto de fontes; localização da fila/checkpoint existente; anexos reconciliados; decisões conflitantes; mecanismo de consulta opcional e validade; contador de consumo disponível (ou NOT_OBSERVED). Não duplicar fontes existentes.

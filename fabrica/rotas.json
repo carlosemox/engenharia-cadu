@@ -1,0 +1,86 @@
+{
+  "version": "2.3.0",
+  "kind": "prompt_factory_not_execution_runtime",
+  "modes": {
+    "auto": {
+      "label": "Comando único: escolher o caminho",
+      "procedure": "comando.md",
+      "stages": [
+        "P00"
+      ],
+      "goal": "Reconcilie o pedido com o estado real e escolha a próxima tarefa autorizada."
+    },
+    "assumir": {
+      "label": "Assumir projeto com estudo anexado",
+      "procedure": "comandos/ASSUMIR_PROJETO.md",
+      "stages": [
+        "P20",
+        "P21",
+        "P18"
+      ],
+      "goal": "Reconstrua a visão do projeto, reconcilie estudos e implementação e assuma a coordenação."
+    },
+    "reestruturar": {
+      "label": "Diagnosticar, corrigir e reorganizar",
+      "procedure": "comandos/REESTRUTURAR_PROJETO.md",
+      "stages": [
+        "P20",
+        "P21",
+        "P14"
+      ],
+      "goal": "Diagnostique causas, corrija por lotes e reorganize somente o necessário para continuar."
+    },
+    "retomar": {
+      "label": "Retomar do checkpoint",
+      "procedure": "execucao/P18.md",
+      "stages": [
+        "P18"
+      ],
+      "goal": "Reconcilie checkpoint, alterações e processos; continue sem repetir efeitos incertos."
+    },
+    "executar": {
+      "label": "Executar tarefa delimitada",
+      "procedure": "execucao/P13.md",
+      "stages": [
+        "P13"
+      ],
+      "goal": "Execute a tarefa autorizada com contexto direcionado e critérios de aceite."
+    },
+    "revisar": {
+      "label": "Revisar entrega",
+      "procedure": "execucao/P14.md",
+      "stages": [
+        "P14"
+      ],
+      "goal": "Revise requisito, alterações e evidências; registre independência e limites reais."
+    },
+    "auditar": {
+      "label": "Auditar segurança",
+      "procedure": "modulos/seguranca/read.md",
+      "stages": [],
+      "goal": "Audite segurança no escopo autorizado; achados não concedem autorização automática de exploração ou alteração externa."
+    },
+    "medir": {
+      "label": "Comparar eficiência",
+      "procedure": "execucao/P24.md",
+      "stages": [
+        "P24"
+      ],
+      "goal": "Compare a versão candidata com o baseline, incluindo falhas, preparação e todos os agentes."
+    },
+    "novo": {
+      "label": "Iniciar produto novo",
+      "procedure": "execucao/P01.md",
+      "stages": [
+        "P01"
+      ],
+      "goal": "Inicie a entrevista do produto e conduza as próximas etapas autorizadas."
+    },
+    "fabrica": {
+      "label": "Criar comando personalizado",
+      "procedure": "fabrica/README.md",
+      "stages": [],
+      "goal": "Produza um comando curto, rastreável e específico, sem executar seu conteúdo."
+    }
+  }
+}

@@ -28,6 +28,8 @@ La propuesta no consiste en producir documentos por obligación. Consiste en con
 <!-- section:comecar -->
 ## 01 / Empieza donde estás
 
+**Nuevo: [fábrica de prompts](../fabrica/README.md) y [entrada única CADU](../comando.md).** Los procedimientos en portugués permiten conciliar estudios adjuntos, asumir un proyecto o corregir y reorganizarlo dentro del alcance autorizado.
+
 | Tu situación | Entrada | Primer resultado |
 |---|---|---|
 | Tengo una idea o un briefing | [P01 — Descubrimiento del producto](../p/P01.md) | Entendimiento compartido, carencias relevantes y dirección para la primera versión. |

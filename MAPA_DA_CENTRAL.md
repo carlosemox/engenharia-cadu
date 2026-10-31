@@ -29,3 +29,9 @@ Relatórios reais, IDs de pastas de backup e recibos detalhados ficam no perfil 
 - [Página do módulo](https://carlosemox.github.io/engenharia-cadu/guia/auditoria/).
 
 Atualização das políticas existentes permanece no mesmo arquivo; o módulo novo fica separado em `modulos/seguranca/`. Relatórios reais ficam privados, fora da central.
+
+## Entradas V2.3
+
+- [Comando único](comando.md) e [fábrica](fabrica/README.md).
+- [Assumir projeto](comandos/ASSUMIR_PROJETO.md) e [reestruturar](comandos/REESTRUTURAR_PROJETO.md).
+- [Memória](politicas/CONTEXTO_E_MEMORIA.md), [índice de contexto](templates/INDICE_CONTEXTO.md) e [case](avaliacoes/CASE_EFICIENCIA.md).

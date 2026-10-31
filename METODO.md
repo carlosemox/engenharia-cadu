@@ -75,3 +75,7 @@ Documentos e prompts preparados; revisão humana de aceite pendente. Nenhum repo
 
 ## Publicação da central
 Esta edição possui um site estático e catálogo público. Isso não implanta clientes nem supervisor. Consulte README para a entrada atual.
+
+## 10. Contexto recuperável e fábrica V2.3
+
+A entrada universal é [comando.md](comando.md). A [fábrica](fabrica/README.md) escolhe um procedimento específico por intenção, sem carregar a biblioteca completa. [Contexto e memória](politicas/CONTEXTO_E_MEMORIA.md) conecta perfil, decisões, tarefa, código e evidências com origem e validade. Estudos novos são reconciliados antes de substituir decisões. O [case de eficiência](avaliacoes/CASE_EFICIENCIA.md) permanece NOT_RUN até experimento comparável.

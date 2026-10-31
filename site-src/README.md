@@ -33,3 +33,9 @@ O validador exige `lang=en` sob `docs/en/`, `lang=es` sob `docs/es/` e `pt-BR` n
 Prévia autorizada: `python -m http.server 8080 --directory docs`. Navegador, teclado, menu, busca, cópia e dimensões precisam de testes interativos próprios; revisão estática não os substitui. Não contornar bloqueios do ambiente. Atualizar o manifesto após a revisão e conferir commit e GitHub Pages separadamente.
 
 Fontes dos guias existentes: políticas, `OPERACAO.md` e módulo S01. Seus corpos também carregam hashes para detectar divergência. O site não executa prompts, instala hooks, ativa backup nem inicia supervisores.
+
+## Fábrica V2.3
+
+Após os geradores acima, execute `python scripts/build_factory.py`. O catálogo canônico fica em `fabrica/rotas.json`; o gerador atualiza a página, os templates do cliente web, os dois downloads e `docs/read.md`. Os assets `factory.js` e `factory.css` são fontes locais. A página apenas gera texto e não envia os campos. Testar CLI, paridade de templates e links; interação no navegador tem evidência separada.
+
+`sync_prompts.py` também gera `execucao/Pxx.md`, mantendo todas as instruções específicas e referenciando o contrato comum uma vez por sessão/revisão. A forma completa em `p/` e seus downloads continua disponível.

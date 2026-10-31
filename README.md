@@ -28,6 +28,8 @@ A proposta não é produzir mais arquivos por obrigação. É transformar conver
 <!-- section:comecar -->
 ## 01 / Comece do ponto em que você está
 
+**Novo: [fábrica de prompts](fabrica/README.md) e [comando único CADU](comando.md).** Para retomar um aplicativo com estudos anexados, use [Assumir projeto](comandos/ASSUMIR_PROJETO.md). Para corrigir e reorganizar, use [Reestruturar projeto](comandos/REESTRUTURAR_PROJETO.md). Os comandos reconciliam o estado antes de executar o autorizado.
+
 | Seu momento | Entrada | O primeiro resultado |
 |---|---|---|
 | Tenho uma ideia ou um briefing | [P01 — Descoberta do produto](p/P01.md) | Entendimento compartilhado, lacunas relevantes e direção para a primeira versão. |

@@ -22,6 +22,7 @@ def link_for(url,src,prefix):
  m=re.fullmatch(r'p/(P\d\d)\.md',path)
  if m:return prefix+'prompts/'+m[1]+'/'
  pages={'politicas/CONTINUIDADE.md':'continuidade','politicas/SEGURANCA_ENGENHARIA.md':'seguranca','politicas/BACKUP_DRIVE.md':'backup','politicas/ECONOMIA_ASTRA.md':'economia','OPERACAO.md':'operacao','modulos/seguranca/README.md':'auditoria'}
+ if path=='fabrica/README.md':return prefix+'fabrica/'
  if path in pages:return prefix+'guia/'+pages[path]+'/'
  return GITHUB+path+('#'+u.fragment if u.fragment else '')
 def render_md(source,src,prefix):

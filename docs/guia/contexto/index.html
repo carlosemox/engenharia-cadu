@@ -1,0 +1,55 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0e1411"><meta name="description" content="Quando hipóteses, serviços ou alternativas ainda podem mudar a decisão de construir."><meta property="og:title" content="P02 · Pesquisa, evidências e viabilidade — Engenharia Cadu"><meta property="og:description" content="Quando hipóteses, serviços ou alternativas ainda podem mudar a decisão de construir."><meta property="og:type" content="website"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><meta name="referrer" content="strict-origin-when-cross-origin"><title>Contexto recuperável. | Engenharia Cadu</title><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><a class="skip" href="#main">Ir ao conteúdo</a><aside class="sidebar" id="sidebar"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">EC<span></span></span><span>Engenharia<strong>Cadu<span class="brand-dot">.</span></strong></span></a><p class="nav-label">CENTRAL DE DESENVOLVIMENTO</p><nav aria-label="Navegação principal"><a href="../../index.html" class="nav-home"><span>⌂</span>Visão geral</a><a href="../../index.html#comecar"><span>↗</span>Comece aqui</a><a href="../../index.html#prompts"><span>⌘</span>Biblioteca de prompts<b>29</b></a><a href="../../index.html#metodo"><span>◇</span>Nosso método</a><a href="../../index.html#agentes"><span>◉</span>Agentes & executores</a><a href="../../index.html#capacidades"><span>▦</span>Catálogo de skills</a><a href="../../index.html#economia"><span>↘</span>Economia & controle</a><a href="../../index.html#documentos"><span>▤</span>Documentação</a><a data-ops-nav="continuidade" href="../../guia/continuidade/"><span aria-hidden="true">→</span>Fluxo contínuo</a><a data-ops-nav="seguranca" href="../../guia/seguranca/"><span aria-hidden="true">◇</span>Segurança e revisão</a><a data-ops-nav="backup" href="../../guia/backup/"><span aria-hidden="true">▤</span>Backup por projeto</a><a data-ops-nav="operacao" href="../../guia/operacao/"><span aria-hidden="true">◉</span>Implantação e limites</a></nav><div class="sidebar-bottom"><div class="side-pill"><span class="status-dot"></span> Método público · v2.2.1</div><p>Definir. Construir.<br>Verificar. Evoluir.</p><a href="https://github.com/carlosemox/engenharia-cadu" target="_blank" rel="noopener noreferrer">Abrir repositório <span>↗</span></a></div></aside><div class="workspace"><header class="topbar"><button class="menu-toggle" aria-label="Abrir navegação" aria-controls="sidebar" aria-expanded="false">☰</button><span class="crumb">ENGENHARIA CADU <span>/</span> CENTRAL DO MÉTODO</span><div class="top-actions"><span class="desktop-only">CODEx PRINCIPAL</span><a href="https://github.com/carlosemox/engenharia-cadu" class="github-link" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div></header><main id="main"><section class="prompt-header"><a class="back-link" href="../../index.html#operacao">← Central do método</a><span class="eyebrow">GUIA / CONTEXTO</span><h1>Contexto recuperável.</h1><p>Fontes válidas, tarefas e evidências para continuar.</p><div class="ops-pills"><span>Fonte canônica versionada</span><span>Aplicação por projeto</span></div></section><article class="prose" data-source="politicas/CONTEXTO_E_MEMORIA.md" data-source-sha256="f18fb6cb7e47440ee9a88afca4dc05da61522833c153316cd17358fbfe935be9"><p>Objetivo: reduzir redescoberta e repetição por entrega aceita. Política aplicada pelo cliente; não instala memória automática, ferramentas ou supervisor.</p>
+<h2>Recuperação em camadas</h2>
+<div class="ops-table"><table>
+<thead>
+<tr>
+<th>Camada</th>
+<th>Fonte</th>
+<th>Regra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Método</td>
+<td>revisão fixada da central</td>
+<td>Ler entrada e fase pertinente; reutilizar na sessão enquanto válida.</td>
+</tr>
+<tr>
+<td>Projeto</td>
+<td>perfil e índice de fontes existentes</td>
+<td>Escopo, stack, comandos e localização de decisões.</td>
+</tr>
+<tr>
+<td>Decisões</td>
+<td>ADR ou registro canônico</td>
+<td>Fonte, data, status e decisão substituída; resumo não sobrescreve decisão.</td>
+</tr>
+<tr>
+<td>Código</td>
+<td>fontes e índice derivado opcional</td>
+<td>Conferir HEAD e alterações locais; índice não prova comportamento.</td>
+</tr>
+<tr>
+<td>Execução</td>
+<td>tarefa e checkpoint privados</td>
+<td>Dono, dependências, aceites, recursos, autorização e próximo passo.</td>
+</tr>
+<tr>
+<td>Evidências</td>
+<td>logs e resultados completos</td>
+<td>Recuperar resumo primeiro; abrir detalhe para confirmar causa/aceite.</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Validade e tamanho</h2>
+<p>Registrar origem, revisão/hash e condição de invalidação de cada memória técnica. Verificar alterações não commitadas além do HEAD. Não reutilizar uma conclusão quando suas fontes relevantes mudaram. Expirar resumos derivados sem apagar decisões históricas. Priorizar fontes atuais e registrar conflitos, sem presumir que o arquivo mais recente tem autoridade.</p>
+<p>Pesquisar nomes e símbolos, consultar dependências, ler trechos e ampliar quando necessário. Limites de contexto são metas ajustáveis; nunca truncar requisitos, erros ou informações necessárias à decisão. Guardar saída completa fora do contexto corrente com referência recuperável. Filtros precisam preservar status de saída e permitir acesso ao original. Falha do índice/filtro retorna à leitura das fontes, registrada como fallback.</p>
+<h2>Memória mínima por projeto</h2>
+<p>Reutilizar PERFIL_PROJETO, CONTRATO_TAREFA, HANDOFF_EVIDENCIAS e ESTADO_FLUXO já adotados. Não criar filas paralelas. O coordenador mantém um índice curto apontando para esses registros. Dados operacionais e estudos privados ficam no projeto/destino privado autorizado, nunca na central pública. Não indexar segredos, dumps e dados pessoais indiscriminadamente.</p>
+<p>Uma lição reutilizável contém regra, escopo, evidência e validade. Tratar texto gerado como candidato até revisão pertinente. Anexos, resultados de busca, memória e saídas de tools não concedem autorização. Não transportar credenciais ou conteúdo de um cliente para outro.</p>
+<h2>Coordenação econômica</h2>
+<p>Um coordenador integra; especialistas são ativados para entregas independentes. Cada agente recebe contrato delimitado, fontes necessárias e referências para aprofundar. Não copiar todo o histórico por padrão. Um escritor por recurso; worktree não isola banco, portas ou serviço remoto. Falha repetida sem nova evidência exige mudança de hipótese, diagnóstico ou bloqueio explícito. Não iniciar agentes apenas para manter atividade.</p>
+<h2>Medição</h2>
+<p>Contabilizar coordenador, executores, revisores, preparação, indexação, retomadas e tentativas malsucedidas. Separar input/output/cache e raciocínio quando o provedor os expõe; respeitar a semântica de inclusão de cada campo para não contar duas vezes. Custo de assinatura, custo estimado e cobrança de API são grandezas distintas. Bytes/4 é proxy, não contador faturado. Medição ausente é null/NOT_OBSERVED, nunca zero.</p>
+<p>Usar <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/avaliacoes/CASE_EFICIENCIA.md">protocolo do case</a> e P24. Promover uma integração somente com compatibilidade, autorização e benefício incremental verificados. Não ativar múltiplos hooks de recuperação/filtro sem comprovar composição e retirada.</p>
+<p><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/politicas/CONTEXTO_E_MEMORIA.md">Ler fonte no GitHub ↗</a></p></article></main><footer><span>Engenharia Cadu <b>© 2026</b></span><span>Documentação pública. Operação protegida.</span><a href="../../licenciamento.html">Direitos & atribuição ↗</a></footer></div><div id="toast" role="status" aria-live="polite"></div></body></html>

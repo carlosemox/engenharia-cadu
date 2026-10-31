@@ -1,5 +1,12 @@
 # Histórico
 
+## 2.3.0 — 31/10/2026
+
+- Entrada única CADU, fábrica local/web e comandos completos para assumir estudos e reestruturar projetos.
+- Contexto por fontes e validade, contratos de tarefas, retomada e segurança integrados aos 29 procedimentos.
+- Catálogo documental de candidatos e protocolo reproduzível do case de eficiência, ainda NOT_RUN.
+- Kit de adoção conectado por revisão fixada; nenhuma instalação de terceiros ou migração de aplicativos por implicação.
+
 ## 2.1.0 — Central publicável
 - Biblioteca V2 completa preservada com caminhos curtos `p/P00.md` a `p/P28.md`.
 - Site estático com busca, filtros, explicação por etapa, atalhos Read e cópia do comando completo.
