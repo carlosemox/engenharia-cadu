@@ -27,3 +27,8 @@ CADU: recupere o estado do projeto aberto e continue a próxima tarefa autorizad
 ```
 
 O coordenador recupera perfil, fontes e checkpoint antes de selecionar a etapa. A aprovação de um lote é preservada; instalação global, efeitos externos e acesso a outros projetos continuam dependentes do escopo real.
+
+
+## Runtime V3 — Astra 6
+
+Todos os procedimentos P00–P30 carregam o Contrato Comum V3 uma vez por sessão. A execução usa Harness, Loop e Graph: contexto progressivo, ciclos limitados, dependências explícitas, checkpoint e atualização contínua do projeto. Não carregue a biblioteca inteira. Para tarefas longas, use o P30; para retomar, use o P18; para medir, use o P24.
