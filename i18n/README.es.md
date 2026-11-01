@@ -252,7 +252,7 @@ Sin acceso al entorno, el agente puede explicar y especificar, pero no comprobar
 
 Cuando un proyecto revela una mejora, extrae la parte reutilizable, elimina los datos internos, comprueba la licencia y revisa antes de incorporarla al método público. Las actualizaciones permanecen en sus fuentes oficiales; los temas nuevos reciben un lugar propio. La operación privada no se replica automáticamente.
 
-Engenharia Cadu se inspira en la organización de **[Vibe Coding Toolkit, de Matheus Gomes](https://github.com/soumatheusgomes/vibe-coding-toolkit)** y adapta esa referencia a las decisiones de esta central. No se presume afiliación ni respaldo. Se conserva el aviso de licencia del toolkit; los demás componentes mantienen sus propios términos. La central no hereda automáticamente una licencia MIT para todo su contenido. [Licencias y atribuciones](../LICENCIAMENTO.md).
+Los materiales originales de Engenharia Cadu son autoría de Carlos Eduardo do Amaral. Los derechos sobre los materiales propios permanecen reservados salvo indicación expresa en contrario. [Derechos de autor y atribuciones](../LICENCIAMENTO.md).
 
 El mejor punto de partida es el siguiente resultado útil: comprender el producto, recuperar un recorrido o preparar una base verificable. Elige la entrada, aporta tu contexto y mantén visibles las decisiones importantes.
 
