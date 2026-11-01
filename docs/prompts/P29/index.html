@@ -1,0 +1,44 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="P29"><title>P29 · P29 — Engenharia Cadu</title><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><main id="main"><a href="../../index.html#prompts">← Biblioteca de prompts</a><p>P29</p><h1>P29</h1><p>Procedimento modernizado para Harness, Loop e Graph, com contexto progressivo, verificação e checkpoint.</p><section><h2>Atalho para o agente</h2><pre id="shortcut-text">Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P29.md e execute somente a etapa solicitada no projeto-alvo, respeitando escopo e autorizações.</pre></section><section><h2>Comando completo</h2><pre id="full-command"># P29 — Proteção contra exposição, clonagem e engenharia reversa
+
+## Finalidade
+
+Auditar e reduzir a exposição de código, regras comerciais, segredos, modelos de dados, prompts, integrações e artefatos publicados. O objetivo é aumentar o custo da clonagem e reduzir o impacto de uma cópia, sem prometer invulnerabilidade.
+
+## Regra central
+
+Tudo que chega ao navegador, aplicativo ou dispositivo do cliente deve ser tratado como potencialmente inspecionável. Segredos, autorização, cálculos críticos e regras estratégicas permanecem no servidor.
+
+## Fluxo obrigatório
+
+`INVENTARIAR → AUDITAR → CORRIGIR → PROTEGER → VERIFICAR → TESTAR → PUBLICAR`
+
+## Verificações
+
+- segredos, tokens, chaves e variáveis públicas;
+- sourcemaps, arquivos de debug e mensagens internas;
+- lógica crítica executada somente no cliente;
+- autenticação, autorização e rate limiting;
+- dependências, scripts e alterações globais;
+- hashes, assinatura e rastreabilidade do build;
+- compatibilidade e impacto de qualquer ferramenta de hardening;
+- rollback e recuperação do artefato original.
+
+## BLA — uso controlado
+
+O Blind LLM Agents (BLA) pode ser avaliado como camada opcional para artefatos próprios, especialmente JavaScript compilado, Electron, WASM, binários e modelos. Suas alegações devem ser separadas entre validação empírica contra REA e estimativas internas. Não instalar globalmente, não proteger produção diretamente e não tratar o BLA como substituto de arquitetura server-side.
+
+## Critérios de aceite
+
+- nenhum segredo no cliente;
+- sourcemaps privados ou removidos da publicação;
+- regras críticas validadas no servidor;
+- testes funcionais e de segurança aprovados;
+- artefato original preservado;
+- hash e versão registrados;
+- rollback comprovado;
+- evidências classificadas como PASS, FAIL, NOT_RUN ou INCONCLUSIVE.
+
+## Limite
+
+Nenhuma proteção de cliente impede completamente análise humana ou cópia de uma aplicação pública. A decisão de release deve registrar os riscos residuais.
+</pre></section><p>Estado operacional: NOT_RUN até piloto no cliente/projeto.</p><a href="../../comandos/P29.txt">Baixar comando</a> · <a href="../../../p/P29.md">Fonte canônica</a></main></body></html>
