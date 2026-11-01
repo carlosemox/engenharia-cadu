@@ -9,7 +9,7 @@ Registro de 30/10/2026. Escopo: navegação, guias, fontes, templates e document
 
 ## Conferências realizadas
 - 27 testes automatizados passaram (contratos documentais, organização e importador); oito casos de organização falharam antes da implementação e passaram depois.
-- 29 prompts preservados; 39 páginas HTML; 1.833 referências locais verificadas sem erro.
+- 31 prompts preservados; 39 páginas HTML; 1.833 referências locais verificadas sem erro.
 - 207 arquivos do candidato central comparados aos blobs Git, sem divergência.
 - 42 páginas/recursos da central responderam HTTP 200, com bytes iguais aos arquivos preparados.
 - Página de adoção respondeu HTTP 200 e correspondeu ao arquivo preparado.
