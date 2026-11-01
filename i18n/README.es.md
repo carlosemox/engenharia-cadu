@@ -236,7 +236,7 @@ Los proyectos existentes preservan sus tecnologías, base de datos, contratos y 
 
 | Capacidad | Estado y condición |
 |---|---|
-| P00–P28 y S01 | Biblioteca publicada; su eficacia en tu proyecto requiere ejecución y evaluación. |
+| P00–P30 y S01 | Biblioteca publicada (P00–P30); su eficacia en tu proyecto requiere ejecución y evaluación. |
 | Continuidad entre etapas | Instrucción del coordinador; depende de sesión, contexto y autorizaciones. |
 | Hooks y controles de seguridad | Ejemplos y políticas; instalación y bloqueos reales deben probarse. |
 | Backup automático | Política definida; conexión, cobertura y restauración requieren implantación. |
