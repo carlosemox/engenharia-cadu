@@ -6,7 +6,7 @@
 
 | Capacidade | Situação desta entrega | O que permite afirmar funcionamento |
 |---|---|---|
-| Biblioteca P00–P28 | Documentos publicados | Leitura da mesma revisão pelo executor |
+| Biblioteca P00–P30 | Documentos publicados | Leitura da mesma revisão pelo executor |
 | Continuidade começando no P01 | Procedimento documentado | Pilotar transições na sessão real, com entradas, aceite e alçadas |
 | Revisão de segurança | Política e template publicados | Avaliação do candidato e ambiente específicos; testes dos aplicativos: NOT_RUN nesta entrega |
 | Backup no Drive por projeto | Política publicada; cópias históricas não equivalem ao estado atual | Captura completa do escopo, envio, conferência de integridade e recibo |
