@@ -2,7 +2,7 @@
 
 ## Verificado nesta entrega
 
-- 29 procedimentos canônicos preservados; texto completo conferido contra os downloads derivados.
+- 31 procedimentos canônicos preservados; texto completo conferido contra os downloads derivados.
 - 35 páginas HTML estáticas.
 - 1.712 referências locais verificadas, sem destinos ausentes no escopo da checagem.
 - Sintaxe JavaScript validada com Node.js.
