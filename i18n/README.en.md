@@ -252,7 +252,7 @@ Without environment access, an agent can explain and specify, but cannot prove c
 
 When a project reveals an improvement, extract the reusable part, remove internal data, check the license and review it before adding it to the public method. Updates stay in their canonical sources; new subjects receive a distinct home. Private operations are not automatically mirrored.
 
-Engenharia Cadu draws inspiration from the organization of **[Vibe Coding Toolkit, by Matheus Gomes](https://github.com/soumatheusgomes/vibe-coding-toolkit)** and adapts that reference to this central repository's decisions. No affiliation or endorsement is implied. The toolkit's license notice is preserved; other components retain their own terms. This repository does not automatically inherit an MIT license for all its content. [Licensing and attribution](../LICENCIAMENTO.md).
+Original Engenharia Cadu materials are authored by Carlos Eduardo do Amaral. Rights to the original materials remain reserved unless expressly stated otherwise. [Copyright and attribution](../LICENCIAMENTO.md).
 
 The best starting point is the next useful outcome: understand the product, recover a journey or prepare a verifiable foundation. Choose an entry point, provide your context and keep important decisions visible.
 
