@@ -3,7 +3,7 @@
 Data: 31/10/2026. Escopo: central de método, geradores, site estático e entradas de adoção. Aplicativos de clientes não foram migrados ou auditados nesta verificação.
 
 - Suite Python: 91 testes passaram, incluindo rotas, revisão inválida, dados delimitados, paridade CLI/web, preservação literal dos procedimentos e cliente JavaScript via Node/DOM simulado.
-- Validador: 29 procedimentos canônicos, 46 páginas HTML, 2.287 links locais, nenhum erro no momento da execução.
+- Validador: 31 procedimentos canônicos, 46 páginas HTML, 2.287 links locais, nenhum erro no momento da execução.
 - JavaScript: 10 modos, caracteres literais de substituição (`$&`, `$$` e equivalentes), cópia e fallback. DOM simulado; não prova layout ou acessibilidade em navegador.
 - Navegador real: NOT_RUN. Binário Chromium ausente; download retornou arquivo inválido. Não alegar verificação visual/interativa.
 - Revisão independente SENTINEL: corrigidos links do espelho, localização das fontes nos comandos copiáveis e interpolação JavaScript. Os derivados removem somente contrato literalmente igual à fonte canônica; P01 especializado é preservado.
