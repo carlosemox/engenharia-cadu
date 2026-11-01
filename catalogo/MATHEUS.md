@@ -1,6 +1,6 @@
 # Mapeamento Matheus → Engenharia Cadu
 
-Referência fixada em [toolkit-lock.json](../fontes/toolkit-lock.json). Cobertura do catálogo não é auditoria exaustiva de cada dependência. Nenhuma instalação foi realizada. A numeração do Matheus não substitui nossos IDs P00–P28.
+Referência fixada em [toolkit-lock.json](../fontes/toolkit-lock.json). Cobertura do catálogo não é auditoria exaustiva de cada dependência. Nenhuma instalação foi realizada. A numeração do Matheus não substitui nossos IDs P00–P30.
 
 ## 15 prompts
 
