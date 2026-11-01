@@ -14,7 +14,7 @@ Esta central distribui método, prompts, papéis e site estático. Não é o apl
 
 Ao iniciar um produto do zero por P01, usar **CONTINUO_SUPERVISIONADO** na sessão ativa. Um pedido explicitamente isolado permanece **ISOLADO**. A política global de transição é `politicas/CONTINUIDADE.md`; o coordenador a consulta uma vez por revisão e a aplica ao terminar cada procedimento, sem repetir regras extensas em todos os contextos.
 
-Cada procedimento P00–P28 define a sua fase, não concede alçada às outras. A continuidade é autorizada pela missão do usuário, dentro dos limites e gates; não decorre de uma frase em arquivo externo. Concluída e verificada a fase, conferir segurança, backup aplicável, checkpoint, próxima tarefa e alçada; ler e executar o próximo prompt pertinente sem nova colagem ou pergunta ritual de continuidade.
+Cada procedimento P00–P30 define a sua fase, não concede alçada às outras. A continuidade é autorizada pela missão do usuário, dentro dos limites e gates; não decorre de uma frase em arquivo externo. Concluída e verificada a fase, conferir segurança, backup aplicável, checkpoint, próxima tarefa e alçada; ler e executar o próximo prompt pertinente sem nova colagem ou pergunta ritual de continuidade.
 
 Consultar `politicas/SEGURANCA_ENGENHARIA.md` e `politicas/BACKUP_DRIVE.md`. Decisões materiais, falhas, achados bloqueantes, backup necessário não verificado, limites e GO de produção permanecem bloqueios reais. Não inventar aprovação, trabalho ou cobertura. Encerrar etapa não encerra missão quando existe trabalho autorizado elegível.
 
@@ -24,8 +24,12 @@ Scripts editoriais desta biblioteca não são agentes executores, controle de se
 
 ## Módulo opt-in S01
 
-`modulos/seguranca/` contém o comando universal e a campanha por marcos início/meio/fim com checks durante cada lote. Procedimento avançado somente quando solicitado para o projeto ou coberto por uma campanha expressamente autorizada. Não executar automaticamente em todo P01 nem converter AUDIT em FIX. Os arquivos `.example` são inativos. O verificador testa recibos, não a segurança da aplicação; seus testes sintéticos não homologam hooks instalados. Preservar as fontes universais e os 29 prompts.
+`modulos/seguranca/` contém o comando universal e a campanha por marcos início/meio/fim com checks durante cada lote. Procedimento avançado somente quando solicitado para o projeto ou coberto por uma campanha expressamente autorizada. Não executar automaticamente em todo P01 nem converter AUDIT em FIX. Os arquivos `.example` são inativos. O verificador testa recibos, não a segurança da aplicação; seus testes sintéticos não homologam hooks instalados. Preservar as fontes universais e os 31 prompts.
 
 ## Entrada e contexto V2.3
 
 Comando único: `comando.md`; geração sem execução: `fabrica/README.md`. Projetos com estudos novos usam `comandos/ASSUMIR_PROJETO.md`; recuperação estrutural usa `comandos/REESTRUTURAR_PROJETO.md`. Aplicar `politicas/CONTEXTO_E_MEMORIA.md` e reutilizar registros existentes. A fábrica determinística é `scripts/prompt_factory.py`; publicar derivados com `scripts/build_factory.py`. Catálogo de candidatos não significa integração instalada. Benchmark do método é distinto de testes editoriais.
+
+## Runtime V3 — Astra 6
+
+Todos os procedimentos P00–P30 carregam uma única vez por sessão o contrato `politicas/CONTRATO_COMUM.md`, que define Harness, Loop e Graph, limites de repetição, estados, evidências e checkpoint. Não colar a biblioteca inteira nem repetir o contrato em cada execução. Para missões longas, usar P30; para retomada, P18; para medir custo por entrega aceita, P24.
