@@ -3,7 +3,7 @@
 Data: 30/10/2026. Base: `180a1980dac98b5a9356dcbd7a82cd7b408979ee`.
 
 ## Escopo
-Copy e storytelling próprios em português brasileiro, inglês e espanhol. Mesmos 14 capítulos e 29 procedimentos descritos. A tradução é da apresentação e da navegação, não de todos os prompts/guias. Fontes: README principal e traduções em `i18n/`. Biblioteca interativa anterior preservada em `docs/biblioteca.html`.
+Copy e storytelling próprios em português brasileiro, inglês e espanhol. Mesmos 14 capítulos e 31 procedimentos descritos. A tradução é da apresentação e da navegação, não de todos os prompts/guias. Fontes: README principal e traduções em `i18n/`. Biblioteca interativa anterior preservada em `docs/biblioteca.html`.
 
 ## Verificações executadas
 - 11 testes editoriais locais aprovados, incluindo idiomas, cobertura de seções, IDs, metadados, hashes das fontes, alvos de cópia, preservação de âncoras e regeneração idempotente.
