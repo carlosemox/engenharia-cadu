@@ -2,7 +2,7 @@
 
 **Investigar → priorizar → planejar → corrigir o lote aprovado → verificar → prosseguir.**
 
-Módulo adicional da Engenharia Cadu. O [prompt universal completo](PROMPT_UNIVERSAL.md), fornecido pelo usuário, permanece em inglês, sem redução de suas fronteiras; entrada e orientação de uso em português. Não pressupõe aplicação web, Node.js, GitHub, Supabase ou fornecedor de IA. Não renumera P00–P28.
+Módulo adicional da Engenharia Cadu. O [prompt universal completo](PROMPT_UNIVERSAL.md), fornecido pelo usuário, permanece em inglês, sem redução de suas fronteiras; entrada e orientação de uso em português. Não pressupõe aplicação web, Node.js, GitHub, Supabase ou fornecedor de IA. Não renumera P00–P30.
 
 ## Três marcos e verificações durante o trabalho
 | Momento | Objetivo | Evento lógico |
