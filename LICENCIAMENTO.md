@@ -1,7 +1,7 @@
-# Direitos e atribuição
+# Direitos autorais e titularidade
 
-Material original da Engenharia Cadu: © 2026 Cadu Amaral. A publicação para consulta não seleciona automaticamente uma licença aberta para este material. A licença geral dos conteúdos próprios permanece pendente de decisão do titular.
+Materiais originais da Engenharia Cadu: © 2026 Carlos Eduardo do Amaral. Todos os direitos reservados, salvo autorização escrita ou indicação expressa em contrário.
 
-Referência metodológica: Vibe Coding Toolkit, Matheus Gomes, revisão `790a895304e0c08b70a5b215c9d334f1c86b816c`, licença MIT preservada em `fontes/LICENSE_MATHEUS.txt`. Conteúdos derivados dessa referência mantêm os avisos aplicáveis. Sem afiliação ou endosso presumido.
+Esta atribuição aplica-se aos textos, prompts, políticas, estruturas, catálogos, páginas e demais materiais próprios desenvolvidos para a Engenharia Cadu. Componentes de terceiros, quando existentes, permanecem sujeitos às suas respectivas licenças e avisos legais.
 
-Catálogos de terceiros contêm nomes, classificações e sínteses; não incluem os pacotes originais, scripts, fontes tipográficas ou arquivos cuja redistribuição não foi estabelecida. As condições de cada componente prevalecem. Um registro de catálogo não é licença nem instalação.
+A publicação no site permite consulta pública, mas não concede licença para copiar, redistribuir, comercializar, remover avisos de autoria ou apresentar os materiais próprios como criação de terceiros.
