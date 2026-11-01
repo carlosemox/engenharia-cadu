@@ -29,7 +29,7 @@ Revisão consultada: `790a895304e0c08b70a5b215c9d334f1c86b816c`. A consulta da b
 
 ## Materiais do próprio projeto
 
-Filosofia e fluxo Cadu V1 e biblioteca P00–P28 disponibilizados na conversa; decisões subsequentes de Codex principal, colaboração por tarefa, design no briefing, serviços/APIs, economia no Astra e definição antes de publicação. Os nomes dos procedimentos foram preservados em identidade, com expansão de escopo declarada no CHANGELOG.
+Filosofia e fluxo Cadu V1 e biblioteca P00–P30 disponibilizados na conversa; decisões subsequentes de Codex principal, colaboração por tarefa, design no briefing, serviços/APIs, economia no Astra e definição antes de publicação. Os nomes dos procedimentos foram preservados em identidade, com expansão de escopo declarada no CHANGELOG.
 
 As referências ao acervo Amanda são critérios oriundos da auditoria estática anterior, não nova auditoria ou homologação dos demais catálogos. Nenhum conteúdo restrito desses pacotes foi copiado nesta biblioteca.
 
