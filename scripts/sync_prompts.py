@@ -8,7 +8,7 @@ import hashlib,html,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 GH='https://github.com/carlosemox/engenharia-cadu/blob/main/'
-COMMON_PATTERN=r'CONTRATO COMUM — APLICAR EM TODAS AS ETAPAS\n[\s\S]*?Sem ferramentas, entregue conteúdo ou diagnóstico documental, não execução fictícia\.\n\n'
+COMMON_PATTERN=r'CONTRATO COMUM — V3\nRead https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/politicas/CONTRATO_COMUM.md[^\\n]*\n[\\s\\S]*?\n\n'
 canonical_common=re.search(COMMON_PATTERN,(ROOT/'politicas/CONTRATO_COMUM.md').read_text())
 if not canonical_common:raise ValueError('Canonical common contract absent')
 for source in sorted((ROOT/'p').glob('P[0-9][0-9].md')):
@@ -30,4 +30,4 @@ for source in sorted((ROOT/'p').glob('P[0-9][0-9].md')):
  if count!=1 and f'href="../../comandos/{pid}.txt"' not in content:
   raise ValueError(f'Expected full-command block or explicit canonical TXT link: {page}')
  page.write_text(content)
-print('Synced 29 canonical bodies. Review metadata/navigation separately when changing titles or routes.')
+print('Synced P00–P30 canonical bodies. Review metadata/navigation separately when changing titles or routes.')
