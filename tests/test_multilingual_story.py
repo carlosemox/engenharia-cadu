@@ -14,7 +14,7 @@ class StoryTests(unittest.TestCase):
  def test_sources_include_all_prompt_ids(self):
   for src,_ in LOCALES.values():
    text=(R/src).read_text()
-   for i in range(29):self.assertIn(f'[P{i:02d}]',text)
+   for i in range(31):self.assertIn(f'[P{i:02d}]',text)
  def test_sources_do_not_change_shortcuts(self):
   for src,_ in LOCALES.values():
    text=(R/src).read_text()
@@ -38,7 +38,7 @@ class StoryTests(unittest.TestCase):
  def test_no_script_needed_for_content(self):
   for _,dst in LOCALES.values():
    text=(R/dst).read_text()
-   for word in ['P00','P28','S01','CONTINUO_SUPERVISIONADO','Projetos 2026/Backup/']:self.assertIn(word,text)
+   for word in ['P00','P30','S01','CONTINUO_SUPERVISIONADO','Projetos 2026/Backup/']:self.assertIn(word,text)
    self.assertIn('Content-Security-Policy',text);self.assertNotIn('onclick=',text)
  def test_copy_targets_resolve(self):
   for _,dst in LOCALES.values():
