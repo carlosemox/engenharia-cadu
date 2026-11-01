@@ -15,4 +15,4 @@ O verificador somente confere recibos. Não verifica assinatura/proveniência, n
 
 Hooks nos aplicativos, auditoria de código dos produtos, scanners, CI de segurança, branch protections, testes ativos, monitoramento periódico e revisão visual em navegador: **NOT_RUN / NÃO IMPLANTADOS nesta entrega**. Revisão do código do módulo realizada pelo implementador; revisão independente: NOT_RUN.
 
-Arquivos de workflow, P00–P28 e aplicativos não são alterados por este módulo. Relatórios privados não são publicados. A validação de links/manifesto da central é executada após gerar esta página e fica no recibo da entrega.
+Arquivos de workflow, P00–P30 e aplicativos não são alterados por este módulo. Relatórios privados não são publicados. A validação de links/manifesto da central é executada após gerar esta página e fica no recibo da entrega.
