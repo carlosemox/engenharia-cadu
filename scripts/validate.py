@@ -39,7 +39,7 @@ for p in ROOT.rglob('*.md'):
  text=re.sub(r'```[\s\S]*?```','',p.read_text())
  for url in re.findall(r'\]\(([^\s)]+)(?:\s+[^)]*)?\)',text):check_link(p,url)
 prompts=list((ROOT/'p').glob('P[0-9][0-9].md'))
-if len(prompts)!=29:errors.append('Expected 29 canonical prompts')
+if len(prompts)!=31:errors.append('Expected 31 canonical prompts')
 for p in prompts:
  m=re.search(r'## Comando completo\n```text\n([\s\S]*?)\n```',p.read_text())
  if not m:errors.append(f'Missing command: {p}');continue
