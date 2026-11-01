@@ -1,0 +1,121 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="P30"><title>P30 · P30 — Engenharia Cadu</title><link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script></head><body><main id="main"><a href="../../index.html#prompts">← Biblioteca de prompts</a><p>P30</p><h1>P30</h1><p>Procedimento modernizado para Harness, Loop e Graph, com contexto progressivo, verificação e checkpoint.</p><section><h2>Atalho para o agente</h2><pre id="shortcut-text">Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P30.md e execute somente a etapa solicitada no projeto-alvo, respeitando escopo e autorizações.</pre></section><section><h2>Comando completo</h2><pre id="full-command"># P30 — Harness, Loop e Graph Engineering no Astra 6
+
+## Finalidade
+
+Executar tarefas longas de desenvolvimento com contexto controlado, ciclos de verificação limitados, dependências explícitas, atualização contínua do projeto e menor consumo total por entrega aceita.
+
+Este procedimento transforma três perspectivas em controles operacionais:
+
+- **Harness:** o que o agente vê, pode acessar, executar e alterar;
+- **Loop:** como ele age, verifica, corrige e decide parar;
+- **Graph:** qual etapa vem depois, quais dependências existem e onde é necessária decisão humana.
+
+## Princípio de economia
+
+Economizar tokens não significa omitir evidência. Significa carregar somente o contexto necessário, evitar leituras repetidas, resumir logs com referências recuperáveis, manter instruções reutilizáveis estáveis e medir custo por entrega aceita.
+
+A fonte completa permanece disponível no repositório. O agente recebe primeiro índice, estado, tarefa, contratos e trechos relevantes.
+
+## Ordem de execução
+
+`IDENTIFICAR → MAPEAR → PLANEJAR → EXECUTAR → VERIFICAR → ATUALIZAR → RETOMAR`
+
+### Harness
+
+Antes de agir:
+
+1. confirmar repositório, branch, revisão e ambiente;
+2. localizar README, AGENTS, perfil, estado, decisões, tarefas e checkpoint;
+3. carregar somente o procedimento aplicável;
+4. definir arquivos e ferramentas permitidos;
+5. identificar segredos, efeitos externos, produção e limites;
+6. usar busca estrutural antes de abrir arquivos extensos;
+7. registrar fontes e revisão do contexto utilizado.
+
+O AGENTS.md deve funcionar como índice curto. Detalhes ficam em documentos versionados e vinculados.
+
+### Loop
+
+Cada tarefa segue:
+
+`OBJETIVO → AÇÃO MÍNIMA → OBSERVAÇÃO → VERIFICAÇÃO → DECISÃO`
+
+Regras:
+
+- preferir uma tentativa completa e verificável;
+- repetir no máximo três ciclos quando o contrato da tarefa continuar válido;
+- se falhar por requisito, contexto ou arquitetura, corrigir o contrato antes de insistir;
+- não repetir efeito externo cujo resultado seja incerto;
+- não permitir que o executor altere seu próprio critério de aceite;
+- usar revisor independente para risco médio ou alto;
+- parar diante de segredo exposto, regressão, escopo ampliado, ausência de autorização ou evidência insuficiente.
+
+### Graph
+
+Toda missão deve possuir nós e transições:
+
+- entrada e objetivo;
+- diagnóstico;
+- especificação;
+- implementação;
+- testes;
+- revisão;
+- segurança;
+- homologação;
+- release;
+- checkpoint.
+
+Cada nó registra:
+
+- responsável;
+- dependências;
+- entradas;
+- recursos que pode alterar;
+- critério de aceite;
+- evidência;
+- estado: `READY`, `RUNNING`, `BLOCKED`, `FAILED`, `PASSED` ou `CANCELLED`.
+
+Uma etapa só inicia quando suas dependências estão satisfeitas. Paralelismo é permitido apenas em frentes independentes e deve ser comparado com a execução por um único agente.
+
+## Estratégia de contexto para Astra 6
+
+- iniciar com o mapa do projeto, não com todos os documentos;
+- recuperar decisões e evidências somente quando afetarem a tarefa;
+- manter instruções estáveis no início do comando quando o cliente permitir reutilização de prefixo;
+- não colar logs completos quando um resumo com caminho, linhas, hash e resultado for suficiente;
+- compactar ou registrar checkpoint depois de marcos importantes;
+- nunca editar um resumo de estado para esconder divergências;
+- preferir ferramentas e formatos já conhecidos pelo cliente;
+- delegar apenas trabalho independente, com entregável próprio;
+- usar um agente executor como padrão; abrir colaboradores somente quando o ganho for mensurável;
+- medir tokens, tempo, chamadas, retrabalho, intervenção humana e aceite.
+
+## Atualização contínua
+
+Depois de cada marco relevante:
+
+1. atualizar estado, decisões, evidências e pendências no projeto;
+2. registrar arquivos alterados e verificações executadas;
+3. gerar ou atualizar checkpoint;
+4. apontar o próximo nó do grafo;
+5. informar se o trabalho pode ser retomado por outra sessão.
+
+O histórico da conversa nunca é a única memória.
+
+## Critério de conclusão
+
+A tarefa só termina quando houver:
+
+- implementação ou diagnóstico correspondente ao objetivo;
+- verificação proporcional ao risco;
+- atualização do registro do projeto;
+- evidências recuperáveis;
+- riscos residuais;
+- próximo passo definido ou estado final explícito.
+
+## Métrica principal
+
+`tokens totais + chamadas de ferramentas + retrabalho + intervenção humana` por entrega aceita.
+
+Uma redução de texto ou log não é apresentada como economia real sem medição do ciclo completo.
+</pre></section><p>Estado operacional: NOT_RUN até piloto no cliente/projeto.</p><a href="../../comandos/P30.txt">Baixar comando</a> · <a href="../../../p/P30.md">Fonte canônica</a></main></body></html>
