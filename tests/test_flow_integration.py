@@ -14,7 +14,7 @@ class FlowIntegrationTests(unittest.TestCase):
   p=(R/'p/P01.md').read_text()
   for s in ['CONTINUO_SUPERVISIONADO','ISOLADO','CONTINUIDADE.md','SEGURANCA_ENGENHARIA.md','BACKUP_DRIVE.md','orquestracao/rotas.json']:self.assertIn(s,p)
  def test_coordinator_applies_transition_to_all_phases(self):
-  p=(R/'AGENTS.md').read_text();self.assertIn('P00–P28',p);self.assertIn('CONTINUO_SUPERVISIONADO',p);self.assertIn('backup',p)
+  p=(R/'AGENTS.md').read_text();self.assertIn('P00–P30',p);self.assertIn('CONTINUO_SUPERVISIONADO',p);self.assertIn('backup',p)
  def test_entry_loads_policy(self):self.assertIn('politicas/CONTINUIDADE.md',(R/'read.md').read_text())
  def test_template_not_approval(self):
   s=json.loads((R/'templates/ESTADO_FLUXO.json').read_text());self.assertEqual(s['status'],'NOT_STARTED');self.assertIs(s['next_scope_authorized'],False);self.assertIsNone(s['snapshot']);self.assertIsNone(s['backup']['receipt'])
