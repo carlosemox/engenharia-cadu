@@ -719,5 +719,31 @@
       "ECONOMIA ESPECÍFICA",
       "ENCERRAMENTO DA ETAPA"
     ]
+  },
+  {
+    "id": "P29",
+    "title": "Proteção contra exposição, clonagem e engenharia reversa",
+    "when": "Quando o projeto precisa reduzir exposição de código, segredos, regras críticas e artefatos publicados.",
+    "scope": "Auditoria e plano de hardening; não garante invulnerabilidade.",
+    "words": 500,
+    "group": "seguranca",
+    "group_label": "Segurança e confiabilidade",
+    "source_path": "p/P29.md",
+    "page": "prompts/P29/",
+    "read": "Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P29.md e execute somente a etapa solicitada no projeto-alvo, respeitando escopo e autorizações.",
+    "origin": "Engenharia Cadu V3"
+  },
+  {
+    "id": "P30",
+    "title": "Harness, Loop e Graph Engineering no Astra 6",
+    "when": "Quando a missão exige contexto progressivo, ciclos de verificação, dependências e retomada.",
+    "scope": "Orquestração metodológica; não cria supervisor persistente por si só.",
+    "words": 650,
+    "group": "execucao",
+    "group_label": "Execução e continuidade",
+    "source_path": "p/P30.md",
+    "page": "prompts/P30/",
+    "read": "Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/p/P30.md e execute somente a etapa solicitada no projeto-alvo, respeitando escopo e autorizações.",
+    "origin": "Engenharia Cadu V3"
   }
 ]
