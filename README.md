@@ -236,7 +236,7 @@ Projetos existentes preservam stack, banco, contratos e equivalentes funcionais.
 
 | Capacidade | Situação e condição |
 |---|---|
-| P00–P28 e S01 | Biblioteca publicada; a eficácia no seu projeto precisa de execução e avaliação. |
+| P00–P30 e S01 | Biblioteca publicada (P00–P30); a eficácia no seu projeto precisa de execução e avaliação. |
 | Continuidade entre etapas | Instrução do coordenador; depende de sessão, contexto e autorizações. |
 | Hooks e controles de segurança | Exemplos e políticas; instalação e bloqueios reais precisam ser testados. |
 | Backup automático | Política definida; conexão, cobertura e restauração precisam ser implantadas. |

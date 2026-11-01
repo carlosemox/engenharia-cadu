@@ -22,3 +22,8 @@ CADU: [meu pedido]. O alvo é o projeto aberto. Use também os estudos que anexe
 Responda com objetivo recuperado, ação escolhida e resultado/evidência. Pergunte novamente somente o que não pôde recuperar e muda a decisão. `CADU STATUS` pede relatório do estado, sem iniciar tarefas. `CADU PARAR` interrompe apenas processos próprios abrangidos quando houver controle real e registra o resultado; texto não encerra supervisor remoto inacessível.
 
 Fontes: [read.md](read.md), [continuidade](politicas/CONTINUIDADE.md), [segurança](politicas/SEGURANCA_ENGENHARIA.md) e [backup](politicas/BACKUP_DRIVE.md).
+
+
+## Runtime obrigatório
+
+A execução de qualquer prompt usa o Contrato Comum V3 uma vez por sessão. Organize a missão como Harness, Loop e Graph. Carregue apenas contexto pertinente, mantenha o prefixo estável quando houver reutilização de cache, limite ciclos, atualize checkpoint e registre o próximo nó. Use P30 para missões longas e não replique o contrato em cada prompt.
