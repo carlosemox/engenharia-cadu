@@ -17,7 +17,7 @@ Inicie meu produto em CONTINUO_SUPERVISIONADO. Avance somente após aceite, segu
 
 [Comando e limites](continuar.md) · [Todos os prompts](README.md) · [Contrato comum](politicas/CONTRATO_COMUM.md) · [Método](METODO.md)
 
-## Entrada universal e fábrica — V2.3
+## Entrada universal e fábrica — V3
 
 Para qualquer projeto, use [CADU — comando único](comando.md). Para anexar estudos e assumir coordenação, use [Assumir projeto](comandos/ASSUMIR_PROJETO.md); para recuperar e reorganizar, [Reestruturar projeto](comandos/REESTRUTURAR_PROJETO.md). A [fábrica](fabrica/README.md) gera o comando do pedido; não executa seu conteúdo.
 
