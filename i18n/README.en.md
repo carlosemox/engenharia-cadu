@@ -236,7 +236,7 @@ Existing projects preserve their stack, database, contracts and working equivale
 
 | Capability | Status and condition |
 |---|---|
-| P00–P28 and S01 | Published library; effectiveness in your project needs execution and evaluation. |
+| P00–P30 and S01 | Published library (P00–P30); effectiveness in your project needs execution and evaluation. |
 | Stage continuity | Coordinator instructions; depends on the session, context and authorization. |
 | Security hooks and controls | Examples and policies; actual installation and blocking behavior need tests. |
 | Automatic backup | Defined policy; connection, coverage and restoration need implementation. |
