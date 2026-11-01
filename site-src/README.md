@@ -4,7 +4,7 @@ Site estático em `docs/`, publicado pelo GitHub Pages. Sem banco, API, rastread
 
 ## Fontes editoriais e idiomas
 
-`README.md`, `i18n/README.en.md` e `i18n/README.es.md` são as fontes da narrativa trilíngue. O português brasileiro é a base editorial. A tradução cobre a apresentação, navegação, chamadas e descrições dos 29 procedimentos; não traduz nem altera os prompts canônicos ou guias vinculados. O prompt universal S01 continua em inglês.
+`README.md`, `i18n/README.en.md` e `i18n/README.es.md` são as fontes da narrativa trilíngue. O português brasileiro é a base editorial. A tradução cobre a apresentação, navegação, chamadas e descrições dos 31 procedimentos; não traduz nem altera os prompts canônicos ou guias vinculados. O prompt universal S01 continua em inglês.
 
 `site-src/build_story.py` gera as três páginas completas e estáticas. `docs/assets/story.css` e `story.js` fornecem apresentação responsiva, navegação, busca e cópia progressivas. A leitura e os links continuam disponíveis sem JavaScript. Cada página inclui hash da fonte, idioma, canonical e alternates.
 
@@ -24,7 +24,7 @@ python scripts/validate.py
 
 O gerador da narrativa deve rodar por último entre os geradores: substitui a página inicial com a apresentação trilíngue, após o gerador legado organizar guias. Se estiver alterando somente a copy, executar `build_story.py` e as verificações pertinentes é suficiente. Os geradores não usam rede, credenciais, modelos ou deploy.
 
-Para alterar um procedimento, editar `p/Pxx.md`; `sync_prompts.py` atualiza seus derivados. Títulos, categorias e rotas também exigem revisão dos índices. Preservar P00–P28, S01 e os limites operacionais.
+Para alterar um procedimento, editar `p/Pxx.md`; `sync_prompts.py` atualiza seus derivados. Títulos, categorias e rotas também exigem revisão dos índices. Preservar P00–P30, S01 e os limites operacionais.
 
 ## Verificação e publicação
 
@@ -34,7 +34,7 @@ Prévia autorizada: `python -m http.server 8080 --directory docs`. Navegador, te
 
 Fontes dos guias existentes: políticas, `OPERACAO.md` e módulo S01. Seus corpos também carregam hashes para detectar divergência. O site não executa prompts, instala hooks, ativa backup nem inicia supervisores.
 
-## Fábrica V2.3
+## Fábrica V3
 
 Após os geradores acima, execute `python scripts/build_factory.py`. O catálogo canônico fica em `fabrica/rotas.json`; o gerador atualiza a página, os templates do cliente web, os dois downloads e `docs/read.md`. Os assets `factory.js` e `factory.css` são fontes locais. A página apenas gera texto e não envia os campos. Testar CLI, paridade de templates e links; interação no navegador tem evidência separada.
 
