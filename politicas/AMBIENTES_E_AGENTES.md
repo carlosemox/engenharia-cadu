@@ -51,3 +51,8 @@ Fontes oficiais consultadas:
 - [Cloud Code para VS Code](https://docs.cloud.google.com/code/docs/vscode)
 - [Gemini Code Assist agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer)
 - [Google Antigravity](https://www.antigravity.google/docs)
+
+## Versões de idioma
+
+- [English](AMBIENTES_E_AGENTES.en.md)
+- [Español](AMBIENTES_E_AGENTES.es.md)
