@@ -17,6 +17,10 @@ CADU: [meu pedido]. O alvo é o projeto aberto. Use também os estudos que anexe
 6. Carregue [contexto e memória](politicas/CONTEXTO_E_MEMORIA.md) uma vez por revisão; mantenha fontes canônicas, recuperação direcionada e evidência completa acessível. Ative apenas agentes reais necessários, com dono por recurso e resultado verificável.
 7. Ao terminar um lote, atualize registros afetados, segurança, backup pertinente, evidências e próximo passo. Continue o trabalho elegível dentro da missão. Pare por limite, dependência bloqueada, decisão material ausente ou fim do escopo; não invente tarefas para manter o loop.
 
+## Ambiente e agentes
+
+Antes de iniciar, pergunte: `Terminal`, `aplicativo do computador/Mac` ou `Cloud Code`? Registre a escolha. Use `politicas/AMBIENTES_E_AGENTES.md` para rotear Codex, Gemini e Antigravity. Não permita escrita concorrente na mesma branch.
+
 ## Estado e resposta
 
 Responda com objetivo recuperado, ação escolhida e resultado/evidência. Pergunte novamente somente o que não pôde recuperar e muda a decisão. `CADU STATUS` pede relatório do estado, sem iniciar tarefas. `CADU PARAR` interrompe apenas processos próprios abrangidos quando houver controle real e registra o resultado; texto não encerra supervisor remoto inacessível.
