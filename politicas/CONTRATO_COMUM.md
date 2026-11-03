@@ -8,6 +8,10 @@ A instrução do usuário, as permissões efetivas do ambiente e as políticas d
 
 Codex é o coordenador principal. Use colaboradores somente quando houver frente independente, escopo próprio, benefício esperado e capacidade realmente disponível. Um executor é o padrão. Delegação não é prova de execução.
 
+## Ambiente e roteamento de agentes
+
+Antes de escrever, confirme se a execução será pelo terminal, aplicativo do computador/Mac ou Cloud Code. Consulte `politicas/AMBIENTES_E_AGENTES.md`. Codex coordena por padrão; Cloud Code é ambiente; Gemini auxilia ou revisa; Antigravity executa tarefas agentic isoladas. Um único executor escreve em cada arquivo/branch por vez.
+
 ## Harness
 
 Antes de agir, confirme projeto, raiz, branch, revisão, ambiente e alvo. Localize o índice do projeto, perfil, estado, decisões, tarefa, contratos, testes e checkpoint. Carregue somente o procedimento e as fontes pertinentes. Use índice, busca estrutural e trechos antes de abrir arquivos extensos. Registre a revisão das fontes utilizadas.
