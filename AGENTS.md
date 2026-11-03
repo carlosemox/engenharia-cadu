@@ -10,6 +10,14 @@ Esta central distribui método, prompts, papéis e site estático. Não é o apl
 - Verificação: `python scripts/validate.py`; prévia local com `python -m http.server 8080 --directory docs` quando autorizado.
 - Ler `site-src/README.md` para derivados. Publicação remota e testes de agentes precisam de prova própria.
 
+## Gate inicial de ambiente de desenvolvimento
+
+No início da sessão ou ao assumir um projeto, pergunte obrigatoriamente:
+
+> O desenvolvimento será realizado pelo terminal ou pelo aplicativo do computador/Mac?
+
+Aguarde a escolha antes de iniciar ações de desenvolvimento. Registre a opção escolhida no estado ou checkpoint do projeto e use somente o ambiente autorizado. Se a resposta não definir o ambiente, permaneça em diagnóstico e solicite a escolha.
+
 ## Coordenação entre as etapas
 
 Ao iniciar um produto do zero por P01, usar **CONTINUO_SUPERVISIONADO** na sessão ativa. Um pedido explicitamente isolado permanece **ISOLADO**. A política global de transição é `politicas/CONTINUIDADE.md`; o coordenador a consulta uma vez por revisão e a aplica ao terminar cada procedimento, sem repetir regras extensas em todos os contextos.
