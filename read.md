@@ -32,3 +32,8 @@ O coordenador recupera perfil, fontes e checkpoint antes de selecionar a etapa. 
 ## Runtime V3 — Astra 6
 
 Todos os procedimentos P00–P30 carregam o Contrato Comum V3 uma vez por sessão. A execução usa Harness, Loop e Graph: contexto progressivo, ciclos limitados, dependências explícitas, checkpoint e atualização contínua do projeto. Não carregue a biblioteca inteira. Para tarefas longas, use o P30; para retomar, use o P18; para medir, use o P24.
+
+
+## Ambiente de desenvolvimento e agentes
+
+Antes de assumir qualquer projeto, escolha Terminal, aplicativo do computador/Mac ou Cloud Code. Consulte `politicas/AMBIENTES_E_AGENTES.md` para o uso coordenado de Codex, Gemini Code Assist/Gemini CLI e Antigravity.
