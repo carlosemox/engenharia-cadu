@@ -259,3 +259,15 @@ O melhor ponto de partida é o próximo resultado útil: compreender o produto, 
 **Defina com intenção. Construa com contexto. Evolua com evidência.**
 
 [COMEÇAR PELO P01 →](p/P01.md) · [RECUPERAR UM PROJETO](https://github.com/carlosemox/engenharia-cadu-adocao) · [REPORTAR UM PROBLEMA](https://github.com/carlosemox/engenharia-cadu/issues)
+
+
+## Ambientes e agentes de desenvolvimento
+
+Antes de iniciar qualquer projeto, escolha o ambiente: **Terminal**, **aplicativo do computador/Mac** ou **Cloud Code**.
+
+- **Codex:** coordenação, integração e revisão final.
+- **Cloud Code:** Cloud Run, Kubernetes, GKE, Skaffold e APIs Google Cloud.
+- **Gemini:** pair programming, assistência Google e revisão localizada.
+- **Antigravity:** tarefas longas, navegador, UI, artefatos e execução isolada.
+
+Um único executor escreve em cada arquivo ou branch por vez. Consulte a [política completa de ambientes e agentes](politicas/AMBIENTES_E_AGENTES.md).
