@@ -259,3 +259,15 @@ The best starting point is the next useful outcome: understand the product, reco
 **Define with intent. Build with context. Evolve with evidence.**
 
 [START WITH P01 →](../p/P01.md) · [RECOVER A PROJECT](https://github.com/carlosemox/engenharia-cadu-adocao) · [REPORT AN ISSUE](https://github.com/carlosemox/engenharia-cadu/issues)
+
+
+## Development environments and agents
+
+Before starting any project, choose the environment: **Terminal**, **Computer/Mac application** or **Cloud Code**.
+
+- **Codex:** coordination, integration and final review.
+- **Cloud Code:** Cloud Run, Kubernetes, GKE, Skaffold and Google Cloud APIs.
+- **Gemini:** pair programming, Google assistance and localized review.
+- **Antigravity:** long-running tasks, browser, UI, artifacts and isolated execution.
+
+One executor writes to each file or branch at a time. See the [full environments and agents policy](../politicas/AMBIENTES_E_AGENTES.en.md).
