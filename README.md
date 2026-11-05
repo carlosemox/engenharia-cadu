@@ -229,6 +229,18 @@ O catálogo é uma seleção de possibilidades, não uma instalação em massa. 
 
 Projetos existentes preservam stack, banco, contratos e equivalentes funcionais. Mudanças incompatíveis exigem decisão própria. Monorepos precisam de inventário das fronteiras e recursos compartilhados. Novos serviços só entram quando existe função concreta no produto.
 
+### Descoberta de skills: procurar antes de instalar
+
+Quando uma necessidade pode já existir como skill, a Engenharia Cadu usa uma trilha própria: **P08 define a capacidade → D01 descobre candidatos → P22 audita → piloto → instalação aprovada → P11 comprova**.
+
+```text
+NECESSIDADE → npx skills find / skills.sh → P22 → PILOTO → INSTALAR → VERIFICAR
+```
+
+A CLI upstream também oferece `skills use` para uso temporário, `skills check` para detectar atualizações e `skills update` para aplicá-las. Na nossa engenharia, busca não instala e check não atualiza. O escopo de projeto é o padrão; instalação global, confirmação automática e atualização em massa exigem justificativa própria.
+
+O `find-skills` ajuda a descobrir capacidades, mas instalações, estrelas e reputação são sinais de triagem. A aprovação depende da skill específica, sua licença, scripts, hooks, dados, rede/telemetria, permissões, conflitos e teste. [Abrir D01 — descoberta controlada](modulos/descoberta-skills/README.md).
+
 <!-- section:operacao -->
 ## 12 / Saiba o que está publicado — e o que precisa ser comprovado
 

@@ -10,6 +10,7 @@ Uma fonte por assunto. A biblioteca orienta; o ambiente e os testes demonstram o
 | Proteger arquivos | [Backup](politicas/BACKUP_DRIVE.md) e [recibo](templates/RECIBO_BACKUP.md) | [Backup por projeto](https://carlosemox.github.io/engenharia-cadu/guia/backup/) |
 | Saber o que está realmente ativo | [Estado operacional](OPERACAO.md) | [Implantação e limites](https://carlosemox.github.io/engenharia-cadu/guia/operacao/) |
 | Organizar projeto existente | [Guia de adoção](https://github.com/carlosemox/engenharia-cadu-adocao/blob/main/GUIA_DE_USO.md) | [Central de adoção](https://carlosemox.github.io/engenharia-cadu-adocao/) |
+| Descobrir skills sem instalar | [D01](modulos/descoberta-skills/README.md), [P08](p/P08.md) e [P22](p/P22.md) | [Capacidades](https://carlosemox.github.io/engenharia-cadu/#capacidades) |
 | Selecionar agentes e skills | [Catálogo](catalogo/README.md), [papéis](agentes/README.md) e [P08](p/P08.md) | [Capacidades](https://carlosemox.github.io/engenharia-cadu/#capacidades) |
 | Preparar uma missão prolongada | [P17](p/P17.md), [P18](p/P18.md), [contrato](templates/CONTRATO_MISSAO.md) | [P17](https://carlosemox.github.io/engenharia-cadu/prompts/P17/) |
 

@@ -229,6 +229,18 @@ The catalog is a set of possibilities, not a bulk installation. Each skill, libr
 
 Existing projects preserve their stack, database, contracts and working equivalents. Incompatible changes need a separate decision. Monorepos require an inventory of boundaries and shared resources. New services belong only where they have a concrete role in the product.
 
+### Skill discovery: search before installing
+
+When a capability may already exist as a skill, Engenharia Cadu uses a controlled path: **P08 defines the need → D01 discovers candidates → P22 audits → pilot → approved install → P11 verifies**.
+
+```text
+NEED → npx skills find / skills.sh → P22 → PILOT → INSTALL → VERIFY
+```
+
+The upstream CLI also provides `skills use` for temporary use, `skills check` for update detection and `skills update` for applying updates. In our method, search never installs and check never updates. Project scope is the default; global installation, automatic confirmation and mass updates require their own justification.
+
+`find-skills` helps discover capabilities, but install counts, stars and source reputation are triage signals. Approval depends on the exact skill, license, scripts, hooks, data, network/telemetry, permissions, conflicts and test. [Open D01 — controlled discovery](modulos/descoberta-skills/README.en.md).
+
 <!-- section:operacao -->
 ## 12 / Know what is published—and what still needs proof
 

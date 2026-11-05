@@ -1,3 +1,11 @@
+# 2026-11-04 — D01 — Descoberta controlada de skills
+
+- Integrado `find-skills`, `npx skills find`, `skills use`, `skills check` e o diretório skills.sh como mecanismos de descoberta, não instalação automática.
+- P08 passa a descobrir candidatos por necessidade; P22 mantém a auditoria obrigatória antes de piloto/instalação.
+- Escopo de projeto é preferido; instalação global, `-y`, `--all` e atualização automática não são padrão.
+- Módulo D01 publicado em português, inglês e espanhol; narrativa trilíngue atualizada.
+- Fonte upstream fixada para esta integração em `vercel-labs/skills@9197d919034d19010ae303cf96bf19ad087dd4be`; execução da CLI permanece NOT_RUN nesta atualização documental.
+
 # 2026-11-01 — Runtime V3 Astra 6
 
 - Modernizados P00–P30 com contrato comum V3, Harness, Loop e Graph.

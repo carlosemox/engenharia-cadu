@@ -5,3 +5,7 @@ A central mantém o catálogo em `catalogo/`. Não há pacote de terceiros autom
 Para criar uma adaptação, use P22 e P08. Registre função, origem, revisão, licença, dependências, permissões, evidência e estado. Somente promova a um diretório descoberto pelo cliente após autorização e teste. Padrões específicos de cada CLI devem ser verificados na versão instalada.
 
 Papéis da central estão em `agentes/`; procedimentos estão em `p/`. A separação impede duplicação e carregamento integral desnecessário.
+
+## Descoberta controlada
+
+Quando a capacidade ainda não foi escolhida, use [D01](../modulos/descoberta-skills/README.md): P08 define a necessidade, `npx skills find`/skills.sh produz candidatos, P22 audita e somente depois um piloto ou instalação pode ser autorizado. `skills check` não autoriza `skills update`; instalação global não é padrão.

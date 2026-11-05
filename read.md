@@ -2,12 +2,13 @@
 
 Esta central distribui procedimentos, não autorização irrestrita. Codex coordena; colaboradores só quando úteis, disponíveis e autorizados. O alvo é o aplicativo do usuário, não esta biblioteca.
 
-1. Aproveite a intenção e o contexto disponíveis. Novo produto começa no [P01](p/P01.md); falha em projeto existente no [P20](p/P20.md); retomada no [P18](p/P18.md); acervo no [P22](p/P22.md). Sem trilha clara, [P00](p/P00.md).
-2. Resolva a central para uma revisão e registre-a. Leia apenas o procedimento e as fontes pertinentes. Mudança de documento não troca modelo, provedor ou autenticação.
-3. Ao iniciar produto do zero, use CONTINUO_SUPERVISIONADO na sessão ativa, conforme [Continuidade](politicas/CONTINUIDADE.md). Se o usuário pediu apenas uma etapa/análise, mantenha ISOLADO. Aplique [Segurança](politicas/SEGURANCA_ENGENHARIA.md) e [Backup](politicas/BACKUP_DRIVE.md).
-4. Concluída e verificada a fase, conferir entrega, segurança, backup aplicável, checkpoint, limites e alçada; carregar o próximo prompt pertinente sem exigir nova colagem. O coordenador governa transições; cada prompt continua definindo somente sua fase. Não avançar sobre decisão material, falha ou ação não autorizada.
-5. Seguir [rotas](orquestracao/rotas.json) por dependências reais: implementação/revisão repetem por incremento; P17 e especializações não são obrigatórios. Fim do escopo encerra; não inventar trabalho para manter execução.
-6. Entrevista permanece interativa. Produção, migrations, gastos, credenciais e publicação conservam gates próprios. Backup obrigatório não verificado bloqueia o que depende dele. Sem runtime/conexão, não simular continuidade fora da sessão, segurança absoluta ou cópia automática.
+1. Aproveite a intenção e o contexto disponíveis. Pedido para localizar uma nova skill segue P08 → modulos/descoberta-skills/README.md → P22 antes de instalação.
+2. Aproveite a intenção e o contexto disponíveis. Novo produto começa no [P01](p/P01.md); falha em projeto existente no [P20](p/P20.md); retomada no [P18](p/P18.md); acervo no [P22](p/P22.md). Sem trilha clara, [P00](p/P00.md).
+3. Resolva a central para uma revisão e registre-a. Leia apenas o procedimento e as fontes pertinentes. Mudança de documento não troca modelo, provedor ou autenticação.
+4. Ao iniciar produto do zero, use CONTINUO_SUPERVISIONADO na sessão ativa, conforme [Continuidade](politicas/CONTINUIDADE.md). Se o usuário pediu apenas uma etapa/análise, mantenha ISOLADO. Aplique [Segurança](politicas/SEGURANCA_ENGENHARIA.md) e [Backup](politicas/BACKUP_DRIVE.md).
+5. Concluída e verificada a fase, conferir entrega, segurança, backup aplicável, checkpoint, limites e alçada; carregar o próximo prompt pertinente sem exigir nova colagem. O coordenador governa transições; cada prompt continua definindo somente sua fase. Não avançar sobre decisão material, falha ou ação não autorizada.
+6. Seguir [rotas](orquestracao/rotas.json) por dependências reais: implementação/revisão repetem por incremento; P17 e especializações não são obrigatórios. Fim do escopo encerra; não inventar trabalho para manter execução.
+7. Entrevista permanece interativa. Produção, migrations, gastos, credenciais e publicação conservam gates próprios. Backup obrigatório não verificado bloqueia o que depende dele. Sem runtime/conexão, não simular continuidade fora da sessão, segurança absoluta ou cópia automática.
 
 ## Atalho
 ```text
