@@ -17,9 +17,13 @@ CADU: [meu pedido]. O alvo é o projeto aberto. Use também os estudos que anexe
 6. Carregue [contexto e memória](politicas/CONTEXTO_E_MEMORIA.md) uma vez por revisão; mantenha fontes canônicas, recuperação direcionada e evidência completa acessível. Ative apenas agentes reais necessários, com dono por recurso e resultado verificável.
 7. Ao terminar um lote, atualize registros afetados, segurança, backup pertinente, evidências e próximo passo. Continue o trabalho elegível dentro da missão. Pare por limite, dependência bloqueada, decisão material ausente ou fim do escopo; não invente tarefas para manter o loop.
 
+## Início e recuperação
+
+`CADU INICIAR` prepara o próximo incremento no aplicativo aberto. `CADU RECUPERAR` investiga a falha atual e retoma a fila elegível. Para qualquer uma das entradas leia [início e recuperação](modulos/recuperacao/README.md) na mesma revisão. A configuração do agente é por projeto. Use `CADU DIAGNOSTICAR` para inventário técnico somente leitura de um ou mais checkouts. Uma solicitação explícita de correção encaminha os nós elegíveis a `CADU RECUPERAR` após registrar a referência.
+
 ## Ambiente e agentes
 
-Antes de iniciar, pergunte: `Terminal`, `aplicativo do computador/Mac` ou `Cloud Code`? Registre a escolha. Use `politicas/AMBIENTES_E_AGENTES.md` para rotear Codex, Gemini e Antigravity. Não permita escrita concorrente na mesma branch.
+Antes de escrever, confronte o executor com o perfil, o checkpoint e o destino selecionado pelo responsável. Reutilize a escolha comprovada. Pergunte somente se o destino for ambíguo ou conflitante. Use `politicas/AMBIENTES_E_AGENTES.md` para rotear Codex, Gemini e Antigravity. Não permita escrita concorrente na mesma branch.
 
 ## Estado e resposta
 

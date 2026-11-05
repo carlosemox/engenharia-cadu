@@ -12,11 +12,7 @@ Esta central distribui método, prompts, papéis e site estático. Não é o apl
 
 ## Gate inicial de ambiente de desenvolvimento
 
-No início da sessão ou ao assumir um projeto, pergunte obrigatoriamente:
-
-> O desenvolvimento será realizado pelo terminal, pelo aplicativo do computador/Mac ou pelo Cloud Code?
-
-Aguarde a escolha antes de iniciar ações de desenvolvimento. Registre a opção escolhida no estado ou checkpoint do projeto e use somente o ambiente autorizado. Consulte `politicas/AMBIENTES_E_AGENTES.md` para definir o papel de Codex, Gemini, Cloud Code e Antigravity. Se a resposta não definir o ambiente, permaneça em diagnóstico e solicite a escolha.
+Recupere o ambiente autorizado do perfil ou checkpoint e confronte com o executor atual. No primeiro uso, registre o ambiente em que o responsável abriu o projeto quando o destino for inequívoco. Pergunte somente se houver conflito de destino ou escolha material pendente. Siga a análise e os nós independentes autorizados. Consulte `politicas/AMBIENTES_E_AGENTES.md`.
 
 ## Coordenação entre as etapas
 

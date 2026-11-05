@@ -2,7 +2,7 @@
 
 ## Puerta obligatoria
 
-Al inicio de la sesión o al asumir un proyecto, confirmar:
+Recupere el entorno autorizado y compárelo con el ejecutor actual. Pregunte solo si el destino es ambiguo o hay un conflicto. Entornos previstos:
 
 1. **Terminal** — CLI, Git, scripts y pruebas directas.
 2. **Aplicación del ordenador/Mac** — IDE o aplicación local con edición interactiva y revisión visual.

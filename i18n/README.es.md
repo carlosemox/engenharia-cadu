@@ -277,7 +277,7 @@ El mejor punto de partida es el siguiente resultado útil: comprender el product
 
 ## Entornos y agentes de desarrollo
 
-Antes de iniciar cualquier proyecto, elija el entorno: **Terminal**, **aplicación del ordenador/Mac** o **Cloud Code**.
+Recupere el entorno autorizado. Pregunte solo si hay ambigüedad entre **Terminal**, **aplicación del ordenador/Mac** o **Cloud Code**.
 
 - **Codex:** coordinación, integración y revisión final.
 - **Cloud Code:** Cloud Run, Kubernetes, GKE, Skaffold y APIs de Google Cloud.

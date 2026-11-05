@@ -81,6 +81,36 @@
       "procedure": "fabrica/README.md",
       "stages": [],
       "goal": "Produza um comando curto, rastreável e específico, sem executar seu conteúdo."
+    },
+    "iniciar": {
+      "label": "Preparar o projeto e executar o primeiro incremento",
+      "procedure": "modulos/recuperacao/README.md",
+      "stages": [
+        "P07",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "goal": "CADU INICIAR: recupere o perfil, configure as capacidades aprovadas e valide a primeira jornada elegível."
+    },
+    "recuperar": {
+      "label": "Corrigir uma falha e retomar o trabalho",
+      "procedure": "modulos/recuperacao/README.md",
+      "stages": [
+        "P13",
+        "P14",
+        "P24"
+      ],
+      "goal": "CADU RECUPERAR: reproduza a falha, valide o reparo, salve a lição aplicável e continue o próximo nó autorizado."
+    },
+    "diagnosticar": {
+      "label": "Diagnosticar os bloqueios de projetos",
+      "procedure": "modulos/recuperacao/README.md",
+      "stages": [
+        "P07",
+        "P20"
+      ],
+      "goal": "CADU DIAGNOSTICAR: faça o inventário somente leitura, colete evidências por nó e produza a ficha privada de cada checkout autorizado."
     }
   }
 }

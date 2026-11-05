@@ -13,6 +13,10 @@ Preencher com dados observados/aprovados; A_DEFINIR não significa ausência de 
 | Design D0/D1/D2 | A_DEFINIR | Referências e provas distintas |
 | Serviços/APIs e modos temporários | A_DEFINIR | Mapa e contratos |
 | Ambientes | A_DEFINIR | IDs sem segredos |
+| GitHub e CI | A_DEFINIR | Repositório, branch, workflow, limites e SHA validado |
+| Hostinger quando adotada | A_DEFINIR | Produto contratado, ID de staging, teste de saúde, recuperação |
+| Docker e/ou Supabase quando adotados | A_DEFINIR | Contexto Docker e/ou referência de staging, smoke sintético |
+| Controle de recuperação | A_DEFINIR | Dono do recurso, receitas aprovadas, prova independente, STOP e limite |
 | Coordenador técnico | Codex | Política escolhida; validar cliente |
 | Modelos desejados e efetivos | A_DEFINIR | Não inferir da instrução |
 | Colaboradores habilitados | A_DEFINIR | Teste de adaptador pendente |

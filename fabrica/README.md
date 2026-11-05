@@ -31,3 +31,7 @@ python scripts/prompt_factory.py --modo assumir --alvo "meu-projeto" --pedido "R
 Pedidos em linguagem natural são roteados pelo agente. O gerador local/web usa a seleção explícita; não finge entender semanticamente o campo livre.
 
 As rotas de etapas usam `execucao/Pxx.md`, derivado automaticamente do procedimento completo. O contrato comum deve ser recuperado uma vez por sessão/revisão e continua obrigatório. Isso reduz repetição textual; economia total depende da medição do fluxo.
+
+Use `--modo iniciar` para preparar e verificar o próximo incremento ou `--modo recuperar` para investigar uma falha e retomar a fila. A rota compartilhada distingue as duas intenções e preserva a revisão escolhida.
+
+Para mapear os bloqueios do portfólio, gere o modo `diagnosticar`; a opção `auditar` continua dedicada à campanha de segurança.

@@ -10,7 +10,7 @@ Codex é o coordenador principal. Use colaboradores somente quando houver frente
 
 ## Ambiente e roteamento de agentes
 
-Antes de escrever, confirme se a execução será pelo terminal, aplicativo do computador/Mac ou Cloud Code. Consulte `politicas/AMBIENTES_E_AGENTES.md`. Codex coordena por padrão; Cloud Code é ambiente; Gemini auxilia ou revisa; Antigravity executa tarefas agentic isoladas. Um único executor escreve em cada arquivo/branch por vez.
+Antes de escrever, recupere o ambiente autorizado do perfil, da seleção do responsável ou do checkpoint e confira o executor atual. Só pergunte entre terminal, aplicativo do computador/Mac ou Cloud Code quando a divergência mudar a ação. Consulte `politicas/AMBIENTES_E_AGENTES.md`. Codex coordena por padrão; Cloud Code é ambiente; Gemini auxilia ou revisa; Antigravity executa tarefas agentic isoladas. Um único executor escreve em cada arquivo/branch por vez.
 
 ## Harness
 
@@ -26,7 +26,9 @@ OBJETIVO → AÇÃO MÍNIMA → OBSERVAÇÃO → VERIFICAÇÃO → DECISÃO
 
 Prefira uma tentativa completa e verificável. Faça no máximo três ciclos por nó enquanto o contrato da tarefa continuar válido. Se a falha indicar requisito, contexto ou arquitetura incorreta, corrija o contrato antes de repetir. Não repita efeitos externos de resultado incerto. O executor não altera o próprio critério de aceite. Use revisão independente conforme o risco.
 
-Pare e registre bloqueio diante de segredo exposto, regressão, escopo ampliado, ausência de autorização, dependência não satisfeita ou evidência insuficiente.
+Em falha reproduzível, consulte [recuperação local](../modulos/recuperacao/README.md) somente para o nó afetado. Reutilize a lição validada da versão aplicável e interrompa repetições sem evidência nova. Retome o próximo nó autorizado. Pausa global, incidente de segurança compartilhado e teto da missão prevalecem.
+
+Pare o trabalho dependente e registre bloqueio diante de segredo exposto, regressão, escopo ampliado, ausência de autorização, dependência não satisfeita ou evidência insuficiente.
 
 ## Graph
 

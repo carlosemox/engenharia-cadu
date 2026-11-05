@@ -12,3 +12,4 @@ Papéis documentados, não processos permanentes ou modelos treinados. O coorden
 - [GUARDIAN · Escopo](guardian.md): Conferir destino, alçada, dados e isolamento.
 - [SENTINEL · Revisão](sentinel.md): Revisar independentemente uma versão ou snapshot delimitado.
 - [Release & operação](release.md): Conferir promoção, recuperação e observabilidade.
+- [Recuperação local](../modulos/recuperacao/README.md) · Diagnosticar falhas e validar a correção autorizada antes de retornar ao coordenador.
