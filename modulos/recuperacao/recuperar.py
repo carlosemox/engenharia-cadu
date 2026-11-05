@@ -57,6 +57,17 @@ def configure(profile, expected):
     driver = control / "procedimento.py"
     if driver.is_symlink() or digest(driver.read_bytes()) != cfg["sha256_procedimento"]:
         raise ValueError("Procedimento não corresponde ao digest fixado.")
+    # Optional executable from the trusted profile. Never inherit an arbitrary worker PATH.
+    runtime = cfg.get("node")
+    if runtime is not None:
+        node = Path(runtime["caminho"])
+        real = node.resolve(strict=True)
+        if (not node.is_absolute() or path_in(real, root) or not real.is_file()
+                or not os.access(real, os.X_OK) or digest(real.read_bytes()) != runtime["sha256"]):
+            raise ValueError("Node diverge do executável autorizado pelo perfil")
+        cfg["node_verificado"] = str(real)
+    else:
+        cfg.pop("node_verificado", None)
     return cfg, root, control, driver
 
 
@@ -64,7 +75,7 @@ class Halt(Exception):
     pass
 
 
-def phase(driver, stage, recipe, root, control, deadline, lock_fd):
+def phase(driver, stage, recipe, root, control, deadline, lock_fd, node):
     def check():
         if (control / "STOP").exists():
             raise Halt("PAUSED")
@@ -72,8 +83,11 @@ def phase(driver, stage, recipe, root, control, deadline, lock_fd):
             raise Halt("TIMEOUT")
     check()
     # The surrounding supervisor owns the sandbox. Do not pass API credentials as environment.
+    env = {"PATH": os.defpath}
+    if node:
+        env["CADU_NODE"] = node
     with subprocess.Popen([sys.executable, "-I", str(driver), stage, recipe],
-                          cwd=root, env={"PATH": os.defpath}, stdin=subprocess.DEVNULL,
+                          cwd=root, env=env, stdin=subprocess.DEVNULL,
                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
                           start_new_session=True, pass_fds=(lock_fd,)) as child:
         try:
@@ -97,15 +111,18 @@ def recover(db, cfg, root, driver, control, mission, evidence, candidate, policy
     if (control / "STOP").exists():
         return result("PAUSED")
     unresolved = db.execute(
-        "SELECT id,project,incident,mission,policy FROM attempts WHERE state='IN_PROGRESS' LIMIT 1"
+        "SELECT id,project,incident,mission,policy,state FROM attempts "
+        "WHERE state='IN_PROGRESS' OR (state='REJECTED' AND NOT EXISTS "
+        "(SELECT 1 FROM attempts newer WHERE newer.project=attempts.project AND newer.incident=attempts.incident "
+        "AND newer.id>attempts.id AND newer.state IN ('VERIFIED','ROLLED_BACK','RECONCILED_PASS'))) ORDER BY id LIMIT 1"
     ).fetchone()
     if unresolved:
-        if not reconcile or unresolved[1:] != (*task, policy_sha):
+        if not reconcile or unresolved[1:5] != (*task, policy_sha):
             return result("RECONCILE", motivo="Tentativa interrompida; confira a árvore antes de novo efeito.")
-        baseline = phase(driver, "probe", "-", root, control, deadline, lock_fd)
-        if baseline == 0 and phase(driver, "holdout", "-", root, control, deadline, lock_fd) == 0:
+        baseline = phase(driver, "probe", "-", root, control, deadline, lock_fd, cfg.get("node_verificado"))
+        if baseline == 0 and unresolved[5] == "IN_PROGRESS" and phase(driver, "holdout", "-", root, control, deadline, lock_fd, cfg.get("node_verificado")) == 0:
             state = "RECONCILED_PASS"
-        elif baseline == 1 and phase(driver, "rollback_check", "-", root, control, deadline, lock_fd) == 0:
+        elif baseline == 1 and phase(driver, "rollback_check", "-", root, control, deadline, lock_fd, cfg.get("node_verificado")) == 0:
             state = "ROLLED_BACK"
         else:
             return result("RECONCILE", motivo="Estado final ou restauração ainda sem prova.")
@@ -114,10 +131,11 @@ def recover(db, cfg, root, driver, control, mission, evidence, candidate, policy
         return result(state)
     if reconcile:
         return result("NOT_PENDING")
-    baseline = phase(driver, "probe", "-", root, control, deadline, lock_fd)
+    baseline = phase(driver, "probe", "-", root, control, deadline, lock_fd, cfg.get("node_verificado"))
     if baseline == 0:
-        reserved = phase(driver, "holdout", "-", root, control, deadline, lock_fd)
-        return result("ALREADY_PASS" if reserved == 0 else "BLOCKED_REGRESSION",
+        reserved = phase(driver, "holdout", "-", root, control, deadline, lock_fd, cfg.get("node_verificado"))
+        status = {0: "ALREADY_PASS", 1: "BLOCKED_REGRESSION"}.get(reserved, "BLOCKED_DEPENDENCY")
+        return result(status,
                       referencia=0, holdout=reserved)
     if baseline != 1:
         return result("BLOCKED_DEPENDENCY", referencia=baseline)
@@ -135,7 +153,11 @@ def recover(db, cfg, root, driver, control, mission, evidence, candidate, policy
         return result("BUDGET_EXHAUSTED")
     if candidate and candidate not in cfg["receitas"]:
         raise ValueError("Receita fora do perfil.")
-    learned = db.execute("SELECT recipe FROM lessons WHERE project=? AND incident=? AND policy=?", (*case, policy_sha)).fetchone()
+    head = subprocess.run(["git", "-C", str(root), "rev-parse", "--verify", "HEAD"],
+                          stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
+    revision = head.stdout.strip() if head.returncode == 0 else None
+    memory_scope = digest((policy_sha + ":" + revision).encode()) if revision else None
+    learned = db.execute("SELECT recipe FROM lessons WHERE project=? AND incident=? AND policy=?", (*case, memory_scope)).fetchone()
     recipe = candidate or (learned[0] if learned else cfg["receitas"][0])
     source = "memoria" if learned and recipe == learned[0] else "candidata"
     cursor = db.execute("INSERT INTO attempts(project,incident,mission,evidence,state,recipe,policy) VALUES(?,?,?,?,'IN_PROGRESS',?,?)", (*task, evidence, recipe, policy_sha))
@@ -143,19 +165,19 @@ def recover(db, cfg, root, driver, control, mission, evidence, candidate, policy
     steps = {"referencia": baseline}
     status = "REJECTED"
     for stage in ("repair", "probe", "holdout"):
-        steps[stage] = phase(driver, stage, recipe if stage == "repair" else "-", root, control, deadline, lock_fd)
+        steps[stage] = phase(driver, stage, recipe if stage == "repair" else "-", root, control, deadline, lock_fd, cfg.get("node_verificado"))
         if steps[stage] != 0:
             break
     else:
         status = "VERIFIED"
     db.execute("UPDATE attempts SET state=?, checks=? WHERE id=?",
                (status, json.dumps(steps, sort_keys=True), cursor.lastrowid))
-    if status == "VERIFIED":
-        db.execute("INSERT OR REPLACE INTO lessons VALUES(?,?,?,?)", (*case, policy_sha, recipe))
+    if status == "VERIFIED" and memory_scope:
+        db.execute("INSERT OR REPLACE INTO lessons VALUES(?,?,?,?)", (*case, memory_scope, recipe))
     else:
-        db.execute("DELETE FROM lessons WHERE project=? AND incident=? AND policy=? AND recipe=?", (*case, policy_sha, recipe))
+        db.execute("DELETE FROM lessons WHERE project=? AND incident=? AND policy=? AND recipe=?", (*case, memory_scope, recipe))
     db.commit()
-    return result(status, registro=cursor.lastrowid, origem=source, receita=recipe, verificacoes=steps, tentativa=count + 1)
+    return result(status, registro=cursor.lastrowid, revisao=revision, origem=source, receita=recipe, verificacoes=steps, tentativa=count + 1)
 
 
 def execute(args):

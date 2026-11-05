@@ -78,7 +78,10 @@ def validate(item):
     for gate in gates.values():
         if not isinstance(gate, dict) or not isinstance(gate.get("estado"), str):
             raise ValueError("Gate sem estado textual")
-        if gate["estado"] in ("PASS", "FAIL", "RUNNING", "BLOCKED") and not gate.get("evidencia"):
+        if gate["estado"] not in ("PASS", "FAIL", "RUNNING", "BLOCKED", "INCONCLUSIVE", "NOT_RUN", "NAO_VERIFICADO", "NAO_APLICAVEL"):
+            raise ValueError("Estado de gate desconhecido")
+        if gate["estado"] not in ("NOT_RUN", "NAO_VERIFICADO") and (
+                not isinstance(gate.get("evidencia"), str) or not gate["evidencia"].strip()):
             raise ValueError(f"Gate {gate['estado']} sem evidência")
     fails = item.get("falhas")
     if not isinstance(fails, list):
@@ -89,7 +92,7 @@ def validate(item):
         sig = failure.get("assinatura")
         if not isinstance(sig, str) or not re.fullmatch(r"[a-z0-9_.-]{1,100}", sig):
             raise ValueError("Use uma assinatura curta em minúsculas, sem nomes privados")
-        if not failure.get("evidencia"):
+        if not isinstance(failure.get("evidencia"), str) or not failure["evidencia"].strip():
             raise ValueError("Falha sem evidência")
     count = item.get("entregas_aceitas_na_janela")
     if count is not None and (type(count) is not int or count < 0 or not item.get("janela")):

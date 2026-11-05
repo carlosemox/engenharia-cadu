@@ -33,7 +33,7 @@ if stage == 'repair':
     if recipe == 'parcial':
         target = Path('docs/fabrica/routes.json')
         data = json.loads(target.read_text())
-        data['routes']['recuperar'] = {}
+        data['routes']['recuperar'] = json.loads(Path('rota-canonica.json').read_text())
         target.write_text(json.dumps(data))
         sys.exit(0)
     if recipe == 'lento':
@@ -60,7 +60,7 @@ class RecoveryTest(unittest.TestCase):
         self.control.mkdir()
         subprocess.run(["git", "init", "-q", str(self.root)], check=True)
         for rel in ("scripts/build_factory.py", "scripts/prompt_factory.py", "fabrica/rotas.json",
-                    "comandos/ASSUMIR_PROJETO.md", "comandos/REESTRUTURAR_PROJETO.md", "read.md"):
+                    "comandos/ASSUMIR_PROJETO.md", "comandos/REESTRUTURAR_PROJETO.md", "docs/assets/factory.js", "read.md"):
             dest = self.root / rel
             dest.parent.mkdir(exist_ok=True, parents=True)
             shutil.copyfile(ROOT / rel, dest)
@@ -68,6 +68,10 @@ class RecoveryTest(unittest.TestCase):
         subprocess.run([sys.executable, "scripts/build_factory.py"], cwd=self.root,
                        capture_output=True, check=True)
         self.output = self.root / "docs/fabrica"
+        (self.root / "rota-canonica.json").write_text(json.dumps(json.loads((self.output / "routes.json").read_text())["routes"]["recuperar"]))
+        subprocess.run(["git", "-C", str(self.root), "add", "."], check=True)
+        subprocess.run(["git", "-C", str(self.root), "-c", "user.name=QA", "-c", "user.email=qa@example.invalid",
+                        "commit", "-qm", "ensaio"], check=True)
         # Embed the example into the digest-pinned driver, keeping the holdout
         # outside the worktree. No imports from mutable application code here.
         example = (MODULE / "exemplos/fabrica.py").read_text().split('if __name__ == "__main__":')[0]
@@ -77,6 +81,9 @@ class RecoveryTest(unittest.TestCase):
         self.cfg = dict(projeto="app", caso="fabrica", ambiente="ensaio-descartavel",
                         worktree=str(self.root), receitas=["parcial", "regenerar", "lento"],
                         tentativas=3, segundos=12, sha256_procedimento=sha(driver.read_bytes()))
+        if shutil.which("node"):
+            node = Path(shutil.which("node")).resolve()
+            self.cfg["node"] = {"caminho": str(node), "sha256": sha(node.read_bytes())}
         self.set_profile()
         self.inject()
 
@@ -110,8 +117,10 @@ class RecoveryTest(unittest.TestCase):
         partial = self.run_worker(recipe="parcial")
         self.assertEqual(partial["estado"], "REJECTED")
         self.assertEqual(partial["verificacoes"], {"referencia": 1, "repair": 0, "probe": 0, "holdout": 1})
-        self.assertEqual(self.run_worker()["estado"], "BLOCKED_REGRESSION")
+        self.assertEqual(self.run_worker()["estado"], "RECONCILE")
+        self.assertEqual(self.run_worker(reconcile=True)["estado"], "RECONCILE")
         self.inject()
+        self.assertEqual(self.run_worker(reconcile=True)["estado"], "ROLLED_BACK")
         self.assertEqual(self.run_worker(mission="outra")["estado"], "BLOCKED_REPEAT")
         fixed = self.run_worker(recipe="regenerar", evidence="f2")
         self.assertEqual(fixed["estado"], "VERIFIED")
@@ -141,6 +150,7 @@ class RecoveryTest(unittest.TestCase):
         self.set_profile()
         self.assertEqual(self.run_worker(recipe="parcial")["estado"], "REJECTED")
         self.inject()
+        self.assertEqual(self.run_worker(reconcile=True)["estado"], "ROLLED_BACK")
         self.assertEqual(self.run_worker(evidence="nova")["estado"], "BUDGET_EXHAUSTED")
         self.assertEqual(self.run_worker(mission="outro", evidence="nova")["estado"], "BUDGET_EXHAUSTED")
 
@@ -201,6 +211,29 @@ class RecoveryTest(unittest.TestCase):
         self.assertIn("Projetos recebidos: 1", summary)
         self.assertEqual(subprocess.check_output(args), before)
 
+    def test_broken_template_is_repaired_and_new_head_invalidates_memory(self):
+        self.assertEqual(self.run_worker(recipe="regenerar")["estado"], "VERIFIED")
+        routes = self.output / "routes.json"
+        data = json.loads(routes.read_text())
+        data["routes"]["recuperar"] = {}
+        routes.write_text(json.dumps(data))
+        self.assertEqual(self.run_worker(mission="segunda", evidence="f2")["estado"], "VERIFIED")
+        subprocess.run(["git", "-C", str(self.root), "-c", "user.name=QA", "-c", "user.email=qa@example.invalid",
+                        "commit", "--allow-empty", "-qm", "outro commit"], check=True)
+        self.inject()
+        result = self.run_worker(mission="terceira", evidence="f3")
+        self.assertEqual(result["origem"], "candidata")
+        self.assertEqual(result["receita"], "parcial")
+
+    def test_portfolio_rejects_unknown_gate_or_blank_proof(self):
+        cli = [sys.executable, str(MODULE / "diagnostico.py")]
+        data = json.loads(subprocess.check_output(cli + ["coletar", str(self.root)]))
+        report = self.control / "relato.json"
+        for state in ("APROVADO_EM_PRODUCAO", "PASS"):
+            data["gates"]["release"] = {"estado": state, "evidencia": "  "}
+            report.write_text(json.dumps(data))
+            self.assertEqual(subprocess.run(cli + ["consolidar", str(report)], capture_output=True).returncode, 2)
+
     def test_deadline_and_integrity(self):
         self.cfg["segundos"] = 1
         self.set_profile()
@@ -216,18 +249,34 @@ class RecoveryTest(unittest.TestCase):
         rules = self.root / "AGENTS.md"
         original = b"Regra existente com acento UTF-8: " + "produção".encode()
         rules.write_bytes(original)
-        cmd = [sys.executable, str(MODULE / "adotar.py"), str(self.root),
-               "--ativar-na-revisao", "a" * 40]
+        fixture = self.control / "central"
+        for filename in (ROLE, Path("comando.md"), Path("modulos/recuperacao/adotar.py")):
+            (fixture / filename).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(ROOT / filename, fixture / filename)
+        subprocess.run(["git", "init", "-q", str(fixture)], check=True)
+        subprocess.run(["git", "-C", str(fixture), "add", "."], check=True)
+        commit = ["git", "-C", str(fixture), "-c", "user.name=QA", "-c", "user.email=qa@example.invalid",
+                  "commit", "-qm"]
+        subprocess.run(commit + ["central"], check=True)
+        revision = subprocess.check_output(["git", "-C", str(fixture), "rev-parse", "HEAD"], text=True).strip()
+        cmd = [sys.executable, str(fixture / "modulos/recuperacao/adotar.py"), str(self.root), "--ativar-na-revisao", revision]
         self.assertEqual(subprocess.check_output(cmd, text=True).strip(), "ATIVO")
         after = rules.read_bytes()
         self.assertTrue(after.startswith(original))
         self.assertIn(b"cadu_recuperacao", after)
-        self.assertIn(b"/" + b"a" * 40 + b"/comando.md", after)
+        self.assertIn(b"/" + revision.encode() + b"/comando.md", after)
         self.assertEqual(subprocess.check_output(cmd, text=True).strip(), "JA_ATIVO")
         self.assertEqual(after, rules.read_bytes())
         cmd[-1] = "b" * 40
         self.assertEqual(subprocess.run(cmd, capture_output=True).returncode, 2)
         self.assertEqual(after, rules.read_bytes())
+
+        subprocess.run(commit + ["segunda", "--allow-empty"], check=True)
+        cmd[-1] = subprocess.check_output(["git", "-C", str(fixture), "rev-parse", "HEAD"], text=True).strip()
+        self.assertEqual(subprocess.check_output(cmd, text=True).strip(), "ATIVO")
+        self.assertTrue(rules.read_bytes().startswith(original))
+        (fixture / ROLE).write_text("papel alterado")
+        self.assertEqual(subprocess.run(cmd, capture_output=True).returncode, 2)
 
     def test_install_is_idempotent_and_preserves_existing_agent(self):
         cmd = [sys.executable, str(MODULE / "adotar.py"), str(self.root)]

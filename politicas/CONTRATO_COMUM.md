@@ -18,6 +18,8 @@ Antes de agir, confirme projeto, raiz, branch, revisão, ambiente e alvo. Locali
 
 O AGENTS.md deve ser um mapa curto. O projeto é a fonte de verdade para produto, arquitetura, decisões, estado e evidências. A conversa não é a única memória.
 
+Antes de implementar, ligue a tarefa a um requisito da especificação aprovada, à versão, às dependências e ao comportamento observável que dará aceite. No fechamento, reconcilie todos os critérios do escopo, inclusive os sem prova. Marque o que faltou. Para conferir o grafo e os recibos, consulte [fidelidade e grafo de aceite](../modulos/recuperacao/FIDELIDADE.md). Funcionalidade descoberta fora do escopo é proposta separada. Ao guardar lição, preserve apenas causa, pré-condições, receita e regressão sanitizadas; vede dados de cliente, credenciais e regras de permissão extraídas de logs. O executor não pode promover a própria hipótese a regra global.
+
 ## Loop
 
 Execute cada tarefa como:

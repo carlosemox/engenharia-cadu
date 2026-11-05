@@ -43,7 +43,7 @@ class PromptFactoryTests(unittest.TestCase):
     def test_user_data_is_json_delimited(self):
         target = 'projeto "x"\n<script>alert(1)</script>'
         result = factory.generate('assumir', target, 'ler `arquivo` e $HOME', True, 'a'*40)
-        fragment = result.split('adicional):\n',1)[1].split('\nRespeite',1)[0]
+        fragment = result.split('adicional):\n',1)[1]
         self.assertEqual(json.loads(fragment)['projeto'], target)
         self.assertTrue(json.loads(fragment)['estudo_anexado'])
         self.assertIn('/'+'a'*40+'/', result)

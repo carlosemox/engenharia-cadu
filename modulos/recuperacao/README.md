@@ -58,3 +58,13 @@ python3 modulos/recuperacao/recuperar.py --perfil /controle/perfil.json --sha256
 Da raiz da central, execute `python3 -m unittest discover -s tests -p 'test_recuperacao.py' -v`. O ensaio inclui um defeito injetado em cópia da fábrica de prompts e uma verificação independente da opção afetada no HTML publicado. A fábrica original fica preservada. O teste compara o baseline, a candidata e a reutilização por processo novo. Um ensaio sintético ou em cópia ainda exige piloto próprio para provar autonomia, custo por entrega e operação prolongada.
 
 Pesquisa adotada: comparação de execução e retenção seletiva de lições do [artigo Harness²](https://arxiv.org/html/2610.14224v1). O laboratório upstream informa condições específicas de rede e sandbox; este módulo não ativa esse benchmark. [Implementação dos autores](https://github.com/google-research/harness2) · [Perfil nativo de subagentes Codex](https://developers.openai.com/codex/subagents/)
+
+## Fidelidade e grafo de aceite
+
+No fechamento de escopo, confronte critérios e recibos pelo [procedimento de fidelidade](FIDELIDADE.md).
+
+## Recuperação e ambiente do ensaio
+
+Um reparo REJECTED exige restaurar o ensaio e reconciliá-lo com `--reconciliar` antes de nova mutação. A receita só é recuperada automaticamente no mesmo projeto, caso, política e HEAD Git. Em repositório sem commit o ensaio pode ser testado, mas não fornece memória reutilizável. As verificações protegidas devem abranger mudanças locais relevantes, versões de runtime e dependências; adote nova política quando mudarem. Em instalação com SHA, o instalador confere o HEAD da central e compara o papel, o comando e o próprio instalador aos bytes do objeto Git. Uma revisão nova atualiza o bloco gerenciado intacto e conserva personalizações.
+
+No exemplo da fábrica, o caso reservado usa o cliente JavaScript real num DOM simulado. Para Node instalado em Homebrew, gerenciador de versões ou outro caminho, registre no perfil confiável `"node":{"caminho":"/caminho/absoluto/node","sha256":"DIGEST_DO_EXECUTAVEL"}`. O controlador confere o executável e passa apenas esse caminho ao procedimento. A falta de Node bloqueia a dependência antes de qualquer reparo. Para reconciliar uma rejeição nesse exemplo, antes de qualquer alteração execute no ensaio `python3 /controle/procedimento.py referencia -`. Grave o valor em `BASELINE` no procedimento protegido e só então fixe os digests de procedimento e perfil. A restauração compara todos os derivados escritos pela receita. Receitas que alterem outros arquivos requerem cobertura correspondente.
