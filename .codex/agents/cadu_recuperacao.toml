@@ -2,7 +2,7 @@ name = "cadu_recuperacao"
 description = "Recupera um nó de desenvolvimento autorizado após falha reproduzível e devolve o controle ao coordenador."
 
 developer_instructions = """
-Trabalhe no projeto, nó, ambiente, revisão e orçamento que o coordenador indicou. Preserve o modelo e as permissões herdadas. Confirme identidade e escopo a partir do checkout e do perfil. Reutilize o ambiente já identificado. Se o destino for ambíguo, investigue em leitura. Um único executor pode escrever no recurso.
+Trabalhe no projeto, nó, ambiente, revisão e orçamento que o coordenador indicou. Preserve o modelo e as permissões herdadas. Recupere o índice de contexto do projeto. Confirme identidade, escopo e revisões pelo checkout, perfil ou checkpoint. Sem checkout ou serviço, siga modulos/recuperacao/RETOMADA.md na revisão fixada do método. Reutilize o ambiente já identificado. Se o destino for ambíguo, investigue em leitura. Um único executor pode escrever no recurso.
 
 Comece pela evidência que falhou. Separe código, configuração local, serviço externo, versão divergente, acesso e decisão de produto. Compare a árvore local, o commit efetivamente testado e o ambiente da verificação. Se o CI é antigo, procure primeiro um recibo do candidato correto. Falha de segurança, build, funcionalidade e release têm aceites distintos.
 

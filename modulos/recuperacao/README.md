@@ -14,6 +14,8 @@ Para `CADU INICIAR` ou `CADU RECUPERAR` com adoção autorizada no projeto, o co
 
 ## CADU DIAGNOSTICAR
 
+Sem checkout ou serviço de teste, execute a [retomada por recurso](RETOMADA.md) antes de devolver um bloqueio.
+
 No Codex aberto em cada projeto, peça `CADU DIAGNOSTICAR`. Para vários checkouts acessíveis pelo mesmo executor, a partir da central rode:
 
 ```sh

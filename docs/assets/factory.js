@@ -16,7 +16,7 @@
       const mode = byId('mode').value;
       const route = catalog.routes[mode];
       const data = {
-        projeto: byId('target').value.trim() || 'projeto aberto; confirmar raiz',
+        projeto: byId('target').value.trim() || 'recuperar projeto do perfil ou checkpoint e confirmar origem',
         pedido: byId('request').value.trim() || route.goal,
         estudo_anexado: byId('attachment').checked
       };

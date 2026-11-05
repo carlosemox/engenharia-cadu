@@ -14,6 +14,8 @@ Antes de escrever, recupere o ambiente autorizado do perfil, da seleção do res
 
 ## Harness
 
+Sem checkout ou serviço de teste, execute a [retomada por recurso](../modulos/recuperacao/RETOMADA.md) antes de devolver um bloqueio.
+
 Antes de agir, confirme projeto, raiz, branch, revisão, ambiente e alvo. Localize o índice do projeto, perfil, estado, decisões, tarefa, contratos, testes e checkpoint. Carregue somente o procedimento e as fontes pertinentes. Use índice, busca estrutural e trechos antes de abrir arquivos extensos. Registre a revisão das fontes utilizadas.
 
 O AGENTS.md deve ser um mapa curto. O projeto é a fonte de verdade para produto, arquitetura, decisões, estado e evidências. A conversa não é a única memória.
