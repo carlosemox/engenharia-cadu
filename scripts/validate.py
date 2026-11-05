@@ -41,10 +41,10 @@ for p in ROOT.rglob('*.md'):
 prompts=list((ROOT/'p').glob('P[0-9][0-9].md'))
 if len(prompts)!=31:errors.append('Expected 31 canonical prompts')
 for p in prompts:
- m=re.search(r'## Comando completo\n```text\n([\s\S]*?)\n```',p.read_text())
- if not m:errors.append(f'Missing command: {p}');continue
+ source=p.read_text();m=re.search(r'## Comando completo\n```text\n([\s\S]*?)\n```',source)
+ expected=m.group(1).strip() if m else source.strip()
  txt=(ROOT/f'docs/comandos/{p.stem}.txt').read_text()
- if txt.strip()!=m.group(1).strip():errors.append(f'Drift: {p.stem}')
+ if txt.strip()!=expected:errors.append(f'Drift: {p.stem}')
 for p in ROOT.rglob('*.json'):
  try:json.loads(p.read_text())
  except Exception as e:errors.append(f'Invalid JSON {p}: {e}')

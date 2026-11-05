@@ -14,12 +14,13 @@ spec.loader.exec_module(factory)
 
 class PromptFactoryTests(unittest.TestCase):
     def test_thin_stage_preserves_all_specific_instructions(self):
-        common=r'CONTRATO COMUM — V3\nRead https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/politicas/CONTRATO_COMUM.md[^\n]*\n[\s\S]*?\n\n'
+        common=r'CONTRATO COMUM — V3\nRead https://raw\.githubusercontent\.com/carlosemox/engenharia-cadu/main/politicas/CONTRATO_COMUM\.md[^\n]*\nAplique Harness, Loop e Graph:[^\n]*\n\n'
         for source in (ROOT/'p').glob('P[0-9][0-9].md'):
-            full=re.search(r'## Comando completo\n```text\n([\s\S]*?)\n```',source.read_text())[1]
-            expected=re.sub(common,'',full,count=1)
+            source_text=source.read_text();m=re.search(r'## Comando completo\n```text\n([\s\S]*?)\n```',source_text)
+            full=m[1] if m else source_text.strip()
+            expected=re.sub(common,'',full,count=1) if m else full
             thin=(ROOT/'execucao'/source.name).read_text()
-            self.assertEqual(re.search(r'```text\n([\s\S]*?)\n```',thin)[1].rstrip(),expected.rstrip())
+            self.assertEqual(re.search(r'```text\n([\s\S]*?)\n```',thin)[1],expected)
             self.assertIn('../politicas/CONTRATO_COMUM.md',thin)
 
     @unittest.skipUnless(shutil.which('node'), 'Node required for client behavior test')

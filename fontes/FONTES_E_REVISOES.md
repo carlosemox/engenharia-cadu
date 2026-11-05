@@ -20,6 +20,16 @@ Revisão consultada: `790a895304e0c08b70a5b215c9d334f1c86b816c`. A consulta da b
 - [Catálogo de ferramentas](https://github.com/soumatheusgomes/vibe-coding-toolkit/blob/790a895304e0c08b70a5b215c9d334f1c86b816c/docs/tools/README.md) — 23 frentes e decisão por aplicabilidade.
 - [Licença](https://github.com/soumatheusgomes/vibe-coding-toolkit/blob/790a895304e0c08b70a5b215c9d334f1c86b816c/LICENSE) — MIT com aviso de copyright preservado.
 
+## Vercel Labs Skills CLI e Find Skills
+
+Consulta: 04/11/2026. Revisão fixada para D01: `9197d919034d19010ae303cf96bf19ad087dd4be`.
+
+- [Skills CLI](https://github.com/vercel-labs/skills/blob/9197d919034d19010ae303cf96bf19ad087dd4be/README.md) — ecossistema aberto de agent skills; Node.js 22.20+ na revisão consultada.
+- [Find Skills](https://github.com/vercel-labs/skills/blob/9197d919034d19010ae303cf96bf19ad087dd4be/skills/find-skills/SKILL.md) — descoberta por necessidade; recomenda verificar qualidade antes de recomendar.
+- [CLI reference](https://github.com/vercel-labs/skills/blob/9197d919034d19010ae303cf96bf19ad087dd4be/docs/commands.md) — `find`, `use`, `add`, `list`, `check`, `update` e `remove`, escopo de projeto/global e `skills-lock.json`.
+
+A Engenharia Cadu usa essas fontes para descoberta controlada. Popularidade, instalações e estrelas são sinais auxiliares, não autorização nem prova de segurança/adequação.
+
 ## Guias oficiais OpenAI consultados
 
 - [Rethinking skills and prompts for GPT-6 Astra](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra): tarefa clara, instruções focadas e contexto relevante.

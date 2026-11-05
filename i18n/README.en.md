@@ -214,8 +214,8 @@ Use the full library as a map, not as one enormous prompt. IDs stay stable; each
 | [P26](../p/P26.md) | Organize content and publishing by brand. |
 | [P27](../p/P27.md) | Build programmatic video capabilities. |
 | [P28](../p/P28.md) | Structure engineering and construction capabilities. |
-| [P29](../p/P29.md) | Reduce exposure, cloning and reverse-engineering risk without claiming invulnerability. |
-| [P30](../p/P30.md) | Run Harness, Loop and Graph with controlled context and verifiable cycles. |
+| [P29](../p/P29.md) | Reduce exposure, cloning and reverse-engineering risk without promising invulnerability. |
+| [P30](../p/P30.md) | Run Harness, Loop and Graph with controlled context and evidence. |
 
 <!-- section:capacidades -->
 ## 11 / Adopt what you need. Preserve what works.

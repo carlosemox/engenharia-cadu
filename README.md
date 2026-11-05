@@ -215,7 +215,7 @@ Use a biblioteca completa como mapa, não como texto para colar de uma vez. Os I
 | [P27](p/P27.md) | Criar capacidades de vídeo programático. |
 | [P28](p/P28.md) | Estruturar capacidades de engenharia e obras. |
 | [P29](p/P29.md) | Reduzir exposição, clonagem e engenharia reversa sem prometer invulnerabilidade. |
-| [P30](p/P30.md) | Executar Harness, Loop e Graph com contexto controlado e ciclos verificáveis. |
+| [P30](p/P30.md) | Operar Harness, Loop e Graph com contexto controlado e evidência. |
 
 <!-- section:capacidades -->
 ## 11 / Adote o necessário. Preserve o que funciona.

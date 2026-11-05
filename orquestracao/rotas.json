@@ -74,12 +74,5 @@
   ],
   "limits": "Este mapa não executa agentes, autentica decisões, verifica evidências ou concede permissões. O coordenador precisa observar o ambiente e aplicar as políticas.",
   "universal_entry": "comando.md",
-  "intent_catalog": "fabrica/rotas.json",
-  "skill_discovery": {
-    "entry": "modulos/descoberta-skills/read.md",
-    "need_definition": "P08",
-    "audit": "P22",
-    "runtime_verification": "P11",
-    "automatic_install": false
-  }
+  "intent_catalog": "fabrica/rotas.json"
 }

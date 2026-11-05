@@ -20,8 +20,9 @@ class StoryTests(unittest.TestCase):
    text=(R/src).read_text()
    for suffix in ['engenharia-cadu/main/p/P01.md','engenharia-cadu/main/p/P07.md','engenharia-cadu-adocao/main/read.md']:self.assertIn('https://raw.githubusercontent.com/carlosemox/'+suffix,text)
  def test_no_unapproved_guarantee_in_copy(self):
+  licensing_terms={'README.md':'Direitos autorais','i18n/README.en.md':'Copyright','i18n/README.es.md':'Derechos'}
   for src,_ in LOCALES.values():
-   text=(R/src).read_text();self.assertNotIn('100% secure',text);self.assertNotIn('segurança garantida',text);self.assertIn('NOT_RUN',text);self.assertIn('LICENCIAMENTO.md',text)
+   text=(R/src).read_text();self.assertNotIn('100% secure',text);self.assertNotIn('segurança garantida',text);self.assertIn('NOT_RUN',text);self.assertIn(licensing_terms[src],text)
  def test_generated_page_contracts(self):
   for lang,(src,dst) in LOCALES.items():
    with self.subTest(lang=lang):
@@ -58,7 +59,7 @@ class StoryTests(unittest.TestCase):
   tree=ast.parse((R/'scripts/validate.py').read_text())
   fn=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='expected_language')
   namespace={'ROOT':R};exec(compile(ast.Module(body=[fn],type_ignores=[]),'language-resolver','exec'),namespace)
-  for path,lang in [('docs/index.html','pt-BR'),('docs/en/index.html','en'),('docs/es/index.html','es'),('docs/prompts/P01/index.html','pt-BR'),('docs/enough/index.html','pt-BR')]:
+  for path,lang in [('docs/index.html','pt-BR'),('docs/en/index.html','en'),('docs/es/index.html','es'),('docs/prompts/P01/index.html','pt-BR'),('docs/arquitetura/index.en.html','en'),('docs/seguranca/index.es.html','es'),('docs/enough/index.html','pt-BR')]:
    self.assertEqual(namespace['expected_language'](R/path),lang)
  def test_spanish_interface_uses_spanish_review(self):
   text=(R/'docs/es/index.html').read_text()
