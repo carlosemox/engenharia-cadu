@@ -214,6 +214,8 @@ Use the full library as a map, not as one enormous prompt. IDs stay stable; each
 | [P26](../p/P26.md) | Organize content and publishing by brand. |
 | [P27](../p/P27.md) | Build programmatic video capabilities. |
 | [P28](../p/P28.md) | Structure engineering and construction capabilities. |
+| [P29](../p/P29.md) | Reduce exposure, cloning and reverse-engineering risk without claiming invulnerability. |
+| [P30](../p/P30.md) | Run Harness, Loop and Graph with controlled context and verifiable cycles. |
 
 <!-- section:capacidades -->
 ## 11 / Adopt what you need. Preserve what works.
@@ -239,7 +241,7 @@ NEED → npx skills find / skills.sh → P22 → PILOT → INSTALL → VERIFY
 
 The upstream CLI also provides `skills use` for temporary use, `skills check` for update detection and `skills update` for applying updates. In our method, search never installs and check never updates. Project scope is the default; global installation, automatic confirmation and mass updates require their own justification.
 
-`find-skills` helps discover capabilities, but install counts, stars and source reputation are triage signals. Approval depends on the exact skill, license, scripts, hooks, data, network/telemetry, permissions, conflicts and test. [Open D01 — controlled discovery](modulos/descoberta-skills/README.en.md).
+`find-skills` helps discover capabilities, but install counts, stars and source reputation are triage signals. Approval depends on the exact skill, license, scripts, hooks, data, network/telemetry, permissions, conflicts and test. [Open D01 — controlled discovery](../modulos/descoberta-skills/README.en.md).
 
 <!-- section:operacao -->
 ## 12 / Know what is published—and what still needs proof

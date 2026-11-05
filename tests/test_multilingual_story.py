@@ -21,7 +21,7 @@ class StoryTests(unittest.TestCase):
    for suffix in ['engenharia-cadu/main/p/P01.md','engenharia-cadu/main/p/P07.md','engenharia-cadu-adocao/main/read.md']:self.assertIn('https://raw.githubusercontent.com/carlosemox/'+suffix,text)
  def test_no_unapproved_guarantee_in_copy(self):
   for src,_ in LOCALES.values():
-   text=(R/src).read_text();self.assertNotIn('100% secure',text);self.assertNotIn('segurança garantida',text);self.assertIn('NOT_RUN',text);self.assertIn('MIT',text)
+   text=(R/src).read_text();self.assertNotIn('100% secure',text);self.assertNotIn('segurança garantida',text);self.assertIn('NOT_RUN',text);self.assertIn('LICENCIAMENTO.md',text)
  def test_generated_page_contracts(self):
   for lang,(src,dst) in LOCALES.items():
    with self.subTest(lang=lang):

@@ -12,6 +12,7 @@
 | Backup no Drive por projeto | Política publicada; cópias históricas não equivalem ao estado atual | Captura completa do escopo, envio, conferência de integridade e recibo |
 | Backup automático no host do Codex | NÃO IMPLANTADO por esta publicação | Autenticação de acesso restrito, upload/download, destino privado e restauração testados no host |
 | Supervisor de 24 horas | NÃO IMPLANTADO por esta publicação | Runtime real, exclusividade, limites, retomada, parada e missão autorizada |
+| D01 — descoberta de skills | Procedimento público de descoberta controlada | Diretório/CLI acessíveis, shortlist auditada por P22 e piloto comprovado por P11 |
 | Agentes e skills | Catálogo para seleção | Procedência, licença, descoberta pelo cliente e piloto funcional |
 
 A situação de um aplicativo real pode ser diferente. O agente deve inspecioná-lo e registrar a evidência, não presumir que os estados desta biblioteca sejam os do produto.

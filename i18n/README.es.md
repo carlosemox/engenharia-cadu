@@ -214,6 +214,8 @@ Utiliza la biblioteca completa como mapa, no como un texto para pegar entero. Lo
 | [P26](../p/P26.md) | Organizar contenido y publicación por marca. |
 | [P27](../p/P27.md) | Crear capacidades de vídeo programático. |
 | [P28](../p/P28.md) | Estructurar capacidades de ingeniería y obras. |
+| [P29](../p/P29.md) | Reducir exposición, clonación e ingeniería inversa sin prometer invulnerabilidad. |
+| [P30](../p/P30.md) | Ejecutar Harness, Loop y Graph con contexto controlado y ciclos verificables. |
 
 <!-- section:capacidades -->
 ## 11 / Adopta lo necesario. Preserva lo que funciona.
@@ -239,7 +241,7 @@ NECESIDAD → npx skills find / skills.sh → P22 → PILOTO → INSTALAR → CO
 
 La CLI upstream también ofrece `skills use` para uso temporal, `skills check` para detectar actualizaciones y `skills update` para aplicarlas. En nuestro método, buscar no instala y check no actualiza. El alcance de proyecto es el predeterminado; instalación global, confirmación automática y actualizaciones masivas exigen justificación propia.
 
-`find-skills` ayuda a descubrir capacidades, pero instalaciones, estrellas y reputación son señales de triaje. La aprobación depende de la skill concreta, licencia, scripts, hooks, datos, red/telemetría, permisos, conflictos y prueba. [Abrir D01 — descubrimiento controlado](modulos/descoberta-skills/README.es.md).
+`find-skills` ayuda a descubrir capacidades, pero instalaciones, estrellas y reputación son señales de triaje. La aprobación depende de la skill concreta, licencia, scripts, hooks, datos, red/telemetría, permisos, conflictos y prueba. [Abrir D01 — descubrimiento controlado](../modulos/descoberta-skills/README.es.md).
 
 <!-- section:operacao -->
 ## 12 / Distingue lo publicado de lo que necesita comprobarse

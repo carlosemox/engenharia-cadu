@@ -1,3 +1,9 @@
+# 2026-11-04 — Consolidação D01 / P00–P30
+
+- D01 registrado nas rotas e no estado operacional.
+- P29/P30 alinhados ao formato canônico e incluídos nas narrativas PT/EN/ES.
+- Sincronizador e validador atualizados para reproduzir a biblioteca P00–P30 sem drift editorial.
+
 # 2026-11-04 — D01 — Descoberta controlada de skills
 
 - Integrado `find-skills`, `npx skills find`, `skills use`, `skills check` e o diretório skills.sh como mecanismos de descoberta, não instalação automática.

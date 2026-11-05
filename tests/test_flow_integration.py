@@ -2,11 +2,11 @@
 import json,pathlib,re,unittest
 R=pathlib.Path(__file__).resolve().parents[1]
 class FlowIntegrationTests(unittest.TestCase):
- def test_all_29_are_preserved(self):
-  self.assertEqual({p.stem for p in (R/'p').glob('P[0-9][0-9].md')},{f'P{i:02d}' for i in range(29)})
+ def test_all_31_are_preserved(self):
+  self.assertEqual({p.stem for p in (R/'p').glob('P[0-9][0-9].md')},{f'P{i:02d}' for i in range(31)})
  def test_routes_reference_existing_prompts(self):
   r=json.loads((R/'orquestracao/rotas.json').read_text());self.assertEqual(r['entry'],'P01')
-  self.assertEqual(set(r['default_order'])|set(r['not_automatic'])|{'P00'},{f'P{i:02d}' for i in range(29)})
+  self.assertEqual(set(r['default_order'])|set(r['not_automatic'])|{'P00'},{f'P{i:02d}' for i in range(31)})
   for p in r['default_order']+r['not_automatic']:self.assertTrue((R/'p'/f'{p}.md').exists())
  def test_optional_mission_not_automatic(self):
   r=json.loads((R/'orquestracao/rotas.json').read_text());self.assertNotIn('P17',r['default_order']);self.assertIsNone(r['on_scope_complete']);self.assertEqual(r['loops']['P14']['fix'],'P13')
