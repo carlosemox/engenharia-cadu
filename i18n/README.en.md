@@ -277,7 +277,7 @@ The best starting point is the next useful outcome: understand the product, reco
 
 ## Development environments and agents
 
-Before starting any project, choose the environment: **Terminal**, **Computer/Mac application** or **Cloud Code**.
+Recover the authorized environment. Ask only if the choice is ambiguous between **Terminal**, **Computer/Mac application** or **Cloud Code**.
 
 - **Codex:** coordination, integration and final review.
 - **Cloud Code:** Cloud Run, Kubernetes, GKE, Skaffold and Google Cloud APIs.

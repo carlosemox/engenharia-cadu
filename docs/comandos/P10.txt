@@ -32,3 +32,6 @@ Pronto significa operação autorizada demonstrada, não apenas YAML ou variáve
 
 ENCERRAMENTO DA ETAPA
 Entregue o resultado útil desta fase e um resumo com: situação (CONCLUIDO_NO_ESCOPO / PARCIAL / BLOQUEADO / AGUARDANDO_DECISAO); artefatos ou alterações; verificações realmente executadas e sua versão/ambiente; limites e pendências; próxima ação coberta pela autorização. Use NOT_RUN para teste não realizado. Registre tokens/custo somente quando observáveis; não converta estimativa em medição. Não repita o histórico inteiro e não prometa trabalho futuro ou em segundo plano sem processo real verificável. Quando a fase exigir entrevista, faça a pergunta pertinente em vez de encerrar prematuramente.
+
+PREPARAÇÃO EXECUTÁVEL
+Aplique modulos/recuperacao/PREPARACAO.md. Converta ausência de runtime, dependência ou serviço em tarefa de configuração e execute a preparação já autorizada. Verifique disponibilidade real, primeira operação sintética e limpeza dos recursos temporários. Falta de credencial, acesso ou decisão material deve identificar recurso e responsável exatos.

@@ -2,7 +2,7 @@
 
 ## Gate obrigatório
 
-No início da sessão ou ao assumir um projeto, confirmar:
+Recupere a seleção do perfil/checkpoint e confira o executor efetivo. Em primeiro uso, aceite o ambiente aberto pelo responsável quando inequívoco. Pergunte só diante de destino ambíguo ou conflito. Os ambientes previstos são:
 
 1. **Terminal** — execução direta por CLI, scripts, Git e testes.
 2. **Aplicativo do computador/Mac** — IDE ou aplicativo local, com revisão visual e controle interativo.

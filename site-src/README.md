@@ -36,6 +36,6 @@ Fontes dos guias existentes: políticas, `OPERACAO.md` e módulo S01. Seus corpo
 
 ## Fábrica V3
 
-Após os geradores acima, execute `python scripts/build_factory.py`. O catálogo canônico fica em `fabrica/rotas.json`; o gerador atualiza a página, os templates do cliente web, os dois downloads e `docs/read.md`. Os assets `factory.js` e `factory.css` são fontes locais. A página apenas gera texto e não envia os campos. Testar CLI, paridade de templates e links; interação no navegador tem evidência separada.
+Após os geradores acima, execute `python scripts/build_factory.py`. O catálogo canônico fica em `fabrica/rotas.json`; o gerador atualiza as páginas PT/EN/ES, os templates do cliente web, os dois downloads e `docs/read.md`. A fábrica visual tem um formulário único de contexto: respostas preenchidas são serializadas em JSON delimitado e viram o comando de retomada; segredos e dados pessoais são proibidos. Os assets `factory.js` e `factory.css` são fontes locais. A página apenas gera texto e não envia os campos. Testar CLI, paridade de templates, cobertura dos três idiomas e links; interação no navegador tem evidência separada.
 
 `sync_prompts.py` também gera `execucao/Pxx.md`, mantendo todas as instruções específicas e referenciando o contrato comum uma vez por sessão/revisão. A forma completa em `p/` e seus downloads continua disponível.

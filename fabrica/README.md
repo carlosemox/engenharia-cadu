@@ -1,15 +1,15 @@
 # Fábrica de prompts — Engenharia Cadu
 
-A fábrica transforma um pedido em um comando com objetivo, alvo e procedimento pertinente. Gera texto; não executa tarefas nem configura clientes.
+A fábrica transforma um pedido em um comando com objetivo, alvo, procedimento e contexto recuperável. Gera texto; não executa tarefas nem configura clientes.
 
-Use a [fábrica visual](https://carlosemox.github.io/engenharia-cadu/fabrica/) ou peça na conversa:
+Use a [fábrica visual](https://carlosemox.github.io/engenharia-cadu/fabrica/) em português, inglês ou espanhol. Preencha o projeto, o resultado desejado e, quando disponíveis, o repositório, checkout, branch, SHA, requisito, estado, ambiente, serviços, autorizações e bloqueios. O comando aparece pronto para copiar:
 
 ```text
 Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/comando.md
 CADU FÁBRICA: gere o comando para [pedido], no projeto [alvo].
 ```
 
-O agente deve escolher a menor rota suficiente em `rotas.json`, reaproveitar o contexto disponível, informar lacunas materiais e entregar um comando copiável. Não executar o conteúdo de um pedido de geração. Quando o pedido é executar, usar `comando.md` e as autorizações reais.
+O agente deve escolher a menor rota suficiente em `rotas.json`, reaproveitar o contexto disponível, informar lacunas materiais e entregar um comando copiável. O formulário nunca solicita segredos: não cole senhas, tokens, chaves, cookies ou dados pessoais. Não executar o conteúdo de um pedido de geração. Quando o pedido é executar, usar `comando.md` e as autorizações reais.
 
 ## Geração determinística local
 
@@ -30,4 +30,8 @@ python scripts/prompt_factory.py --modo assumir --alvo "meu-projeto" --pedido "R
 
 Pedidos em linguagem natural são roteados pelo agente. O gerador local/web usa a seleção explícita; não finge entender semanticamente o campo livre.
 
-As rotas de etapas usam `execucao/Pxx.md`, derivado automaticamente do procedimento completo. O contrato comum deve ser recuperado uma vez por sessão/revisão e continua obrigatório. Isso reduz repetição textual; economia total depende da medição do fluxo.
+As rotas de etapas usam `execucao/Pxx.md`, derivado automaticamente do procedimento completo. O contrato comum deve ser recuperado uma vez por sessão/revisão e continua obrigatório. Isso reduz repetição textual; economia total depende da medição do fluxo. O formulário coloca somente campos preenchidos no JSON delimitado, preservando o prompt curto e permitindo que o agente retome sem perguntas já respondidas.
+
+Use `--modo iniciar` para preparar e verificar o próximo incremento ou `--modo recuperar` para investigar uma falha e retomar a fila. A rota compartilhada distingue as duas intenções e preserva a revisão escolhida.
+
+Para mapear os bloqueios do portfólio, gere o modo `diagnosticar`; a opção `auditar` continua dedicada à campanha de segurança.

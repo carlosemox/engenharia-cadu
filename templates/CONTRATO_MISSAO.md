@@ -19,3 +19,8 @@ Checkpoint, heartbeat/lease, identificação de efeitos externos, retomada, idem
 
 ## Encerramento
 Condição de escopo concluído, orçamento, quota, risco, falta de alçada e cancelamento. Relatório verificável; processos/recursos próprios; pendências; status de publicação separado.
+
+
+## Ensaio e continuidade
+
+Referência do lote real que demonstrou entrega, parada, retomada, escritor único, preservação de alterações e limite aplicado. Hora de início observada, deadline, identidade do host e identificador real da execução. Estado de cliente, supervisor e worker. Condições que invalidam a homologação. Fontes de consumo observável e critério de progresso por entrega. Preparação/correção do controlador autorizada, com fonte e escopo, ou decisão pendente explícita.

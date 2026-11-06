@@ -37,4 +37,4 @@ Todos os procedimentos P00–P30 carregam o Contrato Comum V3 uma vez por sessã
 
 ## Ambiente de desenvolvimento e agentes
 
-Antes de assumir qualquer projeto, escolha Terminal, aplicativo do computador/Mac ou Cloud Code. Consulte `politicas/AMBIENTES_E_AGENTES.md` para o uso coordenado de Codex, Gemini Code Assist/Gemini CLI e Antigravity.
+Recupere o ambiente efetivo e o destino autorizado. Só peça uma escolha entre Terminal, aplicativo do computador/Mac ou Cloud Code quando houver ambiguidade. Consulte `politicas/AMBIENTES_E_AGENTES.md` para o uso coordenado de Codex, Gemini Code Assist/Gemini CLI e Antigravity.

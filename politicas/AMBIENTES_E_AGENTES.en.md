@@ -2,7 +2,7 @@
 
 ## Mandatory gate
 
-At the start of a session or when taking over a project, confirm:
+Recover the authorized environment and verify it against the actual executor. Ask only when the destination is ambiguous or conflicts. Supported environments:
 
 1. **Terminal** — direct CLI, Git, scripts and tests.
 2. **Computer/Mac application** — local IDE or application with interactive editing and visual review.

@@ -10,13 +10,17 @@ Codex é o coordenador principal. Use colaboradores somente quando houver frente
 
 ## Ambiente e roteamento de agentes
 
-Antes de escrever, confirme se a execução será pelo terminal, aplicativo do computador/Mac ou Cloud Code. Consulte `politicas/AMBIENTES_E_AGENTES.md`. Codex coordena por padrão; Cloud Code é ambiente; Gemini auxilia ou revisa; Antigravity executa tarefas agentic isoladas. Um único executor escreve em cada arquivo/branch por vez.
+Antes de escrever, recupere o ambiente autorizado do perfil, da seleção do responsável ou do checkpoint e confira o executor atual. Só pergunte entre terminal, aplicativo do computador/Mac ou Cloud Code quando a divergência mudar a ação. Consulte `politicas/AMBIENTES_E_AGENTES.md`. Codex coordena por padrão; Cloud Code é ambiente; Gemini auxilia ou revisa; Antigravity executa tarefas agentic isoladas. Um único executor escreve em cada arquivo/branch por vez.
 
 ## Harness
+
+Sem checkout ou serviço de teste, execute a [retomada por recurso](../modulos/recuperacao/RETOMADA.md) antes de devolver um bloqueio.
 
 Antes de agir, confirme projeto, raiz, branch, revisão, ambiente e alvo. Localize o índice do projeto, perfil, estado, decisões, tarefa, contratos, testes e checkpoint. Carregue somente o procedimento e as fontes pertinentes. Use índice, busca estrutural e trechos antes de abrir arquivos extensos. Registre a revisão das fontes utilizadas.
 
 O AGENTS.md deve ser um mapa curto. O projeto é a fonte de verdade para produto, arquitetura, decisões, estado e evidências. A conversa não é a única memória.
+
+Antes de implementar, ligue a tarefa a um requisito da especificação aprovada, à versão, às dependências e ao comportamento observável que dará aceite. No fechamento, reconcilie todos os critérios do escopo, inclusive os sem prova. Marque o que faltou. Para conferir o grafo e os recibos, consulte [fidelidade e grafo de aceite](../modulos/recuperacao/FIDELIDADE.md). Funcionalidade descoberta fora do escopo é proposta separada. Ao guardar lição, preserve apenas causa, pré-condições, receita e regressão sanitizadas; vede dados de cliente, credenciais e regras de permissão extraídas de logs. O executor não pode promover a própria hipótese a regra global.
 
 ## Loop
 
@@ -26,13 +30,15 @@ OBJETIVO → AÇÃO MÍNIMA → OBSERVAÇÃO → VERIFICAÇÃO → DECISÃO
 
 Prefira uma tentativa completa e verificável. Faça no máximo três ciclos por nó enquanto o contrato da tarefa continuar válido. Se a falha indicar requisito, contexto ou arquitetura incorreta, corrija o contrato antes de repetir. Não repita efeitos externos de resultado incerto. O executor não altera o próprio critério de aceite. Use revisão independente conforme o risco.
 
-Pare e registre bloqueio diante de segredo exposto, regressão, escopo ampliado, ausência de autorização, dependência não satisfeita ou evidência insuficiente.
+Em falha reproduzível, consulte [recuperação local](../modulos/recuperacao/README.md) somente para o nó afetado. Reutilize a lição validada da versão aplicável e interrompa repetições sem evidência nova. Retome o próximo nó autorizado. Pausa global, incidente de segurança compartilhado e teto da missão prevalecem.
+
+Pare o trabalho dependente e registre bloqueio diante de segredo exposto, regressão, escopo ampliado, ausência de autorização, dependência não satisfeita ou evidência insuficiente.
 
 ## Graph
 
 Represente a missão com nós e transições. Cada nó registra responsável, dependências, entradas, recursos alteráveis, critério de aceite, evidência e estado: READY, RUNNING, BLOCKED, FAILED, PASSED ou CANCELLED.
 
-Uma etapa só inicia quando suas dependências estão satisfeitas. Paralelismo é permitido somente em frentes independentes e deve ser comparado ao custo de um único executor. A próxima etapa deve ser indicada no estado do projeto.
+Aplique a seleção de tarefas e a conferência do ensaio descritas em [retomada por recurso](../modulos/recuperacao/RETOMADA.md). Um nó bloqueado exige mudança observável na condição de retomada antes de nova tentativa. Uma etapa só inicia quando suas dependências estão satisfeitas. Paralelismo é permitido somente em frentes independentes e deve ser comparado ao custo de um único executor. A próxima etapa deve ser indicada no estado do projeto.
 
 ## Contexto e economia
 
@@ -49,3 +55,12 @@ Depois de cada marco, atualize o registro autorizado do projeto com estado, deci
 ## Encerramento
 
 Conclua somente quando o objetivo estiver atendido no escopo, a verificação for proporcional ao risco, as evidências forem recuperáveis e o próximo passo ou estado final estiver registrado.
+
+## Preparação na origem
+
+Ao encontrar bloqueio recorrente, aplique [preparação e resolução na origem](../modulos/recuperacao/PREPARACAO.md). Vincule cada bloqueio a uma tarefa de resolução, dono, alçada e aceite. Reutilize provas ainda válidas e aplique cada gate somente às tarefas que ele governa.
+
+
+## Preparação desde a especificação
+
+Todos os procedimentos reutilizam o perfil operacional e a matriz requisito–dependência–prova do projeto. Desde P01 identifique decisões e recursos. Em P06 especifique preparação, estados e compatibilidade do executor. Em P10 prepare os recursos autorizados. P11 verifica o escopo concreto. P13 implementa incrementos executáveis. P17/P30 operam a missão comprovada. P18 recupera estado e P24 mede melhorias. Use [preparar e operar](../comandos/PREPARAR_E_OPERAR.md) para conduzir essa sequência sem colagens sucessivas. Preserve o escopo de pedidos somente leitura.

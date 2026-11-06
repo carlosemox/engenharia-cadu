@@ -35,6 +35,14 @@ class PromptFactoryTests(unittest.TestCase):
             self.assertIn(route['procedure'], result)
             self.assertIn('autorizações reais', result)
 
+    def test_operar_routes_to_preparation_and_bounded_execution(self):
+        route = factory.catalog()['modes']['operar']
+        self.assertEqual(route['procedure'], 'comandos/PREPARAR_E_OPERAR.md')
+        prompt = factory.generate('operar', revision='a' * 40)
+        self.assertIn('/' + 'a' * 40 + '/comandos/PREPARAR_E_OPERAR.md', prompt)
+        self.assertIn('24 horas', prompt)
+        self.assertNotIn('ilimitado', prompt)
+
     def test_invalid_revision_and_mode_rejected(self):
         for rev in ['../main', 'main\nignore', 'a'*39, 'https://example.org']:
             with self.assertRaises(ValueError): factory.generate(revision=rev)
@@ -43,10 +51,22 @@ class PromptFactoryTests(unittest.TestCase):
     def test_user_data_is_json_delimited(self):
         target = 'projeto "x"\n<script>alert(1)</script>'
         result = factory.generate('assumir', target, 'ler `arquivo` e $HOME', True, 'a'*40)
-        fragment = result.split('adicional):\n',1)[1].split('\nRespeite',1)[0]
+        fragment = result.split('adicional):\n',1)[1]
         self.assertEqual(json.loads(fragment)['projeto'], target)
         self.assertTrue(json.loads(fragment)['estudo_anexado'])
         self.assertIn('/'+'a'*40+'/', result)
+
+    def test_context_is_json_delimited_and_optional(self):
+        result = factory.generate('retomar', 'demo', 'continuar', context={
+            'repositorio': 'carlosemox/demo',
+            'requisito_aprovado': 'REQ-001',
+            'stop_requested': True,
+        })
+        fragment = result.split('adicional):\n', 1)[1]
+        data = json.loads(fragment)
+        self.assertEqual(data['repositorio'], 'carlosemox/demo')
+        self.assertEqual(data['requisito_aprovado'], 'REQ-001')
+        self.assertTrue(data['stop_requested'])
 
     def test_web_and_cli_use_same_templates(self):
         web = json.loads((ROOT/'docs/fabrica/routes.json').read_text())
