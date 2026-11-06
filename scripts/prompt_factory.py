@@ -11,7 +11,7 @@ BASE = 'https://raw.githubusercontent.com/carlosemox/engenharia-cadu/'
 def catalog():
     return json.loads((ROOT / 'fabrica/rotas.json').read_text(encoding='utf-8'))
 
-def generate(mode='auto', target='', request='', attachment=False, revision='main'):
+def generate(mode='auto', target='', request='', attachment=False, revision='main', context=None):
     if revision != 'main' and not re.fullmatch(r'[a-fA-F0-9]{40}', revision):
         raise ValueError('Revisão deve ser main ou SHA completo de 40 caracteres.')
     routes = catalog()['modes']
@@ -19,9 +19,18 @@ def generate(mode='auto', target='', request='', attachment=False, revision='mai
         raise ValueError('Modo desconhecido.')
     route = routes[mode]
     # JSON encoding keeps user input clearly delimited, including embedded newlines.
-    payload = json.dumps({'projeto': target.strip() or 'recuperar projeto do perfil ou checkpoint e confirmar origem',
-                          'pedido': request.strip() or route['goal'],
-                          'estudo_anexado': bool(attachment)}, ensure_ascii=False, indent=2)
+    payload_data = {
+        'projeto': target.strip() or 'recuperar projeto do perfil ou checkpoint e confirmar origem',
+        'pedido': request.strip() or route['goal'],
+        'estudo_anexado': bool(attachment),
+    }
+    if context:
+        for key, value in context.items():
+            if isinstance(value, str):
+                value = value.strip()
+            if value not in ('', None) or key == 'stop_requested':
+                payload_data[key] = value
+    payload = json.dumps(payload_data, ensure_ascii=False, indent=2)
     return (f'ENGENHARIA CADU · {mode.upper()}\n'
             f'Read {BASE}{revision}/comando.md\n'
             f'Procedimento selecionado: {BASE}{revision}/{route["procedure"]}\n'

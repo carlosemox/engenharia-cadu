@@ -56,6 +56,18 @@ class PromptFactoryTests(unittest.TestCase):
         self.assertTrue(json.loads(fragment)['estudo_anexado'])
         self.assertIn('/'+'a'*40+'/', result)
 
+    def test_context_is_json_delimited_and_optional(self):
+        result = factory.generate('retomar', 'demo', 'continuar', context={
+            'repositorio': 'carlosemox/demo',
+            'requisito_aprovado': 'REQ-001',
+            'stop_requested': True,
+        })
+        fragment = result.split('adicional):\n', 1)[1]
+        data = json.loads(fragment)
+        self.assertEqual(data['repositorio'], 'carlosemox/demo')
+        self.assertEqual(data['requisito_aprovado'], 'REQ-001')
+        self.assertTrue(data['stop_requested'])
+
     def test_web_and_cli_use_same_templates(self):
         web = json.loads((ROOT/'docs/fabrica/routes.json').read_text())
         for mode in factory.catalog()['modes']:

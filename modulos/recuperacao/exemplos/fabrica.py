@@ -47,10 +47,18 @@ class Options(HTMLParser):
     def __init__(self):
         super().__init__()
         self.values = []
+        self.in_mode = False
 
     def handle_starttag(self, tag, attrs):
-        if tag == "option":
-            self.values.append(dict(attrs).get("value"))
+        attributes = dict(attrs)
+        if tag == "select" and attributes.get("id") == "mode":
+            self.in_mode = True
+        elif tag == "option" and self.in_mode:
+            self.values.append(attributes.get("value"))
+
+    def handle_endtag(self, tag):
+        if tag == "select" and self.in_mode:
+            self.in_mode = False
 
 
 def main(stage, recipe):
