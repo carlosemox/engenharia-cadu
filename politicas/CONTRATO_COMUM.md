@@ -38,7 +38,7 @@ Pare o trabalho dependente e registre bloqueio diante de segredo exposto, regres
 
 Represente a missão com nós e transições. Cada nó registra responsável, dependências, entradas, recursos alteráveis, critério de aceite, evidência e estado: READY, RUNNING, BLOCKED, FAILED, PASSED ou CANCELLED.
 
-Uma etapa só inicia quando suas dependências estão satisfeitas. Paralelismo é permitido somente em frentes independentes e deve ser comparado ao custo de um único executor. A próxima etapa deve ser indicada no estado do projeto.
+Aplique a seleção de tarefas e a conferência do ensaio descritas em [retomada por recurso](../modulos/recuperacao/RETOMADA.md). Um nó bloqueado exige mudança observável na condição de retomada antes de nova tentativa. Uma etapa só inicia quando suas dependências estão satisfeitas. Paralelismo é permitido somente em frentes independentes e deve ser comparado ao custo de um único executor. A próxima etapa deve ser indicada no estado do projeto.
 
 ## Contexto e economia
 

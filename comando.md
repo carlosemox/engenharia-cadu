@@ -9,7 +9,7 @@ CADU: [meu pedido]. Confirme o projeto pelo pedido, perfil ou checkpoint. Use ta
 
 ## Contrato de entrada
 
-Sem checkout ou serviço de teste, execute a [retomada por recurso](modulos/recuperacao/RETOMADA.md) antes de devolver um bloqueio.
+Antes de testar, confira se o ensaio contém os arquivos, configuração e recursos usados pela suíte. Sem checkout ou serviço de teste, execute a [retomada por recurso](modulos/recuperacao/RETOMADA.md) antes de devolver um bloqueio.
 
 1. Identifique o aplicativo-alvo por diretório, remoto e instruções aplicáveis. Esta central é o alvo somente quando o pedido é alterar a própria Engenharia Cadu. Se houver vários alvos possíveis, faça apenas a pergunta indispensável antes de escrever; continue análise independente.
 2. Resolva a referência do método para um SHA, registre-o no estado privado do projeto e use a mesma revisão durante a missão. Reutilize leitura válida; não carregue todos os 31 procedimentos. Se offline, use cópia confiável identificada e declare a limitação.
