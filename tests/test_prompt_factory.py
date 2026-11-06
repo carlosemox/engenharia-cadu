@@ -35,6 +35,14 @@ class PromptFactoryTests(unittest.TestCase):
             self.assertIn(route['procedure'], result)
             self.assertIn('autorizações reais', result)
 
+    def test_operar_routes_to_preparation_and_bounded_execution(self):
+        route = factory.catalog()['modes']['operar']
+        self.assertEqual(route['procedure'], 'comandos/PREPARAR_E_OPERAR.md')
+        prompt = factory.generate('operar', revision='a' * 40)
+        self.assertIn('/' + 'a' * 40 + '/comandos/PREPARAR_E_OPERAR.md', prompt)
+        self.assertIn('24 horas', prompt)
+        self.assertNotIn('ilimitado', prompt)
+
     def test_invalid_revision_and_mode_rejected(self):
         for rev in ['../main', 'main\nignore', 'a'*39, 'https://example.org']:
             with self.assertRaises(ValueError): factory.generate(revision=rev)

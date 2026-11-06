@@ -15,3 +15,11 @@ ADR curto: contexto, alternativas, escolha, consequências, fonte/evidência e g
 
 ## Operação
 Ambientes, build/deploy, artefato, testes, orçamento, backups/restore, contingência. Nomes/referências de secrets, nunca valores. GO separado.
+
+
+## Preparação por incremento
+
+| REQ | Recurso e ambiente | Versão/destino | Preparação existente | Fonte da autorização | Prova e limpeza | Responsável |
+|---|---|---|---|---|---|---|
+
+Descreva estados reais de supervisor, worker e checkpoint, schema/versionamento, transições, lease/exclusão, parada, retomada, limites e ensaio de compatibilidade. Identifique recurso compartilhado e isolamento por execução. Vincule cada gate ao requisito que governa.

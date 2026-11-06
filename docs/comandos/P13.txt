@@ -37,3 +37,6 @@ Comece com consulta dirigida ao mapa/símbolo ou busca textual. Confira a valida
 
 ENCERRAMENTO DA ETAPA
 Entregue o resultado útil desta fase e um resumo com: situação (CONCLUIDO_NO_ESCOPO / PARCIAL / BLOQUEADO / AGUARDANDO_DECISAO); artefatos ou alterações; verificações realmente executadas e sua versão/ambiente; limites e pendências; próxima ação coberta pela autorização. Use NOT_RUN para teste não realizado. Registre tokens/custo somente quando observáveis; não converta estimativa em medição. Não repita o histórico inteiro e não prometa trabalho futuro ou em segundo plano sem processo real verificável. Quando a fase exigir entrevista, faça a pergunta pertinente em vez de encerrar prematuramente.
+
+DEPENDÊNCIAS ANTES DO INCREMENTO
+Use a matriz operacional do requisito. Execute a preparação ou correção de dependências coberta pela missão antes de construir mais código dependente. Reutilize provas válidas. Preserve o aceite do produto e a fonte aprovada ao corrigir infraestrutura ou ferramentas.

@@ -42,3 +42,8 @@ A execução de qualquer prompt usa o Contrato Comum V3 uma vez por sessão. Org
 ## Preparação na origem
 
 Ao encontrar bloqueio recorrente, aplique [preparação e resolução na origem](modulos/recuperacao/PREPARACAO.md). Vincule cada bloqueio a uma tarefa de resolução, dono, alçada e aceite. Reutilize provas ainda válidas e aplique cada gate somente às tarefas que ele governa.
+
+
+## Preparação e operação contínua
+
+Para preparar projeto novo ou recuperar projeto existente e operar uma missão longa, use [CADU PREPARAR E OPERAR](comandos/PREPARAR_E_OPERAR.md). O comando cobre descoberta, configuração autorizada, correção do executor, ensaio real e início condicionado à prontidão e à ordem da missão. Reutilize o método fixado e as decisões existentes.

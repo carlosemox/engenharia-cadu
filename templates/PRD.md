@@ -18,3 +18,8 @@ REQ → fluxo → decisão técnica → tarefa → teste → evidência. Limita�
 
 ## Decisões e aprovação
 Pendências bloqueadoras/não bloqueadoras, fontes, autor/data e versão aprovada. Não autoriza publicação.
+
+
+## Incrementos executáveis
+
+Para cada REQ aprovado, registre dependências de decisão e integração, responsável pela resolução, ordem no grafo e teste da jornada. Defina o primeiro incremento que entrega valor e os critérios de conclusão do backlog. Sugestões de expansão permanecem propostas.

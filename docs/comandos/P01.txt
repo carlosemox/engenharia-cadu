@@ -42,3 +42,6 @@ O detalhe fica no briefing, não em recapítulos constantes. Não invoque quatro
 
 ENCERRAMENTO DA ETAPA
 Registre situação, artefatos, testes realmente executados, versão/ambiente, evidências, limites, backup e próxima ação autorizada. Use NOT_RUN para teste não realizado e custo não observado para medição indisponível. Em modo contínuo, fase encerrada não é missão encerrada: confira os gates e carregue o próximo prompt. Aguarde apenas decisão/entrada material ou bloqueio real. Não prometa execução futura ou de 24 horas sem processo verificável.
+
+PREPARAÇÃO ANTECIPADA
+Recupere ambiente de desenvolvimento existente, disponibilidade de executor, serviços necessários e dono das decisões de acesso. Registre essas dependências no briefing para resolução em P06/P10 antes do primeiro incremento. Uma descoberta documental mantém esse escopo.

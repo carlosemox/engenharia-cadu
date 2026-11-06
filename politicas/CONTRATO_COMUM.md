@@ -59,3 +59,8 @@ Conclua somente quando o objetivo estiver atendido no escopo, a verificação fo
 ## Preparação na origem
 
 Ao encontrar bloqueio recorrente, aplique [preparação e resolução na origem](../modulos/recuperacao/PREPARACAO.md). Vincule cada bloqueio a uma tarefa de resolução, dono, alçada e aceite. Reutilize provas ainda válidas e aplique cada gate somente às tarefas que ele governa.
+
+
+## Preparação desde a especificação
+
+Todos os procedimentos reutilizam o perfil operacional e a matriz requisito–dependência–prova do projeto. Desde P01 identifique decisões e recursos. Em P06 especifique preparação, estados e compatibilidade do executor. Em P10 prepare os recursos autorizados. P11 verifica o escopo concreto. P13 implementa incrementos executáveis. P17/P30 operam a missão comprovada. P18 recupera estado e P24 mede melhorias. Use [preparar e operar](../comandos/PREPARAR_E_OPERAR.md) para conduzir essa sequência sem colagens sucessivas. Preserve o escopo de pedidos somente leitura.

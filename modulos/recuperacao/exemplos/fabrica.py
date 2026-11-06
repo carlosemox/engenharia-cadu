@@ -70,7 +70,7 @@ def main(stage, recipe):
         return 2
     # Independent acceptance contract for this version of the factory.
     expected = {"auto", "assumir", "reestruturar", "retomar", "executar", "revisar",
-                "auditar", "medir", "novo", "fabrica", "iniciar", "recuperar", "diagnosticar"}
+                "auditar", "medir", "novo", "fabrica", "iniciar", "recuperar", "diagnosticar", "operar"}
     canonical = json.loads(Path("fabrica/rotas.json").read_text())["modes"]
     if set(canonical) != expected:
         return 2  # A revisão precisa conter a rota antes de regenerar os derivados.

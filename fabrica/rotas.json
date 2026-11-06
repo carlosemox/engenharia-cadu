@@ -111,6 +111,17 @@
         "P20"
       ],
       "goal": "CADU DIAGNOSTICAR: faça o inventário somente leitura, colete evidências por nó e produza a ficha privada de cada checkout autorizado."
+    },
+    "operar": {
+      "label": "Preparar e operar por até 24 horas",
+      "procedure": "comandos/PREPARAR_E_OPERAR.md",
+      "stages": [
+        "P10",
+        "P11",
+        "P13",
+        "P17"
+      ],
+      "goal": "Prepare o próximo incremento, resolva dependências autorizadas, comprove o executor e opere a missão aprovada por até 24 horas com limites observáveis."
     }
   }
 }
