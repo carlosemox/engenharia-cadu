@@ -39,3 +39,8 @@ Para operação sem supervisão, prove no executor real a leitura do perfil do a
 ## Evoluir funcionalidades e aprendizado
 
 Entregue um comportamento aprovado por lote, pela entrada normal, com caso permitido e recusado quando aplicável. Vincule requisito, mudança e prova no checkpoint. Novas funcionalidades sugeridas ficam na fila de propostas para decisão de escopo. Guarde a lição comprovada com versão, pré-condições e regressão, usando os registros existentes. Uma hipótese nova fica como candidata até validação. Consulte apenas lições pertinentes ao componente e à falha atuais.
+
+
+## Preparação na origem
+
+Ao encontrar bloqueio recorrente, aplique [preparação e resolução na origem](PREPARACAO.md). Vincule cada bloqueio a uma tarefa de resolução, dono, alçada e aceite. Reutilize provas ainda válidas e aplique cada gate somente às tarefas que ele governa.

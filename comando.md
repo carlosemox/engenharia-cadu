@@ -37,3 +37,8 @@ Fontes: [read.md](read.md), [continuidade](politicas/CONTINUIDADE.md), [seguran�
 ## Runtime obrigatório
 
 A execução de qualquer prompt usa o Contrato Comum V3 uma vez por sessão. Organize a missão como Harness, Loop e Graph. Carregue apenas contexto pertinente, mantenha o prefixo estável quando houver reutilização de cache, limite ciclos, atualize checkpoint e registre o próximo nó. Use P30 para missões longas e não replique o contrato em cada prompt.
+
+
+## Preparação na origem
+
+Ao encontrar bloqueio recorrente, aplique [preparação e resolução na origem](modulos/recuperacao/PREPARACAO.md). Vincule cada bloqueio a uma tarefa de resolução, dono, alçada e aceite. Reutilize provas ainda válidas e aplique cada gate somente às tarefas que ele governa.

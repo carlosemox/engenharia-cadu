@@ -158,16 +158,64 @@ def summary(paths):
     return "\n".join(lines)
 
 
+def plan(paths):
+    """Prepara propostas de desbloqueio a partir das fichas, sem executar ações."""
+    rows = []
+    projects = set()
+    for path in paths:
+        data = json.loads(path.read_text(encoding="utf-8-sig"))
+        for item in data if isinstance(data, list) else [data]:
+            report = validate(item)
+            key = report["projeto"].strip().casefold()
+            if key in projects:
+                raise ValueError("Reconcilie fichas repetidas do mesmo projeto")
+            projects.add(key)
+            for failure in report["falhas"]:
+                resolution = failure.get("resolucao") or {}
+                if not isinstance(resolution, dict):
+                    raise ValueError("resolucao deve ser um objeto")
+                required = ("acao", "responsavel", "aceite", "condicao_retomada",
+                            "fonte_autorizacao", "revisao_alvo")
+                missing = [field for field in required
+                           if not isinstance(resolution.get(field), str)
+                           or not resolution[field].strip()]
+                gates = resolution.get("gates_necessarios")
+                if not isinstance(gates, list) or any(gate not in GATES for gate in gates):
+                    missing.append("gates_necessarios")
+                    gates = []
+                pending = [gate for gate in gates
+                           if report["gates"][gate]["estado"] not in ("PASS", "NAO_APLICAVEL")]
+                status = "PROPOSTA_PARA_VERIFICAR"
+                if report.get("stop_requested") is True:
+                    status = "PAUSADA"
+                elif report.get("stop_requested") is not False:
+                    missing.append("stop_requested")
+                if status != "PAUSADA" and (missing or pending):
+                    status = "PENDENTE"
+                rows.append({
+                    "projeto": report["projeto"], "assinatura": failure["assinatura"],
+                    "classe": failure["classe"], "evidencia": failure["evidencia"],
+                    "resolucao": resolution, "campos_ausentes": missing,
+                    "gates_pendentes": pending, "estado": status,
+                })
+    return {"schema": "cadu.plano_desbloqueio.v1", "executado": False,
+            "aviso": "Propostas derivadas das fichas. Verifique fonte, alçada, revisão, recursos e estado real antes de executar.",
+            "tarefas": rows}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="mode", required=True)
     commands.add_parser("coletar").add_argument("pastas", type=Path, nargs="+")
     commands.add_parser("consolidar").add_argument("fichas", type=Path, nargs="+")
+    commands.add_parser("planejar").add_argument("fichas", type=Path, nargs="+")
     args = parser.parse_args()
     try:
         if args.mode == "coletar":
             rows = [collect(root) for root in args.pastas]
             print(json.dumps(rows[0] if len(rows) == 1 else rows, ensure_ascii=False, indent=2))
+        elif args.mode == "planejar":
+            print(json.dumps(plan(args.fichas), ensure_ascii=False, indent=2))
         else:
             print(summary(args.fichas))
     except (OSError, ValueError) as error:

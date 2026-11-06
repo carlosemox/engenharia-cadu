@@ -55,3 +55,7 @@ Depois de cada marco, atualize o registro autorizado do projeto com estado, deci
 ## Encerramento
 
 Conclua somente quando o objetivo estiver atendido no escopo, a verificação for proporcional ao risco, as evidências forem recuperáveis e o próximo passo ou estado final estiver registrado.
+
+## Preparação na origem
+
+Ao encontrar bloqueio recorrente, aplique [preparação e resolução na origem](../modulos/recuperacao/PREPARACAO.md). Vincule cada bloqueio a uma tarefa de resolução, dono, alçada e aceite. Reutilize provas ainda válidas e aplique cada gate somente às tarefas que ele governa.
