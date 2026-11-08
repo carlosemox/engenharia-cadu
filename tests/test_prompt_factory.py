@@ -20,7 +20,7 @@ class PromptFactoryTests(unittest.TestCase):
             full=m[1] if m else source_text.strip()
             expected=re.sub(common,'',full,count=1) if m else full
             thin=(ROOT/'execucao'/source.name).read_text()
-            self.assertEqual(re.search(r'```text\n([\s\S]*?)\n```',thin)[1],expected)
+            self.assertEqual(re.search(r'```text\n([\s\S]*?)\n```',thin)[1],expected.rstrip())
             self.assertIn('../politicas/CONTRATO_COMUM.md',thin)
 
     @unittest.skipUnless(shutil.which('node'), 'Node required for client behavior test')

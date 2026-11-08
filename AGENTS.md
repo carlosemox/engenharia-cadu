@@ -41,3 +41,7 @@ Comando único: `comando.md`; geração sem execução: `fabrica/README.md`. Pro
 ## Runtime V3 — Astra 6
 
 Todos os procedimentos P00–P30 carregam uma única vez por sessão o contrato `politicas/CONTRATO_COMUM.md`, que define Harness, Loop e Graph, limites de repetição, estados, evidências e checkpoint. Não colar a biblioteca inteira nem repetir o contrato em cada execução. Para missões longas, usar P30; para retomada, P18; para medir custo por entrega aceita, P24.
+
+## Sala de controle P0/P1
+
+Exceção canônica: `docs/harness/` é estado operacional versionado desta central, não derivado do site. Começar por `docs/harness/PROJECT_STATE.md`. Supervisor: `docs/harness/SUPERVISOR.md`; fila única: `docs/harness/TASK_QUEUE.md`. Roteador somente leitura: `python scripts/supervisor.py --check`. Regras existentes de alçada prevalecem. Não declarar runtime contínuo instalado.

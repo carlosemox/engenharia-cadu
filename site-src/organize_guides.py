@@ -116,5 +116,6 @@ block='''<!-- CADU-SECURITY-START --><section id="auditoria" class="section ops-
 anchor='<section id="comecar"'
 if anchor not in text:anchor='<section class="chapter" id="comecar"'
 if anchor not in text:raise ValueError('Home anchor absent')
-text=text.replace(anchor,block+anchor,1)
+if 'id="auditoria"' not in text:
+ text=text.replace(anchor,block+anchor,1)
 p.write_text(text,encoding='utf-8')

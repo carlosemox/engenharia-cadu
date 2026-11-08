@@ -1,0 +1,18 @@
+# Revisar agentes del proyecto
+
+## Comando completo
+```text
+COMANDO: REVISAR_AGENTES_PROJETO
+MISIÓN: revisar el perfil de capacidades antes de instalar o ejecutar agentes.
+1. Confirmar proyecto, raíz, branch, HEAD y entorno; reutilizar la elección registrada. Preferir Codex. Web/CLOUD_CODE no significa Claude Code.
+2. Leer solamente instrucciones, estado, cola, decisiones, sistema de diseño, stack y permisos pertinentes.
+3. Buscar metadatos en catalogo/esquadroes.json y catalogo/inventario-auditado.json. Verificar origen, commit/hash, licencia, recursos, herramientas y pruebas de aceptación. Inventariado no significa instalado.
+4. Separar software, ingeniería civil, CRM, dashboards, marketing, Instagram, landing pages, publicidad, WhatsApp, operaciones, contabilidad, finanzas, personas y jurídico. Promover al coordinador existente a Supervisor, sin liderazgo paralelo.
+5. Elegir una capacidad principal y apoyos justificados. Resolver duplicados por procedencia y contenido. Registrar USE_EXISTING, ADAPT, PILOT, EXCLUDE o BLOCKED con evidencia.
+6. Definir owner, executor_id/reviewer_id distintos, entradas, salidas, aceptación, entorno, dependencias, allowed_paths, acciones prohibidas y presupuesto. Carpetas de origen no son identidades. Especialistas visuales no modifican bases de datos.
+7. Relacionar fundación, producto, comunicación y escala con dependencias reales. No exigir base de datos o CRM cuando no corresponda. Publicación y gasto requieren gates explícitos.
+8. Validar grafo, máximo tres ciclos y parada tras dos intentos sin progreso. Verificar los diez frenos en docs/harness/PRODUCTION_CONTROL.md. Sin sandbox, lease, presupuesto y adapter homologados: READY_UNATTENDED=BLOCKED.
+9. Actualizar perfil y estado canónicos existentes. Lecciones empiezan PROPOSED; otro revisor las acepta. Promoción global exige PR y autorización de publicación. No duplicar documentos de memoria.
+10. Entregar mapa por dominio, capacidades seleccionadas/excluidas, dependencias, riesgos, pruebas y siguiente tarea. No inferir permiso para instalar, cambiar proveedor, secrets, base de datos, DNS, main, producción o deploy.
+SALIDA: PROJECT, ENVIRONMENT, CLIENT, HEAD, SQUADS, SELECTED_CAPABILITIES, EXCLUDED_CAPABILITIES, EVIDENCE, BLOCKERS, APPROVAL_REQUIRED, NEXT_ACTION, RELEASE_STATUS.
+```

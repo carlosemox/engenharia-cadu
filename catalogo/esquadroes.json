@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "kind": "routing_policy_not_installed_agents",
+  "roles": [
+    {
+      "id": "supervisor",
+      "source": "agentes/coordenador.md",
+      "allowed_prefixes": [],
+      "state": "DOCUMENTED_NOT_INSTALLED"
+    },
+    {
+      "id": "architect",
+      "source": "agentes/arquitetura.md",
+      "allowed_prefixes": [
+        "docs/",
+        "orquestracao/"
+      ],
+      "state": "DOCUMENTED_NOT_INSTALLED"
+    },
+    {
+      "id": "forge",
+      "source": "agentes/backend.md",
+      "allowed_prefixes": [
+        "src/backend/",
+        "migrations/"
+      ],
+      "state": "DOCUMENTED_NOT_INSTALLED"
+    },
+    {
+      "id": "frame",
+      "source": "agentes/frontend.md",
+      "allowed_prefixes": [
+        "src/ui/",
+        "src/components/",
+        "src/styles/"
+      ],
+      "state": "DOCUMENTED_NOT_INSTALLED"
+    },
+    {
+      "id": "qa",
+      "source": "agentes/qualidade.md",
+      "allowed_prefixes": [
+        "tests/"
+      ],
+      "state": "DOCUMENTED_NOT_INSTALLED"
+    },
+    {
+      "id": "sentinel",
+      "source": "agentes/sentinel.md",
+      "allowed_prefixes": [],
+      "state": "DOCUMENTED_NOT_INSTALLED"
+    },
+    {
+      "id": "guardian",
+      "source": "agentes/guardian.md",
+      "allowed_prefixes": [],
+      "state": "DOCUMENTED_NOT_INSTALLED"
+    },
+    {
+      "id": "release",
+      "source": "agentes/release.md",
+      "allowed_prefixes": [],
+      "state": "DOCUMENTED_NOT_INSTALLED"
+    },
+    {
+      "id": "product",
+      "source": "agentes/produto.md",
+      "allowed_prefixes": [
+        "docs/"
+      ],
+      "state": "DOCUMENTED_NOT_INSTALLED"
+    },
+    {
+      "id": "design",
+      "source": "agentes/design.md",
+      "allowed_prefixes": [
+        "docs/",
+        "src/styles/"
+      ],
+      "state": "DOCUMENTED_NOT_INSTALLED"
+    }
+  ],
+  "squads": [
+    {
+      "id": "software",
+      "label": "Software engineering",
+      "roles": [
+        "architect",
+        "forge",
+        "frame",
+        "qa",
+        "guardian",
+        "sentinel"
+      ],
+      "source_groups": [],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "civil",
+      "label": "Engenharia civil",
+      "roles": [],
+      "source_groups": [
+        "agentes engenharia"
+      ],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "operations",
+      "label": "Operação e processos",
+      "roles": [],
+      "source_groups": [
+        "agentes funcionarios"
+      ],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "crm",
+      "label": "Comercial / CRM",
+      "roles": [
+        "forge",
+        "frame",
+        "qa"
+      ],
+      "source_groups": [
+        "crm"
+      ],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "dashboard",
+      "label": "Painéis",
+      "roles": [
+        "frame",
+        "qa"
+      ],
+      "source_groups": [
+        "dashboard"
+      ],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "whatsapp",
+      "label": "WhatsApp / Disparos",
+      "roles": [],
+      "source_groups": [
+        "Disparos"
+      ],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "landing",
+      "label": "Landing pages",
+      "roles": [
+        "frame",
+        "design",
+        "qa"
+      ],
+      "source_groups": [
+        "skills landing pages"
+      ],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "roles": [],
+      "source_groups": [
+        "skills Instagram"
+      ],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "paid_media",
+      "label": "Tráfego pago",
+      "roles": [],
+      "source_groups": [
+        "trafego pago"
+      ],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "marketing",
+      "label": "Marketing e conteúdo",
+      "roles": [],
+      "source_groups": [],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "security",
+      "label": "Segurança",
+      "roles": [
+        "guardian",
+        "sentinel"
+      ],
+      "source_groups": [],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "accounting",
+      "label": "Contábil e fiscal",
+      "roles": [],
+      "source_groups": [],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "finance",
+      "label": "Financeiro e controladoria",
+      "roles": [],
+      "source_groups": [],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "legal",
+      "label": "Jurídico",
+      "roles": [],
+      "source_groups": [],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "people",
+      "label": "Pessoas e cultura",
+      "roles": [],
+      "source_groups": [],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    },
+    {
+      "id": "learning",
+      "label": "Aprendizado",
+      "roles": [
+        "architect",
+        "sentinel"
+      ],
+      "source_groups": [],
+      "state": "MAPPED_NOT_HOMOLOGATED"
+    }
+  ]
+}
