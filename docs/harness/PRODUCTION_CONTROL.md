@@ -2,7 +2,7 @@
 
 | Ambiente | Branch | Banco | Secrets | Deploy | Uso |
 |---|---|---|---|---|---|
-| Web de desenvolvimento | chore/p0-harness-control-room | nenhum | nenhum | proibido | P0/P1 |
+| Web de desenvolvimento | chore/p0-harness-control-room | SQLite operacional fora do Git; produto sem banco | nenhum | proibido | auditoria supervisionada |
 | Staging | não configurada | não configurado | nenhum recebido | bloqueado | futuro piloto |
 | Produção | main | não aplicável à central estática | não acessados | exige gate | GitHub Pages existente |
 
@@ -20,4 +20,14 @@ Dez freios obrigatórios antes de ligar executor:
 9. Circuit breaker para segredo, dados perdidos, regressão grave ou autorização ausente.
 10. Idempotência, checkpoint e reconciliação de efeito externo incerto antes de retry.
 
-Nesta entrega são contratos e validações estáticas. Freios 1/2/3/4/7/9/10 não são mecanismos ativos em servidor. Bloqueios locais não impedem tarefas independentes autorizadas. Produção, aprendizado central e campanhas reais não são efeitos automáticos da fila.
+O runtime local implementa stop, prazo, teto de claims, limite de tentativas,
+dependências, leases/fencing, heartbeat, revisão independente, idempotência e
+registro transacional. `reap()` recupera expirados quando a bridge chama; não há
+watchdog de servidor. WIP=1 inclui trabalho aguardando revisão.
+
+Limites ainda não implementados: medição/teto monetário e de tokens, sandbox de
+processo, detector automático de segredo/regressão e reconciliação de efeitos
+externos. Por isso somente auditoria de contexto selecionado está habilitada;
+workers de código, serviços externos e execução sem sessão permanecem bloqueados.
+Stop impede novos claims/submits/reviews, mas não mata uma chamada de modelo já
+iniciada: cancelamento do agente depende da bridge. Isso não é disjuntor físico. Bloqueios locais não impedem tarefas independentes autorizadas. Produção, aprendizado central e campanhas reais não são efeitos automáticos da fila.

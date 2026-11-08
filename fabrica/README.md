@@ -35,3 +35,7 @@ As rotas de etapas usam `execucao/Pxx.md`, derivado automaticamente do procedime
 ## Revisão de agentes
 
 Modo `revisar-agentes`: [PT](../comandos/REVISAR_AGENTES_PROJETO.md), [EN](../comandos/REVISAR_AGENTES_PROJETO.en.md), [ES](../comandos/REVISAR_AGENTES_PROJETO.es.md). A fábrica gera comandos; não inicia o Supervisor.
+
+## Operação supervisionada
+
+Modo `operar-supervisor`: [PT](../comandos/OPERAR_SUPERVISOR.md), [EN](../comandos/OPERAR_SUPERVISOR.en.md), [ES](../comandos/OPERAR_SUPERVISOR.es.md). A página gera o comando; a sessão Codex opera a bridge descrita no [runbook](../docs/harness/OPERATING_RUNBOOK.md). Sem runtime e ferramentas disponíveis, bloquear.

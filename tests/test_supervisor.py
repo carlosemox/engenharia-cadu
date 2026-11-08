@@ -11,7 +11,7 @@ class SupervisorTests(unittest.TestCase):
     def setUp(self):
         self.r=json.loads((ROOT/'catalogo/esquadroes.json').read_text())
         self.q=s.load_queue(ROOT/'docs/harness/TASK_QUEUE.md')
-        t=copy.deepcopy(self.q['tasks'][0]);t.update(status='READY',authorized=True)
+        t=copy.deepcopy(self.q['tasks'][0]);t.update(status='READY',authorized=True,evidence=[],review=None,attempts=0,no_progress=0,depends_on=[])
         self.q['tasks']=[t];self.t=t
     def test_read_only_selection(self):
         before=copy.deepcopy(self.q)

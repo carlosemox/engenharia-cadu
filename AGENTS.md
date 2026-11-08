@@ -45,3 +45,16 @@ Todos os procedimentos P00–P30 carregam uma única vez por sessão o contrato 
 ## Sala de controle P0/P1
 
 Exceção canônica: `docs/harness/` é estado operacional versionado desta central, não derivado do site. Começar por `docs/harness/PROJECT_STATE.md`. Supervisor: `docs/harness/SUPERVISOR.md`; fila única: `docs/harness/TASK_QUEUE.md`. Roteador somente leitura: `python scripts/supervisor.py --check`. Regras existentes de alçada prevalecem. Não declarar runtime contínuo instalado.
+
+
+### Piloto operacional supervisionado
+
+`comandos/OPERAR_SUPERVISOR.md` e `docs/harness/OPERATING_RUNBOOK.md` definem o
+perfil autorizado `read_only_audit`. A API em `scripts/supervisor_runtime.py`
+persiste fila/eventos em SQLite fora do Git. Só a bridge confiável da sessão
+Codex vincula IDs reais de executor/revisor e convoca as ferramentas. Contratos
+no catálogo não concedem acesso. Não fornecer banco, lease token ou ferramentas
+mutáveis aos workers. Não confundir grafo local com Graphy externo instalado.
+Ao retomar, conferir recibo e existência real do armazenamento; nenhuma sessão
+anterior garante serviço ativo. Fora do chat, custos, infraestrutura e código
+autônomo continuam sujeitos aos gates registrados em DECISIONS.md.

@@ -20,7 +20,7 @@
       "reviewer_id": "independent-review",
       "role": "architect",
       "squad": "software",
-      "status": "IN_REVIEW",
+      "status": "DONE",
       "priority": "P1",
       "depends_on": [],
       "inputs": [
@@ -37,21 +37,28 @@
       "attempts": 0,
       "no_progress": 0,
       "max_attempts": 3,
-      "authorized": false,
-      "evidence": [],
-      "review": null,
-      "next_action": "Revisar evidências e registrar decisão aplicável",
+      "authorized": true,
+      "evidence": [
+        "docs/harness/VALIDATION.md",
+        "https://github.com/carlosemox/engenharia-cadu/actions/runs/42501906470"
+      ],
+      "review": {
+        "reviewer_id": "independent-review",
+        "result": "PASS",
+        "snapshot": "ea8f0c13a3674b91ea0751e0092caa879e1a2a9c"
+      },
+      "next_action": "Conferir incremento operacional H-004",
       "deadline": null
     },
     {
       "id": "H-002",
-      "title": "Homologar um perfil de projeto",
+      "title": "Homologar perfil de auditoria documental supervisionada",
       "owner": "Carlos Eduardo do Amaral",
-      "executor_id": "codex-implementation",
-      "reviewer_id": "independent-review",
+      "executor_id": "01a1bc31-d489-7195-b40a-c95e5e262037",
+      "reviewer_id": "01a1bc31-d932-76c4-85f3-183d8d57c03e",
       "role": "architect",
       "squad": "software",
-      "status": "BLOCKED",
+      "status": "DONE",
       "priority": "P1",
       "depends_on": [
         "H-001"
@@ -65,20 +72,26 @@
       "allowed_paths": [
         "docs/harness/"
       ],
-      "acceptance": "Evidências recuperáveis e revisão independente do snapshot; runtime nunca declarado ativo sem prova.",
+      "acceptance": "Somente contratos documentais dos arquivos de catálogo e DS: auditor e revisor distintos; hashes exatos no recibo H-004. Não homologa código ou catálogo inteiro.",
       "environment": "CLOUD_CODE",
       "attempts": 0,
       "no_progress": 0,
       "max_attempts": 3,
-      "authorized": false,
-      "evidence": [],
-      "review": null,
-      "next_action": "Revisar evidências e registrar decisão aplicável",
+      "authorized": true,
+      "evidence": [
+        "docs/harness/OPERATIONAL_EVIDENCE.md"
+      ],
+      "review": {
+        "reviewer_id": "01a1bc31-d932-76c4-85f3-183d8d57c03e",
+        "result": "PASS",
+        "snapshot": "ea8f0c13a3674b91ea0751e0092caa879e1a2a9c"
+      },
+      "next_action": "Preservar perfil read-only; ampliar somente com isolamento e aprovação",
       "deadline": null
     },
     {
       "id": "H-003",
-      "title": "Aprovar arquitetura do worker persistente",
+      "title": "Aprovar serviço persistente fora da sessão",
       "owner": "Carlos Eduardo do Amaral",
       "executor_id": "codex-implementation",
       "reviewer_id": "independent-review",
@@ -106,7 +119,52 @@
       "authorized": false,
       "evidence": [],
       "review": null,
-      "next_action": "Revisar evidências e registrar decisão aplicável",
+      "next_action": "Definir host, adapter disponível, isolamento, orçamento, backup e alçada antes de provisionar",
+      "deadline": null
+    },
+    {
+      "id": "H-004",
+      "title": "Validar e registrar o incremento operacional supervisionado",
+      "owner": "Carlos Eduardo do Amaral",
+      "executor_id": "01a1bc2d-ec5d-779b-a19e-09112a9da00e",
+      "reviewer_id": "01a1bc32-0470-7704-910d-fb7025d1f039",
+      "role": "architect",
+      "squad": "software",
+      "status": "RELEASE_CANDIDATE",
+      "priority": "P1",
+      "depends_on": [
+        "H-001"
+      ],
+      "inputs": [
+        "scripts/supervisor_runtime.py",
+        "tests/test_supervisor_runtime.py",
+        "docs/harness/OPERATING_RUNBOOK.md"
+      ],
+      "outputs": [
+        "docs/harness/VALIDATION.md",
+        "docs/harness/OPERATIONAL_EVIDENCE.md"
+      ],
+      "allowed_paths": [
+        "docs/harness/"
+      ],
+      "acceptance": "Dois jobs documentais reais, dependência respeitada, review independente, stop; testes de fila e parecer de código sem bloqueantes.",
+      "environment": "CLOUD_CODE",
+      "attempts": 0,
+      "no_progress": 0,
+      "max_attempts": 3,
+      "authorized": true,
+      "evidence": [
+        "docs/harness/OPERATIONAL_EVIDENCE.md",
+        "docs/harness/VALIDATION.md",
+        "docs/harness/evidence/H-004/code-review.md"
+      ],
+      "review": {
+        "reviewer_id": "01a1bc32-0470-7704-910d-fb7025d1f039",
+        "result": "PASS",
+        "snapshot": "26fb3e1d6c6b15b13a8a3a9f1aef728f31461597",
+        "snapshot_kind": "git_blob_runtime; full SHA256 list in VALIDATION.md"
+      },
+      "next_action": "Revisar PR5 e autorizar merge separadamente; serviço 24h permanece H-003",
       "deadline": null
     }
   ]

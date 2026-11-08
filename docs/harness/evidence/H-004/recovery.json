@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "scope": "SQLite backup API and reopen on same host; original database unchanged",
+  "jobs": 2,
+  "claims": 2,
+  "stopped": true,
+  "offsite_backup": "NOT_CONFIGURED",
+  "host_loss_recovery": "NOT_TESTED"
+}

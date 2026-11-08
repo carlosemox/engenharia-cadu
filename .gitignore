@@ -12,3 +12,9 @@ ops/
 checkpoints/
 *.log
 .DS_Store
+
+# Supervisor operational state: never publish lease tokens or live databases
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+.supervisor-runtime/

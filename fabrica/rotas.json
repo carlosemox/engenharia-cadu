@@ -94,6 +94,20 @@
         "P22"
       ],
       "goal": "Mapeie capacidades por domínio; confira origem, escopo, dependências e revisão independente antes de instalar ou executar."
+    },
+    "operar-supervisor": {
+      "label": "Operar Supervisor de auditoria",
+      "labels": {
+        "pt": "Operar Supervisor de auditoria",
+        "en": "Operate audit Supervisor",
+        "es": "Operar Supervisor de auditoría"
+      },
+      "procedure": "comandos/OPERAR_SUPERVISOR.md",
+      "stages": [
+        "P22",
+        "P14"
+      ],
+      "goal": "Executar auditorias delimitadas com fila persistente, bridge Codex e revisão independente; bloquear execução sem adapter disponível."
     }
   }
 }

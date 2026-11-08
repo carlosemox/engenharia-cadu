@@ -13,3 +13,24 @@ Erro: valores truthy de tipo errado podiam liberar um candidato no roteador.
 Causa: campos obrigatórios eram verificados por presença sem schema de tipos.
 Prevenção proposta: validar tipos, strings não vazias, listas e raiz JSON antes de regras de estado; manter testes negativos.
 Evidência: tests/test_supervisor.py, testes malformed_roots, malformed_required_fields e malformed_evidence; hashes em VALIDATION.md. Aceitação/promocão: pendente de revisão, sem alteração global.
+
+
+## LL-002 — PROPOSED
+
+Tarefa H-004. Proponente: sessão Codex. Evidência: OPERATIONAL_EVIDENCE.md.
+Erro: configuração de storage rejeitada e envio inicial de contexto antes do claim.
+Causa: bridge manual sem preflight único do armazenamento e da transição de estado.
+Prevenção proposta: testar diretórios irmãos fora de Git e confirmar claim antes de
+qualquer despacho. Adapter programático deve tornar essa sequência obrigatória.
+Não promovida a regra global; alterações de runtime exigem revisão independente.
+
+
+## LL-003 — PROPOSED
+
+Tarefa H-004; proponente: implementador; revisor identificou P2 depois corrigido.
+Erro: mudança de fonte/evidência durante hashing do parecer podia escapar da checagem.
+Causa: ordem das verificações sem rechecagem após o trabalho de hashing mais lento.
+Prevenção proposta: revalidar entradas antes da transição e congelar escritores do
+host durante a operação; teste de interleaving e limitação explícita de atomicidade.
+Evidência: tests/test_supervisor_runtime.py e evidence/H-004/code-review.md.
+Não aceita/promovida globalmente; aprendizado pendente de decisão.

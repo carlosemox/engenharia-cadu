@@ -158,7 +158,7 @@ def main():
             result = select_next(queue, registry)
         else:
             errors = validate(queue, registry)
-            result = {'status': 'FAIL' if errors else 'PASS', 'errors': errors, 'runtime': 'NOT_CONFIGURED'}
+            result = {'status': 'FAIL' if errors else 'PASS', 'errors': errors, 'execution': 'NOT_STARTED', 'mode': 'READ_ONLY_PLANNER'}
     except (ValueError, KeyError, TypeError, OSError, RecursionError) as exc:
         result = {'status': 'FAIL', 'errors': [str(exc)]}
     print(json.dumps(result, ensure_ascii=False, indent=2))

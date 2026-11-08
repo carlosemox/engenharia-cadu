@@ -1,3 +1,13 @@
+# 2026-11-08 — Supervisor de auditoria supervisionada
+
+- Fila SQLite transacional para auditorias read-only, com dependências, leases,
+  heartbeat, parada, prazo, limite de claims e revisão por identidade distinta.
+- Comando OPERAR_SUPERVISOR em português, inglês e espanhol e rota na fábrica.
+- Piloto real Codex web: duas tarefas documentais revisadas, dependência e parada
+  registradas em docs/harness/OPERATIONAL_EVIDENCE.md.
+- Mantidos gates para sandbox, host persistente, custos, escrita de código,
+  integração de produto Graphy e produção. Não há operação autônoma 24 horas.
+
 # 2026-11-04 — Consolidação D01 / P00–P30
 
 - D01 registrado nas rotas e no estado operacional.
