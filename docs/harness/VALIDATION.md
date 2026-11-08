@@ -131,3 +131,14 @@ gerador editorial, fontes/HTML PT/EN/ES, fila e limites operacionais.
 - git diff --check: PASS.
 - Modelo, hardware, isolamento e runtime no Mac: NOT_RUN.
 - CI e deploy deste incremento: verificar no SHA remoto; não inferidos por este registro.
+
+### Publicação confirmada — v1.2.0
+
+PR #7 integrada; candidato e91cda88158b832ae1a2377c5bcca38b45626cdd,
+árvore 81b47bea248bd2ae96c07e3a80476dddb3bf1be1 idêntica à revisão local.
+CI_READ_ONLY run 42511796026: SUCCESS. Merge 8636a11d48d5adae2508e70b3bda4ee84c07c61c.
+Páginas públicas /supervisor-mac/index.html, index.en.html e index.es.html
+confirmadas em Chrome; links de idioma PT→EN→ES funcionaram. Captura visual PT
+conferida, versão e timestamp visíveis. Não foi executado teste em dispositivo Mac
+nem ensaio visual mobile. A tentativa inicial de navegador local falhou por download
+Chromium inválido; o smoke público foi concluído pelo navegador conectado.
