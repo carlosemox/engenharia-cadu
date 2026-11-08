@@ -263,6 +263,14 @@ Without environment access, an agent can explain and specify, but cannot prove c
 
 [Operational status](../OPERACAO.md) · [Central map](../MAPA_DA_CENTRAL.md) · [Evaluation scenarios](../avaliacoes/CENARIOS.md) · [S01 validation](../modulos/seguranca/validacao/RESULTADOS.md)
 
+### Codex + Ollama on Mac — preparation approved
+
+Preparation approved by Cadu; installation, model and isolation require tests on the Mac. The unattended supervisor is not active.
+
+**1.2.0 · 2026-11-08T15:45:08-03:00 · America/Sao_Paulo**
+
+[Open the pilot](https://carlosemox.github.io/engenharia-cadu/supervisor-mac/index.en.html)
+
 <!-- section:evolucao -->
 ## 13 / Build a foundation that can evolve
 

@@ -263,6 +263,14 @@ Sin acceso al entorno, el agente puede explicar y especificar, pero no comprobar
 
 [Estado operativo](../OPERACAO.md) · [Mapa de la central](../MAPA_DA_CENTRAL.md) · [Escenarios de evaluación](../avaliacoes/CENARIOS.md) · [Validación S01](../modulos/seguranca/validacao/RESULTADOS.md)
 
+### Codex + Ollama en Mac — preparación aprobada
+
+Preparación aprobada por Cadu; instalación, modelo y aislamiento requieren pruebas en el Mac. El supervisor autónomo no está activo.
+
+**1.2.0 · 2026-11-08T15:45:08-03:00 · America/Sao_Paulo**
+
+[Abrir el piloto](https://carlosemox.github.io/engenharia-cadu/supervisor-mac/index.es.html)
+
 <!-- section:evolucao -->
 ## 13 / Construye una base capaz de evolucionar
 

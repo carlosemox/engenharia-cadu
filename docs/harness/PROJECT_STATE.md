@@ -13,11 +13,20 @@ RELEASE_SCOPE=SITE_LIBRARY_COMMANDS_DETERMINISTIC_MAINTENANCE
 MODE=CONTINUOUS_CONTROLLED_LOOP
 UNATTENDED_RUNTIME=GITHUB_ACTIONS_DETERMINISTIC
 LOOP_STATE=BOUNDED_SCHEDULE_CONFIGURED_PUSH_VERIFIED
-LLM_RUNTIME=BLOCKED_AUTHENTICATION_MODEL_BUDGET
+LLM_RUNTIME=MAC_OLLAMA_PREPARATION_APPROVED_RUNTIME_PENDING
 GRAPHY_RUNTIME=NOT_CONFIGURED
 DEPENDENCY_RUNTIME=LOCAL_SQLITE_SUPERVISED
 
-## Checkpoint atual — 2026-11-08
+## Checkpoint atual — preparação Mac/Ollama aprovada
+
+D-013: usuário aprovou organização, tradução PT/EN/ES e publicação.
+Preparação v1.2.0; [piloto canônico](CODEX_OLLAMA_PILOT.md).
+Host definitivo: Mac do usuário, desligado. Instalação, modelo, isolamento e
+execução autônoma aguardam testes no Mac. API paga não contratada/aprovada.
+H-003 permanece BLOCKED somente para a ativação operacional.
+Publicação deste incremento: pendente de CI e merge; não presumir deploy.
+
+## Checkpoint anterior — 2026-11-08
 
 PR #5 integrada e GitHub Pages publicado. CI_READ_ONLY e manutenção passaram
 na main. Evidência completa: [VALIDATION.md](VALIDATION.md), seção Publicação.

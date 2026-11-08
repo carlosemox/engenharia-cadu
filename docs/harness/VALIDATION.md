@@ -116,3 +116,18 @@ estática inativa. Nenhuma certificação de produção dos aplicativos foi emit
   Não houve migração de dados; restauração em produção não foi executada.
 - RELEASE_STATUS=RELEASED somente para central estática e manutenção delimitada.
   Adapter LLM não executado; Graphy externo não instalado; catálogo não homologado.
+
+## Preparação Mac/Ollama v1.2.0 — 08/11/2026
+
+Autorização D-013: publicar preparação e documentação integral PT/EN/ES.
+Revisão independente de review_activation: SEM BLOQUEADORES ENCONTRADOS NO
+ESCOPO REVISADO, condicionada à CI do SHA final. Escopo: código do verificador,
+gerador editorial, fontes/HTML PT/EN/ES, fila e limites operacionais.
+
+- 184 testes Python: PASS.
+- Validador editorial: PASS, 65 páginas, 2597 links locais.
+- Supervisor --check: PASS, NOT_STARTED.
+- Cliente fábrica: PASS, DOM simulado.
+- git diff --check: PASS.
+- Modelo, hardware, isolamento e runtime no Mac: NOT_RUN.
+- CI e deploy deste incremento: verificar no SHA remoto; não inferidos por este registro.

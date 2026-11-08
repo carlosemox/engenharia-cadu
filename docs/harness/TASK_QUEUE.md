@@ -91,7 +91,7 @@
     },
     {
       "id": "H-003",
-      "title": "Ativar adapter Codex independente da sessão",
+      "title": "Homologar executor Codex + Ollama no Mac",
       "owner": "Carlos Eduardo do Amaral",
       "executor_id": "codex-implementation",
       "reviewer_id": "independent-review",
@@ -103,7 +103,8 @@
         "H-002"
       ],
       "inputs": [
-        "docs/harness/PROJECT_STATE.md"
+        "docs/harness/PROJECT_STATE.md",
+        "docs/harness/CODEX_OLLAMA_PILOT.md"
       ],
       "outputs": [
         "docs/harness/VALIDATION.md"
@@ -119,7 +120,7 @@
       "authorized": false,
       "evidence": [],
       "review": null,
-      "next_action": "Cadu define autenticação segura, modelo e teto de gasto; depois teste real do adapter antes de remover if:false",
+      "next_action": "Mac conectado: verificar hardware, instalar modelo local e testar isolamento; preparação e publicação aprovadas D-013",
       "deadline": null
     },
     {

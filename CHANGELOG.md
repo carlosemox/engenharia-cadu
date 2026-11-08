@@ -73,3 +73,9 @@ Navegação única para continuidade, segurança, backup e implantação; págin
 - Biblioteca interativa anterior preservada em `docs/biblioteca.html`; guias, prompts e S01 mantêm seus caminhos e idiomas originais.
 - Gerador a partir das fontes editoriais, testes de consistência e verificação de idioma por caminho.
 - Não ativa hooks, backups, scanners, supervisores ou configurações dos aplicativos. Verificações e limites em `avaliacoes/APRESENTACAO_TRILINGUE.md`.
+
+## Piloto Mac/Ollama 1.2.0 — 2026-11-08T15:45:08-03:00
+
+Preparação aprovada, guia integral PT/EN/ES e página pública com versão/data.
+Verificador de login sem exportação de segredos; 184 testes locais PASS.
+Runtime, modelo e isolamento no Mac permanecem pendentes.

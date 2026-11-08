@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Codex + Ollama — Preparação aprovada"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>Codex + Ollama | Engenharia Cadu</title><link rel="stylesheet" href="../assets/ollama-pilot.css"></head>
+<body><header><a href="../index.html">Engenharia Cadu · Início</a><span>1.2.0</span></header><main data-source-sha256="cf8c2ac36b02f3b198a14a0aef446ffbeb9444541ecd5edb8b6140ab99c823c4"><h1>Codex + Ollama no Mac</h1>
+<p><a href="index.html">Português</a> · <a href="index.en.html">English</a> · <a href="index.es.html">Español</a></p>
+<p>Versão / atualização: <strong>1.2.0 · 2026-11-08T15:45:08-03:00 · America/Sao_Paulo</strong></p>
+<p><strong>PREPARAÇÃO APROVADA — HOMOLOGAÇÃO OPERACIONAL PENDENTE.</strong></p>
+<p>Cadu aprovou a preparação, organização, tradução e publicação deste incremento. O Mac foi escolhido como executor; está desligado e indisponível para instalação. Esta aprovação não transforma testes documentais em testes do modelo.</p>
+<h2>Arquitetura e custos</h2>
+<p>Codex conduz as tarefas de programação; Ollama executa um modelo local; o supervisor coordena fila, limites, revisão independente e evidências. Um modelo local não é o mesmo modelo OpenAI usado pelo Codex com ChatGPT.</p>
+<p>Não foi contratada API nem nova assinatura. A proposta anterior de R$ 50,00 fica como alternativa não ativada, sem aprovação de gasto. Inferência local não cobra tokens de API, mas utiliza hardware, energia e armazenamento. Sem fallback automático para cloud ou API paga. Modelo, licença e capacidade para usar ferramentas dependem de validação.</p>
+<h2>Evidências e limites</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Estado observado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regressão da preparação</td>
+<td>184 testes Python aprovados</td>
+</tr>
+<tr>
+<td>Revisão independente</td>
+<td>Preparação revisada; ajustes incorporados</td>
+</tr>
+<tr>
+<td>GitHub</td>
+<td>Conta carlosemox confirmada; permissões admin/push/pull informadas pela API</td>
+</tr>
+<tr>
+<td>Codex CLI</td>
+<td>Versão 0.167.0 instalada apenas no ambiente temporário</td>
+</tr>
+<tr>
+<td>Login ChatGPT</td>
+<td>Credenciais reconhecidas; nenhum valor de segredo exportado</td>
+</tr>
+<tr>
+<td>Acesso ao modelo OpenAI</td>
+<td>Chamada mínima terminou em timeout de 60 segundos; acesso e quota não comprovados</td>
+</tr>
+<tr>
+<td>Mac</td>
+<td>Escolhido pelo usuário; hardware e macOS ainda não inspecionados; dispositivo não conectado</td>
+</tr>
+<tr>
+<td>Ollama no Mac</td>
+<td>Instalação, modelo e integração não verificados</td>
+</tr>
+<tr>
+<td>Supervisor fora da conversa</td>
+<td>Não ativado nem homologado</td>
+</tr>
+<tr>
+<td>Agentes externos</td>
+<td>Catalogados; sem homologação individual presumida</td>
+</tr>
+</tbody>
+</table></div>
+<p>O ambiente inspecionado nesta conversa é Linux temporário, com limite de 8 GiB de RAM e oito CPUs por quota, 57,7 GiB livres observados e nvidia-smi indisponível. Esses dados não descrevem o Mac. Ollama não estava instalado nesse ambiente. OPENAI_API_KEY e CODEX_API_KEY estavam ausentes ou vazias.</p>
+<h2>Instalação posterior no Mac</h2>
+<ol>
+<li>Conectar o Mac e registrar processador, RAM/VRAM, espaço livre, macOS e instalações existentes.</li>
+<li>Selecionar versões verificadas de Codex e Ollama e um modelo local com licença adequada, ferramentas e digest registrado.</li>
+<li>Configurar somente loopback, cloud desativada e contexto compatível com a memória. A documentação Ollama recomenda ao menos 64k tokens para Codex; isso precisa caber na máquina.</li>
+<li>Validar resposta local, ferramentas, isolamento, timeout, parada, retomada e ausência de efeitos duplicados em fixture sem segredos.</li>
+<li>Resolver uma pequena correção em checkout descartável, executar testes e obter revisão independente do diff. Medir tempo e memória.</li>
+<li>Integrar ao supervisor e testar persistência e agendamento somente depois dos gates. Este piloto não autoriza autoaprovação, merge/deploy de aplicativos nem homologação de todo o catálogo.</li>
+</ol>
+<h2>Comandos preparados, ainda não executados no Mac</h2>
+<p>Iniciar apenas se não houver servidor existente. Se houver, conferir sua configuração e reiniciar o serviço adequado, sem duplicá-lo.</p>
+<pre><code class="language-sh">OLLAMA_NO_CLOUD=1 OLLAMA_HOST=127.0.0.1:11434 OLLAMA_CONTEXT_LENGTH=65536 ollama serve
+</code></pre>
+<p>Substituir MODEL_NAME pelo nome exato do modelo instalado. O contexto é uma meta de ensaio, não uma garantia de memória suficiente.</p>
+<pre><code class="language-sh">codex exec --oss --local-provider ollama --model MODEL_NAME --sandbox read-only -c 'web_search=&quot;disabled&quot;' 'Reply CADU_OLLAMA_OK without using tools.'
+</code></pre>
+<p>Ollama local não é sandbox dos comandos do agente. O bloqueio real do sandbox deve ser testado no Mac. Não copiar autenticação pessoal ChatGPT para o workflow público de CI.</p>
+<h2>Verificador de acesso</h2>
+<p><code>python scripts/check_codex_access.py</code> consulta somente versão e login; aceita <code>--codex-bin</code> com executável confiável. Não lê auth.json diretamente, não exporta saída bruta, não chama modelo nem inicia serviço. Credencial presente não comprova conexão, quota, modelo ou isolamento. Esse diagnóstico é da rota ChatGPT; Ollama local não exige login OpenAI.</p>
+<h2>Próximo marco</h2>
+<p><strong>MAC_CONNECTED → HARDWARE_CHECKED → LOCAL_MODEL_TESTED → ISOLATION_VERIFIED → PILOT_REVIEWED.</strong> A publicação desta página encerra a preparação aprovada, não a homologação operacional.</p>
+<h2>Referências</h2>
+<ul>
+<li>https://learn.chatgpt.com/docs/auth</li>
+<li>https://learn.chatgpt.com/docs/non-interactive-mode</li>
+<li>https://learn.chatgpt.com/docs/cli/reference</li>
+<li>https://docs.ollama.com/integrations/codex</li>
+<li>https://docs.ollama.com/faq</li>
+</ul>
+</main></body></html>

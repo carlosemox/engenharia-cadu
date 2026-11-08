@@ -15,14 +15,14 @@ A biblioteca interativa anterior foi preservada integralmente em `docs/bibliotec
 Em ambiente editorial isolado com as dependências revisadas de `site-src/requirements.txt`, executar nesta ordem:
 
 ```text
-python site-src/organize_guides.py
 python scripts/sync_prompts.py
 python site-src/build_story.py
+python site-src/organize_guides.py
 python -m unittest discover -s tests -q
 python scripts/validate.py
 ```
 
-O gerador da narrativa deve rodar por último entre os geradores: substitui a página inicial com a apresentação trilíngue, após o gerador legado organizar guias. Se estiver alterando somente a copy, executar `build_story.py` e as verificações pertinentes é suficiente. Os geradores não usam rede, credenciais, modelos ou deploy.
+O gerador da narrativa substitui a página inicial com a apresentação trilíngue; executar `organize_guides.py` depois para completar a navegação operacional, como exige o teste de idempotência. Se estiver alterando somente a copy, executar `build_story.py`, `organize_guides.py` e as verificações pertinentes. Os geradores não usam rede, credenciais, modelos ou deploy.
 
 Para alterar um procedimento, editar `p/Pxx.md`; `sync_prompts.py` atualiza seus derivados. Títulos, categorias e rotas também exigem revisão dos índices. Preservar P00–P30, S01 e os limites operacionais.
 
@@ -50,3 +50,11 @@ Conteúdo original: arquivos em `agentes/`; terceiros: metadados do inventário
 auditado e links de procedência, sujeitos a licença. Não copiar pacotes privados
 para a página pública. Regerar biblioteca antes do validador de links.
 Manutenção agendada não instala agentes nem chama IA paga: docs/harness/AUTONOMY.md.
+
+## Piloto Codex + Ollama no Mac
+
+Fontes integrais PT/EN/ES: `docs/harness/CODEX_OLLAMA_PILOT*.md`.
+Metadados: `docs/harness/ollama-release.json`. Gerar com
+`python scripts/build_ollama_pilot.py`; destinos: `docs/supervisor-mac/index*.html`.
+Versão e timestamp são fixados na fonte, sem relógio variável no build.
+Preparação aprovada não significa runtime instalado ou modelo homologado.

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Codex + Ollama — Preparation approved"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>Codex + Ollama | Engenharia Cadu</title><link rel="stylesheet" href="../assets/ollama-pilot.css"></head>
+<body><header><a href="../en/index.html">Engenharia Cadu · Home</a><span>1.2.0</span></header><main data-source-sha256="52704b9b07f13a060a2a20ad169dba792c90bae2e29eb4556ff7d74da3581a79"><h1>Codex + Ollama on Mac</h1>
+<p><a href="index.html">Português</a> · <a href="index.en.html">English</a> · <a href="index.es.html">Español</a></p>
+<p>Version / updated: <strong>1.2.0 · 2026-11-08T15:45:08-03:00 · America/Sao_Paulo</strong></p>
+<p><strong>PREPARATION APPROVED — OPERATIONAL VALIDATION PENDING.</strong></p>
+<p>Cadu approved the preparation, organization, translation and publication of this increment. The Mac was selected as the executor; it is powered off and unavailable for installation. This approval does not turn documentation checks into model tests.</p>
+<h2>Architecture and costs</h2>
+<p>Codex handles coding tasks; Ollama runs a local model; the supervisor coordinates the queue, limits, independent review and evidence. A local model is not the OpenAI model used by Codex with ChatGPT.</p>
+<p>No API or new subscription was purchased. The previous BRL 50.00 proposal remains an inactive alternative, with no spending approval. Local inference has no per-token API charge, but uses hardware, electricity and storage. No automatic fallback to cloud or paid APIs. Model, license and tool-use capability require validation.</p>
+<h2>Evidence and limits</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Observed status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preparation regression suite</td>
+<td>184 Python tests passed</td>
+</tr>
+<tr>
+<td>Independent review</td>
+<td>Preparation reviewed; corrections incorporated</td>
+</tr>
+<tr>
+<td>GitHub</td>
+<td>carlosemox account confirmed; API reported admin/push/pull permissions</td>
+</tr>
+<tr>
+<td>Codex CLI</td>
+<td>Version 0.167.0 installed only in the temporary environment</td>
+</tr>
+<tr>
+<td>ChatGPT login</td>
+<td>Credentials recognized; no secret value exported</td>
+</tr>
+<tr>
+<td>OpenAI model access</td>
+<td>Minimal call timed out after 60 seconds; access and quota not verified</td>
+</tr>
+<tr>
+<td>Mac</td>
+<td>Selected by the user; hardware and macOS not inspected; device not connected</td>
+</tr>
+<tr>
+<td>Ollama on Mac</td>
+<td>Installation, model and integration not verified</td>
+</tr>
+<tr>
+<td>Supervisor outside the conversation</td>
+<td>Neither activated nor operationally validated</td>
+</tr>
+<tr>
+<td>External agents</td>
+<td>Cataloged; no presumed individual validation</td>
+</tr>
+</tbody>
+</table></div>
+<p>The environment inspected in this conversation is temporary Linux, limited to 8 GiB RAM and eight CPUs by quota, with 57.7 GiB free disk observed and nvidia-smi unavailable. These figures do not describe the Mac. Ollama was not installed there. OPENAI_API_KEY and CODEX_API_KEY were absent or empty.</p>
+<h2>Later installation on Mac</h2>
+<ol>
+<li>Connect the Mac and record processor, RAM/VRAM, free space, macOS and existing installations.</li>
+<li>Select verified Codex and Ollama versions and a local model with a suitable license, tools and recorded digest.</li>
+<li>Configure loopback only, cloud disabled and a context window that fits memory. Ollama documentation recommends at least 64k tokens for Codex; the machine must support that requirement.</li>
+<li>Validate local responses, tools, isolation, timeout, stop, recovery and absence of duplicate effects in a fixture without secrets.</li>
+<li>Complete a small fix in a disposable checkout, run tests and obtain independent diff review. Measure time and memory.</li>
+<li>Integrate with the supervisor and test persistence and scheduling only after the gates pass. This pilot does not authorize self-approval, application merges/deployments or certification of the entire catalog.</li>
+</ol>
+<h2>Prepared commands, not yet run on Mac</h2>
+<p>Start only if no server already exists. Otherwise inspect its configuration and restart the appropriate service without creating a duplicate.</p>
+<pre><code class="language-sh">OLLAMA_NO_CLOUD=1 OLLAMA_HOST=127.0.0.1:11434 OLLAMA_CONTEXT_LENGTH=65536 ollama serve
+</code></pre>
+<p>Replace MODEL_NAME with the exact installed model name. Context size is a test target, not a guarantee of sufficient memory.</p>
+<pre><code class="language-sh">codex exec --oss --local-provider ollama --model MODEL_NAME --sandbox read-only -c 'web_search=&quot;disabled&quot;' 'Reply CADU_OLLAMA_OK without using tools.'
+</code></pre>
+<p>Local Ollama does not sandbox agent commands. Actual sandbox enforcement must be tested on the Mac. Do not copy personal ChatGPT authentication into the public CI workflow.</p>
+<h2>Access checker</h2>
+<p><code>python scripts/check_codex_access.py</code> checks only version and login; it accepts <code>--codex-bin</code> for a trusted executable. It does not read auth.json directly, export raw output, call a model or start a service. Credentials do not prove connectivity, quota, model access or isolation. This diagnostic covers the ChatGPT route; local Ollama does not require OpenAI login.</p>
+<h2>Next milestone</h2>
+<p><strong>MAC_CONNECTED → HARDWARE_CHECKED → LOCAL_MODEL_TESTED → ISOLATION_VERIFIED → PILOT_REVIEWED.</strong> Publishing this page completes the approved preparation, not operational validation.</p>
+<h2>References</h2>
+<ul>
+<li>https://learn.chatgpt.com/docs/auth</li>
+<li>https://learn.chatgpt.com/docs/non-interactive-mode</li>
+<li>https://learn.chatgpt.com/docs/cli/reference</li>
+<li>https://docs.ollama.com/integrations/codex</li>
+<li>https://docs.ollama.com/faq</li>
+</ul>
+</main></body></html>
