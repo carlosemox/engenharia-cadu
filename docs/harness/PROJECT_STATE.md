@@ -7,9 +7,9 @@ ENVIRONMENT_LABEL=Web
 CLIENT=CODEX
 COORDINATOR=Codex
 BRANCH=main
-RELEASE_HEAD=beaf409dc05c5db15c57b763cae17f8730dca547
+RELEASE_HEAD=8636a11d48d5adae2508e70b3bda4ee84c07c61c
 RELEASE_STATUS=RELEASED
-RELEASE_SCOPE=SITE_LIBRARY_COMMANDS_DETERMINISTIC_MAINTENANCE
+RELEASE_SCOPE=SITE_LIBRARY_COMMANDS_DETERMINISTIC_MAINTENANCE_MAC_OLLAMA_PREPARATION
 MODE=CONTINUOUS_CONTROLLED_LOOP
 UNATTENDED_RUNTIME=GITHUB_ACTIONS_DETERMINISTIC
 LOOP_STATE=BOUNDED_SCHEDULE_CONFIGURED_PUSH_VERIFIED
@@ -24,7 +24,11 @@ Preparação v1.2.0; [piloto canônico](CODEX_OLLAMA_PILOT.md).
 Host definitivo: Mac do usuário, desligado. Instalação, modelo, isolamento e
 execução autônoma aguardam testes no Mac. API paga não contratada/aprovada.
 H-003 permanece BLOCKED somente para a ativação operacional.
-Publicação deste incremento: pendente de CI e merge; não presumir deploy.
+Publicação verificada: PR #7 integrada; CI_READ_ONLY SUCCESS no candidato
+e91cda88158b832ae1a2377c5bcca38b45626cdd. Páginas PT/EN/ES abertas no
+navegador público; navegação entre idiomas confirmada. Versão 1.2.0.
+Evidências: https://github.com/carlosemox/engenharia-cadu/pull/7 e
+https://github.com/carlosemox/engenharia-cadu/actions/runs/42511796026.
 
 ## Checkpoint anterior — 2026-11-08
 
