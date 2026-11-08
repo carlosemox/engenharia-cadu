@@ -97,6 +97,8 @@ Supabase puede formar parte de la arquitectura cuando se elija. Eso no autoriza 
 <!-- section:agentes -->
 ## 04 / Un coordinador. Colaboración con responsabilidad.
 
+**[Biblioteca de agentes y skills](https://carlosemox.github.io/engenharia-cadu/biblioteca/index.es.html)** · [Regularizar proyectos en curso](https://carlosemox.github.io/engenharia-cadu/comandos/REGULARIZAR_PROJETO.es.txt) · [Supervisor y autonomía](https://github.com/carlosemox/engenharia-cadu/blob/main/docs/harness/AUTONOMY.md)
+
 **Codex es el ejecutor principal del método.** Antigravity, Gemini CLI y OpenCode son colaboradores posibles, elegidos según la tarea y las capacidades realmente disponibles. No es obligatorio abrir cuatro agentes para resolver un cambio sencillo.
 
 Cada delegación lleva un objetivo, contexto suficiente, archivos y recursos permitidos, dependencias, criterios de aceptación y formato de respuesta. Los recursos compartidos tienen un responsable. Los revisores trabajan en lectura; el coordinador comprueba la integración.

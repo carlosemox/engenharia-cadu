@@ -29,3 +29,16 @@ com agentes distintos e dependência real, usando SQLite e bridge Codex web.
 Fila do piloto encerrada, stop persistido; nenhum worker autônomo permanece ligado.
 Incremento operacional: 141 testes PASS e revisão independente PASS no perfil delimitado. Candidato preparado na mesma PR; verificar CI do HEAD remoto antes de merge.
 Próximo gate externo: host/adapter/isolamento/custos para serviço persistente.
+
+
+## Checkpoint de publicação — biblioteca e autonomia
+
+Autorização atual D-012: publicação desta central em PT/EN/ES após gates.
+Biblioteca: 2566 ocorrências catalogadas + 10 papéis originais, traduções EN/ES,
+30 downloads Markdown, bundle e metadados. Candidatos externos não homologados.
+Comando REGULARIZAR_PROJETO e auditor read-only preparados para projetos existentes;
+nenhum aplicativo externo foi migrado por esta entrega.
+Manutenção determinística: workflow GitHub com quatro checks e artifacts, pronto
+para ativação por merge. Adapter Codex com executor/revisor separados está inativo
+por gate literal: autenticação, modelo e orçamento pendentes. Não declarar IA 24h.
+Publicação/CI/validação de navegador: acompanhar evidências do HEAD na PR5.

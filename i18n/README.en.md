@@ -97,6 +97,8 @@ Supabase can be part of the architecture when selected. That does not authorize 
 <!-- section:agentes -->
 ## 04 / One coordinator. Accountable collaboration.
 
+**[Agents and skills library](https://carlosemox.github.io/engenharia-cadu/biblioteca/index.en.html)** · [Regularize ongoing projects](https://carlosemox.github.io/engenharia-cadu/comandos/REGULARIZAR_PROJETO.en.txt) · [Supervisor and autonomy](https://github.com/carlosemox/engenharia-cadu/blob/main/docs/harness/AUTONOMY.md)
+
 **Codex is the primary executor in this method.** Antigravity, Gemini CLI and OpenCode are potential collaborators, selected for the task and their observed capabilities. There is no requirement to open four agents for a simple change.
 
 Every delegation carries an objective, sufficient context, allowed files and resources, dependencies, acceptance criteria and a return format. Shared resources have a responsible owner. Reviewers work read-only; the coordinator checks the integration.

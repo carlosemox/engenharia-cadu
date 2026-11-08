@@ -24,3 +24,15 @@ para serviço persistente fora da sessão e execução mutante. Adota-se para o 
 armazenamento SQLite transacional no host, sem dependência externa e sem mudança
 da stack de aplicativos. Fila editorial continua a fonte do plano; a instância de
 execução guarda tentativas/eventos e projeta recibos, não outro backlog concorrente.
+
+
+## D-012 — DECIDED — publicação e autonomia delimitada
+
+Pedido atual de Cadu autoriza publicar a central trilíngue, biblioteca, comando de
+regularização e manutenção automática. Merge/deploy desta central estão autorizados
+após CI e revisão independente; restrições históricas de publicação desse lote são
+superadas somente nesse escopo. Automatizar checks fixos via GitHub Actions evita
+contratar host antes de demonstrar necessidade. Sem Supabase/Hostinger nesta central
+estática. Serviço de IA autônomo permanece dependente de autenticação e orçamento.
+Materiais de terceiros são referências/metadados até direitos de distribuição
+comprovados. Agentes próprios podem ser baixados; catálogo não instala executores.

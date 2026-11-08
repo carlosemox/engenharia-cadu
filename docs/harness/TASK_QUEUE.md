@@ -91,13 +91,13 @@
     },
     {
       "id": "H-003",
-      "title": "Aprovar serviço persistente fora da sessão",
+      "title": "Ativar adapter Codex independente da sessão",
       "owner": "Carlos Eduardo do Amaral",
       "executor_id": "codex-implementation",
       "reviewer_id": "independent-review",
       "role": "architect",
       "squad": "software",
-      "status": "APPROVAL_REQUIRED",
+      "status": "BLOCKED",
       "priority": "P1",
       "depends_on": [
         "H-002"
@@ -119,7 +119,7 @@
       "authorized": false,
       "evidence": [],
       "review": null,
-      "next_action": "Definir host, adapter disponível, isolamento, orçamento, backup e alçada antes de provisionar",
+      "next_action": "Cadu define autenticação segura, modelo e teto de gasto; depois teste real do adapter antes de remover if:false",
       "deadline": null
     },
     {

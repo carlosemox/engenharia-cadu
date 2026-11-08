@@ -1,0 +1,72 @@
+name: CODEX_AUTONOMOUS_AUDIT
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 9 * * 1-5'
+permissions:
+  contents: read
+concurrency:
+  group: codex-autonomous-audit
+  cancel-in-progress: false
+jobs:
+  executor:
+    if: false && vars.CADU_LLM_ENABLED == 'true' && vars.CADU_LLM_BUDGET_APPROVED == 'true' && vars.CADU_AUTONOMY_STOP != 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Verify service authentication
+        env:
+          API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MODEL: ${{ vars.CADU_CODEX_MODEL }}
+        run: |
+          test -n "$API_KEY" || { echo 'BLOCKED_AUTHENTICATION'; exit 1; }
+          test -n "$MODEL" || { echo 'BLOCKED_MODEL_SELECTION'; exit 1; }
+      - name: Execute bounded read-only audit
+        uses: openai/codex-action@13e9c17417b29e9a276f73ec6ed7fb574137d3c3
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          permission-profile: ':read-only'
+          safety-strategy: drop-sudo
+          model: ${{ vars.CADU_CODEX_MODEL }}
+          prompt-file: automation/CODEX_MISSION.md
+          output-file: ${{ runner.temp }}/audit.md
+      - name: Save audit for separate reviewer
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: codex-audit-${{ github.run_id }}
+          path: ${{ runner.temp }}/audit.md
+          retention-days: 7
+          if-no-files-found: error
+  reviewer:
+    needs: executor
+    if: false && vars.CADU_LLM_ENABLED == 'true' && vars.CADU_LLM_BUDGET_APPROVED == 'true' && vars.CADU_AUTONOMY_STOP != 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: codex-audit-${{ github.run_id }}
+          path: ${{ runner.temp }}/executor
+      - name: Stage untrusted report as data
+        run: cp "$RUNNER_TEMP/executor/audit.md" REVIEW_INPUT.md
+      - name: Independent read-only review
+        uses: openai/codex-action@13e9c17417b29e9a276f73ec6ed7fb574137d3c3
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          permission-profile: ':read-only'
+          safety-strategy: drop-sudo
+          model: ${{ vars.CADU_CODEX_MODEL }}
+          prompt-file: automation/CODEX_REVIEW.md
+          output-file: ${{ runner.temp }}/review.md
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: codex-review-${{ github.run_id }}
+          path: ${{ runner.temp }}/review.md
+          retention-days: 7
+          if-no-files-found: error

@@ -1,6 +1,6 @@
 # Engenharia Cadu — instruções do repositório
 
-Esta central distribui método, prompts, papéis e site estático. Não é o aplicativo do usuário nem um supervisor instalado.
+Esta central distribui método, prompts, papéis e site estático. Não é o aplicativo do usuário. Modos operacionais reais e limites constam em docs/harness/AUTONOMY.md.
 
 - Comece por `read.md`; para produto novo, P01. Consulte uma etapa em `p/` e somente as políticas pertinentes.
 - Fontes canônicas: `p/`, `politicas/`, `templates/`, `catalogo/` e `agentes/`; `docs/` é publicação derivada.
@@ -58,3 +58,9 @@ mutáveis aos workers. Não confundir grafo local com Graphy externo instalado.
 Ao retomar, conferir recibo e existência real do armazenamento; nenhuma sessão
 anterior garante serviço ativo. Fora do chat, custos, infraestrutura e código
 autônomo continuam sujeitos aos gates registrados em DECISIONS.md.
+
+
+Biblioteca pública gerada: `python scripts/build_library.py`. Regularização de projetos:
+`comandos/REGULARIZAR_PROJETO.md`, auditor seletivo `scripts/audit_project.py`.
+Manutenção autônoma determinística: `automation/maintenance.json` e workflow dedicado.
+Isso não autoriza execução LLM paga nem torna candidatos do catálogo homologados.

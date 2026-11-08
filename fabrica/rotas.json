@@ -108,6 +108,22 @@
         "P14"
       ],
       "goal": "Executar auditorias delimitadas com fila persistente, bridge Codex e revisão independente; bloquear execução sem adapter disponível."
+    },
+    "regularizar-projeto": {
+      "label": "Regularizar projeto em andamento",
+      "labels": {
+        "pt": "Regularizar projeto em andamento",
+        "en": "Regularize an ongoing project",
+        "es": "Regularizar un proyecto en curso"
+      },
+      "procedure": "comandos/REGULARIZAR_PROJETO.md",
+      "stages": [
+        "P20",
+        "P21",
+        "P22",
+        "P14"
+      ],
+      "goal": "Auditar seletivamente, preservar fontes equivalentes e Design System, organizar tarefas e executar somente correções autorizadas com evidências."
     }
   }
 }

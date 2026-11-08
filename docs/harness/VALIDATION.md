@@ -71,3 +71,26 @@ Revisão independente final: PASS no perfil `read_only_audit` em host confiável
 Revisor `01a1bc32-0470-7704-910d-fb7025d1f039` distinto do implementador
 `01a1bc2d-ec5d-779b-a19e-09112a9da00e`; 45 testes de runtime/roteador conferidos.
 Achado P2 corrigido, sem bloqueante restante nesse escopo. [Parecer](evidence/H-004/code-review.md).
+
+
+## Biblioteca e manutenção — candidato de publicação
+
+- Suíte completa: 176 testes PASS (inclui 19 auditor, 7 manutenção, 9 biblioteca).
+- Manutenção local: M-001…M-004 PASS, zero chamadas LLM; recibo em evidências H-005.
+- Biblioteca: 2566 registros, 10 originais e 20 traduções; HTML 25–28 KB por idioma,
+  30 resultados por página, metadados externos somente em texto, links HTTPS GitHub.
+- Revisão independente da biblioteca: PASS (Hilbert); 19 testes específicos de
+  biblioteca/narrativa, sem achados bloqueantes. Browser pós-deploy pendente.
+- Dois P1 identificados antes da publicação: Git clean filters no auditor e
+  deadline com saída zero. Corrigidos com remoção de subprocessos Git e status
+  FAIL em prazo esgotado; regressões adicionadas. Rechecagem independente PASS.
+- Chromium local: download do navegador falhou como ZIP inválido. Navegador cloud
+  abre página pública; não alcança localhost. Testes funcionais após deploy.
+- Integração de IA agendada: CONFIGURED_INACTIVE, NOT_RUN; if:false em ambos jobs.
+  Não há chamada paga, alteração de secret ou alegação de autonomia de código.
+
+
+Pareceres do lote: [biblioteca](evidence/H-005/library-review.md),
+[automação e auditor](evidence/H-005/automation-review.md).
+Revisões fecham P1 por filtro Git e timeout; adapter LLM recebeu somente revisão
+estática inativa. Nenhuma certificação de produção dos aplicativos foi emitida.

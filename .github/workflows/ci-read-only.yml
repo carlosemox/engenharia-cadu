@@ -2,7 +2,7 @@ name: CI_READ_ONLY
 on:
   pull_request:
   push:
-    branches: ['chore/p0-harness-control-room']
+    branches: ['main', 'chore/p0-harness-control-room']
   workflow_dispatch:
 permissions:
   contents: read

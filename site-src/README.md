@@ -39,3 +39,14 @@ Fontes dos guias existentes: políticas, `OPERACAO.md` e módulo S01. Seus corpo
 Após os geradores acima, execute `python scripts/build_factory.py`. O catálogo canônico fica em `fabrica/rotas.json`; o gerador atualiza a página, os templates do cliente web, os dois downloads e `docs/read.md`. Os assets `factory.js` e `factory.css` são fontes locais. A página apenas gera texto e não envia os campos. Testar CLI, paridade de templates e links; interação no navegador tem evidência separada.
 
 `sync_prompts.py` também gera `execucao/Pxx.md`, mantendo todas as instruções específicas e referenciando o contrato comum uma vez por sessão/revisão. A forma completa em `p/` e seus downloads continua disponível.
+
+
+## Biblioteca de agentes e skills
+
+`python scripts/build_library.py` gera `docs/biblioteca/index.html`,
+`index.en.html` e `index.es.html`, com busca local, filtros e downloads.
+Não substituir `docs/biblioteca.html` (acervo legado de prompts).
+Conteúdo original: arquivos em `agentes/`; terceiros: metadados do inventário
+auditado e links de procedência, sujeitos a licença. Não copiar pacotes privados
+para a página pública. Regerar biblioteca antes do validador de links.
+Manutenção agendada não instala agentes nem chama IA paga: docs/harness/AUTONOMY.md.
