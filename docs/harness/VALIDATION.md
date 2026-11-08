@@ -94,3 +94,25 @@ Pareceres do lote: [biblioteca](evidence/H-005/library-review.md),
 [automação e auditor](evidence/H-005/automation-review.md).
 Revisões fecham P1 por filtro Git e timeout; adapter LLM recebeu somente revisão
 estática inativa. Nenhuma certificação de produção dos aplicativos foi emitida.
+
+
+## Publicação verificada — 2026-11-08
+
+- PR5 integrada: https://github.com/carlosemox/engenharia-cadu/pull/5
+- Commit publicado: `beaf409dc05c5db15c57b763cae17f8730dca547`.
+- CI_READ_ONLY PASS: https://github.com/carlosemox/engenharia-cadu/actions/runs/42507614857
+- Manutenção por push PASS: https://github.com/carlosemox/engenharia-cadu/actions/runs/42507614848
+- Pages PASS: https://github.com/carlosemox/engenharia-cadu/actions/runs/42507613947
+- Saúde/smoke no navegador público: home PT/EN/ES e biblioteca PT/EN/ES renderizadas;
+  metadados carregados (2566 registros), busca Instagram (17), filtro Instagram (7),
+  reset e página 2/86 funcionando. Download de coordenador.md concluído.
+- Fábrica: seleção Regularizar projeto gerou referência correta ao comando;
+  REGULARIZAR_PROJETO.txt abriu com conteúdo esperado. Espera de evento download
+  desse TXT foi inconclusiva (timeout); disponibilidade de conteúdo foi confirmada
+  por navegação direta. Não declarar todos os downloads individualmente testados.
+- Validação visual mobile e homologação de todos os candidatos: NOT_RUN.
+- Rollback disponível: reverter o merge PR5 em PR revisada para árvore anterior
+  `cd17e123f907bd3b271137b1d6bf5b3312505047`, executar CI e publicar pelo mesmo Pages.
+  Não houve migração de dados; restauração em produção não foi executada.
+- RELEASE_STATUS=RELEASED somente para central estática e manutenção delimitada.
+  Adapter LLM não executado; Graphy externo não instalado; catálogo não homologado.

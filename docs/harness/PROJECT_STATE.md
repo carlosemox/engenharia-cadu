@@ -6,6 +6,52 @@ ENVIRONMENT=CLOUD_CODE
 ENVIRONMENT_LABEL=Web
 CLIENT=CODEX
 COORDINATOR=Codex
+BRANCH=main
+RELEASE_HEAD=beaf409dc05c5db15c57b763cae17f8730dca547
+RELEASE_STATUS=RELEASED
+RELEASE_SCOPE=SITE_LIBRARY_COMMANDS_DETERMINISTIC_MAINTENANCE
+MODE=CONTINUOUS_CONTROLLED_LOOP
+UNATTENDED_RUNTIME=GITHUB_ACTIONS_DETERMINISTIC
+LOOP_STATE=BOUNDED_SCHEDULE_CONFIGURED_PUSH_VERIFIED
+LLM_RUNTIME=BLOCKED_AUTHENTICATION_MODEL_BUDGET
+GRAPHY_RUNTIME=NOT_CONFIGURED
+DEPENDENCY_RUNTIME=LOCAL_SQLITE_SUPERVISED
+
+## Checkpoint atual — 2026-11-08
+
+PR #5 integrada e GitHub Pages publicado. CI_READ_ONLY e manutenção passaram
+na main. Evidência completa: [VALIDATION.md](VALIDATION.md), seção Publicação.
+O schedule de seis horas está configurado; a execução verificada foi por push,
+não uma observação antecipada de um disparo futuro do cron.
+
+Biblioteca PT/EN/ES: 2566 registros de terceiros, dez papéis originais e trinta
+arquivos Markdown. Catálogo não significa instalação ou homologação individual.
+Busca, categoria, paginação, download de papel original, navegação PT/EN/ES e
+conteúdo do comando de regularização verificados no navegador público.
+
+Autorização vigente: D-012 e pedido reiterado de autonomia, homologação e publicação.
+A central pode ser publicada após gates; não há autenticação de serviço, modelo ou
+teto financeiro confirmado para executar IA fora da sessão. Adapter continua
+inativo por if:false. Nenhum aplicativo externo foi migrado. Supabase e Hostinger
+continuam preferências para produtos que precisem deles, sem provisionamento.
+
+Próxima tarefa: H-003, obter autenticação segura, modelo e orçamento; homologar o
+adapter read-only em execução real antes de habilitá-lo. Desenvolvimento autônomo
+com escrita exige isolamento e gates próprios. Não pedir segredo em conversa/Git.
+Para usar agora: biblioteca pública, fábrica de comandos e auditoria read-only.
+Para parar manutenção: CADU_AUTONOMY_STOP=true bloqueia novos jobs; cancelar
+execução já ativa no GitHub. Regras e limites: [AUTONOMY.md](AUTONOMY.md).
+
+## Histórico preservado (superado pelo checkpoint acima)
+
+# Fotografia anterior
+
+PROJECT=engenharia-cadu
+REPOSITORY=carlosemox/engenharia-cadu
+ENVIRONMENT=CLOUD_CODE
+ENVIRONMENT_LABEL=Web
+CLIENT=CODEX
+COORDINATOR=Codex
 SESSION_EXECUTOR=Codex
 BRANCH=chore/p0-harness-control-room
 BASE_HEAD=cd17e123f907bd3b271137b1d6bf5b3312505047
