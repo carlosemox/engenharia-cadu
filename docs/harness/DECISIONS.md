@@ -36,3 +36,13 @@ contratar host antes de demonstrar necessidade. Sem Supabase/Hostinger nesta cen
 estática. Serviço de IA autônomo permanece dependente de autenticação e orçamento.
 Materiais de terceiros são referências/metadados até direitos de distribuição
 comprovados. Agentes próprios podem ser baixados; catálogo não instala executores.
+
+## D-013 — DECIDED — preparação Codex + Ollama no Mac e publicação
+
+Cadu escolheu Mac, informou que está desligado e aprovou finalizar, organizar,
+traduzir e publicar a preparação. Autoriza push, PR, merge e publicação desta
+central após verificações e revisão; supera o bloqueio de divulgação da proposta
+no escopo destes documentos. Não aprova gasto API, instalação remota não
+verificada ou declarar supervisor/terceiros homologados operacionalmente.
+Perfil: Codex + Ollama local, cloud desativada, sem fallback pago.
+Próximo gate: Mac conectado, hardware/modelo/isolamento e ensaio real.
