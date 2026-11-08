@@ -20,3 +20,5 @@ Ambiente escolhido pelo usuário: web; cliente confirmado: Codex. CLOUD_CODE é 
 Checkpoint: auditoria anterior reconciliada; baseline editorial PASS. Retomar lendo este estado, fila e decisões; validar o HEAD da branch antes de escrever. Última entrega e verificações: VALIDATION.md. O sistema não continua após o encerramento desta sessão sem um executor persistente homologado.
 
 Entrega local: 12 documentos de controle + auditoria inicial; 16 esquadrões; inventário de 268 fichas e 2298 definições públicas; comando PT/EN/ES e roteador read-only. 118 testes passaram. Próximo nó: CI remoto e revisão do candidato.
+
+Proposta remota: https://github.com/carlosemox/engenharia-cadu/pull/5 (DRAFT). Candidato inicial 86e49506dc4b091b34894ee9190bb3b292ac898a com CI_READ_ONLY SUCCESS. Main permanece cd17e123f907bd3b271137b1d6bf5b3312505047. Próximo trabalho depende da decisão D-006 e do perfil piloto H-002; nenhum worker está ligado.
