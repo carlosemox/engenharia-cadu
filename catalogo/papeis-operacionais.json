@@ -3,9 +3,10 @@
     "id": "README",
     "name": "README",
     "category": "README",
-    "description": "Papel de referência para README. Requer adaptação de contexto, fontes, ferramentas e alçadas.",
-    "state": "Inventariado · não homologado",
-    "source": "Acervo de papéis operacionais"
+    "description": "README do acervo; preservado para proveniência, excluído da contagem de agentes.",
+    "state": "Documentação de origem · não é agente",
+    "source": "Acervo de papéis operacionais",
+    "kind": "documentation"
   },
   {
     "id": "01-trafego-meta-analise-campanha",

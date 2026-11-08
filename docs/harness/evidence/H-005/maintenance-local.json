@@ -1,0 +1,357 @@
+{
+  "status": "PASS",
+  "tasks": [
+    {
+      "id": "M-001",
+      "action": "project_audit",
+      "attempts": 1,
+      "status": "PASS",
+      "exit_code": 0,
+      "output_sha256": "a837c8331091197ac017c0da0ee03c89ffa8f6a1f53c75abaed3d0d4c2af6c88",
+      "audit": {
+        "coverage": {
+          "entries": 87,
+          "documents": 41,
+          "skipped": 0,
+          "limited": false,
+          "secret_candidates": 0,
+          "selection": "root and named documentation directories only; no history, source-code or full secret scan"
+        },
+        "artifacts": [
+          {
+            "artifact": "instructions",
+            "required": true,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "a54ff182c7e8acf5",
+                "sha256": "c4fedf78100989346644dbcd7426cfff24d61819f0414d55e6b950424fa066b1"
+              }
+            ]
+          },
+          {
+            "artifact": "profile",
+            "required": true,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "b335630551682c19",
+                "sha256": "e296a6a56be190ef8559e61597b14ad23de53fc975b3173a9b8f2988607c91ab"
+              }
+            ]
+          },
+          {
+            "artifact": "state",
+            "required": true,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "2ef86dbf052a89de",
+                "sha256": "5a971c243354ae0a7a0d53e1228fdb3a0cf41f74ae093334b58e813616e1d3af"
+              }
+            ]
+          },
+          {
+            "artifact": "decisions",
+            "required": true,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "cbb01fdd535b0ab8",
+                "sha256": "67027de66c37b92dadd56fd836292273a25c2ba3b5ce0cd7b93fbb1655742fc9"
+              },
+              {
+                "document_id": "ab0e05dca9b88930",
+                "sha256": "2b377c39946f446cef40db7f618a8ef0863790852ca178b545161a7f8c3c14a6"
+              }
+            ]
+          },
+          {
+            "artifact": "queue",
+            "required": true,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "7679d055a05a6881",
+                "sha256": "61f68eafc70af6902d078a90e8cf093d37d7baaa58306824dcbda2164ea67be1"
+              }
+            ]
+          },
+          {
+            "artifact": "stack",
+            "required": true,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "42649bb7f199093c",
+                "sha256": "90ae0a796828d059ea5eb29105d48fa2250d00eb1ef41b3aa234e7d74ffd8d9e"
+              }
+            ]
+          },
+          {
+            "artifact": "validation",
+            "required": true,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "3f0a54edeaccd66b",
+                "sha256": "6e35c0461179533740a271239f9ca612087a5556eb8ae83e8d4857fe8964007f"
+              }
+            ]
+          },
+          {
+            "artifact": "autonomy",
+            "required": true,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "4a92778ef6d975e2",
+                "sha256": "ac3439ea181d63d2dd4d94ba3881cc8d15ad155aeb147593b990997c33c39f5a"
+              },
+              {
+                "document_id": "d3b5a85e89f24e95",
+                "sha256": "b779ae57b47995f0de01ee288fd7709e29ee4a9672b061047e619e3ce077e0ed"
+              },
+              {
+                "document_id": "7e52edf3e0336ad3",
+                "sha256": "884504ac8f313ac04177c4f024e9d3f08693100f2f5f53770364d4869db51262"
+              },
+              {
+                "document_id": "0c3d26a133bc459e",
+                "sha256": "2c6998a134abebbfe5ea40762dd76ef74d0d01e74eca9b8d438fadfabef96431"
+              },
+              {
+                "document_id": "a9ea7e042bcfeeb0",
+                "sha256": "6fd6abf72b2c45ada4e56c8fe77a4a2317a41e1ad6e9d02eaf25879ef7350a85"
+              }
+            ]
+          },
+          {
+            "artifact": "security",
+            "required": true,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "f6ed156e4bf5c791",
+                "sha256": "d948af59922d9687cc0b486999f8724a965ad4de7ccfffdb863b8914db97e3f1"
+              },
+              {
+                "document_id": "683f9de539989dc9",
+                "sha256": "369a4af3c2a873b6c176cea2a775b7ae85f0077359ba52cefe8ada904ecc61aa"
+              },
+              {
+                "document_id": "cc7528c8a8fd9566",
+                "sha256": "09070ead019eefd82b9271032752161af16cae48ea922ba811a3ebaa4deb3069"
+              },
+              {
+                "document_id": "6029f67468ce1acf",
+                "sha256": "6e2c62498510f88d3b20066132206797b41de64f009db0af498e0504697dd54e"
+              }
+            ]
+          },
+          {
+            "artifact": "checkpoint",
+            "required": true,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "2ef86dbf052a89de",
+                "sha256": "5a971c243354ae0a7a0d53e1228fdb3a0cf41f74ae093334b58e813616e1d3af"
+              }
+            ]
+          },
+          {
+            "artifact": "design_system",
+            "required": null,
+            "status": "FOUND_EQUIVALENT",
+            "action": "REUSE_AND_REVIEW",
+            "evidence": [
+              {
+                "document_id": "33764e29892e4b5c",
+                "sha256": "4549f5d782901e4d490e4f0c454c176aa16f193faf165d5b84f4a157d89442ed"
+              }
+            ]
+          }
+        ],
+        "findings": [
+          {
+            "id": "BASELINE_REVIEW",
+            "priority": "P1",
+            "owner": "project_coordinator",
+            "input": [
+              "selected_document_metadata",
+              "project_authorization"
+            ],
+            "output": "baseline_review_evidence",
+            "acceptance": "Reconcile local work and identify an isolated authorized candidate before changes.",
+            "dependencies": [],
+            "status": "OPEN"
+          },
+          {
+            "id": "RUNTIME_EVIDENCE",
+            "priority": "P1",
+            "owner": "runtime_owner",
+            "input": [
+              "selected_document_metadata",
+              "project_authorization"
+            ],
+            "output": "runtime_evidence_evidence",
+            "acceptance": "Verify actual Graphy/Loop adapters, identities, controls and receipts in separately authorized isolation; documents are not proof.",
+            "dependencies": [
+              "BASELINE_REVIEW"
+            ],
+            "status": "OPEN"
+          }
+        ],
+        "proposed_tasks": [
+          {
+            "id": "TASK_BASELINE_REVIEW",
+            "finding_id": "BASELINE_REVIEW",
+            "priority": "P1",
+            "owner": "project_coordinator",
+            "input": [
+              "selected_document_metadata",
+              "project_authorization"
+            ],
+            "output": "baseline_review_evidence",
+            "acceptance": "Reconcile local work and identify an isolated authorized candidate before changes.",
+            "dependencies": [],
+            "state": "BLOCKED",
+            "blocked_by": [
+              "SCOPE_AND_OWNER_CONFIRMATION"
+            ],
+            "allowed_paths": [],
+            "allowed_actions": [
+              "review_selected_evidence"
+            ],
+            "budget": {
+              "max_cycles": 3,
+              "stop_after_no_progress": 2,
+              "tokens": null,
+              "cost": null
+            },
+            "execution": "NOT_RUN"
+          },
+          {
+            "id": "TASK_RUNTIME_EVIDENCE",
+            "finding_id": "RUNTIME_EVIDENCE",
+            "priority": "P1",
+            "owner": "runtime_owner",
+            "input": [
+              "selected_document_metadata",
+              "project_authorization"
+            ],
+            "output": "runtime_evidence_evidence",
+            "acceptance": "Verify actual Graphy/Loop adapters, identities, controls and receipts in separately authorized isolation; documents are not proof.",
+            "dependencies": [
+              "TASK_BASELINE_REVIEW"
+            ],
+            "state": "BLOCKED",
+            "blocked_by": [
+              "SCOPE_AND_OWNER_CONFIRMATION"
+            ],
+            "allowed_paths": [],
+            "allowed_actions": [
+              "review_selected_evidence"
+            ],
+            "budget": {
+              "max_cycles": 3,
+              "stop_after_no_progress": 2,
+              "tokens": null,
+              "cost": null
+            },
+            "execution": "NOT_RUN"
+          }
+        ],
+        "runtime": {
+          "graphy": "NOT_VERIFIED",
+          "loop": "NOT_VERIFIED",
+          "agents": "NOT_VERIFIED",
+          "ready_unattended": "BLOCKED"
+        },
+        "limitations": [
+          "Document candidates require human equivalence and content review.",
+          "Stack markers do not prove versions, architecture or deployment.",
+          "Git is never executed; dirty is always NOT_VERIFIED/null; HEAD is metadata, not object verification.",
+          "Submodule internals and indirect Git metadata are not traversed.",
+          "No repository contents, remotes, branches, filenames or secret values are exported.",
+          "Concurrent target changes can invalidate this non-atomic observation."
+        ]
+      }
+    },
+    {
+      "id": "M-002",
+      "action": "editorial_check",
+      "attempts": 1,
+      "status": "PASS",
+      "exit_code": 0,
+      "output_sha256": "b9ba19000605a0000d72119a62118fcc24ed4ad157630e043cf35fbbc581611f"
+    },
+    {
+      "id": "M-003",
+      "action": "queue_check",
+      "attempts": 1,
+      "status": "PASS",
+      "exit_code": 0,
+      "output_sha256": "e5b3b3d2ac860239808dba852fd1db886466aaea50f71a657217415dec094b53"
+    },
+    {
+      "id": "M-004",
+      "action": "regression_tests",
+      "attempts": 1,
+      "status": "PASS",
+      "exit_code": 0,
+      "output_sha256": "c0186e5ab35e0e4738088a585d6c50ebf86d3907aa7697cb253bd8d482f74c58"
+    }
+  ],
+  "events": [
+    {
+      "task": "M-001",
+      "event": "STARTED"
+    },
+    {
+      "task": "M-001",
+      "event": "PASS"
+    },
+    {
+      "task": "M-002",
+      "event": "STARTED"
+    },
+    {
+      "task": "M-002",
+      "event": "PASS"
+    },
+    {
+      "task": "M-003",
+      "event": "STARTED"
+    },
+    {
+      "task": "M-003",
+      "event": "PASS"
+    },
+    {
+      "task": "M-004",
+      "event": "STARTED"
+    },
+    {
+      "task": "M-004",
+      "event": "PASS"
+    }
+  ],
+  "llm": "NOT_STARTED",
+  "mode": "AUTONOMOUS_DETERMINISTIC_AUDIT",
+  "run_id": "local",
+  "source_sha": "local",
+  "token_usage": 0,
+  "meaning": "PASS means checks ran successfully; project findings require their own assessment"
+}

@@ -1,0 +1,240 @@
+{
+  "run_id": "H-004-pilot",
+  "config": {
+    "deadline": 1794162388.6837864,
+    "environment": "CODEX_WEB",
+    "lease_seconds": 1800,
+    "max_claims": 2,
+    "session_id": "codex-web-2026-11-08",
+    "supervised": true,
+    "workers": {
+      "01a1bc31-d489-7195-b40a-c95e5e262037": [
+        "auditor"
+      ],
+      "01a1bc31-d932-76c4-85f3-183d8d57c03e": [
+        "reviewer"
+      ]
+    }
+  },
+  "claims": 2,
+  "stopped": true,
+  "jobs": [
+    {
+      "id": "H-004-A",
+      "state": "DONE",
+      "attempts": 1,
+      "no_progress": 0,
+      "run_id": "H-004-pilot",
+      "worker_id": "01a1bc31-d489-7195-b40a-c95e5e262037",
+      "expires": null,
+      "snapshot": "11b5f3aa0168dccd56492f1258ccd4a33989b366b2406172110e79161ceb9c39",
+      "submission_id": "05785aa79332859fe3a80b95688398d4191b44501ef9a49ec85848f621f5c987"
+    },
+    {
+      "id": "H-004-B",
+      "state": "DONE",
+      "attempts": 1,
+      "no_progress": 0,
+      "run_id": "H-004-pilot",
+      "worker_id": "01a1bc31-d489-7195-b40a-c95e5e262037",
+      "expires": null,
+      "snapshot": "7cfb1052efd56405e376cc6ee27259027fde730683d5ea41fd99b2ffc901984b",
+      "submission_id": "dd687e9a8f424ea631e6781e8b14f02639fd71456495d43c3f6e2353b22ffeb4"
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "at": 1794158795.3512695,
+      "kind": "INIT",
+      "job_id": null,
+      "data": {
+        "evidence_dir": "<PRIVATE_EVIDENCE_DIRECTORY>",
+        "project": "<PROJECT_CHECKOUT>",
+        "version": 1
+      }
+    },
+    {
+      "seq": 2,
+      "at": 1794158795.3521144,
+      "kind": "RUN_STARTED",
+      "job_id": null,
+      "data": {
+        "deadline": 1794162388.6837864,
+        "environment": "CODEX_WEB",
+        "lease_seconds": 1800,
+        "max_claims": 2,
+        "run_id": "H-004-pilot",
+        "session_id": "codex-web-2026-11-08",
+        "supervised": true,
+        "workers": {
+          "01a1bc31-d489-7195-b40a-c95e5e262037": [
+            "auditor"
+          ],
+          "01a1bc31-d932-76c4-85f3-183d8d57c03e": [
+            "reviewer"
+          ]
+        }
+      }
+    },
+    {
+      "seq": 3,
+      "at": 1794158795.3532305,
+      "kind": "ENQUEUED",
+      "job_id": "H-004-A",
+      "data": {
+        "run_id": "H-004-pilot",
+        "spec": {
+          "capability": "read_only_audit",
+          "depends_on": [],
+          "id": "H-004-A",
+          "paths": [
+            "catalogo/esquadroes.json",
+            "agentes/coordenador.md"
+          ]
+        }
+      }
+    },
+    {
+      "seq": 4,
+      "at": 1794158795.3532476,
+      "kind": "ENQUEUED",
+      "job_id": "H-004-B",
+      "data": {
+        "run_id": "H-004-pilot",
+        "spec": {
+          "capability": "read_only_audit",
+          "depends_on": [
+            "H-004-A"
+          ],
+          "id": "H-004-B",
+          "paths": [
+            "docs/harness/DESIGN_SYSTEM_CONTRACT.md"
+          ]
+        }
+      }
+    },
+    {
+      "seq": 5,
+      "at": 1794158795.3862484,
+      "kind": "CLAIMED",
+      "job_id": "H-004-A",
+      "data": {
+        "attempt": 1,
+        "manifest": {
+          "agentes/coordenador.md": "7228290140cb2de71ebacfc594c4d0ebaec1dd761a987cb8910afe15e2343ece",
+          "catalogo/esquadroes.json": "8e941d524a5ba65a15fe80ea8babcbcc06d5456b4a9c59fcc616406dd5684b44"
+        },
+        "run_id": "H-004-pilot",
+        "snapshot": "11b5f3aa0168dccd56492f1258ccd4a33989b366b2406172110e79161ceb9c39",
+        "worker_id": "01a1bc31-d489-7195-b40a-c95e5e262037"
+      }
+    },
+    {
+      "seq": 6,
+      "at": 1794158829.1730545,
+      "kind": "SUBMITTED",
+      "job_id": "H-004-A",
+      "data": {
+        "evidence": {
+          "auditor-a.md": "89e52c063eb307e76a230032f1cfb98b71a46bab05b954ed6e8fd1f05b6a2947"
+        },
+        "snapshot": "11b5f3aa0168dccd56492f1258ccd4a33989b366b2406172110e79161ceb9c39",
+        "submission_id": "05785aa79332859fe3a80b95688398d4191b44501ef9a49ec85848f621f5c987",
+        "worker_id": "01a1bc31-d489-7195-b40a-c95e5e262037"
+      }
+    },
+    {
+      "seq": 7,
+      "at": 1794158850.8859441,
+      "kind": "REVIEWED",
+      "job_id": "H-004-A",
+      "data": {
+        "artifact": {
+          "review-a.md": "7f2680d36e12d33b1794257e8fdf6f6b0690f04cc6d23a5122858a207cfa8fcb"
+        },
+        "implementer": "01a1bc31-d489-7195-b40a-c95e5e262037",
+        "progress": false,
+        "result": "PASS",
+        "snapshot": "11b5f3aa0168dccd56492f1258ccd4a33989b366b2406172110e79161ceb9c39",
+        "submission_id": "05785aa79332859fe3a80b95688398d4191b44501ef9a49ec85848f621f5c987",
+        "worker_id": "01a1bc31-d932-76c4-85f3-183d8d57c03e"
+      }
+    },
+    {
+      "seq": 8,
+      "at": 1794158850.9201343,
+      "kind": "CLAIMED",
+      "job_id": "H-004-B",
+      "data": {
+        "attempt": 1,
+        "manifest": {
+          "docs/harness/DESIGN_SYSTEM_CONTRACT.md": "4549f5d782901e4d490e4f0c454c176aa16f193faf165d5b84f4a157d89442ed"
+        },
+        "run_id": "H-004-pilot",
+        "snapshot": "7cfb1052efd56405e376cc6ee27259027fde730683d5ea41fd99b2ffc901984b",
+        "worker_id": "01a1bc31-d489-7195-b40a-c95e5e262037"
+      }
+    },
+    {
+      "seq": 9,
+      "at": 1794158883.5327473,
+      "kind": "HEARTBEAT",
+      "job_id": "H-004-B",
+      "data": {
+        "expires": 1794160683.5327344,
+        "worker_id": "01a1bc31-d489-7195-b40a-c95e5e262037"
+      }
+    },
+    {
+      "seq": 10,
+      "at": 1794158893.943834,
+      "kind": "SUBMITTED",
+      "job_id": "H-004-B",
+      "data": {
+        "evidence": {
+          "auditor-b.md": "14dcf67e6d221534bb4ecae2cd54b0bd033249be800e0afe25267b0c3d81a9fc"
+        },
+        "snapshot": "7cfb1052efd56405e376cc6ee27259027fde730683d5ea41fd99b2ffc901984b",
+        "submission_id": "dd687e9a8f424ea631e6781e8b14f02639fd71456495d43c3f6e2353b22ffeb4",
+        "worker_id": "01a1bc31-d489-7195-b40a-c95e5e262037"
+      }
+    },
+    {
+      "seq": 11,
+      "at": 1794158913.1045573,
+      "kind": "REVIEWED",
+      "job_id": "H-004-B",
+      "data": {
+        "artifact": {
+          "review-b.md": "3142c4771319916862b1c2807e476ed679524e3ea2bd9be771f95b6cf3b821e3"
+        },
+        "implementer": "01a1bc31-d489-7195-b40a-c95e5e262037",
+        "progress": false,
+        "result": "PASS",
+        "snapshot": "7cfb1052efd56405e376cc6ee27259027fde730683d5ea41fd99b2ffc901984b",
+        "submission_id": "dd687e9a8f424ea631e6781e8b14f02639fd71456495d43c3f6e2353b22ffeb4",
+        "worker_id": "01a1bc31-d932-76c4-85f3-183d8d57c03e"
+      }
+    },
+    {
+      "seq": 12,
+      "at": 1794158913.139457,
+      "kind": "STOP",
+      "job_id": null,
+      "data": {
+        "run_id": "H-004-pilot"
+      }
+    }
+  ],
+  "lessons": [],
+  "scope": "Supervised Codex web read-only documentary audit; no background service",
+  "token_usage": "NOT_MEASURED",
+  "reports": {
+    "auditor-a.md": "89e52c063eb307e76a230032f1cfb98b71a46bab05b954ed6e8fd1f05b6a2947",
+    "review-a.md": "7f2680d36e12d33b1794257e8fdf6f6b0690f04cc6d23a5122858a207cfa8fcb",
+    "auditor-b.md": "14dcf67e6d221534bb4ecae2cd54b0bd033249be800e0afe25267b0c3d81a9fc",
+    "review-b.md": "3142c4771319916862b1c2807e476ed679524e3ea2bd9be771f95b6cf3b821e3"
+  },
+  "sanitization": "Fencing tokens excluded by API; host paths redacted; report bytes preserved"
+}

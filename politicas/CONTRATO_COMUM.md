@@ -49,3 +49,17 @@ Depois de cada marco, atualize o registro autorizado do projeto com estado, deci
 ## Encerramento
 
 Conclua somente quando o objetivo estiver atendido no escopo, a verificação for proporcional ao risco, as evidências forem recuperáveis e o próximo passo ou estado final estiver registrado.
+
+## Adoção e modos operacionais
+
+Projetos existentes entram por `comandos/REGULARIZAR_PROJETO.md`: auditoria seletiva,
+fontes equivalentes preservadas, escopo por tarefa e Design System vigente. Aplicar
+correções locais autorizadas em branch isolada; não instalar todo o catálogo.
+Referências em `catalogo/` e na biblioteca pública são candidatas, não executores
+homologados. Um implementador não aprova sua própria entrega.
+
+Consultar `docs/harness/AUTONOMY.md` uma vez por revisão: distinguir sessão Codex,
+manutenção determinística agendada e agente LLM independente. O grafo local de
+dependências não prova produto Graphy instalado. Duas falhas sem progresso bloqueiam
+o nó; continuar trabalho independente autorizado. Gastos e publicação precisam de
+alçada vigente, sem pedir novamente o que já foi explicitamente autorizado.

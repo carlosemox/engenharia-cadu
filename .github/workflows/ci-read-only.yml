@@ -1,0 +1,33 @@
+name: CI_READ_ONLY
+on:
+  pull_request:
+  push:
+    branches: ['main', 'chore/p0-harness-control-room']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-read-only-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Install existing editorial dependency
+        run: python3 -m pip install -r site-src/requirements.txt
+      - name: Editorial and supervisor contracts
+        run: |
+          python3 scripts/validate.py
+          python3 scripts/supervisor.py --check
+      - name: Regression tests
+        run: |
+          python3 -m unittest discover -s tests
+          node tests/test_factory_client.cjs
+      - name: Whitespace
+        run: git diff --check

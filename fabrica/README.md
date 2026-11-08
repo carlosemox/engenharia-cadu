@@ -31,3 +31,14 @@ python scripts/prompt_factory.py --modo assumir --alvo "meu-projeto" --pedido "R
 Pedidos em linguagem natural são roteados pelo agente. O gerador local/web usa a seleção explícita; não finge entender semanticamente o campo livre.
 
 As rotas de etapas usam `execucao/Pxx.md`, derivado automaticamente do procedimento completo. O contrato comum deve ser recuperado uma vez por sessão/revisão e continua obrigatório. Isso reduz repetição textual; economia total depende da medição do fluxo.
+
+## Revisão de agentes
+
+Modo `revisar-agentes`: [PT](../comandos/REVISAR_AGENTES_PROJETO.md), [EN](../comandos/REVISAR_AGENTES_PROJETO.en.md), [ES](../comandos/REVISAR_AGENTES_PROJETO.es.md). A fábrica gera comandos; não inicia o Supervisor.
+
+## Operação supervisionada
+
+Modo `operar-supervisor`: [PT](../comandos/OPERAR_SUPERVISOR.md), [EN](../comandos/OPERAR_SUPERVISOR.en.md), [ES](../comandos/OPERAR_SUPERVISOR.es.md). A página gera o comando; a sessão Codex opera a bridge descrita no [runbook](../docs/harness/OPERATING_RUNBOOK.md). Sem runtime e ferramentas disponíveis, bloquear.
+
+
+Regularizar projetos: [PT](../comandos/REGULARIZAR_PROJETO.md), [EN](../comandos/REGULARIZAR_PROJETO.en.md), [ES](../comandos/REGULARIZAR_PROJETO.es.md). Biblioteca: [agentes e skills](../docs/biblioteca/index.html).

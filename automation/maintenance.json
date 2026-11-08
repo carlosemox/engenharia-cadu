@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "enabled": true,
+  "mode": "AUTONOMOUS_DETERMINISTIC_AUDIT",
+  "max_tasks": 4,
+  "timeout_seconds": 300,
+  "tasks": [
+    {"id": "M-001", "action": "project_audit", "depends_on": []},
+    {"id": "M-002", "action": "editorial_check", "depends_on": []},
+    {"id": "M-003", "action": "queue_check", "depends_on": []},
+    {"id": "M-004", "action": "regression_tests", "depends_on": ["M-002", "M-003"]}
+  ],
+  "llm": {"enabled": false, "status": "BLOCKED_AUTHENTICATION_AND_BUDGET"}
+}

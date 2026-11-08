@@ -22,6 +22,6 @@ setImmediate(async()=>{
   await nodes.copy.events.click();assert.equal(clipboard,nodes.output.value);
   context.navigator.clipboard.writeText=async()=>{throw new Error('denied')};
   await nodes.copy.events.click();assert(nodes.output.selected);assert(nodes.status.textContent.includes('manualmente'));
-  console.log('PASS: 10 modos, dados literais, cópia e fallback; DOM simulado, não navegador.');
+  console.log('PASS: modos do catálogo, dados literais, cópia e fallback; DOM simulado, não navegador.');
  }catch(e){console.error(e);process.exitCode=1;}
 });

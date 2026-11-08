@@ -1,6 +1,6 @@
 # Engenharia Cadu — instruções do repositório
 
-Esta central distribui método, prompts, papéis e site estático. Não é o aplicativo do usuário nem um supervisor instalado.
+Esta central distribui método, prompts, papéis e site estático. Não é o aplicativo do usuário. Modos operacionais reais e limites constam em docs/harness/AUTONOMY.md.
 
 - Comece por `read.md`; para produto novo, P01. Consulte uma etapa em `p/` e somente as políticas pertinentes.
 - Fontes canônicas: `p/`, `politicas/`, `templates/`, `catalogo/` e `agentes/`; `docs/` é publicação derivada.
@@ -41,3 +41,26 @@ Comando único: `comando.md`; geração sem execução: `fabrica/README.md`. Pro
 ## Runtime V3 — Astra 6
 
 Todos os procedimentos P00–P30 carregam uma única vez por sessão o contrato `politicas/CONTRATO_COMUM.md`, que define Harness, Loop e Graph, limites de repetição, estados, evidências e checkpoint. Não colar a biblioteca inteira nem repetir o contrato em cada execução. Para missões longas, usar P30; para retomada, P18; para medir custo por entrega aceita, P24.
+
+## Sala de controle P0/P1
+
+Exceção canônica: `docs/harness/` é estado operacional versionado desta central, não derivado do site. Começar por `docs/harness/PROJECT_STATE.md`. Supervisor: `docs/harness/SUPERVISOR.md`; fila única: `docs/harness/TASK_QUEUE.md`. Roteador somente leitura: `python scripts/supervisor.py --check`. Regras existentes de alçada prevalecem. Não declarar runtime contínuo instalado.
+
+
+### Piloto operacional supervisionado
+
+`comandos/OPERAR_SUPERVISOR.md` e `docs/harness/OPERATING_RUNBOOK.md` definem o
+perfil autorizado `read_only_audit`. A API em `scripts/supervisor_runtime.py`
+persiste fila/eventos em SQLite fora do Git. Só a bridge confiável da sessão
+Codex vincula IDs reais de executor/revisor e convoca as ferramentas. Contratos
+no catálogo não concedem acesso. Não fornecer banco, lease token ou ferramentas
+mutáveis aos workers. Não confundir grafo local com Graphy externo instalado.
+Ao retomar, conferir recibo e existência real do armazenamento; nenhuma sessão
+anterior garante serviço ativo. Fora do chat, custos, infraestrutura e código
+autônomo continuam sujeitos aos gates registrados em DECISIONS.md.
+
+
+Biblioteca pública gerada: `python scripts/build_library.py`. Regularização de projetos:
+`comandos/REGULARIZAR_PROJETO.md`, auditor seletivo `scripts/audit_project.py`.
+Manutenção autônoma determinística: `automation/maintenance.json` e workflow dedicado.
+Isso não autoriza execução LLM paga nem torna candidatos do catálogo homologados.

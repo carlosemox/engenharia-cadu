@@ -1,0 +1,36 @@
+name: AUTONOMOUS_MAINTENANCE
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main, chore/p0-harness-control-room]
+permissions:
+  contents: read
+concurrency:
+  group: autonomous-maintenance
+  cancel-in-progress: false
+jobs:
+  audit:
+    if: vars.CADU_AUTONOMY_STOP != 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      CADU_AUTONOMY_STOP: ${{ vars.CADU_AUTONOMY_STOP }}
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Install editorial dependency
+        run: python3 -m pip install -r site-src/requirements.txt
+      - name: Run bounded autonomous maintenance
+        run: python3 scripts/autonomous_maintenance.py --output "$RUNNER_TEMP/maintenance.json"
+      - name: Retain sanitized receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: maintenance-${{ github.run_id }}
+          path: ${{ runner.temp }}/maintenance.json
+          retention-days: 30
+          if-no-files-found: error

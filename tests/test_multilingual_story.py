@@ -53,6 +53,8 @@ class StoryTests(unittest.TestCase):
   outputs=[R/dst for _,dst in LOCALES.values()]
   before=[p.read_bytes() for p in outputs]
   subprocess.run([sys.executable,str(R/'site-src/build_story.py')],cwd=R,check=True,capture_output=True)
+  # Home navigation is completed by the documented guide generator.
+  subprocess.run([sys.executable,str(R/'site-src/organize_guides.py')],cwd=R,check=True,capture_output=True)
   self.assertEqual(before,[p.read_bytes() for p in outputs])
  def test_language_resolver_is_path_specific(self):
   import ast

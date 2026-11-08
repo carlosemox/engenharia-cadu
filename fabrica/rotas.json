@@ -81,6 +81,49 @@
       "procedure": "fabrica/README.md",
       "stages": [],
       "goal": "Produza um comando curto, rastreável e específico, sem executar seu conteúdo."
+    },
+    "revisar-agentes": {
+      "label": "Revisar agentes por projeto",
+      "labels": {
+        "pt": "Revisar agentes por projeto",
+        "en": "Review project agents",
+        "es": "Revisar agentes del proyecto"
+      },
+      "procedure": "comandos/REVISAR_AGENTES_PROJETO.md",
+      "stages": [
+        "P22"
+      ],
+      "goal": "Mapeie capacidades por domínio; confira origem, escopo, dependências e revisão independente antes de instalar ou executar."
+    },
+    "operar-supervisor": {
+      "label": "Operar Supervisor de auditoria",
+      "labels": {
+        "pt": "Operar Supervisor de auditoria",
+        "en": "Operate audit Supervisor",
+        "es": "Operar Supervisor de auditoría"
+      },
+      "procedure": "comandos/OPERAR_SUPERVISOR.md",
+      "stages": [
+        "P22",
+        "P14"
+      ],
+      "goal": "Executar auditorias delimitadas com fila persistente, bridge Codex e revisão independente; bloquear execução sem adapter disponível."
+    },
+    "regularizar-projeto": {
+      "label": "Regularizar projeto em andamento",
+      "labels": {
+        "pt": "Regularizar projeto em andamento",
+        "en": "Regularize an ongoing project",
+        "es": "Regularizar un proyecto en curso"
+      },
+      "procedure": "comandos/REGULARIZAR_PROJETO.md",
+      "stages": [
+        "P20",
+        "P21",
+        "P22",
+        "P14"
+      ],
+      "goal": "Auditar seletivamente, preservar fontes equivalentes e Design System, organizar tarefas e executar somente correções autorizadas com evidências."
     }
   }
 }
