@@ -7,9 +7,9 @@ ENVIRONMENT_LABEL=Web
 CLIENT=CODEX
 COORDINATOR=Codex
 BRANCH=main
-RELEASE_HEAD=8636a11d48d5adae2508e70b3bda4ee84c07c61c
+RELEASE_HEAD=6a782a31a09597a5f2de803bbf13193bee8b8bfe
 RELEASE_STATUS=RELEASED
-RELEASE_SCOPE=SITE_LIBRARY_COMMANDS_DETERMINISTIC_MAINTENANCE_MAC_OLLAMA_PREPARATION
+RELEASE_SCOPE=SITE_LIBRARY_COMMANDS_DETERMINISTIC_MAINTENANCE_MAC_PREPARATION_GRAPHIFY_INDEX_VALIDATION
 MODE=CONTINUOUS_CONTROLLED_LOOP
 UNATTENDED_RUNTIME=GITHUB_ACTIONS_DETERMINISTIC
 LOOP_STATE=BOUNDED_SCHEDULE_CONFIGURED_PUSH_VERIFIED
@@ -25,7 +25,7 @@ zero falhas. Engenharia Cadu: 493 nós no SHA c3a930148c73532af47cfa678065a1da0b
 Homologação delimitada à conexão/indexação observadas, não a consultas MCP,
 segurança do fornecedor, todos os repositórios ou agentes externos.
 Limite Free bloqueou novas ativações; nenhum upgrade contratado.
-Publicação deste incremento: em validação; conferir PR/CI antes de declarar release.
+Publicação v1.3.0 confirmada: PR #9 integrada, CI e Pages PASS; páginas públicas PT/EN/ES verificadas no navegador. Recibos em VALIDATION.md.
 Fontes PT/EN/ES: CODEX_OLLAMA_PILOT*.md, versão 1.3.0.
 H-003 permanece BLOCKED para runtime Mac; próximo gate Graphify: consulta MCP real.
 
