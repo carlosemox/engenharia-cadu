@@ -148,3 +148,15 @@ Chromium inválido; o smoke público foi concluído pelo navegador conectado.
 Observação em 2026-11-08T21:40:46-03:00: https://app.graphify.com/engenharia-cadu/builds mostrou 3 completed, 0 in flight, Succeeded 3, Failed 0, Nodes produced 11.9K. engenharia-cadu: Indexed, 493 nós, SHA c3a930148c73532af47cfa678065a1da0b977e40. A conta pessoal tem 69 repositórios reconhecidos. Limites Free observados: três repositórios e 25 mil nós por repositório. MCP NOT_RUN. Este registro não homologa o novo SHA editorial nem o runtime Mac.
 
 Validação editorial local: 184 testes PASS; scripts/validate.py PASS (31 prompts, 65 páginas, 2597 links); git diff --check PASS. Dependência markdown-it-py 4.2.0 instalada em venv isolado após ausência no Python inicial. Nenhum teste de runtime/MCP foi incluído nesses números.
+
+## Publicação Graphify v1.3.0 confirmada
+
+- PR: https://github.com/carlosemox/engenharia-cadu/pull/9
+- Candidato: ef0c49ea5e08c0753066959ccd0b152c4274f04a; árvore b0afb69f5d95332b2c9a883b2591d2a3539cbbce idêntica à árvore local validada.
+- Merge: 6a782a31a09597a5f2de803bbf13193bee8b8bfe.
+- CI candidato PASS: https://github.com/carlosemox/engenharia-cadu/actions/runs/42541616277
+- CI main PASS: https://github.com/carlosemox/engenharia-cadu/actions/runs/42541654239
+- Manutenção determinística PASS: https://github.com/carlosemox/engenharia-cadu/actions/runs/42541654288
+- Pages PASS: https://github.com/carlosemox/engenharia-cadu/actions/runs/42541654004
+- Navegador público: páginas supervisor-mac/index.html, index.en.html e index.es.html exibiram 1.3.0 e 2026-11-08T21:40:46-03:00; conteúdo Graphify e navegação de idiomas confirmados.
+- Este recibo posterior não altera as páginas ou amplia a homologação.
