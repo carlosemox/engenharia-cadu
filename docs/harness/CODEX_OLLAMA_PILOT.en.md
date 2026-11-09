@@ -2,11 +2,34 @@
 
 [Português](CODEX_OLLAMA_PILOT.md) · [English](CODEX_OLLAMA_PILOT.en.md) · [Español](CODEX_OLLAMA_PILOT.es.md)
 
-Version / updated: **1.2.0 · 2026-11-08T15:45:08-03:00 · America/Sao_Paulo**
+Version / updated: **1.3.0 · 2026-11-08T21:40:46-03:00 · America/Sao_Paulo**
 
 **PREPARATION APPROVED — OPERATIONAL VALIDATION PENDING.**
 
 Cadu approved the preparation, organization, translation and publication of this increment. The Mac was selected as the executor; it is powered off and unavailable for installation. This approval does not turn documentation checks into model tests.
+
+## Graphify — scoped validation
+
+**CONNECTION AND INDEXING VALIDATED; FULL ECOSYSTEM VALIDATION PENDING.**
+
+Reinstalling from the workspace and verifying the administrator account repaired the GitHub link. The dashboard now recognizes 69 repositories in the authorized personal account. Installations in separate organizations have not been verified.
+
+| Check | Observed result |
+| --- | --- |
+| GitHub association with the Engenharia Cadu workspace | PASS |
+| Recognized repositories | 69; recognition does not mean indexing |
+| Observed builds | 3 successful, 0 failed and 0 in flight |
+| engenharia-cadu | Indexed; 493 nodes; revision c3a930148c73532af47cfa678065a1da0b977e40 |
+| Dashboard aggregate | Approximately 11.9 thousand nodes across the three builds |
+| Real Codex/MCP query | NOT_RUN; account connection does not prove a query |
+| Indexing all 69 repositories | BLOCKED_PLAN; not completed |
+| Supervisor, Ollama and Mac isolation | Not installed/tested in this delivery |
+
+The Free dashboard rejected additional activations with a three-repository limit and reported a 25,000-node limit per repository. Do not assume that completing a build frees a slot: the message also asks to disable a repository or change plans. We did not disable valid indexes to bypass this limit. No paid plan was purchased. The authorized installation retains access to all repositories in the account, with read access to issues/metadata and read/write access to checks, code and pull requests; this does not authorize autonomous changes.
+
+Evidence observed in the authenticated browser: [workspace builds](https://app.graphify.com/engenharia-cadu/builds). Validation covers the observed results and identified revision, not this publication's new commit, other repositories or the provider's overall security. Private repository names and credentials are omitted from this public publication.
+
+Next gate: test an authenticated Codex/MCP query against the ready index, checking the symbol and location against the indexed revision. Then define coverage and budget before upgrading the plan. External agents remain candidates without presumed individual validation.
 
 ## Architecture and costs
 

@@ -46,3 +46,7 @@ no escopo destes documentos. Não aprova gasto API, instalação remota não
 verificada ou declarar supervisor/terceiros homologados operacionalmente.
 Perfil: Codex + Ollama local, cloud desativada, sem fallback pago.
 Próximo gate: Mac conectado, hardware/modelo/isolamento e ensaio real.
+
+## D-014 — Graphify e publicação trilíngue
+
+2026-11-08T21:40:46-03:00. Usuário autorizou todos os repositórios da conta, reinstalação, indexação e publicação revisada PT/EN/ES. Homologação limitada à evidência: 69 reconhecidos, três builds PASS; MCP NOT_RUN e Mac pendente. Sem autorização de gasto adicional. Nenhum segredo ou nome de repositório privado integra a nova documentação pública.
