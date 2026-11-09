@@ -1,10 +1,58 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Codex + Ollama — Preparation approved"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>Codex + Ollama | Engenharia Cadu</title><link rel="stylesheet" href="../assets/ollama-pilot.css"></head>
-<body><header><a href="../en/index.html">Engenharia Cadu · Home</a><span>1.2.0</span></header><main data-source-sha256="52704b9b07f13a060a2a20ad169dba792c90bae2e29eb4556ff7d74da3581a79"><h1>Codex + Ollama on Mac</h1>
+<body><header><a href="../en/index.html">Engenharia Cadu · Home</a><span>1.3.0</span></header><main data-source-sha256="6a15d006de0786ba366691f454f75dc579c600a7061ec56bdc8cd79b12297b42"><h1>Codex + Ollama on Mac</h1>
 <p><a href="index.html">Português</a> · <a href="index.en.html">English</a> · <a href="index.es.html">Español</a></p>
-<p>Version / updated: <strong>1.2.0 · 2026-11-08T15:45:08-03:00 · America/Sao_Paulo</strong></p>
+<p>Version / updated: <strong>1.3.0 · 2026-11-08T21:40:46-03:00 · America/Sao_Paulo</strong></p>
 <p><strong>PREPARATION APPROVED — OPERATIONAL VALIDATION PENDING.</strong></p>
 <p>Cadu approved the preparation, organization, translation and publication of this increment. The Mac was selected as the executor; it is powered off and unavailable for installation. This approval does not turn documentation checks into model tests.</p>
+<h2>Graphify — scoped validation</h2>
+<p><strong>CONNECTION AND INDEXING VALIDATED; FULL ECOSYSTEM VALIDATION PENDING.</strong></p>
+<p>Reinstalling from the workspace and verifying the administrator account repaired the GitHub link. The dashboard now recognizes 69 repositories in the authorized personal account. Installations in separate organizations have not been verified.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Observed result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub association with the Engenharia Cadu workspace</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Recognized repositories</td>
+<td>69; recognition does not mean indexing</td>
+</tr>
+<tr>
+<td>Observed builds</td>
+<td>3 successful, 0 failed and 0 in flight</td>
+</tr>
+<tr>
+<td>engenharia-cadu</td>
+<td>Indexed; 493 nodes; revision c3a930148c73532af47cfa678065a1da0b977e40</td>
+</tr>
+<tr>
+<td>Dashboard aggregate</td>
+<td>Approximately 11.9 thousand nodes across the three builds</td>
+</tr>
+<tr>
+<td>Real Codex/MCP query</td>
+<td>NOT_RUN; account connection does not prove a query</td>
+</tr>
+<tr>
+<td>Indexing all 69 repositories</td>
+<td>BLOCKED_PLAN; not completed</td>
+</tr>
+<tr>
+<td>Supervisor, Ollama and Mac isolation</td>
+<td>Not installed/tested in this delivery</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Free dashboard rejected additional activations with a three-repository limit and reported a 25,000-node limit per repository. Do not assume that completing a build frees a slot: the message also asks to disable a repository or change plans. We did not disable valid indexes to bypass this limit. No paid plan was purchased. The authorized installation retains access to all repositories in the account, with read access to issues/metadata and read/write access to checks, code and pull requests; this does not authorize autonomous changes.</p>
+<p>Evidence observed in the authenticated browser: <a href="https://app.graphify.com/engenharia-cadu/builds">workspace builds</a>. Validation covers the observed results and identified revision, not this publication's new commit, other repositories or the provider's overall security. Private repository names and credentials are omitted from this public publication.</p>
+<p>Next gate: test an authenticated Codex/MCP query against the ready index, checking the symbol and location against the indexed revision. Then define coverage and budget before upgrading the plan. External agents remain candidates without presumed individual validation.</p>
 <h2>Architecture and costs</h2>
 <p>Codex handles coding tasks; Ollama runs a local model; the supervisor coordinates the queue, limits, independent review and evidence. A local model is not the OpenAI model used by Codex with ChatGPT.</p>
 <p>No API or new subscription was purchased. The previous BRL 50.00 proposal remains an inactive alternative, with no spending approval. Local inference has no per-token API charge, but uses hardware, electricity and storage. No automatic fallback to cloud or paid APIs. Model, license and tool-use capability require validation.</p>

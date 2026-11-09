@@ -142,3 +142,9 @@ confirmadas em Chrome; links de idioma PT→EN→ES funcionaram. Captura visual 
 conferida, versão e timestamp visíveis. Não foi executado teste em dispositivo Mac
 nem ensaio visual mobile. A tentativa inicial de navegador local falhou por download
 Chromium inválido; o smoke público foi concluído pelo navegador conectado.
+
+## Graphify — evidência operacional v1.3.0
+
+Observação em 2026-11-08T21:40:46-03:00: https://app.graphify.com/engenharia-cadu/builds mostrou 3 completed, 0 in flight, Succeeded 3, Failed 0, Nodes produced 11.9K. engenharia-cadu: Indexed, 493 nós, SHA c3a930148c73532af47cfa678065a1da0b977e40. A conta pessoal tem 69 repositórios reconhecidos. Limites Free observados: três repositórios e 25 mil nós por repositório. MCP NOT_RUN. Este registro não homologa o novo SHA editorial nem o runtime Mac.
+
+Validação editorial local: 184 testes PASS; scripts/validate.py PASS (31 prompts, 65 páginas, 2597 links); git diff --check PASS. Dependência markdown-it-py 4.2.0 instalada em venv isolado após ausência no Python inicial. Nenhum teste de runtime/MCP foi incluído nesses números.

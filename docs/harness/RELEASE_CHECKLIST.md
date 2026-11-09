@@ -36,3 +36,9 @@ CI, manutenção e Pages PASS no commit beaf409dc05c5db15c57b763cae17f8730dca547
 Rollback documentado e versão anterior preservada; exercício de restauração em
 produção não executado. Homologação limitada à central, auditor e manutenção
 determinística. H-003 mantém IA autônoma bloqueada; terceiros não homologados.
+
+## Incremento Graphify v1.3.0
+
+Escopo autorizado: evidência de associação/indexação e tradução integral da atualização PT/EN/ES. Publicação depende dos testes locais, revisão e CI do candidato. Rollback: revert do merge deste incremento para a árvore anterior c3a930148c73532af47cfa678065a1da0b977e40; não altera nem reverte a instalação externa. Homologação MCP/Mac e todos os repositórios permanece fora do aceite concluído.
+
+Revisão independente: /root/review_graphify_release — PASS, sem bloqueantes; paridade PT/EN/ES, escopo, privacidade, hashes e diff conferidos. Snapshot git diff SHA-256: 6bc353ff0742ed662c87c908666d8bd02df620d2421e7a21c4e23464d6663915 (antes deste recibo). 184 testes e validador local PASS.

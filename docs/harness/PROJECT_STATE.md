@@ -14,10 +14,22 @@ MODE=CONTINUOUS_CONTROLLED_LOOP
 UNATTENDED_RUNTIME=GITHUB_ACTIONS_DETERMINISTIC
 LOOP_STATE=BOUNDED_SCHEDULE_CONFIGURED_PUSH_VERIFIED
 LLM_RUNTIME=MAC_OLLAMA_PREPARATION_APPROVED_RUNTIME_PENDING
-GRAPHY_RUNTIME=NOT_CONFIGURED
+GRAPHY_RUNTIME=GRAPHIFY_CONNECTED_THREE_BUILDS_VALIDATED
 DEPENDENCY_RUNTIME=LOCAL_SQLITE_SUPERVISED
 
-## Checkpoint atual — preparação Mac/Ollama aprovada
+## Checkpoint atual — Graphify v1.3.0
+
+Atualização: 2026-11-08T21:40:46-03:00. Ambiente editorial CLOUD_CODE mantido; Mac indisponível.
+Conexão GitHub corrigida; 69 repositórios reconhecidos; três builds concluídos,
+zero falhas. Engenharia Cadu: 493 nós no SHA c3a930148c73532af47cfa678065a1da0b977e40.
+Homologação delimitada à conexão/indexação observadas, não a consultas MCP,
+segurança do fornecedor, todos os repositórios ou agentes externos.
+Limite Free bloqueou novas ativações; nenhum upgrade contratado.
+Publicação deste incremento: em validação; conferir PR/CI antes de declarar release.
+Fontes PT/EN/ES: CODEX_OLLAMA_PILOT*.md, versão 1.3.0.
+H-003 permanece BLOCKED para runtime Mac; próximo gate Graphify: consulta MCP real.
+
+## Checkpoint anterior — preparação Mac/Ollama aprovada
 
 D-013: usuário aprovou organização, tradução PT/EN/ES e publicação.
 Preparação v1.2.0; [piloto canônico](CODEX_OLLAMA_PILOT.md).

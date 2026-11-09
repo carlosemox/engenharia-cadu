@@ -1,10 +1,58 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Codex + Ollama — Preparação aprovada"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>Codex + Ollama | Engenharia Cadu</title><link rel="stylesheet" href="../assets/ollama-pilot.css"></head>
-<body><header><a href="../index.html">Engenharia Cadu · Início</a><span>1.2.0</span></header><main data-source-sha256="cf8c2ac36b02f3b198a14a0aef446ffbeb9444541ecd5edb8b6140ab99c823c4"><h1>Codex + Ollama no Mac</h1>
+<body><header><a href="../index.html">Engenharia Cadu · Início</a><span>1.3.0</span></header><main data-source-sha256="5cee8e63fa8544d2b75826cc963181280bac1b2ca9dcbcaa74ddd35ff5723e8b"><h1>Codex + Ollama no Mac</h1>
 <p><a href="index.html">Português</a> · <a href="index.en.html">English</a> · <a href="index.es.html">Español</a></p>
-<p>Versão / atualização: <strong>1.2.0 · 2026-11-08T15:45:08-03:00 · America/Sao_Paulo</strong></p>
+<p>Versão / atualização: <strong>1.3.0 · 2026-11-08T21:40:46-03:00 · America/Sao_Paulo</strong></p>
 <p><strong>PREPARAÇÃO APROVADA — HOMOLOGAÇÃO OPERACIONAL PENDENTE.</strong></p>
 <p>Cadu aprovou a preparação, organização, tradução e publicação deste incremento. O Mac foi escolhido como executor; está desligado e indisponível para instalação. Esta aprovação não transforma testes documentais em testes do modelo.</p>
+<h2>Graphify — homologação delimitada</h2>
+<p><strong>CONEXÃO E INDEXAÇÃO VALIDADAS; HOMOLOGAÇÃO COMPLETA DO ECOSSISTEMA PENDENTE.</strong></p>
+<p>A reinstalação iniciada pelo workspace e a verificação da conta administradora corrigiram o vínculo GitHub. O painel passou a reconhecer 69 repositórios da conta pessoal autorizada. Instalações em organizações separadas não foram comprovadas.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Verificação</th>
+<th>Resultado observado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Associação GitHub ao workspace Engenharia Cadu</td>
+<td>PASS</td>
+</tr>
+<tr>
+<td>Repositórios reconhecidos</td>
+<td>69; reconhecimento não equivale a indexação</td>
+</tr>
+<tr>
+<td>Builds observados</td>
+<td>3 concluídos com sucesso, 0 falhas e 0 em execução</td>
+</tr>
+<tr>
+<td>engenharia-cadu</td>
+<td>Indexed; 493 nós; revisão c3a930148c73532af47cfa678065a1da0b977e40</td>
+</tr>
+<tr>
+<td>Total apresentado pelo painel</td>
+<td>Aproximadamente 11,9 mil nós nos três builds</td>
+</tr>
+<tr>
+<td>Consulta real por Codex/MCP</td>
+<td>NOT_RUN; conexão de conta não comprova consulta</td>
+</tr>
+<tr>
+<td>Indexação de todos os 69</td>
+<td>BLOCKED_PLAN; não concluída</td>
+</tr>
+<tr>
+<td>Supervisor, Ollama e isolamento no Mac</td>
+<td>Não instalados/testados nesta entrega</td>
+</tr>
+</tbody>
+</table></div>
+<p>O painel Free recusou ativações adicionais com limite de três repositórios e indicou limite de 25 mil nós por repositório. Não presumir que finalizar um build libera uma vaga: a mensagem também orienta desativar um repositório ou alterar o plano. Não desativamos índices válidos para contornar esse limite. Nenhum plano pago foi contratado. A instalação autorizada mantém acesso a todos os repositórios da conta, com leitura de issues/metadados e leitura/escrita de checks, código e pull requests; isso não autoriza alterações autônomas.</p>
+<p>Evidência observada no navegador autenticado: <a href="https://app.graphify.com/engenharia-cadu/builds">builds do workspace</a>. A homologação vale para os resultados observados e a revisão identificada, não para o novo commit desta publicação, outros repositórios ou segurança integral do fornecedor. Nomes de repositórios privados e credenciais foram omitidos desta publicação pública.</p>
+<p>Próximo gate: testar consulta autenticada pelo Codex/MCP sobre o índice pronto, conferindo símbolo e localização contra a revisão indexada. Depois, definir cobertura e orçamento antes de ampliar o plano. Agentes externos continuam candidatos, sem homologação individual presumida.</p>
 <h2>Arquitetura e custos</h2>
 <p>Codex conduz as tarefas de programação; Ollama executa um modelo local; o supervisor coordena fila, limites, revisão independente e evidências. Um modelo local não é o mesmo modelo OpenAI usado pelo Codex com ChatGPT.</p>
 <p>Não foi contratada API nem nova assinatura. A proposta anterior de R$ 50,00 fica como alternativa não ativada, sem aprovação de gasto. Inferência local não cobra tokens de API, mas utiliza hardware, energia e armazenamento. Sem fallback automático para cloud ou API paga. Modelo, licença e capacidade para usar ferramentas dependem de validação.</p>

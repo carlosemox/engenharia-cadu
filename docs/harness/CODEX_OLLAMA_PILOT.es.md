@@ -2,11 +2,34 @@
 
 [Português](CODEX_OLLAMA_PILOT.md) · [English](CODEX_OLLAMA_PILOT.en.md) · [Español](CODEX_OLLAMA_PILOT.es.md)
 
-Versión / actualización: **1.2.0 · 2026-11-08T15:45:08-03:00 · America/Sao_Paulo**
+Versión / actualización: **1.3.0 · 2026-11-08T21:40:46-03:00 · America/Sao_Paulo**
 
 **PREPARACIÓN APROBADA — HOMOLOGACIÓN OPERATIVA PENDIENTE.**
 
 Cadu aprobó la preparación, organización, traducción y publicación de este incremento. El Mac fue elegido como ejecutor; está apagado y no está disponible para la instalación. Esta aprobación no convierte las verificaciones documentales en pruebas del modelo.
+
+## Graphify — homologación delimitada
+
+**CONEXIÓN E INDEXACIÓN VALIDADAS; HOMOLOGACIÓN COMPLETA DEL ECOSISTEMA PENDIENTE.**
+
+La reinstalación desde el workspace y la verificación de la cuenta administradora corrigieron el vínculo con GitHub. El panel reconoce ahora 69 repositorios de la cuenta personal autorizada. No se comprobaron instalaciones en organizaciones separadas.
+
+| Verificación | Resultado observado |
+| --- | --- |
+| Asociación de GitHub con el workspace Engenharia Cadu | PASS |
+| Repositorios reconocidos | 69; reconocimiento no equivale a indexación |
+| Builds observados | 3 completados con éxito, 0 fallos y 0 en ejecución |
+| engenharia-cadu | Indexed; 493 nodos; revisión c3a930148c73532af47cfa678065a1da0b977e40 |
+| Total mostrado en el panel | Aproximadamente 11,9 mil nodos en los tres builds |
+| Consulta real mediante Codex/MCP | NOT_RUN; conectar la cuenta no demuestra una consulta |
+| Indexación de los 69 repositorios | BLOCKED_PLAN; no completada |
+| Supervisor, Ollama y aislamiento en Mac | No instalados/probados en esta entrega |
+
+El panel Free rechazó activaciones adicionales con un límite de tres repositorios e indicó un límite de 25 mil nodos por repositorio. No asumir que finalizar un build libera una plaza: el mensaje también indica desactivar un repositorio o cambiar de plan. No desactivamos índices válidos para eludir este límite. No se contrató ningún plan de pago. La instalación autorizada mantiene acceso a todos los repositorios de la cuenta, con lectura de issues/metadatos y lectura/escritura de checks, código y pull requests; esto no autoriza cambios autónomos.
+
+Evidencia observada en el navegador autenticado: [builds del workspace](https://app.graphify.com/engenharia-cadu/builds). La homologación cubre los resultados observados y la revisión identificada, no el nuevo commit de esta publicación, otros repositorios ni la seguridad integral del proveedor. Se omitieron nombres de repositorios privados y credenciales de esta publicación pública.
+
+Próximo gate: probar una consulta autenticada mediante Codex/MCP sobre el índice listo, comprobando el símbolo y la ubicación contra la revisión indexada. Después, definir cobertura y presupuesto antes de ampliar el plan. Los agentes externos siguen siendo candidatos, sin homologación individual presumida.
 
 ## Arquitectura y costes
 
