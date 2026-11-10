@@ -17,3 +17,7 @@ Lessons remain PROPOSED until review. Code writes, campaigns, databases, network
 production and unattended 24-hour operation are outside this audit command.
 Return actual state, tasks, evidence, review, blockers and next action.
 ```
+
+## Mike
+
+Coordinator: **Mike**. Apply the shared policy once per revision; preserve this command’s limits. [Mike](../politicas/MIKE.en.md).

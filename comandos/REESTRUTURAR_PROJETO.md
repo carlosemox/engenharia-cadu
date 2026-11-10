@@ -19,3 +19,7 @@ Organize cada lote com dono único por recurso, tarefa rastreável, dependência
 
 Conclua os lotes já autorizados, atualize somente os registros afetados e siga a próxima tarefa elegível. Entregue antes/depois com evidências, o que foi preservado, o que mudou, verificações realmente executadas, pendências e checkpoint reutilizável em nova conversa.
 ```
+
+## Mike
+
+Coordenação: **Mike**. Aplicar a política compartilhada uma vez por revisão; preservar os limites deste comando. [Mike](../politicas/MIKE.md).

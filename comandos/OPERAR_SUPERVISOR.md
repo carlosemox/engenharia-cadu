@@ -19,3 +19,7 @@ Lições permanecem PROPOSED até revisão. Escrita de código, campanha, banco,
 produção e operação 24 horas não são autorizadas por este comando de auditoria.
 Retornar estado real, tarefas, evidências, revisão, bloqueios e próximo passo.
 ```
+
+## Mike
+
+Coordenação: **Mike**. Aplicar a política compartilhada uma vez por revisão; preservar os limites deste comando. [Mike](../politicas/MIKE.md).

@@ -58,3 +58,7 @@ al host. Aplique los backups pertinentes antes de modificar proyectos reales.
 Vea la [matriz](../docs/harness/LOCAL_AGENT_ACCEPTANCE.md) para identificadores
 de gates y especificación de la fixture.
 
+
+## Mike
+
+Coordinador: **Mike**. Aplicar la política compartida una vez por revisión; conservar los límites de este comando. [Mike](../politicas/MIKE.es.md).

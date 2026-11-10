@@ -1,3 +1,15 @@
+# Checkpoint Mike — 2026-11-10
+
+COORDINATOR=Mike
+DEVELOPMENT_MODEL_REQUESTED=Astra 6 (start/complexity) -> 5.3 Luna (verified routine)
+DEVELOPMENT_MODEL_OBSERVED=NOT_VERIFIED
+LOCAL_EXECUTOR=OLLAMA_SYNTHETIC_ONLY
+PUBLICATION=PR11_DRAFT
+
+Nome e política de acompanhamento atualizados. [Aceite operacional anterior](LOCAL_EXECUTOR_ACCEPTANCE_2026-11-10.md); consultar estado vivo para alegar disponibilidade atual. [Política](../../politicas/MIKE.md). Nenhum projeto real foi admitido por esta alteração.
+
+## Histórico anterior (não é estado vivo)
+
 # Estado do projeto
 
 PROJECT=engenharia-cadu

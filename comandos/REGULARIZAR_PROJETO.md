@@ -22,3 +22,7 @@ MISSÃO: auditar o código e a organização de um projeto em andamento e propor
 
 SAÍDA: PROJECT, ENVIRONMENT, CLIENT, SOURCE_REVISION, HEAD, COVERAGE, EQUIVALENT_ARTIFACTS, FINDINGS, PROPOSED_TASKS, DS_CONTRACT, STACK, GRAPHY=NOT_VERIFIED, LOOP=NOT_VERIFIED, ACTUAL_AGENTS, REVIEW, BLOCKERS, BUDGET, NEXT_READY_TASK, RELEASE_STATUS. Não certificar conformidade nem ausência de vulnerabilidades.
 ```
+
+## Mike
+
+Coordenação: **Mike**. Aplicar a política compartilhada uma vez por revisão; preservar os limites deste comando. [Mike](../politicas/MIKE.md).

@@ -16,3 +16,7 @@ MISIÓN: revisar el perfil de capacidades antes de instalar o ejecutar agentes.
 10. Entregar mapa por dominio, capacidades seleccionadas/excluidas, dependencias, riesgos, pruebas y siguiente tarea. No inferir permiso para instalar, cambiar proveedor, secrets, base de datos, DNS, main, producción o deploy.
 SALIDA: PROJECT, ENVIRONMENT, CLIENT, HEAD, SQUADS, SELECTED_CAPABILITIES, EXCLUDED_CAPABILITIES, EVIDENCE, BLOCKERS, APPROVAL_REQUIRED, NEXT_ACTION, RELEASE_STATUS.
 ```
+
+## Mike
+
+Coordinador: **Mike**. Aplicar la política compartida una vez por revisión; conservar los límites de este comando. [Mike](../politicas/MIKE.es.md).

@@ -16,3 +16,7 @@ MISSÃO: revisar o perfil de capacidades deste projeto antes de instalar ou exec
 10. Entregar mapa por domínio, agentes selecionados/excluídos, dependências, riscos, testes e próximo nó. Não instalar, mudar fornecedor, secrets, banco, DNS, main, produção ou deploy por inferência.
 SAÍDA: PROJECT, ENVIRONMENT, CLIENT, HEAD, SQUADS, SELECTED_CAPABILITIES, EXCLUDED_CAPABILITIES, EVIDENCE, BLOCKERS, APPROVAL_REQUIRED, NEXT_ACTION, RELEASE_STATUS.
 ```
+
+## Mike
+
+Coordenação: **Mike**. Aplicar a política compartilhada uma vez por revisão; preservar os limites deste comando. [Mike](../politicas/MIKE.md).

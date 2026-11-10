@@ -17,3 +17,7 @@ Lecciones permanecen PROPOSED hasta revisión. Escritura de código, campañas, 
 de datos, red, producción y operación 24 horas quedan fuera de este comando.
 Devolver estado real, tareas, evidencia, revisión, bloqueos y siguiente acción.
 ```
+
+## Mike
+
+Coordinador: **Mike**. Aplicar la política compartida una vez por revisión; conservar los límites de este comando. [Mike](../politicas/MIKE.es.md).

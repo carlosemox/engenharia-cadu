@@ -23,3 +23,7 @@ Necessidade: continuar trabalho fora do chat com custo delimitado. Alternativas:
 Contrato do worker: allowlist de operações, checkout descartável, paths realmente isolados, rede negada por padrão, nenhum segredo fora da tarefa, lease/fencing, budget/timeout, stop flag, idempotência, checkpoint, revisor autenticado independente e revisão do diff completo. Identidades textuais diferentes não provam independência: futura camada autenticada deve verificá-las. O validador não é barreira contra código hostil.
 
 Aceite do runtime: queda/reinício sem duplicar efeito; dois workers disputando a mesma tarefa; lease expirado; cancelamento; falta de credencial; tentativa de escrever banco por FRAME; rename/symlink/traversal; autoaprovação; orçamento esgotado; regressão. Sem todos: READY_UNATTENDED=BLOCKED.
+
+## Identidade Mike
+
+Mike nomeia este papel de coordenação. [Política atual](../../politicas/MIKE.md). O runtime local independente e restrito está documentado no [aceite](LOCAL_EXECUTOR_ACCEPTANCE_2026-11-10.md); não confundir com a API SQLite de auditoria nem criar outra fila.

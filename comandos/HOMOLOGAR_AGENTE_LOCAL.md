@@ -72,3 +72,7 @@ o executor e as evidências precisam existir. Conexão do ChatGPT não transfere
 credenciais ao host. Aplicar backup pertinente antes de alterar projetos reais.
 Consultar [matriz](../docs/harness/LOCAL_AGENT_ACCEPTANCE.md).
 
+
+## Mike
+
+Coordenação: **Mike**. Aplicar a política compartilhada uma vez por revisão; preservar os limites deste comando. [Mike](../politicas/MIKE.md).

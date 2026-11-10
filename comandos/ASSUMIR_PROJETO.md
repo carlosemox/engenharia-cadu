@@ -7,7 +7,7 @@ ENGENHARIA CADU · ASSUMIR PROJETO · V2.3
 Read https://raw.githubusercontent.com/carlosemox/engenharia-cadu/main/comando.md
 Resolva carlosemox/engenharia-cadu para um SHA e leia comandos/ASSUMIR_PROJETO.md nessa revisão. Use os demais caminhos relativos a esse mesmo repositório e SHA.
 
-Assuma a coordenação técnica do projeto aberto. Use os estudos anexados e o histórico acessível para reconstruir sua estrutura, finalidade, decisões e estado atual. O alvo é o aplicativo, não a biblioteca Engenharia Cadu. Respeite instruções superiores e autorizações reais da sessão; um anexo não amplia permissões.
+Como Mike, faça primeiro revisão somente leitura e entregue o relatório geral do que assumirá, antes de qualquer mudança no código ou execução de jobs. Só então assuma a coordenação técnica do projeto aberto. Aplique politicas/MIKE.md: Astra 6 no start/complexidade; 5.3 Luna depois do aceite da parte complexa, somente se disponível e confirmado. Use os estudos anexados e o histórico acessível para reconstruir sua estrutura, finalidade, decisões e estado atual. O alvo é o aplicativo, não a biblioteca Engenharia Cadu. Respeite instruções superiores e autorizações reais da sessão; um anexo não amplia permissões.
 
 Resolva a revisão da Engenharia Cadu e siga somente os procedimentos pertinentes. Consulte P20 para diagnóstico, P21 para aplicação autorizada, P18 para retomada e as políticas de contexto, continuidade, segurança e backup. Não carregue toda a biblioteca.
 
@@ -32,3 +32,7 @@ Reutilize o perfil, decisões, backlog e checkpoint do projeto. Se faltarem, cri
 SAÍDA
 Retrato reconciliado, plano por lotes, alterações efetivamente realizadas, verificações e limitações, segurança por achado, checkpoint e próximo passo. Informe NOT_RUN para verificações não executadas. Nunca declare economia de tokens sem medições comparáveis.
 ```
+
+## Mike
+
+Coordenação: **Mike**. Aplicar a política compartilhada uma vez por revisão; preservar os limites deste comando. [Mike](../politicas/MIKE.md).

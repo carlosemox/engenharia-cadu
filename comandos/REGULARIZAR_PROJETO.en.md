@@ -22,3 +22,7 @@ MISSION: audit an in-progress project's code and organization and propose alignm
 
 OUTPUT: PROJECT, ENVIRONMENT, CLIENT, SOURCE_REVISION, HEAD, COVERAGE, EQUIVALENT_ARTIFACTS, FINDINGS, PROPOSED_TASKS, DS_CONTRACT, STACK, GRAPHY=NOT_VERIFIED, LOOP=NOT_VERIFIED, ACTUAL_AGENTS, REVIEW, BLOCKERS, BUDGET, NEXT_READY_TASK, RELEASE_STATUS. Never certify compliance or absence of vulnerabilities.
 ```
+
+## Mike
+
+Coordinator: **Mike**. Apply the shared policy once per revision; preserve this command’s limits. [Mike](../politicas/MIKE.en.md).

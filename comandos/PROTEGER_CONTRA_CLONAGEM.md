@@ -28,3 +28,7 @@ Entregue:
 - checkpoint e próximo passo.
 
 Resultado sem evidência deve ser marcado como NOT_VERIFIED.
+
+## Mike
+
+Coordenação: **Mike**. Aplicar a política compartilhada uma vez por revisão; preservar os limites deste comando. [Mike](../politicas/MIKE.md).

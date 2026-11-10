@@ -41,3 +41,9 @@ Não usar fallback remoto. Este comando prepara e testa; só evidência real aut
 classificar o executor como operacional. Chat aberto não é serviço persistente.
 
 Operação local instalada em escopo sintético: [PT](docs/harness/LOCAL_EXECUTOR_OPERATION.md) · [EN](docs/harness/LOCAL_EXECUTOR_OPERATION.en.md) · [ES](docs/harness/LOCAL_EXECUTOR_OPERATION.es.md). Recibos e admissão por projeto continuam obrigatórios.
+
+## Coordenação Mike
+
+O coordenador existente passa a se chamar **Mike**. Aplicar [política Mike](politicas/MIKE.md) uma vez por revisão: acompanhamento, relatórios, Harness/Loop/Graph, preferência Astra 6 e economia de contexto. Isso não troca o modelo efetivo nem amplia a homologação local.
+
+`MIKE ASSUMIR` / `MIKE REVISAR E ASSUMIR`: [revisão e relatório primeiro](comandos/MIKE_ASSUMIR_PROJETOS.md), depois execução no escopo autorizado. Astra 6 no start/complexidade → 5.3 Luna após verificação, conforme disponibilidade real. `MIKE STATUS`, `MIKE RELATORIO`, `MIKE PARAR` e `MIKE RETOMAR` seguem a política compartilhada.

@@ -16,3 +16,7 @@ MISSION: review this project's capability profile before installing or executing
 10. Return domain map, included/excluded capabilities, dependencies, risks, tests and next task. Never infer permission to install, change provider, secrets, database, DNS, main, production or deploy.
 OUTPUT: PROJECT, ENVIRONMENT, CLIENT, HEAD, SQUADS, SELECTED_CAPABILITIES, EXCLUDED_CAPABILITIES, EVIDENCE, BLOCKERS, APPROVAL_REQUIRED, NEXT_ACTION, RELEASE_STATUS.
 ```
+
+## Mike
+
+Coordinator: **Mike**. Apply the shared policy once per revision; preserve this command’s limits. [Mike](../politicas/MIKE.en.md).

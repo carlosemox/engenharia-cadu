@@ -75,3 +75,7 @@ Nenhum fallback pago/remoto. Registrar capacidades realmente homologadas, SHA,
 modelo/digest, escopo, limites, evidências e revisão. A indisponibilidade de
 Graphify não bloqueia tarefas que possam usar fontes locais suficientes.
 Sem host, isolamento, autorizações e piloto real, autonomia permanece não homologada.
+
+## Coordenação Mike
+
+O coordenador existente passa a se chamar **Mike**. Aplicar [política Mike](MIKE.md) uma vez por revisão: acompanhamento, relatórios, Harness/Loop/Graph, preferência Astra 6 e economia de contexto. Isso não troca o modelo efetivo nem amplia a homologação local.

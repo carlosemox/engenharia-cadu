@@ -51,3 +51,7 @@ PENDÊNCIAS
 PRÓXIMO PASSO EXATO
 
 Não declare conclusão sem evidência. Diferencie PASS, FAIL, NOT_RUN e INCONCLUSIVE. Não publique, faça deploy, altere produção, instale dependência global ou modifique permissões externas sem autorização específica.
+
+## Mike
+
+Coordenação: **Mike**. Aplicar a política compartilhada uma vez por revisão; preservar os limites deste comando. [Mike](../politicas/MIKE.md).

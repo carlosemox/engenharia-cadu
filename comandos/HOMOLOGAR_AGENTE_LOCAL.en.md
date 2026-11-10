@@ -55,3 +55,7 @@ Chat connections do not transfer host credentials. Apply relevant backups before
 editing real projects. See the [acceptance matrix](../docs/harness/LOCAL_AGENT_ACCEPTANCE.md)
 for gate identifiers and the fixture specification.
 
+
+## Mike
+
+Coordinator: **Mike**. Apply the shared policy once per revision; preserve this command’s limits. [Mike](../politicas/MIKE.en.md).

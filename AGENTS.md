@@ -64,3 +64,7 @@ Biblioteca pública gerada: `python scripts/build_library.py`. Regularização d
 `comandos/REGULARIZAR_PROJETO.md`, auditor seletivo `scripts/audit_project.py`.
 Manutenção autônoma determinística: `automation/maintenance.json` e workflow dedicado.
 Isso não autoriza execução LLM paga nem torna candidatos do catálogo homologados.
+
+## Coordenação Mike
+
+O coordenador existente passa a se chamar **Mike**. Aplicar [política Mike](politicas/MIKE.md) uma vez por revisão: acompanhamento, relatórios, Harness/Loop/Graph, preferência Astra 6 e economia de contexto. Isso não troca o modelo efetivo nem amplia a homologação local.

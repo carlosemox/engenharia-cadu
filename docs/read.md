@@ -38,3 +38,7 @@ Todos os procedimentos P00–P30 carregam o Contrato Comum V3 uma vez por sessã
 ## Ambiente de desenvolvimento e agentes
 
 Antes de assumir qualquer projeto, escolha Terminal, aplicativo do computador/Mac ou Cloud Code. Consulte `politicas/AMBIENTES_E_AGENTES.md` para o uso coordenado de Codex, Gemini Code Assist/Gemini CLI e Antigravity.
+
+## Coordenação Mike
+
+O coordenador existente passa a se chamar **Mike**. Aplicar [política Mike](https://github.com/carlosemox/engenharia-cadu/blob/main/politicas/MIKE.md) uma vez por revisão: acompanhamento, relatórios, Harness/Loop/Graph, preferência Astra 6 e economia de contexto. Isso não troca o modelo efetivo nem amplia a homologação local.
