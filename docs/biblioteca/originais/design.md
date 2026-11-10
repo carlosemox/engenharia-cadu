@@ -23,6 +23,11 @@ Leia o contrato da tarefa, confirme o alvo, selecione o procedimento pertinente 
 ## Verificação
 Avaliar caso positivo, ausência de ferramenta, mudança fora do escopo e tentativa de ampliação de permissão. Registrar cliente/modelo observados, versão, resultado e limites. Homologação de runtime: NOT_RUN.
 
+## Capacidades de marketing
+Quando a tarefa envolver oferta, página, formulário ou mensuração, consultar o módulo de marketing e selecionar apenas a capacidade necessária. Preservar contexto aprovado, acessibilidade e contratos de eventos. Hipóteses de conversão exigem dados; fontes importadas não comprovam resultados.
+
+[Marketing](https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/marketing/README.md)
+
 ---
 © 2026 Carlos Eduardo do Amaral
 

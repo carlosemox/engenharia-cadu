@@ -271,6 +271,14 @@ Preparación aprobada por Cadu; instalación, modelo y aislamiento requieren pru
 
 [Abrir el piloto](https://carlosemox.github.io/engenharia-cadu/supervisor-mac/index.es.html)
 
+### Capacidades de marketing seleccionadas
+
+**1.0.0 · 10/11/2026 · 11:10 · America/Sao_Paulo**
+
+Diez skills principales y una referencia de apoyo, con origen, licencias y hashes. Aplicación por perfil de proyecto; la ejecución y las campañas requieren evidencia propia.
+
+[Marketing](../modulos/marketing/README.es.md) · [Mastra](../integracoes/mastra/README.es.md) · [Web](https://carlosemox.github.io/engenharia-cadu/capacidades/index.es.html)
+
 <!-- section:evolucao -->
 ## 13 / Construye una base capaz de evolucionar
 

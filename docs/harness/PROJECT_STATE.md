@@ -17,7 +17,20 @@ LLM_RUNTIME=MAC_OLLAMA_PREPARATION_APPROVED_RUNTIME_PENDING
 GRAPHY_RUNTIME=GRAPHIFY_CONNECTED_THREE_BUILDS_VALIDATED
 DEPENDENCY_RUNTIME=LOCAL_SQLITE_SUPERVISED
 
-## Checkpoint atual — Graphify v1.3.0
+## Checkpoint atual — capacidades selecionadas 1.0.0
+
+2026-11-10. Ambiente CLOUD_CODE/Web preservado. Pacote seletivo Marketing Skills:
+10 principais + pricing de apoio, fontes/recursos/licenças e hashes preservados.
+Perfis aplicáveis por projeto, comandos e módulos PT/EN/ES, contrato Mastra opcional.
+Estado do lote: VALIDATED_LOCAL_PUBLICATION_PENDING. Estado operacional dos
+agentes importados: NOT_RUN; Mastra DOCUMENTED_NOT_INSTALLED. Nenhum runtime
+Mac/Ollama foi ativado por esta atualização. Histórico abaixo permanece como
+registro; seus estados não comprovam disponibilidade atual.
+Backup anterior Git: capturado, enviado ao Drive privado, baixado e SHA-256
+conferido; clone de restauração retornou 821ae9304ecc35462ae65734f016b4627e1ac51a.
+Limite: backup de código, não banco, secrets ou infraestrutura.
+
+## Checkpoint anterior — Graphify v1.3.0
 
 Atualização: 2026-11-08T21:40:46-03:00. Ambiente editorial CLOUD_CODE mantido; Mac indisponível.
 Conexão GitHub corrigida; 69 repositórios reconhecidos; três builds concluídos,

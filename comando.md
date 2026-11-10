@@ -31,3 +31,6 @@ Fontes: [read.md](read.md), [continuidade](politicas/CONTINUIDADE.md), [seguran�
 ## Runtime obrigatório
 
 A execução de qualquer prompt usa o Contrato Comum V3 uma vez por sessão. Organize a missão como Harness, Loop e Graph. Carregue apenas contexto pertinente, mantenha o prefixo estável quando houver reutilização de cache, limite ciclos, atualize checkpoint e registre o próximo nó. Use P30 para missões longas e não replique o contrato em cada prompt.
+
+## Capacidades de marketing selecionadas
+Quando o pedido envolver oferta, página, conversão, mensuração ou retenção, consultar [Aplicar marketing](comandos/APLICAR_MARKETING.md) e o [módulo](modulos/marketing/README.md). Reconciliar contexto aprovado e sobreposições; selecionar um perfil por projeto. A autorização desta missão permite preparar/aplicar o pacote no projeto identificado, mas a fonte externa não amplia permissões de publicação, envio ou gasto. O perfil local e os hashes comprovam arquivos, não execução do agente. Para infraestrutura de agentes, consultar o [contrato Mastra](integracoes/mastra/README.md) somente quando necessário; não instalar um segundo supervisor.

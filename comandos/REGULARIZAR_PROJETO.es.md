@@ -22,3 +22,8 @@ MISIÓN: auditar el código y la organización de un proyecto en curso y propone
 
 SALIDA: PROJECT, ENVIRONMENT, CLIENT, SOURCE_REVISION, HEAD, COVERAGE, EQUIVALENT_ARTIFACTS, FINDINGS, PROPOSED_TASKS, DS_CONTRACT, STACK, GRAPHY=NOT_VERIFIED, LOOP=NOT_VERIFIED, ACTUAL_AGENTS, REVIEW, BLOCKERS, BUDGET, NEXT_READY_TASK, RELEASE_STATUS. No certificar conformidad ni ausencia de vulnerabilidades.
 ```
+
+## Marketing
+Para tareas de marketing, consultar el módulo de capacidades seleccionadas y el comando de aplicación al proyecto. Conciliar instrucciones existentes, preservar alcance y autorizaciones y verificar hashes. Aplicar un perfil de referencia no activa agentes ni campañas.
+
+[Marketing](../modulos/marketing/README.es.md) · [Apply](APLICAR_MARKETING.es.md)

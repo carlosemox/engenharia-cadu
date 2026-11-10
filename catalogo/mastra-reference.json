@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "mastra-reference",
+  "version": "1.0.0",
+  "reviewed_at": "2026-11-10",
+  "source": "https://github.com/mastra-ai/mastra",
+  "upstream_commit": "3f1d3a38dfcc7c5f7abb44d7789242cdc16b61e8",
+  "state": "DOCUMENTED_NOT_INSTALLED",
+  "decision": "SELECTIVE_ADAPTER_CANDIDATE",
+  "files": [
+    {
+      "path": "fontes/mastra/README.upstream.txt",
+      "upstream_path": "README.md",
+      "source": "https://github.com/mastra-ai/mastra/blob/3f1d3a38dfcc7c5f7abb44d7789242cdc16b61e8/README.md",
+      "git_blob": "f6465bcaf53f737e3754c28660e142ca44e07c97",
+      "sha256": "49dd3ceb119209ed5130d4c8654c9082bae072191ca0ef4d43ecc3ecd5c80d28",
+      "bytes": 7195,
+      "license": "Apache-2.0",
+      "state": "ARCHIVED_REFERENCE_NOT_EXECUTED"
+    },
+    {
+      "path": "fontes/mastra/LICENSE.md",
+      "upstream_path": "LICENSE.md",
+      "source": "https://github.com/mastra-ai/mastra/blob/3f1d3a38dfcc7c5f7abb44d7789242cdc16b61e8/LICENSE.md",
+      "git_blob": "e1b6e4b6455a882dbbf66ee0b13101ec584d5e63",
+      "sha256": "f0351b469d1548e547882f01d2486a90f6bd0ff3c89defec841bbf5641265776",
+      "bytes": 1258,
+      "license": "Apache-2.0",
+      "state": "ARCHIVED_REFERENCE_NOT_EXECUTED"
+    },
+    {
+      "path": "fontes/mastra/APACHE-2.0.txt",
+      "source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "license": "Apache-2.0",
+      "state": "LICENSE_TEXT"
+    }
+  ],
+  "enterprise_license": {
+    "source": "https://github.com/mastra-ai/mastra/blob/3f1d3a38dfcc7c5f7abb44d7789242cdc16b61e8/ee/LICENSE",
+    "git_blob": "689ca0ad0738b43358c8c6c61f1b05667dba4fac",
+    "version": "2.0",
+    "effective_date": "2026-09-22",
+    "copied": false,
+    "finding": "Production use requires applicable written agreement and valid license key; no EE features redistributed."
+  },
+  "exclusions": [
+    "No EE code",
+    "No framework source or dependency installation",
+    "No hosted provider credentials",
+    "No runtime activation",
+    "No application migration"
+  ],
+  "contracts": {
+    "pt": "integracoes/mastra/README.md",
+    "en": "integracoes/mastra/README.en.md",
+    "es": "integracoes/mastra/README.es.md"
+  },
+  "validation": {
+    "upstream_blobs": "PASS",
+    "runtime": "NOT_RUN",
+    "ollama": "NOT_RUN",
+    "independent_review": "PENDING"
+  }
+}

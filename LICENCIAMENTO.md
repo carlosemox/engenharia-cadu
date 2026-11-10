@@ -18,3 +18,7 @@ redistribuição do pacote como produto próprio ou remoção dos avisos de auto
 A permissão não abrange conteúdos de terceiros, links, marcas ou pacotes privados
 catalogados. Para esses itens, consulte a licença da origem. Downloads não implicam
 instalação, certificação de segurança ou homologação de um agente no seu ambiente.
+
+## Fontes selecionadas de terceiros — 2026-11-10
+`fontes/marketingskills/` preserva a licença MIT e avisos adicionais identificados no manifesto `catalogo/marketing-import.json`. Esses materiais não recebem a reserva de direitos dos materiais originais Cadu. Adaptações e overlays Cadu permanecem separados dos originais.
+`fontes/mastra/` contém somente documentos de referência cuja seleção e condições constam em `catalogo/mastra-reference.json`. Nenhum componente Enterprise é incorporado como código executável. A licença de uma dependência deve ser revista antes de instalação/produção.

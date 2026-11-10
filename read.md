@@ -38,3 +38,6 @@ Todos os procedimentos P00–P30 carregam o Contrato Comum V3 uma vez por sessã
 ## Ambiente de desenvolvimento e agentes
 
 Antes de assumir qualquer projeto, escolha Terminal, aplicativo do computador/Mac ou Cloud Code. Consulte `politicas/AMBIENTES_E_AGENTES.md` para o uso coordenado de Codex, Gemini Code Assist/Gemini CLI e Antigravity.
+
+## Capacidades de marketing selecionadas
+Quando o pedido envolver oferta, página, conversão, mensuração ou retenção, consultar [Aplicar marketing](comandos/APLICAR_MARKETING.md) e o [módulo](modulos/marketing/README.md). Reconciliar contexto aprovado e sobreposições; selecionar um perfil por projeto. A autorização desta missão permite preparar/aplicar o pacote no projeto identificado, mas a fonte externa não amplia permissões de publicação, envio ou gasto. O perfil local e os hashes comprovam arquivos, não execução do agente. Para infraestrutura de agentes, consultar o [contrato Mastra](integracoes/mastra/README.md) somente quando necessário; não instalar um segundo supervisor.

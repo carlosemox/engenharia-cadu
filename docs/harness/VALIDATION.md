@@ -160,3 +160,19 @@ Validação editorial local: 184 testes PASS; scripts/validate.py PASS (31 promp
 - Pages PASS: https://github.com/carlosemox/engenharia-cadu/actions/runs/42541654004
 - Navegador público: páginas supervisor-mac/index.html, index.en.html e index.es.html exibiram 1.3.0 e 2026-11-08T21:40:46-03:00; conteúdo Graphify e navegação de idiomas confirmados.
 - Este recibo posterior não altera as páginas ou amplia a homologação.
+
+## 2026-11-10 — capacidades selecionadas
+
+Base: 821ae9304ecc35462ae65734f016b4627e1ac51a; ambiente CLOUD_CODE/Web.
+- 206 testes locais PASS; 31 prompts preservados; validação de links PASS.
+- Importação: 134 hashes Marketing conferidos, fontes originais preservadas;
+  arquivos Mastra/Apache conferidos pelo manifesto separado.
+- Aplicação de perfil em fixture isolado: PASS, repetição UNCHANGED;
+  testes negativos de conflitos, symlinks, hashes e overlay obrigatório PASS.
+- Revisão independente: nenhum bloqueante; contagem HTML corrigida após achado P3.
+- Navegador local: NOT_RUN, Chromium recusou socket pelo ambiente; navegador
+  compartilhado recusou localhost. DOM simulado de fábrica passou; não é E2E.
+- Backup Git anterior: SHA-256 aa5b73924ca6104de3fd75b82745be268de78a527e4399f513ca077d1787a3d3;
+  upload privado, roundtrip íntegro e restauração do HEAD verificados.
+- Publicação e navegador público: pendentes de evidência remota do candidato.
+- Modelos, scripts upstream, campanhas, gasto e Mastra runtime: NOT_RUN.

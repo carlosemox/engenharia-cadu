@@ -124,6 +124,22 @@
         "P14"
       ],
       "goal": "Auditar seletivamente, preservar fontes equivalentes e Design System, organizar tarefas e executar somente correções autorizadas com evidências."
+    },
+    "aplicar-marketing": {
+      "label": "Aplicar capacidades de marketing ao projeto",
+      "labels": {
+        "pt": "Aplicar capacidades de marketing",
+        "en": "Apply marketing capabilities",
+        "es": "Aplicar capacidades de marketing"
+      },
+      "procedure": "comandos/APLICAR_MARKETING.md",
+      "stages": [
+        "P08",
+        "P22",
+        "P13",
+        "P14"
+      ],
+      "goal": "Reconciliar contexto, selecionar perfil, aplicar documentos com hashes e verificar o resultado sem iniciar campanhas, custos ou agentes automaticamente."
     }
   }
 }
