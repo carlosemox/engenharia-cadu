@@ -63,3 +63,15 @@ manutenção determinística agendada e agente LLM independente. O grafo local d
 dependências não prova produto Graphy instalado. Duas falhas sem progresso bloqueiam
 o nó; continuar trabalho independente autorizado. Gastos e publicação precisam de
 alçada vigente, sem pedir novamente o que já foi explicitamente autorizado.
+
+## Executor local independente — gate compartilhado
+
+Pedidos de autonomia sem cobrança de API usam [homologação local](../comandos/HOMOLOGAR_AGENTE_LOCAL.md).
+Esta regra vale para todos os P00–P30 que carregam este contrato, sem duplicá-la
+nos prompts. JARVIS permanece projeto separado; não o ler/alterar nem exigir seu
+supervisor para essa modalidade. Reutilizar executor independente comprovado.
+Ollama executa o modelo local; DeepSeek pode ser candidato local, não API gratuita.
+Nenhum fallback pago/remoto. Registrar capacidades realmente homologadas, SHA,
+modelo/digest, escopo, limites, evidências e revisão. A indisponibilidade de
+Graphify não bloqueia tarefas que possam usar fontes locais suficientes.
+Sem host, isolamento, autorizações e piloto real, autonomia permanece não homologada.

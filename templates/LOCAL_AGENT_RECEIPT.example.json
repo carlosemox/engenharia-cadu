@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.1.0",
+  "active": false,
+  "status": "NOT_RUN",
+  "project": null,
+  "method_sha": null,
+  "code_sha": null,
+  "host": null,
+  "executor": {
+    "name": null,
+    "version": null
+  },
+  "model": {
+    "name": null,
+    "digest": null,
+    "license": null
+  },
+  "policy": {
+    "inference": "LOCAL_ONLY",
+    "api_budget_brl": 0,
+    "remote_fallback": false,
+    "wip": 1,
+    "task_timeout_seconds": 900,
+    "max_tool_turns": 20,
+    "observation_window_seconds": 3600,
+    "max_tasks": 3
+  },
+  "gates": [
+    {
+      "id": "L01",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L02",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L03",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L04",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L05",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L06",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L07",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L08",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L09",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L10",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L11",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    },
+    {
+      "id": "L12",
+      "status": "NOT_RUN",
+      "expected": null,
+      "observed": null,
+      "started_at": null,
+      "ended_at": null,
+      "exit_code": null,
+      "evidence": []
+    }
+  ],
+  "review": {
+    "reviewer_id": null,
+    "candidate_sha": null,
+    "status": "NOT_RUN"
+  },
+  "cost": {
+    "observed_api_brl": null,
+    "status": "UNKNOWN"
+  },
+  "next_action": "CONNECT_HOST_AND_INSPECT_EXISTING_EXECUTOR"
+}
