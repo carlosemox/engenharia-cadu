@@ -1,5 +1,7 @@
 # Homologar agente local independente
-Versão 0.1.0 — 2026-11-10 — preparação, não ativação.
+Versão 0.2.0 — 2026-11-10 — procedimento de qualificação.
+
+Instalação sintética restrita disponível: [operação e limites](../docs/harness/LOCAL_EXECUTOR_OPERATION.md). Este procedimento não amplia automaticamente a liberação para projetos reais.
 
 [Português](HOMOLOGAR_AGENTE_LOCAL.md) · [English](HOMOLOGAR_AGENTE_LOCAL.en.md) · [Español](HOMOLOGAR_AGENTE_LOCAL.es.md)
 

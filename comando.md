@@ -39,3 +39,5 @@ O alvo é o executor independente do projeto; JARVIS não é requisito nem alvo 
 Ollama local é a primeira rota sob orçamento incremental de API de R$ 0,00.
 Não usar fallback remoto. Este comando prepara e testa; só evidência real autoriza
 classificar o executor como operacional. Chat aberto não é serviço persistente.
+
+Operação local instalada em escopo sintético: [PT](docs/harness/LOCAL_EXECUTOR_OPERATION.md) · [EN](docs/harness/LOCAL_EXECUTOR_OPERATION.en.md) · [ES](docs/harness/LOCAL_EXECUTOR_OPERATION.es.md). Recibos e admissão por projeto continuam obrigatórios.

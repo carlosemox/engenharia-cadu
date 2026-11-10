@@ -1,5 +1,7 @@
 # Validate an independent local agent
-Version 0.1.0 — 2026-11-10 — preparation, not activation.
+Version 0.2.0 — 2026-11-10 — qualification procedure.
+
+A restricted synthetic installation is available: [operation and limits](../docs/harness/LOCAL_EXECUTOR_OPERATION.en.md). This procedure does not automatically admit real projects.
 
 [Português](HOMOLOGAR_AGENTE_LOCAL.md) · [English](HOMOLOGAR_AGENTE_LOCAL.en.md) · [Español](HOMOLOGAR_AGENTE_LOCAL.es.md)
 

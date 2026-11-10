@@ -1,5 +1,7 @@
 # Preparação local independente — 2026-11-10
 
+> Registro histórico da etapa documental. Estado posterior: [executor instalado com aceite sintético restrito](LOCAL_EXECUTOR_ACCEPTANCE_2026-11-10.md). As afirmações NOT_RUN abaixo descrevem somente aquela etapa.
+
 Base remota: 821ae9304ecc35462ae65734f016b4627e1ac51a.
 Escopo: comandos PT/EN/ES, contrato comum P00–P30, matriz técnica e recibo inativo.
 JARVIS, aplicativos, credenciais, workflows e serviços não alterados.

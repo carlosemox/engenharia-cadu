@@ -1,5 +1,7 @@
 # Homologar un agente local independiente
-Versión 0.1.0 — 2026-11-10 — preparación, no activación.
+Versión 0.2.0 — 2026-11-10 — procedimiento de homologación.
+
+Instalación sintética restringida disponible: [operación y límites](../docs/harness/LOCAL_EXECUTOR_OPERATION.es.md). Este procedimiento no admite automáticamente proyectos reales.
 
 [Português](HOMOLOGAR_AGENTE_LOCAL.md) · [English](HOMOLOGAR_AGENTE_LOCAL.en.md) · [Español](HOMOLOGAR_AGENTE_LOCAL.es.md)
 
