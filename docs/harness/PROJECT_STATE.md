@@ -7,7 +7,7 @@ ENVIRONMENT_LABEL=Web
 CLIENT=CODEX
 COORDINATOR=Codex
 BRANCH=main
-RELEASE_HEAD=6a782a31a09597a5f2de803bbf13193bee8b8bfe
+RELEASE_HEAD=e3dfdbf4039959aa73c4910fbf351513c437c06d
 RELEASE_STATUS=RELEASED
 RELEASE_SCOPE=SITE_LIBRARY_COMMANDS_DETERMINISTIC_MAINTENANCE_MAC_PREPARATION_GRAPHIFY_INDEX_VALIDATION
 MODE=CONTINUOUS_CONTROLLED_LOOP
@@ -22,7 +22,7 @@ DEPENDENCY_RUNTIME=LOCAL_SQLITE_SUPERVISED
 2026-11-10. Ambiente CLOUD_CODE/Web preservado. Pacote seletivo Marketing Skills:
 10 principais + pricing de apoio, fontes/recursos/licenças e hashes preservados.
 Perfis aplicáveis por projeto, comandos e módulos PT/EN/ES, contrato Mastra opcional.
-Estado do lote: VALIDATED_LOCAL_PUBLICATION_PENDING. Estado operacional dos
+Estado do lote: RELEASED_DOCUMENTATION_AND_PROFILE_TOOLING. Publicação: PR #12 integrada; CI_READ_ONLY 42832754028 SUCCESS; páginas públicas PT/EN/ES conferidas em navegador. Estado operacional dos
 agentes importados: NOT_RUN; Mastra DOCUMENTED_NOT_INSTALLED. Nenhum runtime
 Mac/Ollama foi ativado por esta atualização. Histórico abaixo permanece como
 registro; seus estados não comprovam disponibilidade atual.
