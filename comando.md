@@ -31,3 +31,11 @@ Fontes: [read.md](read.md), [continuidade](politicas/CONTINUIDADE.md), [seguran�
 ## Runtime obrigatório
 
 A execução de qualquer prompt usa o Contrato Comum V3 uma vez por sessão. Organize a missão como Harness, Loop e Graph. Carregue apenas contexto pertinente, mantenha o prefixo estável quando houver reutilização de cache, limite ciclos, atualize checkpoint e registre o próximo nó. Use P30 para missões longas e não replique o contrato em cada prompt.
+
+## Homologação do executor local
+
+`CADU HOMOLOGAR AGENTE LOCAL` encaminha para [HOMOLOGAR_AGENTE_LOCAL](comandos/HOMOLOGAR_AGENTE_LOCAL.md).
+O alvo é o executor independente do projeto; JARVIS não é requisito nem alvo implícito.
+Ollama local é a primeira rota sob orçamento incremental de API de R$ 0,00.
+Não usar fallback remoto. Este comando prepara e testa; só evidência real autoriza
+classificar o executor como operacional. Chat aberto não é serviço persistente.

@@ -79,3 +79,19 @@ Flags de orçamento são declarações, não limite financeiro imposto pelo prov
 Este primeiro adapter produz auditoria/proposta textual; não implementa nem publica
 código automaticamente. Ampliação para código exige perfil de escrita isolado e
 gates próprios. A revisão em outro job não garante ausência de erro de modelo.
+
+## Diretriz de 2026-11-10 — executor local independente
+
+Para os projetos abrangidos pelo novo pedido, JARVIS continua em desenvolvimento
+e não é dependência operacional. Não foi autorizada sua alteração nesta frente.
+Inferência do futuro piloto: local via Ollama, orçamento incremental de API R$ 0,00,
+sem ChatGPT/OpenAI remoto, DeepSeek API, Ollama Cloud ou fallback remoto.
+Esta preparação na sessão não constitui execução local nem medição de consumo.
+
+[Procedimento PT/EN/ES](../../comandos/HOMOLOGAR_AGENTE_LOCAL.md) e
+[matriz L01–L12](LOCAL_AGENT_ACCEPTANCE.md) definem o próximo aceite.
+Consulta de dispositivos nesta sessão: nenhum Mac conectado. Código e resultados
+locais relatados pelo usuário não foram reexecutados aqui. A fila read_only_audit
+existente não foi promovida a executor de código; não foi criada fila paralela.
+Estado: PREPARED / BLOCKED_HOST_ACCESS / AUTONOMOUS_LLM_NOT_VALIDATED.
+Nenhum daemon, cron ou launchd iniciado por esta alteração.
