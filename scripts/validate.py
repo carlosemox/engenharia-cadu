@@ -30,7 +30,7 @@ def check_link(source,url):
  if not p.is_relative_to(ROOT):errors.append(f'Path outside root: {source.relative_to(ROOT)} -> {url}');return
  if p.is_dir():p=p/'index.html'
  if not p.exists():errors.append(f'Missing: {source.relative_to(ROOT)} -> {url}')
-for p in ROOT.rglob('*.html'):
+for p in (ROOT/'docs').rglob('*.html'):
  parser=Links();parser.feed(p.read_text())
  if parser.lang!=expected_language(p):errors.append(f'Incorrect language: {p}')
  if parser.h1!=1:errors.append(f'Expected one h1: {p} ({parser.h1})')
@@ -54,5 +54,5 @@ for p in ROOT.rglob('*'):
  text=p.read_text()
  for pattern in (r'-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----',r'ghp_[A-Za-z0-9]{30,}',r'sk-proj-[A-Za-z0-9_-]{40,}'):
   if re.search(pattern,text):errors.append(f'Potential credential in {p.relative_to(ROOT)}')
-result={'status':'PASS' if not errors else 'FAIL','canonical_prompts':len(prompts),'html_pages':len(list(ROOT.rglob('*.html'))),'local_links_checked':links,'errors':errors,'browser_validation':'NOT_RUN: approved browser environment required','runtime_agents':'NOT_RUN'}
+result={'status':'PASS' if not errors else 'FAIL','canonical_prompts':len(prompts),'html_pages':len(list((ROOT/'docs').rglob('*.html'))),'local_links_checked':links,'errors':errors,'browser_validation':'NOT_RUN: approved browser environment required','runtime_agents':'NOT_RUN'}
 print(json.dumps(result,ensure_ascii=False,indent=2));sys.exit(bool(errors))

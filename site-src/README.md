@@ -58,3 +58,6 @@ Metadados: `docs/harness/ollama-release.json`. Gerar com
 `python scripts/build_ollama_pilot.py`; destinos: `docs/supervisor-mac/index*.html`.
 Versão e timestamp são fixados na fonte, sem relógio variável no build.
 Preparação aprovada não significa runtime instalado ou modelo homologado.
+
+## Capacidades selecionadas
+`python scripts/build_capabilities.py` gera `docs/capacidades/index*.html`, comandos traduzidos e arquivo ZIP de fontes selecionadas com suas licenças. Execute depois dos geradores anteriores. Fonte de conteúdo: `modulos/marketing/README*.md` e `integracoes/mastra/README*.md`. Fontes upstream preservam inglês; documentação operacional PT/EN/ES é equivalente. Pacote não instala nem executa modelos.

@@ -25,6 +25,11 @@ Lea el contrato de la tarea, confirme el destino, seleccione el procedimiento pe
 ## Verificación
 Evaluar un caso positivo, la ausencia de una herramienta, un cambio fuera del alcance y un intento de ampliar permisos. Registrar el cliente/modelo observados, la versión, el resultado y los límites. Homologación de runtime: NOT_RUN.
 
+## Capacidades de marketing
+Para ofertas, páginas, formularios o medición, consultar el módulo de marketing y seleccionar solo la capacidad necesaria. Preservar contexto aprobado, accesibilidad y contratos de eventos. Las hipótesis de conversión requieren datos; las fuentes importadas no prueban resultados.
+
+[Marketing](https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/marketing/README.es.md)
+
 ---
 © 2026 Carlos Eduardo do Amaral
 

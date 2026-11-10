@@ -22,3 +22,8 @@ As sínteses do snapshot recebido não afirmam corresponder à versão atual de 
 - [Comando de revisão por projeto](../comandos/REVISAR_AGENTES_PROJETO.md).
 
 CRM/dashboard são aplicações; agentes engenharia do Drive são de engenharia civil. Não usar essas pastas como identidades de executores de software. Manter uma variante por capacidade no perfil aprovado do projeto, com licença e recursos revisados.
+
+## Pacote selecionado — 10/11/2026
+[Manifesto de importação](../catalogo/marketing-import.json) · [Módulo PT/EN/ES](../modulos/marketing/README.md) · [Aplicar por projeto](../comandos/APLICAR_MARKETING.md).
+Dez capacidades principais e `pricing` como apoio documental, com revisão fixada, hashes e licenças. Originais preservados fora de auto-discovery; scripts e receitas arquivados não são executados pelo importador. O instalador copia somente o perfil selecionado sem executar os arquivos e registra os limites. O acervo histórico permanece preservado.
+[Mastra](../integracoes/mastra/README.md) é contrato de integração opcional, não supervisor ativado.

@@ -22,3 +22,8 @@ MISSION: audit an in-progress project's code and organization and propose alignm
 
 OUTPUT: PROJECT, ENVIRONMENT, CLIENT, SOURCE_REVISION, HEAD, COVERAGE, EQUIVALENT_ARTIFACTS, FINDINGS, PROPOSED_TASKS, DS_CONTRACT, STACK, GRAPHY=NOT_VERIFIED, LOOP=NOT_VERIFIED, ACTUAL_AGENTS, REVIEW, BLOCKERS, BUDGET, NEXT_READY_TASK, RELEASE_STATUS. Never certify compliance or absence of vulnerabilities.
 ```
+
+## Marketing
+For marketing tasks, consult the selected capabilities module and the project application command. Reconcile existing instructions, preserve scope and approvals, and verify hashes. Applying a reference profile does not activate agents or campaigns.
+
+[Marketing](../modulos/marketing/README.en.md) · [Apply](APLICAR_MARKETING.en.md)

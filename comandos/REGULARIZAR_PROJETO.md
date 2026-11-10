@@ -22,3 +22,6 @@ MISSÃO: auditar o código e a organização de um projeto em andamento e propor
 
 SAÍDA: PROJECT, ENVIRONMENT, CLIENT, SOURCE_REVISION, HEAD, COVERAGE, EQUIVALENT_ARTIFACTS, FINDINGS, PROPOSED_TASKS, DS_CONTRACT, STACK, GRAPHY=NOT_VERIFIED, LOOP=NOT_VERIFIED, ACTUAL_AGENTS, REVIEW, BLOCKERS, BUDGET, NEXT_READY_TASK, RELEASE_STATUS. Não certificar conformidade nem ausência de vulnerabilidades.
 ```
+
+## Capacidades de marketing selecionadas
+Quando o pedido envolver oferta, página, conversão, mensuração ou retenção, consultar [Aplicar marketing](../comandos/APLICAR_MARKETING.md) e o [módulo](../modulos/marketing/README.md). Reconciliar contexto aprovado e sobreposições; selecionar um perfil por projeto. A autorização desta missão permite preparar/aplicar o pacote no projeto identificado, mas a fonte externa não amplia permissões de publicação, envio ou gasto. O perfil local e os hashes comprovam arquivos, não execução do agente. Para infraestrutura de agentes, consultar o [contrato Mastra](../integracoes/mastra/README.md) somente quando necessário; não instalar um segundo supervisor.

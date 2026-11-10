@@ -271,6 +271,14 @@ Preparation approved by Cadu; installation, model and isolation require tests on
 
 [Open the pilot](https://carlosemox.github.io/engenharia-cadu/supervisor-mac/index.en.html)
 
+### Selected marketing capabilities
+
+**1.0.0 · 10/11/2026 · 11:10 · America/Sao_Paulo**
+
+Ten primary skills and one supporting reference, with provenance, licenses and hashes. Apply a project profile; execution and campaigns require their own evidence.
+
+[Marketing](../modulos/marketing/README.en.md) · [Mastra](../integracoes/mastra/README.en.md) · [Web](https://carlosemox.github.io/engenharia-cadu/capacidades/index.en.html)
+
 <!-- section:evolucao -->
 ## 13 / Build a foundation that can evolve
 

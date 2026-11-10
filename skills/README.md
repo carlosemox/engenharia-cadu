@@ -9,3 +9,8 @@ Papéis da central estão em `agentes/`; procedimentos estão em `p/`. A separa�
 ## Descoberta controlada
 
 Quando a capacidade ainda não foi escolhida, use [D01](../modulos/descoberta-skills/README.md): P08 define a necessidade, `npx skills find`/skills.sh produz candidatos, P22 audita e somente depois um piloto ou instalação pode ser autorizado. `skills check` não autoriza `skills update`; instalação global não é padrão.
+
+## Pacote selecionado — 10/11/2026
+[Manifesto de importação](../catalogo/marketing-import.json) · [Módulo PT/EN/ES](../modulos/marketing/README.md) · [Aplicar por projeto](../comandos/APLICAR_MARKETING.md).
+Dez capacidades principais e `pricing` como apoio documental, com revisão fixada, hashes e licenças. Originais preservados fora de auto-discovery; scripts e receitas arquivados não são executados pelo importador. O instalador copia somente o perfil selecionado sem executar os arquivos e registra os limites. O acervo histórico permanece preservado.
+[Mastra](../integracoes/mastra/README.md) é contrato de integração opcional, não supervisor ativado.

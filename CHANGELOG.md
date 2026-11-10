@@ -79,3 +79,9 @@ Navegação única para continuidade, segurança, backup e implantação; págin
 Preparação aprovada, guia integral PT/EN/ES e página pública com versão/data.
 Verificador de login sem exportação de segredos; 184 testes locais PASS.
 Runtime, modelo e isolamento no Mac permanecem pendentes.
+
+## 2026-11-10 — pacote de capacidades 1.0.0
+- Importação seletiva de Marketing Skills com hashes, licenças, revisão e overlay.
+- Perfis locais verificáveis, comando integrado à fábrica, documentação PT/EN/ES.
+- Contrato Mastra separado e referências de licença; sem runtime automático.
+- Preservados os 31 prompts, catálogo histórico e governança do JARVIS.

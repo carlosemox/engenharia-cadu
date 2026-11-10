@@ -25,6 +25,11 @@ Read the task contract, confirm the target, select the relevant procedure and ap
 ## Verification
 Evaluate a positive case, a missing tool, an out-of-scope change and an attempt to expand permissions. Record the observed client/model, version, result and limits. Runtime validation: NOT_RUN.
 
+## Marketing capabilities
+For offers, pages, forms or measurement, consult the marketing module and select only the required capability. Preserve approved context, accessibility and event contracts. Conversion hypotheses need data; imported sources do not prove results.
+
+[Marketing](https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/marketing/README.en.md)
+
 ---
 © 2026 Carlos Eduardo do Amaral
 

@@ -1,0 +1,198 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Capacidades selecionadas | Engenharia Cadu</title><link rel="stylesheet" href="../assets/factory.css"><link rel="stylesheet" href="../assets/capabilities.css"></head><body><main><nav class="topbar"><a href="../biblioteca/index.html">Biblioteca</a><span><a href="index.html" hreflang="pt-BR">PT</a> · <a href="index.en.html" hreflang="en">EN</a> · <a href="index.es.html" hreflang="es">ES</a></span></nav><h1>Capacidades selecionadas</h1><p>1.0.0 · 10/11/2026 · 11:10 · America/Sao_Paulo</p><p><a href="marketing-capabilities-1.0.0.zip" download>Baixar fontes e guias</a> · <a href="../comandos/APLICAR_MARKETING.txt" download>Comando completo</a></p><p>SHA-256 ZIP: <code>a0b61fbe579ab9272ee111a017686f9a16ffc8f63afed48ec006abcdf82abd06</code></p><h2>Marketing aplicado aos projetos</h2>
+<p>Versão 1.0.0 · 10/11/2026 · Idioma canônico: português brasileiro.</p>
+<p><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/marketing/README.en.md">English</a> · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/modulos/marketing/README.es.md">Español</a></p>
+<h2>Finalidade e estado</h2>
+<p>Acrescentar procedimentos selecionados de marketing aos projetos que precisam deles, preservando código, identidade, contexto aprovado, stack e competências existentes. Este módulo integra o acervo ao método Engenharia Cadu; não cria um serviço, uma nova fila ou um supervisor.</p>
+<p>O pacote contém fontes selecionadas de <a href="https://github.com/coreyhaines31/marketingskills">coreyhaines31/marketingskills</a>, sob licença MIT. Revisão de origem, hashes, seleção e estado estão no <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/catalogo/marketing-import.json">manifesto</a>; a revisão documental está em <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/fontes/marketingskills/REVIEW.md">REVIEW.md</a>. A licença e os avisos originais acompanham a distribuição. Auditoria documental, cópia no projeto, descoberta pelo cliente e homologação operacional são estados distintos. Nenhum resultado de negócio ou funcionamento com Ollama é garantido por esses arquivos.</p>
+<h2>Seleção e uso progressivo</h2>
+<p>Cada entrada está em <code>fontes/marketingskills/skills/&lt;nome&gt;/SKILL.md</code>, acompanhada dos recursos incluídos no manifesto. As fontes preservam o idioma original; este módulo e o comando de aplicação têm versões completas PT/EN/ES. Não carregar as dez skills simultaneamente por padrão.</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Quando carregar</th>
+<th>Evidência esperada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>product-marketing</code></td>
+<td>Consolidar contexto, público e posicionamento</td>
+<td>Fontes aprovadas, lacunas e histórico das decisões</td>
+</tr>
+<tr>
+<td><code>offers</code></td>
+<td>Revisar composição e apresentação da oferta</td>
+<td>Proposta com hipóteses, restrições e alegações verificáveis</td>
+</tr>
+<tr>
+<td><code>cro</code></td>
+<td>Diagnosticar página ou formulário</td>
+<td>Objetivo, origem do tráfego, fricções e hipóteses priorizadas</td>
+</tr>
+<tr>
+<td><code>analytics</code></td>
+<td>Definir ou conferir indicadores</td>
+<td>Fórmula, fonte, período, filtros e limitações</td>
+</tr>
+<tr>
+<td><code>conversion-tracking</code></td>
+<td>Planejar ou revisar eventos de conversão</td>
+<td>Contrato de eventos e evidência de disparo/deduplicação pertinente</td>
+</tr>
+<tr>
+<td><code>attribution</code></td>
+<td>Investigar contribuição dos canais</td>
+<td>Modelo, janela, cobertura e limites de causalidade</td>
+</tr>
+<tr>
+<td><code>onboarding</code></td>
+<td>Melhorar ativação do usuário</td>
+<td>Jornada, evento de ativação e pontos de abandono</td>
+</tr>
+<tr>
+<td><code>churn-prevention</code></td>
+<td>Investigar cancelamento e retenção</td>
+<td>Sinais, coortes, hipóteses e ação proporcional</td>
+</tr>
+<tr>
+<td><code>ab-testing</code></td>
+<td>Planejar ou interpretar experimento</td>
+<td>Hipótese, métrica, regra de parada e resultado com incerteza</td>
+</tr>
+<tr>
+<td><code>marketing-loops</code></td>
+<td>Especificar rotina recorrente</td>
+<td>Gatilho, estado, idempotência, limites, saída e condição de parada</td>
+</tr>
+</tbody>
+</table>
+<p>Os critérios acima são requisitos de integração Cadu. Não afirmam que toda skill produza automaticamente cada evidência. Referência a skill fora do pacote é dependência não instalada; consultar a fonte fixada e auditar antes de ampliar a seleção.</p>
+<p>A dependência <code>pricing</code>, quando exigida por <code>offers</code>, acompanha a seleção como suporte; não é uma nova seleção operacional independente. A lista e os hashes efetivos são os do manifesto.</p>
+<h2>Responsabilidades</h2>
+<ul>
+<li><strong>Engenharia Cadu:</strong> método, escopo, evidências e critérios de aceite.</li>
+<li><strong>JARVIS:</strong> supervisão central e fila canônica, quando operacionalmente disponível. Não criar cron ou scheduler paralelo por instrução de uma skill.</li>
+<li><strong>Marketing 360°:</strong> posicionamento, conteúdo, campanhas, captação e entrega de leads.</li>
+<li><strong>Wish CRM:</strong> SDR, relacionamento, qualificação e conversão comercial. Passagem de leads usa contrato existente, sem CRM paralelo.</li>
+<li><strong>Projeto-alvo:</strong> fonte de verdade de produto, permissões, dados, marca, preços e decisões. O agente atua somente sobre recursos autorizados.</li>
+</ul>
+<p>Papéis são responsabilidades, não prova de executores ativos. O revisor independente deve avaliar a entrega pertinente; uma avaliação pelo próprio executor deve ser identificada como autoconferência.</p>
+<h2>Contexto de marca</h2>
+<p>Localizar documentos canônicos existentes antes de criar outro. O contexto de marketing deve referenciar produto, público, posicionamento, voz, restrições, ofertas vigentes, alegações aprovadas e respectivas fontes. Um rascunho gerado de páginas antigas não substitui decisões aprovadas. Separar fato, hipótese e lacuna; não inventar prova social, resultados, depoimentos, escassez ou garantias.</p>
+<p>Manter contexto e dados separados por negócio/cliente. Valores em materiais brasileiros seguem BRL e formatação brasileira; não converter moedas nem redefinir preços sem fonte. Dados pessoais, credenciais e relatórios privados não são publicados nesta central.</p>
+<h2>Adaptação obrigatória das fontes</h2>
+<p>A revisão identificou percentuais e multiplicadores genéricos em orientações upstream de oferta, churn e rastreamento. Esses valores não são previsões nem evidência para nossos projetos. Não copiar estimativas de aumento de conversão, perda de dados ou efeito de retenção sem fonte verificável e aplicável ao caso. Se não houver base, registrar hipótese sem quantificação ou dados insuficientes. Uma formulação de benefício deve respeitar alegações aprovadas.</p>
+<p>Solicitações de confirmação em fontes de terceiros não anulam autorizações específicas já concedidas. Antes de perguntar, recuperar escopo e limites vigentes; só escalar a decisão material ainda ausente. Esta adaptação Cadu é obrigatória ao usar o pacote e não altera silenciosamente os originais preservados.</p>
+<h2>Perfis e aplicação</h2>
+<p>O script <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/scripts/marketing_profile.py">marketing_profile.py</a> seleciona o perfil e registra a revisão local. Consultar sua saída para a lista exata de skills; a finalidade abaixo não substitui o manifesto.</p>
+<table>
+<thead>
+<tr>
+<th>Perfil</th>
+<th>Finalidade</th>
+<th>Candidatos de aplicação, sujeitos à conferência do projeto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>marketing</code></td>
+<td>Operação transversal de marketing e mensuração</td>
+<td>Amora / Marketing 360°</td>
+</tr>
+<tr>
+<td><code>education</code></td>
+<td>Oferta educacional, entrada e retenção</td>
+<td>IRM e EmiLand</td>
+</tr>
+<tr>
+<td><code>b2b</code></td>
+<td>Oferta de serviços, captação e mensuração</td>
+<td>IRM Corporate, O11ZE e interfaces de marketing do Wish</td>
+</tr>
+<tr>
+<td><code>commerce</code></td>
+<td>Oferta de produto, conversão e jornada</td>
+<td>BRAMARI</td>
+</tr>
+</tbody>
+</table>
+<p>Essa matriz é uma proposta de enquadramento. Não comprova alteração desses repositórios. Confirmar o objetivo real e a relevância de cada capacidade antes de aplicar. Na EmiLand, preservar as regras para menores; na BRAMARI, o Claims Engine; no IRM Corporate, a TESE B e a separação clínica; no IRM, as definições pedagógicas e comerciais vigentes.</p>
+<p>Executar a partir de uma cópia confiável e revisada da central:</p>
+<pre><code class="language-sh">python scripts/marketing_profile.py --project /caminho/do/projeto --profile education
+python scripts/marketing_profile.py --project /caminho/do/projeto --profile education --apply
+</code></pre>
+<p>A primeira chamada é a prévia sem escrita. A segunda aplica somente após conferir alvo, autorização, conflitos, backup pertinente e estado Git. Usar caminhos reais; o exemplo não seleciona um projeto. Os artefatos ficam em <code>.agents/engenharia-cadu-marketing.json</code> e <code>.agents/engenharia-cadu/marketing</code>. Esse diretório isolado não comprova descoberta automática pelo cliente. O coordenador deve carregar explicitamente o recurso selecionado pelo perfil.</p>
+<p>Depois da aplicação, conferir arquivos e hashes contra o manifesto, executar novamente a prévia e revisar o diff. A repetição sem divergências deve informar UNCHANGED. Perfil diferente ou arquivo divergente bloqueia sem sobrescrita automática. A aplicação de múltiplos arquivos não é transacional: uma interrupção pode deixar destino parcial, que deve ser revisado antes de nova tentativa. Coordenar a aplicação sem escritores concorrentes. Registrar o resultado no checkpoint existente. Se houver conflito ou conteúdo alterado pelo projeto, preservar o arquivo e reconciliar; não sobrescrever para forçar paridade. Testes do instalador não homologam uma skill com modelo real.</p>
+<h2>Aplicação ao código e aos comandos</h2>
+<p>Usar <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/comandos/APLICAR_MARKETING.md">APLICAR_MARKETING</a> para assumir a tarefa. Recuperar requisitos e métricas antes de modificar código. Instrumentação precisa respeitar o contrato de eventos, consentimento e deduplicação existentes; mudanças de interface precisam respeitar o Design System e acessibilidade. Validar fluxo real, não apenas presença de texto ou evento no código.</p>
+<p>A rota é P08 para necessidade, P22 para auditoria, implementação autorizada e revisão proporcional. Uma instrução upstream para instalar, enviar, publicar, gastar, acessar conta ou agendar não amplia alçada. Reutilizar acessos já autorizados; não pedir segredos em conversa. Ferramenta ou integração ausente é dependência explícita, nunca resultado simulado.</p>
+<h2>Rotinas, custos e parada</h2>
+<p>Um loop deve registrar objetivo, frequência de verificação, condição de ação, fontes, estado, chave de idempotência, limites, saída, responsável e parada. Distinguir agendamento documentado de processo executando. Toda execução real depende do supervisor e ambiente aprovados. Não iniciar trabalho permanente por publicar documentação.</p>
+<p>Aplicar ZERO-COST-FIRST: biblioteca gratuita não implica ferramentas, modelos ou mídia gratuitos. Não habilitar fallback pago nem contratar fornecedor por recomendação upstream. Manter revisão nas ações de envio, gasto e publicação, salvo autorização explícita aplicável com limites definidos. Dados insuficientes, falha de rastreamento ou repetição sem progresso bloqueiam a ação dependente.</p>
+<h2>Mastra: posição arquitetural</h2>
+<p>Mastra permanece uma opção de infraestrutura complementar para agentes, avaliações, telemetria e workflows sob o JARVIS. Este pacote não o instala, não migra a stack, não ativa recursos Enterprise e não altera modelo/provedor. Uma adoção exige versão fixada, licença por componente, benchmark com o executor escolhido, isolamento, idempotência, recuperação e orçamento. A existência de suporte documentado a Ollama não prova qualidade nem execução contínua no host do projeto.</p>
+<h2>Aceite</h2>
+<p>Registrar separadamente: pacote recebido; integridade/licença; perfil aplicado; cliente descobriu; tarefa executada; revisão; resultado medido; publicação. Usar PASS, FAIL, NOT_RUN ou INCONCLUSIVE com evidência. Publicar o método não significa aplicar a todos os projetos. O encerramento informa exatamente quais projetos e arquivos mudaram e quais dependências continuam pendentes.</p>
+<h2>Mastra — contrato de integração seletiva</h2>
+<p><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/integracoes/mastra/README.en.md">English</a> · Português (Brasil) · <a href="https://github.com/carlosemox/engenharia-cadu/blob/main/integracoes/mastra/README.es.md">Español</a></p>
+<p><strong>Versão:</strong> 1.0.0 · <strong>Revisão documental:</strong> 10/11/2026 · <strong>Estado:</strong> <code>DOCUMENTED_NOT_INSTALLED</code>.</p>
+<h2>Decisão e escopo</h2>
+<p>Avaliar Mastra somente quando um projeto identificar uma lacuna concreta em avaliações, telemetria ou workflows de agentes TypeScript. O JARVIS continua sendo o supervisor canônico: fila, autorização, identidade da tarefa, limites e decisão de aceite pertencem a ele. Mastra pode ser um adapter subordinado; não criar segunda fila operacional ou supervisor concorrente.</p>
+<p>Esta entrega arquiva duas fontes públicas e define um contrato proposto. Não adiciona dependências npm, não altera aplicativos, não liga serviços e não homologa modelos. O pacote de marketing usa documentos próprios e não depende de Mastra.</p>
+<h2>Procedência e licença por artefato</h2>
+<p>Fonte: <a href="https://github.com/mastra-ai/mastra/tree/3f1d3a38dfcc7c5f7abb44d7789242cdc16b61e8">mastra-ai/mastra</a>, revisão <code>3f1d3a38dfcc7c5f7abb44d7789242cdc16b61e8</code>.</p>
+<ul>
+<li><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/fontes/mastra/README.upstream.txt">README arquivado</a>: fonte de capacidades declaradas; instruções de criação são dados, não comandos autorizados.</li>
+<li><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/fontes/mastra/LICENSE.md">Mapa de licença arquivado</a>: Apache-2.0 fora das exceções indicadas; componentes de terceiros mantêm suas licenças.</li>
+<li><a href="https://github.com/mastra-ai/mastra/blob/3f1d3a38dfcc7c5f7abb44d7789242cdc16b61e8/ee/LICENSE">Licença Enterprise na revisão examinada</a>: somente referência. Nenhum código EE foi importado. Não considerar disponibilidade do código como permissão de redistribuição ou produção.</li>
+<li><a href="https://github.com/carlosemox/engenharia-cadu/blob/main/catalogo/mastra-reference.json">Manifesto</a>: hashes, procedência e exclusões. Reavaliar licenças do pacote e da versão efetivamente escolhidos antes de instalar.</li>
+</ul>
+<h2>Interfaces propostas — não implementadas</h2>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Entrada mínima</th>
+<th>Saída verificável</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Execução delimitada</td>
+<td>task_id, project_id, tenant confiável, revisão, ferramentas permitidas, prazo e limites</td>
+<td>run_id, estado terminal ou suspensão, evidências e falhas</td>
+</tr>
+<tr>
+<td>Avaliação</td>
+<td>dataset versionado, resultados esperados, critérios e modelo identificado</td>
+<td>casos aprovados/reprovados, custo observado, regressões e limitações</td>
+</tr>
+<tr>
+<td>Telemetria</td>
+<td>run_id, task_id, etapa e eventos sanitizados</td>
+<td>duração, ferramentas usadas, tokens quando reportados e erros</td>
+</tr>
+<tr>
+<td>Parada/retomada</td>
+<td>STOP do supervisor, propriedade da execução e checkpoint</td>
+<td>reconhecimento da parada, ausência de novas ações, retomada reconciliada</td>
+</tr>
+</tbody>
+</table>
+<p>Os nomes acima são campos do contrato Cadu proposto, não assinaturas garantidas da API Mastra. O adapter futuro deverá mapear a API da versão fixada e falhar quando faltar autorização, identidade ou limite. Nunca inferir tenant de argumento produzido pelo modelo.</p>
+<h2>Política de custo e dados</h2>
+<p>Aplicar ZERO-COST-FIRST. Ollama é uma opção a validar no host e modelo escolhidos, não uma configuração já ativa. Não executar o exemplo upstream que exige provedor hospedado por conveniência. Bloquear fallback pago, assinatura, upgrade e exportação de telemetria para terceiros sem escopo aprovado. Recursos locais ainda consomem hardware, energia e manutenção. Não registrar prompts sensíveis, segredos ou dados clínicos nos rastros públicos.</p>
+<h2>Testes exigidos antes de promoção</h2>
+<ol>
+<li>Execução sintética real com modelo, cliente, versão, hardware e limites registrados; comparar com o executor existente usando o mesmo conjunto de casos.</li>
+<li>Isolamento entre projetos e tenants, inclusive ferramenta invocada diretamente e leitura de memória, artefatos e telemetria.</li>
+<li>Idempotência de efeitos externos; simular falha após ação e antes de persistir resultado. Nenhum débito, envio ou publicação duplicado.</li>
+<li>Exclusão mútua e rejeição de resultados tardios após perda de lease; STOP efetivo antes de nova ação.</li>
+<li>Reinício do processo e retomada do último estado persistido, sem tratar arquivo de checkpoint como prova de execução contínua.</li>
+<li>Recusa de ferramenta ausente, endpoint não permitido, fallback pago e limite excedido; resultado incompleto não vira PASS.</li>
+<li>Avaliação determinística e revisão independente; um avaliador LLM não substitui testes de segurança nem aprovação de release.</li>
+</ol>
+<h2>Promoção e recuperação</h2>
+<p><code>DOCUMENTED_NOT_INSTALLED</code> → <code>PILOT_CONFIGURED</code> → <code>PILOT_TESTED</code> → <code>PROJECT_APPROVED</code> somente com evidência específica. Esses estados são proposta de adoção, não renomeiam os estados atuais do supervisor. Registrar dependências fixadas, cobertura e responsável. Manter rollback para o executor anterior; interromper tarefas afetadas e reconciliar efeitos antes de reexecutar. Publicar esta documentação não concede GO de produção ao adapter.</p>
+</main></body></html>

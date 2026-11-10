@@ -50,3 +50,6 @@ Próximo gate: Mac conectado, hardware/modelo/isolamento e ensaio real.
 ## D-014 — Graphify e publicação trilíngue
 
 2026-11-08T21:40:46-03:00. Usuário autorizou todos os repositórios da conta, reinstalação, indexação e publicação revisada PT/EN/ES. Homologação limitada à evidência: 69 reconhecidos, três builds PASS; MCP NOT_RUN e Mac pendente. Sem autorização de gasto adicional. Nenhum segredo ou nome de repositório privado integra a nova documentação pública.
+
+## D-015 — atualização seletiva e publicação trilíngue
+2026-11-10. Pedido de Cadu autoriza baixar capacidades pertinentes dos dois repositórios analisados, atualizar banco, códigos, comandos e projetos aplicáveis e publicar Engenharia-Cadu com traduções. Ambiente CLOUD_CODE/Web preservado conforme estado vigente. Autoriza branch, testes, revisão, push/PR/merge e Pages da central. Preserva ZERO-COST-FIRST, dados por projeto, fontes existentes e fila JARVIS. Não autoriza campanhas, envio, compra de licença ou fallback API pago. Mastra: contrato preparado, instalação somente mediante necessidade e testes no projeto-alvo. Aplicação documental não comprova runtime homologado.
