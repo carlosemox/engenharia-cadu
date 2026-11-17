@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "state": "PLANNED",
+  "project": {
+    "repository": "TO_FILL",
+    "base_sha": "TO_FILL",
+    "method_sha": "TO_FILL",
+    "environment": "TO_FILL"
+  },
+  "slice": {
+    "id": "SLICE-001",
+    "outcome": "TO_FILL",
+    "dependencies": [],
+    "owner": "cadu-slice-builder",
+    "model": "claude-sonnet-5-5",
+    "allowed_paths": [],
+    "exclusive_resources": [],
+    "branch": "TO_FILL",
+    "worktree": "TO_FILL",
+    "risk": "TO_ASSESS"
+  },
+  "authorization": {
+    "p06_approved": false,
+    "approval_ref": null,
+    "forbidden_actions": [
+      "merge",
+      "deploy",
+      "billing",
+      "secrets",
+      "test_deletion"
+    ]
+  },
+  "harness": {
+    "acceptance": [],
+    "positive_tests": [],
+    "negative_tests": [],
+    "baseline_sha": "TO_FILL",
+    "rollback": "TO_FILL"
+  },
+  "limits": {
+    "max_loops": 3,
+    "parallel_writers_per_resource": 1,
+    "budget_usd": null
+  },
+  "checks": {
+    "status": "NOT_RUN",
+    "evidence": [],
+    "independent_reviewer": "cadu-slice-reviewer"
+  },
+  "checkpoint": {
+    "next_node": "TO_PLAN",
+    "cost_observed_usd": null
+  }
+}
