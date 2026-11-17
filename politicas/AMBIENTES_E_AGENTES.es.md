@@ -46,3 +46,7 @@ Nunca permitir que dos agentes escriban simultáneamente en el mismo archivo o r
 `IDENTIFICAR → ELEGIR ENTORNO → DEFINIR RESPONSABLE → EJECUTAR → PROBAR → REVISAR → INTEGRAR`
 
 Referencias oficiales: [Cloud Code](https://cloud.google.com/code), [Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer), [Google Antigravity](https://www.antigravity.google/docs).
+
+## Adenda — Claude Code y MIKE (2026-11-17)
+**Claude Code** (Anthropic) es un cliente de desarrollo diferente de **Cloud Code** de Google descrito antes. Puede utilizarse en aplicación, CLI o web autorizados; conservar el entorno ya elegido sin volver a preguntar. **MIKE** supervisa el desarrollo cuando Cadu lo ordena, separado de JARVIS y sin sustituir automáticamente al coordinador técnico Codex existente. La [política Untangle/slices](UNTANGLE_CLAUDE_SLICES.es.md) asigna Haiku 5.5 a búsquedas limitadas de solo lectura y Sonnet 5.5 a planificación, un worker aprobado por slice y revisión independiente. Escalar a modelos caros solo con autorización. Permisos plan/default; el documento no configura un sandbox real ni autoriza publicación o gastos. Adoptar por repositorio tras revisar su configuración y registrar evidencias.
+Documentación oficial: https://code.claude.com/docs/en/sub-agents · https://code.claude.com/docs/en/skills · https://code.claude.com/docs/en/agent-teams .

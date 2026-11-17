@@ -46,3 +46,7 @@ Never allow two agents to write the same file or branch simultaneously. Do not s
 `IDENTIFY → CHOOSE ENVIRONMENT → ASSIGN OWNER → EXECUTE → TEST → REVIEW → INTEGRATE`
 
 Official references: [Cloud Code](https://cloud.google.com/code), [Gemini Code Assist agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/use-agentic-chat-pair-programmer), [Google Antigravity](https://www.antigravity.google/docs).
+
+## Addendum — Claude Code and MIKE (2026-11-17)
+**Claude Code** (Anthropic) is a development client distinct from Google's **Cloud Code** environment above. It can be used in an authorized desktop app, CLI or web workflow; preserve the environment already selected without repeating questions. **MIKE** supervises development only when appointed by Cadu; it is not JARVIS and does not silently replace the existing Codex technical coordinator. The [Untangle/slice policy](UNTANGLE_CLAUDE_SLICES.en.md) routes Haiku 5.5 to scoped read-only scouting and Sonnet 5.5 to ordinary planning, one approved worker per slice and independent review. Higher-cost models require explicit approval. Prefer plan/default permissions; documentation is not an actual sandbox, deployment approval or billing authority. Roll out to each product repository only after reviewing existing configuration and recording evidence.
+Official documentation: https://code.claude.com/docs/en/sub-agents · https://code.claude.com/docs/en/skills · https://code.claude.com/docs/en/agent-teams .

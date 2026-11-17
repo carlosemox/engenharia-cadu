@@ -79,3 +79,6 @@ Esta edição possui um site estático e catálogo público. Isso não implanta 
 ## 10. Contexto recuperável e fábrica V2.3
 
 A entrada universal é [comando.md](comando.md). A [fábrica](fabrica/README.md) escolhe um procedimento específico por intenção, sem carregar a biblioteca completa. [Contexto e memória](politicas/CONTEXTO_E_MEMORIA.md) conecta perfil, decisões, tarefa, código e evidências com origem e validade. Estudos novos são reconciliados antes de substituir decisões. O [case de eficiência](avaliacoes/CASE_EFICIENCIA.md) permanece NOT_RUN até experimento comparável.
+
+## 11. Rotina seletiva de código e slices (17/11/2026)
+Para projetos novos ou em andamento, classificar antes de implementar se a mudança cabe em um slice vertical independente e se precisa de diagnóstico Untangle seletivo. Consultar [protocolo governado](politicas/UNTANGLE_CLAUDE_SLICES.md). A estrutura MIKE → coordenador técnico → trabalhadores Codex/Claude Code mantém um único dono por arquivo, testes antes de integrar, revisão independente e custo por slice aceito. Não iniciar agentes paralelos ou varreduras complexas quando um worker direto resolve; não equiparar política a implantação em cada repositório.
