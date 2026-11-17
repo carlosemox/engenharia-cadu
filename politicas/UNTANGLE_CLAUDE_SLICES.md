@@ -4,6 +4,8 @@ Revisão: 2026-11-17 · [English](UNTANGLE_CLAUDE_SLICES.en.md) · [Español](UN
 ## Origem e alcance
 Adaptação governada de `caldoai/skills/skills/untangle-codebase/SKILL.md`, commit `bd73b2ea5eb854ab8f0553fb41f77c8786f28f82`, blob `102ff57803e504876f6eb9b412e4eb0f6c576350`; licença MIT, copyright (c) 2026 Maze. Não reproduzir o comando original de "corrigir tudo" sem limite. A skill é instrução para agente, não scanner independente nem sandbox.
 
+**Compatibilidade de etapas:** as fases U01–U08 do fluxo Untangle não substituem P00–P30 da Engenharia CADU; P06 da central trata arquitetura, P13 implementa, P14 revisa e P24 mede.
+
 ## Governança
 Cadu aprova produto, orçamento, escopo e release. **MIKE** é o supervisor de desenvolvimento, sob comando de Cadu, separado do JARVIS. Recupera estado, fila canônica, leases, responsáveis, evidências, custo e checkpoints; não pressupor daemon 24h. Codex permanece o coordenador técnico padrão onde já adotado; Claude Code atua como cliente/worker autorizado, não novo supervisor. Não criar segunda fila nem trocar credenciais ou provedor por inferência. **Deny by default**; privilégio mínimo, RBAC/ABAC/RLS quando aplicável, MFA/Passkey, auditoria e rollback. Texto não implementa controles de segurança reais.
 
@@ -12,9 +14,9 @@ Cadu aprova produto, orçamento, escopo e release. **MIKE** é o supervisor de d
 2. **Untangle seletivo/read-only:** inspecionar apenas módulos afetados por novo epic, refatoração, mudanças transversais ou incidentes recorrentes. Identificar links ocultos, links desnecessários, surplus comprovado e exceções legítimas; mapa de imports e co-change com caminho:linha/SHA. Não confundir retry, verificação de segurança ou tolerância a falhas com código morto.
 3. **Dividir em slices verticais:** cada slice entrega resultado de negócio observável, interface, testes positivos/negativos, dependências, dono exclusivo por arquivo/schema/lockfile/recurso, previsão de custo (hipótese), teto autorizado e rollback. Usar `templates/MIKE_SLICE_CONTRACT.json`.
 4. **Graph:** nós READY, RUNNING, BLOCKED, FAILED, PASSED e CANCELLED. Apenas dependências PASSED liberam execução. Um executor por padrão; paralelismo só com fronteira independente e worktree/branch e serviços efetivamente isolados.
-5. **P06:** mudança de código requer aprovação específica de lote, trabalhador isolado e permissões verificadas. Comentários/testes só podem ser removidos com aprovação distinta. A skill de análise não concede escrita.
+5. **Gate de implementação antes de P13:** mudança de código requer aprovação específica de lote, trabalhador isolado e permissões verificadas. Comentários/testes só podem ser removidos com aprovação distinta. A skill de análise não concede escrita.
 6. **Loop:** OBJETIVO → AÇÃO MÍNIMA → OBSERVAÇÃO → VERIFICAÇÃO → DECISÃO. Máximo 3 ciclos por nó; encerrar antes se regressão, orçamento, segredo, risco ou escopo desconhecido.
-7. **P07/P08:** executar testes autorizados; revisor independente read-only avalia diff, evidências, requisitos e rollback. Sem merge, push, deploy, produção, migração destrutiva, cobrança ou publicação automática.
+7. **P13/P14:** executar testes autorizados; revisor independente read-only avalia diff, evidências, requisitos e rollback. Sem merge, push, deploy, produção, migração destrutiva, cobrança ou publicação automática.
 8. **Checkpoint:** MIKE reconcilia resultados verdadeiros (diff/commit/PR, PASS/FAIL/NOT_RUN/INCONCLUSIVE, custos observados, riscos, próximo nó); nunca aceitar apenas autodeclaração do worker.
 
 ## Modelos e custos

@@ -169,7 +169,7 @@
         "P14",
         "P24"
       ],
-      "goal": "Executar somente slices com P06 aprovado, worker isolado, orçamento e revisão independentes."
+      "goal": "Executar somente slices com P13 aprovado, worker isolado, orçamento e revisão independentes."
     }
   }
 }

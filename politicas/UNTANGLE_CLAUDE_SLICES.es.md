@@ -6,14 +6,16 @@ Adaptación gobernada de `caldoai/skills/skills/untangle-codebase/SKILL.md` (com
 
 Cadu aprueba producto, alcance, presupuesto y publicación. **MIKE** supervisa el desarrollo bajo sus órdenes, separado de JARVIS: cola canónica, leases, responsables, evidencias y checkpoints. La documentación no demuestra un daemon permanente. Codex permanece como coordinador técnico en proyectos ya configurados; Claude Code es ejecutor opcional, sin segundo supervisor. Deny by default, privilegio mínimo, RBAC/ABAC/RLS cuando corresponda, MFA/passkey, auditoría y rollback.
 
+**Correspondencia de etapas:** Untangle U01–U08 no equivale a CADU P00–P30; P06 es arquitectura, P13 implementación, P14 revisión y P24 medición.
+
 ## Procedimiento obligatorio
 1. **Harness:** comprobar repositorio, HEAD/SHA, rama, entorno autorizado anteriormente, decisiones, tests, permisos, estado y worktrees; conservar el trabajo existente.
 2. **Untangle selectivo y de solo lectura:** inspeccionar módulos afectados al iniciar/retomar, planificar épicas, revisar PR relevantes o tras incidentes estructurales. Registrar vínculos ocultos, vínculos innecesarios, redundancias demostradas y excepciones válidas; grafo y evidencia archivo:línea/SHA. Conservar reintentos y controles de seguridad justificados.
 3. **Slices verticales:** cada slice tiene resultado medible, interfaces, tests positivos/negativos, dependencias, propietario exclusivo de archivos/esquemas/lockfiles/recursos, coste estimado, límite aprobado y rollback. Usar `templates/MIKE_SLICE_CONTRACT.json`.
 4. **Graph:** ejecutar READY solo con dependencias PASSED; un ejecutor por defecto. Paralelismo únicamente entre recursos separados y ramas/worktrees realmente aislados.
-5. **P06:** todo cambio requiere autorización específica, worker aislado y permisos comprobados. Eliminar comentarios/tests exige autorización adicional. La skill diagnóstica no concede escritura.
+5. **Gate de implementação antes de P13:** todo cambio requiere autorización específica, worker aislado y permisos comprobados. Eliminar comentarios/tests exige autorización adicional. La skill diagnóstica no concede escritura.
 6. **Loop:** OBJETIVO → ACCIÓN MÍNIMA → OBSERVACIÓN → VERIFICACIÓN → DECISIÓN; máximo tres ciclos por nodo; detenerse antes por riesgo, secretos, regresión o coste.
-7. **P07/P08:** verificaciones autorizadas y revisión independiente de solo lectura sobre contratos, diff, evidencia y rollback. Sin merge, push, despliegue, producción, migración destructiva, gasto o publicación automáticos.
+7. **P13/P14:** verificaciones autorizadas y revisión independiente de solo lectura sobre contratos, diff, evidencia y rollback. Sin merge, push, despliegue, producción, migración destructiva, gasto o publicación automáticos.
 8. **Checkpoint:** MIKE concilia pruebas reales diff/commit/PR, PASS/FAIL/NOT_RUN/INCONCLUSIVE, costes observados, riesgos y próximo nodo; una afirmación del agente no es evidencia.
 
 ## Modelos y costes

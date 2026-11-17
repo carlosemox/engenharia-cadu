@@ -6,14 +6,16 @@ A governed adaptation of `caldoai/skills/skills/untangle-codebase/SKILL.md` (com
 
 Cadu authorizes product, scope, budget and release. **MIKE** is the development supervisor under Cadu's command, separate from JARVIS, maintaining the canonical queue, leases, owners, evidence and checkpoints. MIKE documentation does not prove a persistent daemon. Codex remains the technical default in existing Codex-led projects; Claude Code may execute approved work without replacing MIKE or introducing a second supervisor. Deny by default, least privilege, RBAC/ABAC/RLS as applicable, MFA/passkey, audit and rollback.
 
+**Stage mapping:** Untangle phases U01–U08 are distinct from CADU P00–P30; CADU P06 is architecture, P13 implementation, P14 review and P24 measurement.
+
 ## Required workflow
 1. **Harness:** verify repository, current HEAD/SHA, branch, previously agreed execution environment, decisions, tests, approvals, state and worktrees. Preserve existing work.
 2. **Read-only selective Untangle:** inspect affected components only at project entry/resumption, when a new epic touches architecture, before a relevant PR or after recurrent structural incidents. Record hidden links, needless links, proven surplus and valid exceptions; show dependency graph with file:line/SHA evidence. Do not remove legitimate retries or security safeguards.
 3. **Vertical slices:** each slice has a measurable outcome, interface contract, positive/negative tests, dependencies, exclusive ownership of files/schema/lockfiles/resources, estimated cost, approved ceiling and rollback. Use `templates/MIKE_SLICE_CONTRACT.json`.
 4. **Graph:** READY runs only when dependencies PASSED; use a single executor by default. Parallel workers require disjoint resources and actual isolated worktrees/branches and services.
-5. **P06 gate:** code changes require separate specific approval, worker isolation and verified permissions. Test/comment deletion needs separate explicit approval; this diagnostic skill grants no write authority.
+5. **Implementation gate before P13:** code changes require separate specific approval, worker isolation and verified permissions. Test/comment deletion needs separate explicit approval; this diagnostic skill grants no write authority.
 6. **Loop:** GOAL → MINIMUM ACTION → OBSERVE → VERIFY → DECIDE; maximum three cycles per node, stop sooner on regression, secrets, budget or scope uncertainty.
-7. **P07/P08:** authorized checks and independent read-only review of requirements, diff, evidence and rollback. No automatic merges, pushes, deployment, production changes, destructive migrations, billing or publishing.
+7. **P13/P14:** authorized checks and independent read-only review of requirements, diff, evidence and rollback. No automatic merges, pushes, deployment, production changes, destructive migrations, billing or publishing.
 8. **Checkpoint:** MIKE reconciles real diff/commit/PR, PASS/FAIL/NOT_RUN/INCONCLUSIVE results, observed cost, risk and next node. A worker's self-report is not proof.
 
 ## Model/cost routing
