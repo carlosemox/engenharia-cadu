@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "date": "2026-11-17",
+  "origin": "caldoai/skills",
+  "path": "skills/untangle-codebase/SKILL.md",
+  "commit": "bd73b2ea5eb854ab8f0553fb41f77c8786f28f82",
+  "blob_sha": "102ff57803e504876f6eb9b412e4eb0f6c576350",
+  "license": "MIT",
+  "copyright": "2026 Maze",
+  "adoption": "ADAPTED_LOCALLY_NOT_INSTALLED_GLOBALLY",
+  "status": "NO_RUNTIME_VALIDATION",
+  "translations": [
+    "pt-BR",
+    "en",
+    "es"
+  ],
+  "policy": "politicas/UNTANGLE_CLAUDE_SLICES.md"
+}

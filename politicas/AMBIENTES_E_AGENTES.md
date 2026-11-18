@@ -56,3 +56,7 @@ Fontes oficiais consultadas:
 
 - [English](AMBIENTES_E_AGENTES.en.md)
 - [Español](AMBIENTES_E_AGENTES.es.md)
+
+## Adendo — Claude Code e MIKE (17/11/2026)
+**Claude Code** (Anthropic) é cliente de desenvolvimento distinto do **Cloud Code** do Google descrito acima. Pode atuar em aplicativo desktop, CLI ou ambiente web efetivamente disponível e autorizado; preserve a escolha de ambiente já registrada, sem pergunta repetida. **MIKE** supervisiona missões quando Cadu o designa, separado do JARVIS, sem substituir Codex como coordenador técnico padrão. Política [Untangle + slices](UNTANGLE_CLAUDE_SLICES.md): scout Haiku 5.5 read-only; arquitetura, worker por slice e revisor Sonnet 5.5, com escalonamento caro só após aprovação. Modo de permissão plan/default; nenhum agente do repositório concede sandbox, deploy, cobrança ou autorização sozinho. Adoção por produto exige inspeção das configurações já existentes e evidência de instalação, não copiar cegamente.
+Referências oficiais: https://code.claude.com/docs/en/sub-agents · https://code.claude.com/docs/en/skills · https://code.claude.com/docs/en/agent-teams .

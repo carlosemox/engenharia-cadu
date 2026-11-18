@@ -140,6 +140,53 @@
         "P14"
       ],
       "goal": "Reconciliar contexto, selecionar perfil, aplicar documentos com hashes e verificar o resultado sem iniciar campanhas, custos ou agentes automaticamente."
+    },
+    "untangle": {
+      "label": "Untangle seletivo com MIKE",
+      "labels": {
+        "pt": "Untangle seletivo com MIKE",
+        "en": "Selective Untangle with MIKE",
+        "es": "Untangle selectivo con MIKE"
+      },
+      "procedure": "comandos/MIKE_CLAUDE_SLICES.md",
+      "stages": [
+        "P20",
+        "P22",
+        "P14"
+      ],
+      "goal": "Auditoria estrutural seletiva read-only; planejar slices sem refatorar automaticamente."
+    },
+    "claude-slices": {
+      "label": "Claude Code por slices",
+      "labels": {
+        "pt": "Claude Code por slices",
+        "en": "Claude Code by slices",
+        "es": "Claude Code por slices"
+      },
+      "procedure": "comandos/MIKE_CLAUDE_SLICES.md",
+      "stages": [
+        "P13",
+        "P14",
+        "P24"
+      ],
+      "goal": "Executar somente slices com P13 aprovado, worker isolado, orçamento e revisão independentes."
+    },
+    "ecc-integrar": {
+      "label": "MIKE · ECC integrado e seguro",
+      "labels": {
+        "pt": "MIKE · ECC integrado e seguro",
+        "en": "MIKE · Secure ECC integration",
+        "es": "MIKE · ECC integrado y seguro"
+      },
+      "procedure": "comandos/MIKE_ECC_OPERAR.md",
+      "stages": [
+        "P20",
+        "P22",
+        "P13",
+        "P14",
+        "P24"
+      ],
+      "goal": "Analisar, selecionar especialistas ECC, planejar e executar somente slices autorizados com segurança e evidências."
     }
   }
 }

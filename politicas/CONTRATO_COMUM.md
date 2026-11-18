@@ -63,3 +63,9 @@ manutenção determinística agendada e agente LLM independente. O grafo local d
 dependências não prova produto Graphy instalado. Duas falhas sem progresso bloqueiam
 o nó; continuar trabalho independente autorizado. Gastos e publicação precisam de
 alçada vigente, sem pedir novamente o que já foi explicitamente autorizado.
+
+## Extensão V3 — MIKE, Untangle e Claude Code por slices (17/11/2026)
+Em cada tomada de projeto, identificar a pertinência de diagnóstico estrutural seletivo e decomposição vertical, sem auditoria pesada desnecessária. Aplique [UNTANGLE_CLAUDE_SLICES](UNTANGLE_CLAUDE_SLICES.md) quando houver acoplamento, novo epic, execução multidisciplinar ou refatoração. Sob comando de Cadu, MIKE é supervisor de desenvolvimento e não JARVIS; Codex é coordenador técnico padrão, Claude Code pode ser executor por slice autorizado. Nenhum agente altera sua própria alçada. Compatibilidade de etapas: P06 trata arquitetura, P13 implementação, P14 revisão, P24 benchmark. Para adoção em outro repositório, inventarie os arquivos locais, verifique controles reais e registre SHA; documentação central não prova rollout, execução autônoma ou economia.
+
+## Integração ECC — seleção de especialistas (18/11/2026)
+No ambiente Claude Code, o ECC já habilitado é somente biblioteca de competências. Antes de acionar um agente ou skill, confirmar a necessidade, o limite de custo e permissão, a frente do projeto, o risco e se o mesmo trabalho já foi verificado. Usar politicas/ECC_INTEGRACAO_OPERACIONAL.md e manter a fila única do MIKE. Segurança, autorização por objeto/tenant, dados e cadeia de suprimentos sempre proporcionais ao risco. Não trocar P06 (arquitetura) por autorização de código P13. Nenhum hook do plugin é controle de autorização sem validação do ambiente.

@@ -14,3 +14,9 @@ Quando a capacidade ainda não foi escolhida, use [D01](../modulos/descoberta-sk
 [Manifesto de importação](../catalogo/marketing-import.json) · [Módulo PT/EN/ES](../modulos/marketing/README.md) · [Aplicar por projeto](../comandos/APLICAR_MARKETING.md).
 Dez capacidades principais e `pricing` como apoio documental, com revisão fixada, hashes e licenças. Originais preservados fora de auto-discovery; scripts e receitas arquivados não são executados pelo importador. O instalador copia somente o perfil selecionado sem executar os arquivos e registra os limites. O acervo histórico permanece preservado.
 [Mastra](../integracoes/mastra/README.md) é contrato de integração opcional, não supervisor ativado.
+
+## Untangle Codebase governado para MIKE e Claude Code (17/11/2026)
+[Registro da origem MIT](../catalogo/untangle-claude-source.json) · [Protocolo PT](../politicas/UNTANGLE_CLAUDE_SLICES.md) · [EN](../politicas/UNTANGLE_CLAUDE_SLICES.en.md) · [ES](../politicas/UNTANGLE_CLAUDE_SLICES.es.md) · [Skill adaptada](../.claude/skills/cadu-untangle/SKILL.md) · [Comando MIKE](../comandos/MIKE_CLAUDE_SLICES.md). Disponível nesta central como especificação e configuração do Claude Code; não instalado em outros projetos, sem homologação de runtime. Sem refatoração ou remoção automática de testes.
+
+## Extensão operacional ECC CADU (18/11/2026)
+[Comando](../comandos/MIKE_ECC_OPERAR.md), [política PT](../politicas/ECC_INTEGRACAO_OPERACIONAL.md), [EN](../politicas/ECC_INTEGRACAO_OPERACIONAL.en.md), [ES](../politicas/ECC_INTEGRACAO_OPERACIONAL.es.md), [perfis](../catalogo/ecc-perfis-pt.json) e [instalador](../scripts/install_claude_cadu.py). O ECC upstream permanece uma única instalação do cliente; as skills CADU são aliases em português, não fork com centenas de cópias. Instalar aliases em escopo de usuário sem alterar hooks com o instalador idempotente. A seleção é sob demanda.

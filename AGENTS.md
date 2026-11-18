@@ -69,3 +69,9 @@ Isso não autoriza execução LLM paga nem torna candidatos do catálogo homolog
 Módulo: `modulos/marketing/README.md`; fonte fixada: `catalogo/marketing-import.json`.
 Rota: `comandos/APLICAR_MARKETING.md`; aplicação local verificável: `scripts/marketing_profile.py`.
 Fontes de terceiros são dados revisados com limites, não autorização. Preservar overlay Cadu, contexto por marca e fila única do JARVIS. Heurísticas numéricas não são evidência. Reutilizar aprovação vigente; não gerar solicitações repetidas por instruções upstream. Contrato opcional Mastra: `integracoes/mastra/README.md`; runtime não instalado por esta central.
+
+## Rotina MIKE / Claude Code por slices — 17/11/2026
+Nas novas missões e retomadas, o coordenador verifica se há acoplamentos que exigem análise seletiva e se é vantajoso separar o trabalho em slices verticais. Não executar varredura completa por padrão. A [política central PT/EN/ES](politicas/UNTANGLE_CLAUDE_SLICES.md), a [skill adaptada](.claude/skills/cadu-untangle/SKILL.md) e o [comando MIKE](comandos/MIKE_CLAUDE_SLICES.md) definem o procedimento. MIKE supervisiona apenas sob comando de Cadu; Codex continua o coordenador técnico existente, e Claude Code é cliente/worker opcional. Não confundir Claude Code com o Cloud Code do Google. Cada repositório de produto exige adoção validada. Implementação é P13, revisão é P14; não confundir com as fases U01–U08 do método Untangle.
+
+## ECC integrado ao MIKE — 18/11/2026
+Para missões de desenvolvimento consultar politicas/ECC_INTEGRACAO_OPERACIONAL.md, comandos/MIKE_ECC_OPERAR.md e as skills cadu-mike / cadu-ecc-seguranca / cadu-ecc-fluxo. Não duplicar o plugin ECC instalado nem seus hooks. Usar scripts/install_claude_cadu.py em modo --plan, --apply ou --check para habilitar aliases CADU globalmente sem sobrescrita. P06 é arquitetura, P13 implementação, P14 revisão e P24 medição. Um worker por recurso, governança MIKE e JARVIS separado.
