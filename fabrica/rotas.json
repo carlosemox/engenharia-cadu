@@ -170,6 +170,23 @@
         "P24"
       ],
       "goal": "Executar somente slices com P13 aprovado, worker isolado, orçamento e revisão independentes."
+    },
+    "ecc-integrar": {
+      "label": "MIKE · ECC integrado e seguro",
+      "labels": {
+        "pt": "MIKE · ECC integrado e seguro",
+        "en": "MIKE · Secure ECC integration",
+        "es": "MIKE · ECC integrado y seguro"
+      },
+      "procedure": "comandos/MIKE_ECC_OPERAR.md",
+      "stages": [
+        "P20",
+        "P22",
+        "P13",
+        "P14",
+        "P24"
+      ],
+      "goal": "Analisar, selecionar especialistas ECC, planejar e executar somente slices autorizados com segurança e evidências."
     }
   }
 }

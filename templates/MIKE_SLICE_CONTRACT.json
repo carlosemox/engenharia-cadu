@@ -12,7 +12,7 @@
     "outcome": "TO_FILL",
     "dependencies": [],
     "owner": "cadu-slice-builder",
-    "model": "claude-sonnet-5-5",
+    "model": "sonnet",
     "allowed_paths": [],
     "exclusive_resources": [],
     "branch": "TO_FILL",
@@ -20,7 +20,7 @@
     "risk": "TO_ASSESS"
   },
   "authorization": {
-    "p06_approved": false,
+    "p13_approved": false,
     "approval_ref": null,
     "forbidden_actions": [
       "merge",

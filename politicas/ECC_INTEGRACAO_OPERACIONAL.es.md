@@ -1,0 +1,9 @@
+# ECC e Ingeniería CADU — contrato operativo (ES)
+Versión 1.0. Everything Claude Code ECC (MIT, affaan-m/ECC) es una biblioteca de especialistas opcionales, no otro supervisor ni un sandbox.
+CADU conserva el método de ingeniería; cada proyecto conserva requisitos, permisos y evidencias. MIKE supervisa el desarrollo autorizado y es diferente del módulo JARVIS de GSD.
+Usar especialistas ECC instalados solo cuando la tarea lo requiera. Primero comprobaciones deterministas, después el especialista autorizado de menor coste suficiente; normalmente un ejecutor Sonnet por slice vertical e independiente aprobado. Paralelismo solo con recursos realmente separados.
+Ciclo: descubrimiento (code-explorer, iterative-retrieval); contratos y arquitectura (contract-first, architect, Untangle selectivo); implementación (P13 autorizado); pruebas (verification-loop, pr-test-analyzer); seguridad (security-reviewer y especialistas del límite de confianza); operación (silent-failure-hunter, production-audit).
+Seguridad: identidad y sesión, autorización por objeto/tenant, segregación de datos, secretos, CI, dependencias, entradas maliciosas, agentes/MCP/hooks, integraciones, backup y rollback. Probar permitidos y denegados. Las reglas de texto no sustituyen permisos efectivos.
+Etapas CADU: P06 arquitectura; P13 implementación con autorización explícita; P14 revisión independiente; P24 medición de eficiencia. Hasta tres ciclos por nodo; sin merge, despliegue, cobro ni elevación de privilegios automáticos. Registrar commit real y coste total por slice aceptado.
+El instalador scripts/install_claude_cadu.py enlaza únicamente alias CADU de usuario y preserva ECC y la configuración existente. No duplicar el plugin.
+El catálogo está analizado en portugués; los archivos originales ECC no están traducidos íntegramente.

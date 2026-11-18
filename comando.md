@@ -37,3 +37,6 @@ Quando o pedido envolver oferta, página, conversão, mensuração ou retenção
 
 ## MIKE — Untangle + Claude Code por slices (17/11/2026)
 Pedidos MIKE/Untangle/Claude Code/slices: usar [política multilíngue](politicas/UNTANGLE_CLAUDE_SLICES.md), [comando MIKE](comandos/MIKE_CLAUDE_SLICES.md), [contrato de slice](templates/MIKE_SLICE_CONTRACT.json), [CLAUDE.md](CLAUDE.md) e agentes configurados em `.claude/agents/`. MIKE supervisiona somente a missão comandada por Cadu, separado do JARVIS; Codex segue coordenador técnico padrão. Auditoria estrutural automática somente seletiva/read-only. Refatoração P06 requer aprovação; cada projeto exige adoção própria com evidência, sem instalação global presumida.
+
+## ECC — operação governada (18/11/2026)
+Quando o pedido envolver MIKE, ECC, segurança transversal, Claude Code ou desenvolvimento por slices, usar [MIKE_ECC_OPERAR](comandos/MIKE_ECC_OPERAR.md) e [política ECC PT/EN/ES](politicas/ECC_INTEGRACAO_OPERACIONAL.md). O ECC é plugin separado e pode já estar instalado; não duplicar. A análise de agentes/skills é catálogo, não instalação. Habilite agentes e skills sob demanda, não todos simultaneamente. P06 arquitetura e P13 implementação possuem alçadas distintas. Comandos globais CADU no Claude Code usam links não destrutivos criados por scripts/install_claude_cadu.py; não modificam configurações existentes.

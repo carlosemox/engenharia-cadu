@@ -1,8 +1,12 @@
-# Claude Code — Engenharia CADU (central)
-This repo is the method library, NOT a product deployment. Use `AGENTS.md`, `comando.md`, `politicas/CONTRATO_COMUM.md` and the relevant procedure without loading the entire library.
+# Engenharia CADU — entrada Claude Code (português)
+Esta pasta é a biblioteca de método, não uma aplicação de produção. Preserve o trabalho existente; leia AGENTS.md, comando.md e apenas o contrato pertinente em politicas/CONTRATO_COMUM.md.
 
-Cadu authorizes; **MIKE** supervises development when requested and is distinct from JARVIS; Codex remains the existing default technical coordinator. This file does not install persistent MIKE runtime or authorize costs.
+## Responsabilidade
+Cadu aprova decisões e alçadas; MIKE supervisiona o desenvolvimento quando ativado; JARVIS continua separado; Codex é o coordenador técnico legado e Claude Code é executor/revisor autorizado. A existência deste arquivo não instala daemon ou libera gastos.
 
-Routine: recover project state/SHA and approvals → selective read-only Untangle via `.claude/skills/cadu-untangle/SKILL.md` → vertical slice DAG and contract → one Sonnet 5.5 worker per **approved** isolated slice → Harness/Loop/Graph (3 cycles max) → independent review → evidence and checkpoint. Deterministic tools or Haiku 5.5 for cheap discovery, Sonnet 5.5 for regular planning/build/review, Opus/Fable only after explicit budget approval. Start with one worker; don't enable experimental teams by default.
+## Uso operacional
+Com ECC já instalado, não duplicar agentes, skills ou hooks. Para coordenação por projetos acione /cadu-mike, para segurança use /cadu-ecc-seguranca e para desenho de execução use /cadu-ecc-fluxo. Fonte: politicas/ECC_INTEGRACAO_OPERACIONAL.md e comandos/MIKE_ECC_OPERAR.md.
 
-Canonical protocol: `politicas/UNTANGLE_CLAUDE_SLICES.md`. Command: `comandos/MIKE_CLAUDE_SLICES.md`. No automatic refactor, test deletion, merge, push, deploy, production changes, new billing or permission bypass. Other projects require individual non-destructive adoption with evidence.
+Reconciliar repo/HEAD, instruções locais, autorizações, testes e checkpoint; Untangle read-only seletivo; contrato por slice, um escritor por recurso; avaliação de riscos e custo; implementar somente após aprovação P13, revisar em P14, medir P24. P06 é arquitetura, não é permissão de escrita. Até três ciclos por nó. Preferir verificações determinísticas e um Sonnet por slice aprovado; Haiku apenas para triagem apropriada; Opus/Fable somente com justificativa e orçamento aprovado. Preservar ambientes, serviços, dados e credenciais.
+
+Nenhuma integração, merge, push, deploy, publicação, alteração de acesso ou cobrança automática sem alçada efetiva. Use testes positivos/negativos, rollback e revisão independente. Não presumir controles de segurança apenas porque estão descritos no prompt.

@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "source": "affaan-m/ECC",
+  "scope": "roteamento_seletivo",
+  "defaults": {
+    "planner": "sonnet",
+    "worker": "sonnet",
+    "review": "sonnet",
+    "scout": "haiku",
+    "max_cycles": 3,
+    "parallel": 1,
+    "runtime": "plugin_ecc_existente"
+  },
+  "profiles": [
+    {
+      "id": "descoberta",
+      "trigger": "codigo desconhecido ou alto acoplamento",
+      "agents": [
+        "code-explorer"
+      ],
+      "skills": [
+        "iterative-retrieval",
+        "context-budget"
+      ],
+      "gate": "READ_ONLY"
+    },
+    {
+      "id": "produto",
+      "trigger": "especificacao e contratos",
+      "agents": [
+        "planner"
+      ],
+      "skills": [
+        "intent-driven-development",
+        "blueprint",
+        "contract-first"
+      ],
+      "gate": "PLANO"
+    },
+    {
+      "id": "arquitetura",
+      "trigger": "interfaces compartilhadas ou refatoracao",
+      "agents": [
+        "architect",
+        "code-architect"
+      ],
+      "skills": [
+        "agent-architecture-audit"
+      ],
+      "gate": "P06"
+    },
+    {
+      "id": "frontend",
+      "trigger": "interface e navegacao",
+      "agents": [
+        "a11y-architect"
+      ],
+      "skills": [
+        "accessibility"
+      ],
+      "gate": "P13+P14"
+    },
+    {
+      "id": "backend",
+      "trigger": "API e validacao",
+      "agents": [
+        "code-reviewer"
+      ],
+      "skills": [
+        "verification-loop"
+      ],
+      "gate": "P13+P14"
+    },
+    {
+      "id": "dados",
+      "trigger": "schema, RLS, tenancy",
+      "agents": [
+        "database-reviewer",
+        "security-reviewer"
+      ],
+      "skills": [
+        "postgres-patterns"
+      ],
+      "gate": "SEGURANCA"
+    },
+    {
+      "id": "seguranca",
+      "trigger": "fronteira de confianca",
+      "agents": [
+        "security-reviewer"
+      ],
+      "skills": [
+        "security-scan",
+        "agent-security-hardening"
+      ],
+      "gate": "REVISOR_INDEPENDENTE"
+    },
+    {
+      "id": "quality",
+      "trigger": "verificar comportamento e regressao",
+      "agents": [
+        "pr-test-analyzer",
+        "silent-failure-hunter"
+      ],
+      "skills": [
+        "verification-loop",
+        "eval-harness"
+      ],
+      "gate": "P14"
+    },
+    {
+      "id": "supply_chain",
+      "trigger": "nova dependencia, hook ou MCP",
+      "agents": [
+        "security-reviewer"
+      ],
+      "skills": [
+        "mcp-dependency-review",
+        "security-scan"
+      ],
+      "gate": "SECURITY_APPROVAL"
+    },
+    {
+      "id": "agentes",
+      "trigger": "missao multi-agente e custos",
+      "agents": [
+        "agent-evaluator"
+      ],
+      "skills": [
+        "agent-eval",
+        "context-budget"
+      ],
+      "gate": "CUSTO_OBSERVADO"
+    },
+    {
+      "id": "observabilidade",
+      "trigger": "falha sem causa e incidente",
+      "agents": [
+        "silent-failure-hunter"
+      ],
+      "skills": [
+        "agent-introspection-debugging"
+      ],
+      "gate": "EVIDENCIA"
+    },
+    {
+      "id": "release",
+      "trigger": "candidato de release",
+      "agents": [
+        "code-reviewer"
+      ],
+      "skills": [
+        "production-audit"
+      ],
+      "gate": "GO_HUMANO"
+    }
+  ],
+  "status": "catalogo_referencia_nao_ativacao_automatica"
+}

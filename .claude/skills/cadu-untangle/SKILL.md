@@ -1,12 +1,16 @@
 ---
 name: cadu-untangle
-description: Selective read-only structural audit and vertical slice planning under MIKE; no self-authorized refactors.
-argument-hint: "[affected area]"
+description: Fazer diagnóstico estrutural seletivo em português, apenas leitura, e propor slices sob supervisão MIKE; nunca refatorar sem autorização P13.
+argument-hint: "[área afetada]"
 ---
-# Cadu Untangle — scoped diagnosis only
-Area: $ARGUMENTS. Load `politicas/UNTANGLE_CLAUDE_SLICES.md` and the common contract once. Based on caldoai/skills untangle-codebase (MIT, 2026 Maze), pinned upstream commit in policy; this adaptation rejects unrestricted “fix everything”.
-1. Verify repository, HEAD, chosen environment, existing changes, permissions, approvals, checkpoint and scope.
-2. Stay **read-only**. Report hidden coupling, needless coupling, proven surplus, special cases and legitimate safeguards; attach file/line evidence and graph for the affected area only.
-3. Recommend vertical slices with dependencies, unique owner/file scopes, positive/negative tests, rollback and budget; follow `templates/MIKE_SLICE_CONTRACT.json`.
-4. No editing, installation, running external code, removal of comments/tests or change of credentials from this skill. Refactoring requires a separate approval before implementing P13 and isolated slice-builder.
-5. Record PASS/FAIL/INCONCLUSIVE/NOT_RUN honestly. Stop for unauthorized scope, risky change or unknown costs. This skill may be invoked to analyze, not to implement.
+# Untangle Codebase — adaptação CADU
+Escopo: $ARGUMENTS.
+Proveniência: caldoai/skills, untangle-codebase, licença MIT, revisão fixada em catalogo/untangle-claude-source.json.
+Esta é uma adaptação de DIAGNÓSTICO e não replica a instrução upstream de corrigir tudo.
+
+1. Identifique repositório, SHA, ambiente, alterações existentes, autorização, testes e checkpoint.
+2. Em modo read-only, liste vínculos ocultos (cópia de regras, globais e convenções implícitas), vínculos desnecessários (acoplamentos e dependência instável), excedentes comprovados (wrappers e código morto) e exceções justificadas de segurança e resiliência.
+3. Anexe arquivo:linha/SHA, mapa de dependências e indícios de co-change; se houver dúvida, marque HIPÓTESE.
+4. Divida propostas em slices verticais pequenos, cada um com dependências, dono exclusivo, testes permitidos e negados, orçamento e rollback. Consulte templates/MIKE_SLICE_CONTRACT.json.
+5. Não editar arquivos, instalar pacotes, executar scripts externos nem remover testes ou comentários durante esta auditoria. Implementação exige autorização P13 separada e executor isolado.
+6. Reporte PASS, FAIL, NOT_RUN ou INCONCLUSIVE, com a próxima decisão, sem inventar economia.

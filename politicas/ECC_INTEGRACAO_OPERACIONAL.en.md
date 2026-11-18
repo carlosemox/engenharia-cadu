@@ -1,0 +1,9 @@
+# ECC and CADU Engineering — operational contract (EN)
+Version 1.0. The Everything Claude Code ECC plugin (MIT, affaan-m/ECC) is a library of optional experts, not a separate supervisor or sandbox.
+CADU owns the engineering rules; each project owns its requirements, permissions and evidence. MIKE supervises development when requested and stays separate from the GSD JARVIS module.
+Use existing ECC plugin agents and skills on demand. First deterministic checks, then the cheapest suitable authorized specialist; normally one Sonnet worker per approved independent vertical slice. Extra agents only for independent scope and a measurable reason.
+Lifecycle: discovery (code-explorer, iterative-retrieval); contracts and architecture (contract-first, architect, selective Untangle); implementation (authorized P13); tests (verification-loop, pr-test-analyzer); security (security-reviewer and trust boundary specialists); operations (silent-failure-hunter, production-audit).
+Security covers identity/session, object/tenant authorization, data segregation, secrets, CI and dependencies, malicious inputs, agents/MCP/hooks, external integrations, backup and rollback. Test allowed and denied behavior. Text rules are not OS-enforced permissions.
+Stages: P06 architecture; P13 implementation only with explicit scope authorization; P14 independent review; P24 measured efficiency. Maximum three loops per node; no autonomous merge, deployment, billing or privilege escalation. Track the real commit and total cost per accepted slice, not hypothetical savings.
+Use scripts/install_claude_cadu.py to link only CADU aliases in the user's Claude Code configuration; leave ECC and all existing hooks/settings intact. No global ECC duplication.
+The complete catalog is analyzed in Portuguese; original upstream ECC implementation files remain in their original language. Do not claim full upstream translation.
